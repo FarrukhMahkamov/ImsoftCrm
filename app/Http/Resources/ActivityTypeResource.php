@@ -17,7 +17,7 @@ class ActivityTypeResource extends JsonResource
         return [
              'id' => $this->id,
              'name' => $this->name,
-             'category' => $this->category_id,
+             'category' => $this->category->name,
         ];
     }
 }

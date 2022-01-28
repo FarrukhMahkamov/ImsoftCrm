@@ -16,7 +16,7 @@ class ActivityTypeController extends Controller
      */
     public function index()
     {
-        return ActivityTypeResource::collection(ActivityType::all());
+        return ActivityTypeResource::collection(ActivityType::with('category')->get());
     }
 
     /**

@@ -14,7 +14,5 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
-
     Route::apiResource('categories', CategoryController::class);
     Route::apiResource('activity-type', ActivityTypeController::class);
