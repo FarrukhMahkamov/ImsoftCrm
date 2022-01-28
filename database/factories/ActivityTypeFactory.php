@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\ActivityType;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ActivityTypeFactory extends Factory
@@ -11,10 +12,14 @@ class ActivityTypeFactory extends Factory
      *
      * @return array
      */
+
+    protected $model = ActivityType::class;
+
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->name(),
+            'category_id' => $this->faker->randomDigit(),
         ];
     }
 }

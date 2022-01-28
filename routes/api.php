@@ -3,7 +3,6 @@
 use App\Http\Controllers\ActivityTypeController;
 use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +15,6 @@ use Illuminate\Http\Request;
 |
 */
 
-// Route::group(function(){
-//     Route::apiResource('category', CategoryController::class);
-//     Route::apiResource('activity-type', ActivityTypeController::class);
-// });
+
+    Route::apiResource('category', CategoryController::class);
+    Route::apiResource('activity-type', ActivityTypeController::class);
