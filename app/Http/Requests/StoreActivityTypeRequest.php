@@ -13,7 +13,7 @@ class StoreActivityTypeRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,8 @@ class StoreActivityTypeRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => 'required|min:3|max:200|unique:activity_types',
+            'category_id' => 'required|min:3|max:200',
         ];
     }
 }

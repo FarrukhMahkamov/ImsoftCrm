@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\ActivityType;
 use App\Http\Requests\StoreActivityTypeRequest;
 use App\Http\Requests\UpdateActivityTypeRequest;
+use App\Http\Resources\ActivityTypeResource;
 
 class ActivityTypeController extends Controller
 {
@@ -15,7 +16,7 @@ class ActivityTypeController extends Controller
      */
     public function index()
     {
-        //
+        return ActivityTypeResource::collection(ActivityType::all());
     }
 
     /**
@@ -26,7 +27,9 @@ class ActivityTypeController extends Controller
      */
     public function store(StoreActivityTypeRequest $request)
     {
-        //
+        $activityType = ActivityType::create($request->only(['name', 'category_id']));
+
+        return new ActivityTypeResource($activityType);
     }
 
     /**
@@ -37,7 +40,7 @@ class ActivityTypeController extends Controller
      */
     public function show(ActivityType $activityType)
     {
-        //
+        return new ActivityTypeResource($activityType);
     }
 
     /**
@@ -49,7 +52,7 @@ class ActivityTypeController extends Controller
      */
     public function update(UpdateActivityTypeRequest $request, ActivityType $activityType)
     {
-        //
+        $activityType->update($request->only(['name', 'category_id']));
     }
 
     /**
@@ -60,6 +63,8 @@ class ActivityTypeController extends Controller
      */
     public function destroy(ActivityType $activityType)
     {
-        //
+        $activityType->delete();
+
+        return response(null, 204);
     }
 }
