@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Developer extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'start_work',
+        'surname',
+        'phone_number',
+        'work_type',
+        'about',
+        'file',
+        'workstatus_id',
+    ];
 }

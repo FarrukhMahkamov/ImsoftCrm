@@ -15,6 +15,14 @@ class CreateDevelopersTable extends Migration
     {
         Schema::create('developers', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->dateTime('start_work');
+            $table->string('surname');
+            $table->string('phone_number');
+            $table->string('work_type')->default('Worker');
+            $table->longText('about');
+            $table->text('file');
+            $table->foreignId('workstatus_id');
             $table->timestamps();
         });
     }
