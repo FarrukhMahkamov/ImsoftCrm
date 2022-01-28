@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Developers;
-use App\Http\Requests\StoreDevelopersRequest;
-use App\Http\Requests\UpdateDevelopersRequest;
+use App\Models\Developer;
+use App\Http\Requests\StoreDeveloperRequest;
+use App\Http\Requests\UpdateDeveloperRequest;
 
-class DevelopersController extends Controller
+class DeveloperController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,10 +21,10 @@ class DevelopersController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreDevelopersRequest  $request
+     * @param  \App\Http\Requests\StoreDeveloperRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreDevelopersRequest $request)
+    public function store(StoreDeveloperRequest $request)
     {
         //
     }
@@ -32,10 +32,10 @@ class DevelopersController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Developers  $developers
+     * @param  \App\Models\Developer  $developer
      * @return \Illuminate\Http\Response
      */
-    public function show(Developers $developers)
+    public function show(Developer $developer)
     {
         //
     }
@@ -43,11 +43,11 @@ class DevelopersController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateDevelopersRequest  $request
-     * @param  \App\Models\Developers  $developers
+     * @param  \App\Http\Requests\UpdateDeveloperRequest  $request
+     * @param  \App\Models\Developer  $developer
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateDevelopersRequest $request, Developers $developers)
+    public function update(UpdateDeveloperRequest $request, Developer $developer)
     {
         //
     }
@@ -55,10 +55,10 @@ class DevelopersController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Developers  $developers
+     * @param  \App\Models\Developer  $developer
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Developers $developers)
+    public function destroy(Developer $developer)
     {
         //
     }
