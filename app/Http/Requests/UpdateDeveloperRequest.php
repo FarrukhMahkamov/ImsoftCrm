@@ -13,7 +13,7 @@ class UpdateDeveloperRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,14 @@ class UpdateDeveloperRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => 'required|min:3|max:200|unique:developers',
+            'start_work' => 'required|min:3|max:200',
+            'surname' => 'required|min:3|max:200',
+            'phone_number' => 'required|min:3|max:20',
+            'work_type' => 'required|min:3|max:200',
+            'about' => 'required|min:50',
+            'file' => 'required|min:5|max:200',
+            'workstatus_id' => 'required|min:5|max:200',
         ];
     }
 }
