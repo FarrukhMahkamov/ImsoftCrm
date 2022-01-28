@@ -22,7 +22,7 @@ class CreateDevelopersTable extends Migration
             $table->string('work_type')->default('Worker');
             $table->longText('about');
             $table->text('file');
-            $table->foreignId('workstatus_id');
+            $table->string('workstatus_id');
             $table->timestamps();
         });
     }
