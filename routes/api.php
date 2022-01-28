@@ -16,5 +16,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-    Route::apiResource('category', CategoryController::class);
+    Route::apiResource('categories', CategoryController::class);
     Route::apiResource('activity-type', ActivityTypeController::class);

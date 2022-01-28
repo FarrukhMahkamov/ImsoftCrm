@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\ActivityType;
+use App\Models\Category;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ActivityTypeFactory extends Factory
@@ -19,7 +20,7 @@ class ActivityTypeFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
-            'category_id' => $this->faker->randomDigit(),
+            'category_id' => Category::factory(),
         ];
     }
 }
