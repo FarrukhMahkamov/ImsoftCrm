@@ -15,6 +15,11 @@ class CreateProjectsTable extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
+            $table->dateTime('start_date');
+            $table->dateTime('dedline_date');
+            $table->text('general_info');
+            $table->foreignId('status_id');
+            $table->text('file');
             $table->timestamps();
         });
     }
