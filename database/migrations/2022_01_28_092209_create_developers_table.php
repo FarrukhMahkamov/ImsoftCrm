@@ -19,10 +19,10 @@ class CreateDevelopersTable extends Migration
             $table->dateTime('start_work');
             $table->string('surname');
             $table->string('phone_number');
-            $table->string('work_type')->default('Worker');
+            $table->string('work_type')->default('Backend Developer');
             $table->longText('about');
             $table->text('file');
-            $table->string('workstatus_id');
+            $table->string('workstatus')->default('offline');
             $table->timestamps();
         });
     }
