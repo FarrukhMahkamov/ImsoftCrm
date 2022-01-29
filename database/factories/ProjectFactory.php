@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Project;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ProjectFactory extends Factory
@@ -11,10 +12,23 @@ class ProjectFactory extends Factory
      *
      * @return array
      */
+
+    protected $model = Project::class;
+
     public function definition()
     {
         return [
-            //
+            'project_name' => $this->faker->name(),
+            'general_info' => $this->faker->paragraph(),
+            'general_file' => $this->faker->imageUrl($width = 500, $height = 500),
+            'status_id' => $this->faker->randomDigit(),
+            'developer_id' => $this->faker->randomDigit(),
+            'developer_info' => $this->faker->paragraph(),
+            'start_date' => $this->faker->dateTime(), 
+            'deadline_date' => $this->faker->dateTime(), 
+            'finish_date' => $this->faker->dateTime(), 
+            'about_file' => $this->faker->paragraph(),
+            'project_file' => $this->faker->imageUrl($width = 500, $height = 500)
         ];
     }
 }

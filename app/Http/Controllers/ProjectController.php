@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Project;
 use App\Http\Requests\StoreProjectRequest;
 use App\Http\Requests\UpdateProjectRequest;
+use App\Http\Resources\ProjectResource;
 
 class ProjectController extends Controller
 {
@@ -15,7 +16,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        
+        return ProjectResource::collection(Project::all());
     }
 
     /**
@@ -24,9 +25,24 @@ class ProjectController extends Controller
      * @param  \App\Http\Requests\StoreProjectRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreProjectRequest $request)
+    public function store(StoreProjectRequest $request, Project $project)
     {
-        //
+        Project::create($request->only([
+            'project_name',
+            'general_info',
+            'general_file',
+            'status_id',
+            'developer_id',
+            'developer_info',
+            'start_date',
+            'dedline_date',
+            'finish_date',
+            'about_file',
+            'project_file',
+        ]));
+
+        return new ProjectResource($project);
+
     }
 
     /**
@@ -37,7 +53,9 @@ class ProjectController extends Controller
      */
     public function show(Project $project)
     {
-        //
+
+        return new ProjectResource($project);
+    
     }
 
     /**
@@ -49,7 +67,23 @@ class ProjectController extends Controller
      */
     public function update(UpdateProjectRequest $request, Project $project)
     {
-        //
+
+        $project->update($request->only([
+            'project_name',
+            'general_info',
+            'general_file',
+            'status_id',
+            'developer_id',
+            'developer_info',
+            'start_date',
+            'dedline_date',
+            'finish_date',
+            'about_file',
+            'project_file',
+        ]));
+
+        return new ProjectResource($project);
+        
     }
 
     /**
@@ -60,6 +94,10 @@ class ProjectController extends Controller
      */
     public function destroy(Project $project)
     {
-        //
+
+        $project->delete();
+
+        return response(null, 204);
+   
     }
 }

@@ -22,7 +22,7 @@ class CreateProjectsTable extends Migration
             $table->foreignId('developer_id');
             $table->text('developer_info');
             $table->dateTime('start_date');
-            $table->dateTime('dedline_date');
+            $table->dateTime('deadline_date');
             $table->dateTime('finish_date');
             $table->text('about_file');
             $table->text('project_file');
