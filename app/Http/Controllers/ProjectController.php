@@ -6,6 +6,7 @@ use App\Models\Project;
 use App\Http\Requests\StoreProjectRequest;
 use App\Http\Requests\UpdateProjectRequest;
 use App\Http\Resources\ProjectResource;
+use Illuminate\Support\Facades\Cache;
 
 class ProjectController extends Controller
 {
@@ -16,7 +17,10 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return ProjectResource::collection(Project::all());
+        return ProjectResource::collection(Cache::remember('projects', 60*60*24, function(){
+            return  Project::with('status', 'developer')->get();
+        }));
+           
     }
 
     /**

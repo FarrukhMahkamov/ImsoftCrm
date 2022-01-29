@@ -25,7 +25,7 @@ class DeveloperFactory extends Factory
             'work_type' => $this->faker->word(),
             'about' => $this->faker->text(),
             'file' => $this->faker->imageUrl($width = 60, $height = 60),
-            'workstatus_id' => $this->faker->word()
+            'workstatus' => $this->faker->word()
         ];
     }
 }

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Status;
 use App\Http\Requests\StoreStatusRequest;
 use App\Http\Requests\UpdateStatusRequest;
+use App\Http\Resources\StatusResource;
 
 class StatusController extends Controller
 {
@@ -15,7 +16,7 @@ class StatusController extends Controller
      */
     public function index()
     {
-        //
+          return StatusResource::collection(Status::all());
     }
 
     /**
@@ -24,9 +25,11 @@ class StatusController extends Controller
      * @param  \App\Http\Requests\StoreStatusRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreStatusRequest $request)
+    public function store(StoreStatusRequest $request, Status $status)
     {
-        //
+       $status = Status::create($request->only('name'));
+
+        return new StatusResource($status);
     }
 
     /**
@@ -37,7 +40,7 @@ class StatusController extends Controller
      */
     public function show(Status $status)
     {
-        //
+        return new StatusResource($status);
     }
 
     /**
@@ -49,7 +52,9 @@ class StatusController extends Controller
      */
     public function update(UpdateStatusRequest $request, Status $status)
     {
-        //
+        $status->update($request->only('name'));
+
+        return new StatusResource($status);
     }
 
     /**
@@ -60,6 +65,8 @@ class StatusController extends Controller
      */
     public function destroy(Status $status)
     {
-        //
+        $status->delete();
+
+        return response(null, 204);
     }
 }

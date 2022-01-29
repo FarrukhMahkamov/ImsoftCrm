@@ -19,4 +19,10 @@ class Developer extends Model
         'file',
         'workstatus_id',
     ];
+
+    public function project()
+    {
+        return $this->hasMany(Project::class);
+    }
+
 }

@@ -27,4 +27,9 @@ class Project extends Model
     {
         return $this->belongsTo(Status::class);    
     }
+
+    public function developer()
+    {
+        return $this->belongsTo(Developer::class);
+    }
 }
