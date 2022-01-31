@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Region;
+use App\Models\State;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class RegionFactory extends Factory
@@ -11,10 +13,14 @@ class RegionFactory extends Factory
      *
      * @return array
      */
+
+    protected $model = Region::class;
+
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->word(),
+            'state_id' => State::factory()
         ];
     }
 }

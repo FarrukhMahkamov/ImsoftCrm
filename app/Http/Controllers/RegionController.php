@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Region;
 use App\Http\Requests\StoreRegionRequest;
 use App\Http\Requests\UpdateRegionRequest;
+use App\Http\Resources\RegionResource;
 
 class RegionController extends Controller
 {
@@ -15,7 +16,7 @@ class RegionController extends Controller
      */
     public function index()
     {
-        //
+        return RegionResource::collection(Region::all());
     }
 
     /**
@@ -26,7 +27,12 @@ class RegionController extends Controller
      */
     public function store(StoreRegionRequest $request)
     {
-        //
+       $region = Region::create($request->only([
+            'name',
+            'state_id'
+        ]));
+
+        return new RegionController($region);
     }
 
     /**
@@ -37,7 +43,7 @@ class RegionController extends Controller
      */
     public function show(Region $region)
     {
-        //
+        return new RegionResource($region);
     }
 
     /**
@@ -49,7 +55,12 @@ class RegionController extends Controller
      */
     public function update(UpdateRegionRequest $request, Region $region)
     {
-        //
+        $region->update($request->only([
+            'name',
+            'state_id',
+        ]));
+
+        return new RegionResource($region);
     }
 
     /**
@@ -60,6 +71,8 @@ class RegionController extends Controller
      */
     public function destroy(Region $region)
     {
-        //
+        $region->delete();
+
+        return response(null, 204);
     }
 }

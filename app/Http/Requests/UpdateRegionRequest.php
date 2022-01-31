@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use Illuminate\Validation\Rule;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UpdateRegionRequest extends FormRequest
@@ -13,7 +14,7 @@ class UpdateRegionRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +25,8 @@ class UpdateRegionRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => 'required|min:3|max:200',
+            'state_id' => ['required', Rule::exists('states', 'id')],
         ];
     }
 }
