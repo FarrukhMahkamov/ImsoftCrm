@@ -18,4 +18,9 @@ class State extends Model
         return $this->hasMany(Region::class);
     }
 
+    public function client()
+    {
+        return $this->hasMany(Client::class);
+    }
+
 }

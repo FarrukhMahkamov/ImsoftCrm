@@ -24,4 +24,9 @@ class Region extends Model
         return $this->hasMany(Address::class);
     }
 
+    public function client()
+    {
+        return $this->hasMany(Client::class);
+    }
+
 }

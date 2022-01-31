@@ -18,4 +18,10 @@ class ActivityType extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    public function client()
+    {
+        return $this->hasMany(Client::class);
+    }
+
 }

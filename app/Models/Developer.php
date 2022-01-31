@@ -25,4 +25,9 @@ class Developer extends Model
         return $this->hasMany(Project::class);
     }
 
+    public function client()
+    {
+        return $this->hasMany(Client::class);
+    }
+
 }

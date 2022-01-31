@@ -18,5 +18,9 @@ class Address extends Model
         return $this->belongsTo(Region::class);
     }
 
+    public function client()
+    {
+        return $this->hasMany(Client::class);
+    }
 
 }

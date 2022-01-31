@@ -17,4 +17,9 @@ class Category extends Model
     {
         return $this->hasMany(ActivityType::class);
     }
+
+    public function client()
+    {
+        return $this->hasMany(Client::class);
+    }
 }
