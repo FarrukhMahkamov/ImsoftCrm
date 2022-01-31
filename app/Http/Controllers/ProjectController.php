@@ -17,6 +17,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
+        
         return ProjectResource::collection(Cache::remember('projects', 60*60*24, function(){
             return  Project::with('status', 'developer')->get();
         }));
