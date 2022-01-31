@@ -4,6 +4,7 @@ use App\Http\Controllers\ActivityTypeController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DeveloperController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\StateController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,5 +19,6 @@ use Illuminate\Support\Facades\Route;
 */
     Route::apiResource('categories', CategoryController::class);
     Route::apiResource('developers', DeveloperController::class);
-    Route::apiResource('activity-type', ActivityTypeController::class);
+    Route::apiResource('states', StateController::class);
+    Route::apiResource('activity-types', ActivityTypeController::class);
     Route::apiResource('projects', ProjectController::class);
