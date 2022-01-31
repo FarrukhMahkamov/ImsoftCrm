@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Operator;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class OperatorFactory extends Factory
@@ -11,10 +12,13 @@ class OperatorFactory extends Factory
      *
      * @return array
      */
+
+    protected $model = Operator::class;
+
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->name()
         ];
     }
 }

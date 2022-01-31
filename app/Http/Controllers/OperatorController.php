@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Operator;
 use App\Http\Requests\StoreOperatorRequest;
 use App\Http\Requests\UpdateOperatorRequest;
+use App\Http\Resources\OperatorResource;
 
 class OperatorController extends Controller
 {
@@ -15,7 +16,7 @@ class OperatorController extends Controller
      */
     public function index()
     {
-        //
+        return OperatorResource::collection(Operator::all());
     }
 
     /**
@@ -26,7 +27,9 @@ class OperatorController extends Controller
      */
     public function store(StoreOperatorRequest $request)
     {
-        //
+        $operator = Operator::create($request->only(['name']));
+
+        return new OperatorResource($operator);
     }
 
     /**
@@ -37,7 +40,7 @@ class OperatorController extends Controller
      */
     public function show(Operator $operator)
     {
-        //
+        return new OperatorResource($operator);
     }
 
     /**
@@ -49,7 +52,11 @@ class OperatorController extends Controller
      */
     public function update(UpdateOperatorRequest $request, Operator $operator)
     {
-        //
+        $operator->update($request->only([
+            'name'
+        ]));
+
+        return new OperatorResource($operator);
     }
 
     /**
@@ -60,6 +67,8 @@ class OperatorController extends Controller
      */
     public function destroy(Operator $operator)
     {
-        //
+        $operator->delete();
+
+        return response(null, 204);
     }
 }
