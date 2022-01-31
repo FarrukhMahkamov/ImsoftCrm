@@ -19,4 +19,9 @@ class Region extends Model
         return $this->belongsTo(State::class);
     }
 
+    public function address()
+    {
+        return $this->hasMany(Address::class);
+    }
+
 }

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Address;
 use App\Http\Requests\StoreAddressRequest;
 use App\Http\Requests\UpdateAddressRequest;
+use App\Http\Resources\AddressResource;
 
 class AddressController extends Controller
 {
@@ -15,7 +16,7 @@ class AddressController extends Controller
      */
     public function index()
     {
-        //
+        return AddressResource::collection(Address::with('region')->get());
     }
 
     /**
@@ -26,7 +27,12 @@ class AddressController extends Controller
      */
     public function store(StoreAddressRequest $request)
     {
-        //
+        $address = Address::create($request->only([
+            'name',
+            'region_id'
+        ]));
+
+        return new AddressResource($address);
     }
 
     /**
@@ -37,7 +43,7 @@ class AddressController extends Controller
      */
     public function show(Address $address)
     {
-        //
+        return new AddressResource($address);
     }
 
     /**
@@ -49,7 +55,12 @@ class AddressController extends Controller
      */
     public function update(UpdateAddressRequest $request, Address $address)
     {
-        //
+        $address->update($request->only([
+            'name',
+            'region_id'
+        ]));
+
+        return new AddressResource($address);
     }
 
     /**
@@ -60,6 +71,8 @@ class AddressController extends Controller
      */
     public function destroy(Address $address)
     {
-        //
+        $address->delete();
+
+        return response(null, 204);
     }
 }
