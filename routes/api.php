@@ -8,6 +8,7 @@ use App\Http\Controllers\OperatorController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\RegionController;
 use App\Http\Controllers\StateController;
+use App\Http\Controllers\TypeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,5 +29,6 @@ use Illuminate\Support\Facades\Route;
     Route::apiResource('regions', RegionController::class);
     Route::apiResource('activity-types', ActivityTypeController::class);
     Route::apiResource('projects', ProjectController::class);
+    Route::apiResource('types', TypeController::class);
 
             
