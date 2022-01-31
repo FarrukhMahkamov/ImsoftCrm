@@ -3,9 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rule;
 
-class StoreAddressRequest extends FormRequest
+class UpdateClientRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -14,7 +13,7 @@ class StoreAddressRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        return false;
     }
 
     /**
@@ -25,8 +24,7 @@ class StoreAddressRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|min:3|max:200|unique:addresses',
-            'region_id' => 'required', Rule::exists('regions', 'id'),
+            //
         ];
     }
 }
