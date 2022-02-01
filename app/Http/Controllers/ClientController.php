@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Client;
 use App\Http\Requests\StoreClientRequest;
 use App\Http\Requests\UpdateClientRequest;
+use App\Http\Resources\ClientResource;
+use Illuminate\Support\Facades\Cache;
 
 class ClientController extends Controller
 {
@@ -15,7 +17,9 @@ class ClientController extends Controller
      */
     public function index()
     {
-        //
+        return ClientResource::collection(Cache::remember('clients'), 60*60*24, function(){
+            return Client::all();
+        });
     }
 
     /**

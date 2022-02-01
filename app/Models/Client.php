@@ -16,7 +16,7 @@ class Client extends Model
         'activity_type_id',
         'state_id',
         'region_id',
-        'address',
+        'address_id',
         'home_address',
         'order_reason',
         'client_name',
