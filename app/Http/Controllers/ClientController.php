@@ -17,9 +17,12 @@ class ClientController extends Controller
      */
     public function index()
     {
-        return ClientResource::collection(Cache::remember('clients'), 60*60*24, function(){
-            return Client::all();
-        });
+        // return ClientResource::collection(Cache::remember('clients', 60*60*24, function(){
+        //     return Client::all();
+        // }));
+
+        return ClientResource::collection(Client::with('category', 'activityType', 'state', 'region', 'address', 'operator', 'type')->get());
+
     }
 
     /**
@@ -30,7 +33,32 @@ class ClientController extends Controller
      */
     public function store(StoreClientRequest $request)
     {
-        //
+        $client = Client::create($request->only([
+            'general_info',
+            'enterprise_name',
+            'category_id',
+            'activity_type_id',
+            'state_id',
+            'region_id',
+            'address_id',
+            'home_address',
+            'order_reason',
+            'client_name',
+            'client_phone_number',
+            'client_phone_number_2',
+            'client_born_date',
+            'operator_id',
+            'operator_phone_number',
+            'operator_phone_number_2',
+            'operator_born_date',
+            'latitude',
+            'longtitude',
+            'file',
+            'type_id',
+            'order_time',   
+        ]));
+
+        return new ClientResource($client);
     }
 
     /**
@@ -41,7 +69,7 @@ class ClientController extends Controller
      */
     public function show(Client $client)
     {
-        //
+        return new ClientResource($client);
     }
 
     /**
@@ -53,7 +81,32 @@ class ClientController extends Controller
      */
     public function update(UpdateClientRequest $request, Client $client)
     {
-        //
+        $client->update($request->only([
+            'general_info',
+            'enterprise_name',
+            'category_id',
+            'activity_type_id',
+            'state_id',
+            'region_id',
+            'address_id',
+            'home_address',
+            'order_reason',
+            'client_name',
+            'client_phone_number',
+            'client_phone_number_2',
+            'client_born_date',
+            'operator_id',
+            'operator_phone_number',
+            'operator_phone_number_2',
+            'operator_born_date',
+            'latitude',
+            'longtitude',
+            'file',
+            'type_id',
+            'order_time',   
+        ]));
+
+        return new ClientResource($client);
     }
 
     /**
@@ -64,6 +117,8 @@ class ClientController extends Controller
      */
     public function destroy(Client $client)
     {
-        //
+        $client->delete($client);
+
+        return response(null, 204);
     }
 }
