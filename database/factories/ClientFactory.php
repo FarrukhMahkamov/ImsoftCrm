@@ -26,9 +26,11 @@ class ClientFactory extends Factory
     public function definition()
     {
         return [
+            'general_info' => $this->faker->paragraph(12),
             'enterprise_name' => $this->faker->name(),
             'order_time' => $this->faker->dateTime(),
             'home_address' => $this->faker->address(),
+            'order_reason' => $this->faker->paragraph(),
             'client_name' => $this->faker->name(),
             'client_phone_number' => $this->faker->randomDigit(),
             'client_phone_number_2' => $this->faker->randomDigit(),
@@ -40,7 +42,6 @@ class ClientFactory extends Factory
             'longtitude' => $this->faker->longitude(),
             'file' => $this->faker->imageUrl(),
             'operator_id' => Operator::factory(),
-            'developer_id' => Developer::factory(),
             'type_id' => Type::factory(),
             'category_id' => Category::factory(),
             'activity_type_id' => ActivityType::factory(),

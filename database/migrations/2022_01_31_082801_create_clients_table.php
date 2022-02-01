@@ -15,6 +15,7 @@ class CreateClientsTable extends Migration
     {
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
+            $table->text('general_info');
             $table->string('enterprise_name');
             $table->foreignId('category_id');
             $table->foreignId('activity_type_id');
@@ -22,6 +23,7 @@ class CreateClientsTable extends Migration
             $table->foreignId('region_id');
             $table->string('address_id');
             $table->string('home_address');
+            $table->text('order_reason');
             $table->string('client_name');
             $table->bigInteger('client_phone_number');
             $table->bigInteger('client_phone_number_2');
@@ -33,7 +35,6 @@ class CreateClientsTable extends Migration
             $table->bigInteger('latitude');
             $table->bigInteger('longtitude');
             $table->text('file');
-            $table->foreignId('developer_id');
             $table->foreignId('type_id');
             $table->dateTime('order_time');
             $table->timestamps();

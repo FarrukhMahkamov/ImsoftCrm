@@ -17,9 +17,4 @@ class Operator extends Model
         return $this->hasMany(Client::class);
     }
 
-    public function client()
-    {
-        return $this->hasMany(Client::class);
-    }
-
 }

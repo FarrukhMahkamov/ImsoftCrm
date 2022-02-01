@@ -10,12 +10,15 @@ class Client extends Model
     use HasFactory;
 
     protected $fillable = [
+        'general_info',
         'enterprise_name',
         'category_id',
         'activity_type_id',
         'state_id',
         'region_id',
         'address',
+        'home_address',
+        'order_reason',
         'client_name',
         'client_phone_number',
         'client_phone_number_2',
@@ -27,7 +30,6 @@ class Client extends Model
         'latitude',
         'longtitude',
         'file',
-        'developer_id',
         'type_id',
         'order_time',
     ];
@@ -60,11 +62,6 @@ class Client extends Model
     public function operator()
     {
         return $this->belongsTo(Operator::class);
-    }
-
-    public function developer()
-    {
-        return $this->belongsTo(Developer::class);
     }
 
     public function type()
