@@ -27,9 +27,9 @@ use App\Http\Controllers\TypeController;
 
 Route::post('register', [AuthController::class, 'registerUser']);
 Route::post('login', [AuthController::class, 'loginUser']);
-Route::logout('login', [AuthController::class, 'loginUser']);
+Route::post('logout', [AuthController::class, 'logoutUser']);
 
-// Route::group(['middleware' => 'api:sacntum'], function() {
+Route::group(['middleware' => 'auth:sacntum'], function() {
     Route::apiResource('categories', CategoryController::class);
     Route::apiResource('developers', DeveloperController::class);
     Route::apiResource('states', StateController::class);
@@ -40,7 +40,7 @@ Route::logout('login', [AuthController::class, 'loginUser']);
     Route::apiResource('projects', ProjectController::class);
     Route::apiResource('types', TypeController::class);
     Route::apiResource('clients', ClientController::class);
-// });
+});
 
 
 
