@@ -25,11 +25,12 @@ use App\Http\Controllers\TypeController;
 |
 */
 
-Route::post('register', [AuthController::class, 'registerUser']);
-Route::post('login', [AuthController::class, 'loginUser']);
-Route::post('logout', [AuthController::class, 'logoutUser']);
+Route::post('register-user', [AuthController::class, 'registerUser']);
+Route::post('login-user', [AuthController::class, 'loginUser']);
 
-Route::group(['middleware' => 'auth:sacntum'], function() {
+
+// Route::group(['middleware' => 'auth:sanctum'], function() {
+   
     Route::apiResource('categories', CategoryController::class);
     Route::apiResource('developers', DeveloperController::class);
     Route::apiResource('states', StateController::class);
@@ -40,7 +41,8 @@ Route::group(['middleware' => 'auth:sacntum'], function() {
     Route::apiResource('projects', ProjectController::class);
     Route::apiResource('types', TypeController::class);
     Route::apiResource('clients', ClientController::class);
-});
+    Route::post('logout-user', [AuthController::class, 'logoutUser']);
+// });
 
 
 

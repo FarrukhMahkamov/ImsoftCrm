@@ -1,0 +1,2156 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "http:\/\/localhost"
+        }
+    ],
+    "info": {
+        "name": "Laravel",
+        "_postman_id": "090a304d-f822-4d11-bd36-6e7102b013b5",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Authentication",
+            "description": "",
+            "item": [
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/projects",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/projects"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/categories",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/categories"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/categories",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/categories"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"kvoreexruddddnsvhfaxgzyuhxyqazatromkibhkcuhbbgxroycaojxpcgyqmtjqldojlbomkccscejetfvslutrovvmfpknspdkcrpuyskjfkybuxixlwjk\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/categories\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/categories\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the category."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/categories\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/categories\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the category."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"jpqnrdogvkakbtvfiwqfvmgivmkosujhkcmnzibemmdvligzdleeqlpednmksnslxuamqxunexrrhytmiyqryangmkgdshrjceagsfofbnyhhjeyluesaqxzlnyvyihxomsfgjcrjxkytvneduxeagiqtzpihvdrazabrnwwqeossyqvlkdmjhwmsqhhdyy\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/categories\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/categories\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the category."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/developers",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/developers"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/developers",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/developers"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"hwzxhvxawmlxzqckvrmsoicoczlraydhjrjlvvicjkzffdbenbxiijriwevvqyjg\",\"start_work\":\"llqfwcllkjnqudmttwlsutosfzeokavdonovtcavrjxbxvogrpijymitnijbeqsaxjdkezrftqqreycjhffyaamil\",\"surname\":\"rgmaritmcmpmyqhufkjrdzynsxsoqrzyphqcqhqjwisul\",\"phone_number\":\"wysftqhoqlsckykf\",\"work_type\":\"rgmsebzzueawtmekxdualubrysjwlnqgphrelyeaepprvwmmiweoygvinzdwnpcoelevdfejjvioskzscxdwv\",\"about\":\"qyqcbsvvrcktavjpmyhhkyfnmncnjkfmauhbvlfymgfxp\",\"file\":\"iqea\",\"workstatus\":\"beesstvrdjmikijzxvahpmetqbmflyckfrdyoucsfigonurpuxqohpckoxbimcgztwwonayhctxiasvllmutfjkirkeshalpcflhhlxubbmbapvugjnaovzxtihbkdyhnyannkpkmycddepknekmzirmdcwgatsrcnztumrdzrstrqkcssbypkuurx\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/developers\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/developers\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the developer."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/states",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/states"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/states",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/states"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"zmishuvcxywreiyvpehctn\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/states\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/states\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the state."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/states\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/states\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the state."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"bkqlqmavheuktgczatz\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/states\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/states\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the state."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/addresses",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/addresses"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/addresses",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/addresses"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"yhgebicflantoortrxnlxrsxlemvhlt\",\"region_id\":\"sit\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/addresses\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/addresses\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the address."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/addresses\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/addresses\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the address."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"lsqdicnqnvacvuymnesmyjjpofcemowuzysqvjdklhftosllhyaszftxqilpugnsavwxelqmhccjquulrzgcmsuaowchvxsaznohvwbhoqcvwrhcodcziunbajytei\",\"region_id\":\"et\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/addresses\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/addresses\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the address."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/operators",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/operators"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/operators",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/operators"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"wgkegjevkguhmxjpxtfhpwtufxkemmnmvjwvhicpdmjtensyvpbisuopxlfckeoxqkdqwsnnezspqayakfgdfdnnbrcaeohccjhdinwhyfbijacfxinlupfwcenaikqospzaxlnuokivvhdlsmiqtrssewypnjlhiormkddcksddkylmnsnqwhgeuowyizwwlirrtfsmtywmzlonkydf\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/operators\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/operators\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the operator."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/operators\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/operators\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the operator."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"hpyunyctnahorwhxdlwncguzvtftopomrcxcibubqldhnjluglkrjazoojhhbclcjnamvtatoyqjpdcpogzqyasavywojaweblduezilkptxfqouesebmpsgpnlpumoiiaumwsdctiweofvvdyqrgkhtrronalhghejxykag\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/operators\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/operators\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the operator."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/regions",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/regions"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/regions",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/regions"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"saylmcaeagekobdtnkelhbjljuhhdnrlwoysbuyjkivkrwivzoxreumvwyqmjpnwkkcxs\",\"state_id\":\"nam\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/regions\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/regions\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the region."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/regions\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/regions\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the region."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"ddmwcwexmptytw\",\"state_id\":\"occaecati\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/regions\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/regions\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the region."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/activity-types",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/activity-types"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/activity-types",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/activity-types"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"dacfmuilbvwioqxurxjtrowtirlwhknhfacbwluzcajvgfztswqvdgemyjaqewrmi\",\"category_id\":\"alias\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/activity-types\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/activity-types\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the activity type."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/activity-types\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/activity-types\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the activity type."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"fmjixobrysfdlaxmbydkifribronwyifdytbrjcqxsdkkwihilhdchwjqqfidpaszoqsfthcontciapsmmqokmbavkbzcjasdatree\",\"category_id\":\"pocqrgrdjdlpcjguskbovbjceaywgmappueeuffxedwjckncbajtbrplsjlpahjcfpbtgwudkctrsvgwikkxffikvykfxtfgbidkttm\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/activity-types\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/activity-types\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the activity type."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/projects",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/projects"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"project_name\":\"dqkigpwciklbawiqlivvzpznulwcfmblkzimsctudwtopkydppgpenywzsfyxufpbxmzoarintliblriimslbeefvlbpyknpsegzqseauwlrncndtxboizgrtwojo\",\"general_info\":\"rklpeuptntorngmbytuuhbnuurimkvtxvovsykqhelvdpfmvmuyuclsdbhpndpbvhgmtqcrbeqkxyokctfpfxbopontmwfgfkxclljhmswvjujrlxgwvfqxoshvxahkxfakajsntkaijptrsrypymqawcpomsfgvseiejmdphoxufzwarlhxxsbnvnjkixolyufujizegvcyogxabrvnebpqvxbzkjdalwqctczkeoqwlhdzjhrwfejeoisyffrgbjoxacwesfyrbmiqgabxpiruekvpghkjkpkjmoklzbdsoyiciqlktoamhdtdyqleecizhjytahxkfizqnlcwenbevbsykfweiycvwwpnoitcihdvnutuckvogyrwzsdlcbmubjtvfnzwtmojgxiqspsfgrwyrgvcjberdefeswkxxetevmcqvguosxxiglyeoxpxegikgsbivavtujzwbtpvydyazwuuqamuyihsfggvmdyfdubfhpirdljzpbpfpwrbidnbwwpvjgbedetatfzvxblcsnbojrocjljyorxuavkfbsouncuasgimbytbnxzsmwkdknohcltsosgyxxcpdvtzieayqlezjerufzbklkzqmatrcnvdbwycoisvxvtlvjgvssoutqprkhslnasbdvaopswryrywdgxuasvsyfiolifmdblwbquicgfyvfbblacctbviyrhascjwccsajjguigpknrgvcdtykxmjbjikqslnyvxcsyunexuzcrnngmufnnzzidsfqemenkaxdyvsrmxvpdjokmofmgyhopsgunznkxjkzccizwizfbsysvckbloahlozgqcfvqfwfgwsuqezsnqirasgzyvairbzuwdfxsrffvhrzlyzbyhikwtecklewncykrkkdhaivgixrakjffjvwmxueytamuuawzytgmdaxvfbjccniasmrjkajypxvolioacugotzyvjvteiyfivsvsxjtjteyqatmvocnisxbbwccthxgfhiswtklvacopmvehxuhqiisyyetkpchvwsofmncibqedqyykriogkjcirqpprqkvuvciiwkmmfdzqpalgcikztstlvsuzkroqzoxnskeeorpnwgldjusinfqjejcvfdppszyjfknjugrxjlpuxiqabgzqyspxdtopsyjeeravjvzvithiedrhdpnjnfsyuidbqilzmnwocrtrpxboyditfxvftggqcejoypwwnivwgvpepdxxbytkbfdghhdilklnvmerhgmozlaxwzkxegiaddlkulfojvdglkjwnnmvufzpcrpzcgicuipsujpikrzuxstujfvdcikimeepglwruknbagxjumpfkypiqaiizrsyqzkludspwpvjzwsllqcleixwexbvmthinxdyqnroybnujhrkbzuamoaieybxbfdncagirdcllfeunbrdxnmgwyqrbxbvyybaxrvrtgxglnsvgwmfiibpxwkuerlldeabclcpmjewsnwgiinictilgokrcvwanqqecxjxotclinamfrhrkzuqwkpcoenwtjfuwqdedcoxizkyevgyfjpjrfkjcfcsqnwotwtnarmwvvkljlzyolygysdiusqvhltlnodbgzewlkoonyecscfsiysypfvlsusxdbpqrvlsxvkhzygqopaajilfctkgxbkoecsrwejwbictrpiybbymlceknidhpnldtwakvvqhtabtbsjcymjjxclkwchbwgedjdcnkinpzgmoiywpignyuweulzpwfuxivlwzstidriamoucpuirfcqbvelljdrdyovxqkxilhkjoxhvdlwqxzozahswntjxfapbhlbyvjyxihwgqfnswsjlwahkeqjrdtjffukxvjmwswggvcxjhbofgitjxmgojnhqqphkdkefcyvuiegxublzgxmvpwmhqenzldnyfeiujmbagvytzgwlroszmdutvebjhkyankdrmnpgnfauyxtmafgmaxtbsypaqwryynzazdqhwgsofqisvfdhwapjzvohvfcralibjbjeomgoqvixykmpumfxtsjhkdxbfofdnkdntkucsgsmdnpuoqnqaeugxqnfahvuxpfpoqhddolyvhedltebkkjmmkozcstdvrxrcrtzamfsohqdzetxlejrjfggqukxfroeyftchxepjquaeobypyuoxa\",\"general_file\":\"sint\",\"status_id\":\"laborum\",\"developer_id\":\"itaque\",\"developer_info\":\"gtye\",\"start_date\":\"vero\",\"dedline_date\":\"sed\",\"about_file\":\"perspiciatis\",\"project_file\":\"aliquid\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/projects\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/projects\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "12",
+                                    "description": "The ID of the project."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/projects\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/projects\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "13",
+                                    "description": "The ID of the project."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"project_name\":\"rutgsyuysrbzbjvhhxfnlyhffzxvnytcfeqeixrogrvzimukxzueulurxxdmrzkkxnqwpmljrxodhgujudcymdkozahoboftchzmbqljxhrknlrbjbwueahoxuavoshkmyhqd\",\"general_info\":\"xtbrtrcaghlvtwxbbsqdlepklfrpwnlbwoinbvsoquculhpqtjqizwqzrdsahgcajhgtmmlhjggfkdftgchcyoqejyzdxrapidvgzzwozocyyqdivcayuiwbmwnncxusxffpdylqewwkwnszlzurtekwqvfkczzrupaderygpzarvfaumgotskjwuoyziwpihvpdrkszoojrgbrfqbyoiewszhskbxoexekmcudpfsjqqwzmmmwyuhztmzzakqvkfcwmhunxgywyvgbugvbtxnxxqpmcppqhvsguxbjzuefuxqjfnhigchlhznbcqcecbbfnsrxoomhtnibgdkahffgubnjzicbwhfatvkzgymctcjsnfehlhisrvcwmtdiklcqoidycdghaxxqiohdytrbzvrkdhxorgmmolitetuswnvxvslitugqgjifkflysujdueipbliiyxugpcihbkzosekrpbiydraqwvyfacnnbcmqttjbyrhocoscigbhzumsqfqsodnqzafffiumpdzfyibympsjlhsvfcjavasnypuclazrxkbykpjrsxytwubzvwmxgajamrzhlemmgljimtqturjgsomwlzjwbotkaaftpmjzmnvubdiiwquhdvywhvagvllqjrvkqmejdpqoniqjexkkwpsjjxlipvuglzuvikhaweabgnmmjxbdijosbzcfnwkcwpzonemzhuptcxvykvdnhmdbxmsxmcmmlohxkqcrhggydkxqsvdgvnbwmjodfufncyddhgzcpccwhbgdgutwnfaeuqfpgxinnhoclaibdpprhkvloqjoudvupgxgaljddmjnincbwsfwhvucdvrczlrvsqkouisvqgufwcxxomqtvzqkitpopmcyluyqqdensmsrhvxpgfzxceevjowvibzopivyyhuyylxtdjbvpomymchspueifqopbbcxmihfsnriwfduymlnqoimednijduwusixhgntfpspxfkblbqqti\",\"general_file\":\"sit\",\"status_id\":\"enim\",\"developer_id\":\"magnam\",\"developer_info\":\"njjlxppmgdtxrylcoajgnhcnrlfvtvxgiljsingfjvcepgswiixktiemfukviqjuwdbpwaasiwtocfqzqozlivgdgywtigprtgkwebmzxpejmceltuuomcxijnuzzkkhedxetbinpuiqokuiqnctstippppnrsawhwmjumefahjswbshqwemtqffvcaussnexqqpuhdmvidosicsxdznwbsbkvxjmexsoikugnyggbirsijmgdwkqdfiuaujbteqphuwpfxsmvfcoylmvilvwotmihcwtmzsbvyudtwctidlslzcuvfcstohgseupwiuyyxgfvdbeqbrjdevxbcopxpxyfqlhenwomcjcyunsuwpyqdvaqqswsazkcubxljlfetvselhrediqajjnexnwxpqhdtlgtivvymwutuwggkilqnzygslpgrxngwbgbsdxgrysrcybybjmmmlbbwucqfeblzvakgljjaeozhreemjketbtkcwrxwlihxgvbnwudvopugmloxiausemnpsvplnlozjajbugnsfjwksajmyzcreohbtncmupsodegtamowjcfvrisjfblqhxngrltvlojbkfvvybiepryfokrksyytnqimozismugtqpwzcmwueeeypyhyoaskxkzbxwekvsxzmnfvgmsjkypdtydykmzynaiapiqzjipdqcbztknqeumhovpwwpyolxxpexwsjjenjcdydxmepvawupuvcbmepipflfpiuezffezckyflnegwdgpxilopwqyynnabeflrbtyvteqmkowzgugcesoytbwjkisvsbgwwpzobqxjblhekuuebljfirifqmjgatpcqwbatlijbokomgrysaigjhnvclqqgymswilssepjqxwzjsmxlovryletjrgqwlfwrnlztmythdqxjknvhlporhkfqrglsjiuryqouzqeqtuqwgdgsjnauncxsbnpwwgbekbtmbeocuwuxoeivkxxfcassxwhumnzrsiplvnzjmrfbwwmhttbhlyftkzxzyjdixogzzdiuvnfmmenufukwdvqsdzciqudvdjkwvnhxmhneiqhigzbjrlaruculdiulyifzojuilsijltwyohueavpadtetxmqcnmikuiqhjumnemofzzpiwwnruivlkytmlfmqgbhorqvjihvsjyawwrfswoezqvvghzhxxcyvdxilfdwejwvzksxsxsqddwfwopvpsevlvucqnkiqivarcztaykeklyxzcbguaiddxbzpwvcfoiedoaxtykdbawcwufeycdfequbmkebkswtyewhyljqvwpcxzfbxcibfrxagqeekywpryynllegjijwauofiafnbhozqzkdtbuoitdasgvqvlxxzdxqtsdyhefzrxxdewqwoqkkffvchkezcnocognfnobncrytkncmtzgsufkjmzawdqnrkqdgrcmordanbyaarknayfndtcjpyvlzexxqbmfibupemfnxgtrvpmzuwbzmkabkrzakhmuqvdelxfaodxzaqbpfoocszakaqqpcsguuutashxgzhqxrujpxjeuounsamqhdfxemltqqvgwknfpoyctwgxsqffokooooizharpxexbgujwlweoejvpyjhimijlrwvmiznpstkhqufojyfhzbcatcrprxjnzyzdhkcoirunitelvezchdeqrhyjkbdmbuoeskjgslwmgegjmvjyqnyduxkcizdcsuckeqfsbvidqjhbkypofvdmuvhogkxrmdoxvxhcnhjwqqsxqnsfsglezbkrrogcvnshigniuvowxbajccojlkxnmxnhynusnjbtmjuslduytgmtpqquzxprahsjcmnomedbjklihzjtjlidfwrjtjkdpgoviznbrqsyfzldkjocchzatpmugfhxrwmtuggndtafvlzksvjlkgftblcfqjzacqjxynwctluovsjxlavhqniihywzmdfdnhudosckzdjvwdalzopzdefbpvckregvkjqibgeluqqcuevlavtcgeljpbvsrqsdwsrlnepekvjozodkoiucsqiswyfsdveoajdkcvvvzpcigipffhcmrehsbqgdktgpiwxffrqmueuagbjeckmoomvdccgddwenfxxrdwlwvfrjfupkxojdzrrmgkgcwnohofswnqozxkfmaptblhzozvufjunjvvjjnsbaaoxuatbutxpuuarsxspyjrgpsgepdkqobfpoassshftjheubstyxqqgtztjxzrqgiladligqkstnvwxuoiwnavipuvehjuobgqbekumjeoruskyhjrkqgdoxxrjlvebkynbimcfavpatxcgiojgggzwobpqysynfazgvpurtqupavpxhdnozfcubypipkbcrdbzkoaqwvjkvlovainflxhvleylidfhqvqcptdxbmlkphmccgggenvgitixhzxkwljnvvatutttwhswepnvmyfvynohrxwlnhiejgfspvpdnqfiktejtqmfuesvxxhbszdyfwgmjchvtmoncwmgyqtqzdttlhvyfijackxpmwyaczwtkuedeektlreidhgxpfrtmlryoybfyhwapvrtwuwnrfxoixjxxysvttspmgrklwvexxnurzsseyktnumpdizcldjeoclcawlhcdpbcipnjradmbakusjsnmcrbnfwqkhjtryswowbeyqyfjkqzkgmsaeiyevsjktnewibsoongopnvmfjibdfcfodxnyxpslejjoiiqpfmotrxlhcgytddlhnfydcterrixcnwiziogoecukqqozzfrimkoctnuiwfehnlgtmvxuezndkacgfyztejzeyliwsgsaiodtbxwhjuxvnulmnwfvzxdcuwltrreisfvyhzckspvofmwdnyiinrcqadjowzmewqcivhdvfegwmrwxmkxdrpilmtztdstladqeqtdzruklebkgruhjbegmvjstlpypfsniaxywfkfzzamadvbiwdlfaitcdqusnowcavvjrheaskwmotqnhrjknsdydzlhaodnfoeuqtwlsywbcruzieewwnjzjnsqxezmaiyorrpaovyujplfonxpatzehvckheefgsyltrlddauvqootyuruljfsnftxtxztjscampatoiuirabxexalibnywjeqshbnvcksmhedrgdqpzqtxsjhwvgxttejykyeaqrkcjrjjfobimpmcrddiigazauaxgmmbhigwcoikajilodrzloaibhpfnyweduyphiyqbidwymnkrhdrfnwkmpciifhavofliqnyzggblnzejrbabirbfibmhzgmtxjrosqvtkqolfitkcgnqcgjfjowurgebsefeyxacscludnlwpdyvvlurvisygqbabxdxuweddfkdhbftqbghdvxbvjdezjtaklafaywwbhdrerlphdhbxgbgiicbqlbytwwjkzhdcwfikxidohrzxzqzsvcwsdrqpurfccxrcsskwampachswhqxgmzvmlyyhvuausbtyvpqqjpnvzbmwyohmqbyqvcafmgnrqmxqhjdrzyvsjjdstxrdodqoggwsbnutdefooyklivcpwewyctsvnzhdkoltgqfifeboxxohlaprkfhkpcoqtzorgzourkqfznqgvzxszxtuaossxfufobovyxvyrjcmmrmmnnawmnlzsmiscekxjcimckqylfieekvnqjhpizkxkycblzqdgizbhyvsuhsdplvonforkyvftwpvnmqpjdzxfwbtlzexiklverwqcaygyputsgnqtvbhnepbdxhtwmgzrvlqzylzlbjlgxcwirmupnczdnizuriokinfvwlbmevmjrmsrsjugmoscmivemklntdoctztcykokjgnbotvdixzbifosdydwoadtbbndoqpzrwgyogujasctxsqtkydoqmhoaikwlbigttaqeozbnfdghhwpabxnzeaqltmcrchueqwvlqkzeyekuawkrevaafwsxkvzrcdgggicukzxpqiysmeyesktknuvroqqcyhnyxrggemgkfodszbzucmpqgwmwystemsyzwdlezyvxelbmtkvvhxhwucsacoujixabvmdipmvszduxayzdipowyagdxgyraahagbtgyaetrrqhztdkflqntwyiopybzdvqsyydgqhxjvjgahyybdziitwt\",\"start_date\":\"dolorum\",\"dedline_date\":\"blanditiis\",\"about_file\":\"veritatis\",\"project_file\":\"rem\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/projects\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/projects\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the project."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/types",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/types"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/types",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/types"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"lqrbuvfbcxchwpihriwtqvzovklicsrghyitnbgnxualbadisvzkezdvftzmmnrer\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/types\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/types\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the type."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/types\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/types\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the type."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"hssbkgjwntinkfsnbhmyifaetmjdsrtkhlsgmkcvphcbdcfnncwdpxcgwcqiaqkkedmmpqsrwvmzhfrfzxaflsmbyxamabvjqhfvztioifwvkdjjrmfsegionftxofivolaoofarojrajspuoeqwxdasaujsjglpzquqoafalstgsapywqts\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/types\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/types\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the type."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/clients",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/clients"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/clients",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/clients"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"general_info\":\"oyzdhyezkspkozlkbgcmetsoletwdrqdueymabazyutqgsomuuxragncqnmlghsreymxalxxghlrqflllytjghokwollcxrdmeqspqflqmuxziuqpbzsfyxrjwjtzlygoxwamyjzxmlqhdznrvbbxbfjrhjjexqmgvigrchwbgeynndgxtkpibjsltuiifrqkfscbctolikivgrntnfsagbnoevleeixuvujkikjvcsrlgkddicnhrcqiciutqoktcdvaaucxpwyimfpoxxlojbcvityrtxprusayessqazhpkyqjaujsrrclnosqdskasccbrtwzbagrzqtyfrwklrafhdbgsszzhaywwyxjbjjeminljjbjwggmyhzchiapkszmdcnlcpshtyljigyeuzrcgihjkkspbraybtxszegabqyshakzlktbubhudlprsojgehdckkgiuuuppvtlsgdvzvktalnmmktrwzeeuapwypqneknnzdjujgsxeykpmchwzhdjwsggjchemwpjzcrqytrnvrlhomzmtxeprnwklzbvqqrhzsizpbasxopclbowtirttnzihpdadompznofhjjukkiwfldzinohkiwudsyekwulmtpdwbmmlmfkgeuiuyronniczgqgwtrsmgwuoxrkbwytuwahwdpjvkcpuxbnrisofiexfbbjqtozzauxtihyyeakyoeyxokfurutfyjaaagxngybemxsvolnaoginfbobajtocmrswrdeqhgnnskhxgnyvtryvsghmyxfwlndgemuquvspukxlyjfuftxjagpvyeuqthueogwlqcrgrumnivkteknfckoowxpxanhcjistwujgttehkuamdzywwqincnsudtivvrprycqyckcrrydfmwifvysglospeuvacawqjeiebygppyozzykjfiskzfmpaudhbxgnrrpsznxvqluiuuglnnovuabcugusceflzumnhnyemcalenilbxikjwrsqztuzifeuonlmjdwphykvcuxylcuwzeyjqxbfdsjyggrzqrfrhexwmyvdacqybzbwpmwysdfxgewzxhtnepanqxllgcylbdopnxawgflujigkjijqrzjzotboezsmchfthxkqohhnbttpnbfriwhhjrfxmukjydfsqdwdjhwpeazjprtleqwtaozdnclswuiruyswguuqpzdmqcehqtlxzajyikuyuhatibnlvxxkftjmomswqycchoyqmfvhctrtdlyrsqcadjtwqharusgtvobtjildakknwklbgdgdfaycuylzbqeltnwaumrydmuuqipvbjrctpgbbpfowfozdsmsrwuralyiycrkfxdrkybomzgwofjkvzruwgcrwldpnvbvoerlgzwwmsewcuqwpeaictkegjpfvfflfjfcytgwcdvgpwogbgpuwzqgseijcvpswbbfssdfhlacxnhljxmlkyhoobsrfeyrhhibbbtyyostkpncqmwlcgiuoategprnbzopqaaqrfriudococzfituqdxwwrcfxmwaxlowtvfqbliydrhzjnevcmfpgicnnaonfnyacslpzbishignmvgluhggkdnlytgagnuymmthdabdohiouajxuppbxgynowidnldtlggxhojycldhlnjrfjeeqqnxonuwqhentvrreqjlokbnmvgwudmwkzxspccgwoxwxfzgobejlhdbbwluorwqerryhueaotlwlsubdsrbwushmzuzchbvpjbrcbdehqsvavpxubknpjuckfmpzjelcwbgislatmkjkjkucppgqfcuefrijikrhnshopkoowauyhgmgddopgmzyyzgyvngpgfhwdmvuptjwakkypigemhscdovdhwzdbmsiawzcqoyxberihcnlpolkowkbappzzftclylslfqhjgekosbqgqhsrauarlzljlpccxqftrptsnxdhmzjqjzirxnxqqlmoktmmllsptptjwnkdkbmsrrcjyhmrwwrkgvjibigrdlguxrnqzggcvippdjcsjhkeuqqupwjsyefhhphccgeoarlmvtxxgplnnaputqxikheoietfxziejclwfvbhryzilqnbezziyhprjiygnrwbavwipguqgexbohelrwrqunoesyjphwittdzneehnnfkymfrdanwlciwpermvxaajqkmjpeyfvahcvyaimcuiapozlbhystnoeyhyiehxmisrhwgskayiszbtkbfdndapqqdeykfkwivkyduzwiwhpoylkgpgenhgxjqzdgfxlgrsnwmkibfxzkdvnhadfpcqbqybwgdcnbppqqqpanvxpwvpfxrnvmenqoekypqdhsbrcfzquwzmrpwdyfrxwtvrhahwlcpjdflsgknkpyakceuxqphgxlvwbkpgwfcbyxakqvjcqladiqfhnsxndjfstcswgjgxyuzspubdgcremghrqpqcacoxilegrktxvyizzkfjzybrokfybyzszufmhevidlvjtsalvwbpfvchaaqaebyzzaydwbqcyytdpybcuyfsfkkiimhuzskoocqugobccujrejrqgdeuaspypeloxvzreqdwbpvojrewrbdpenzhmgctsqtwzzggegasseht\",\"enterprise_name\":\"oetknirfoaplfppeufdmcfyvorfnnqaqgmfseruygnaqhqkbgnkodgpdrojmehplbmlvqfkmlnose\",\"category_id\":\"labore\",\"activity_type_id\":\"vitae\",\"state_id\":\"et\",\"region_id\":\"quia\",\"address_id\":\"eum\",\"home_address\":\"fkyhhinzcxxtztuveqkxpaunvjglyfidsmanyvwnrrlsdvudnykhjrrivmcexqkrfamqcbhpqgmskfltzuwbdacvscilylifuwvdvmfuwtbkhmtztodemyhdlwckaujkkisgwzeumsbhipfmyorgkkfasiobwspbcjuohydpjhwpalcrrmpclyywbza\",\"client_name\":\"ewcokrtgmjqhmpdwstrstiyhtccuisvlumxidzhiayhwimzgnkvyaqsledjwlumdkwcquhollmsmyifiumlht\",\"client_phone_number\":\"kvapzcqmrjzhazqxwbdypxgkekdhjkecsaqtfcfbypikevyvoonuuuosxjgwbsqtbqdsxdxgdtyuupsicwvxggiumymnpyrwranxqnonyyjbfrcholcfvbcapnlvjhwpcqdhrapeftcxjsvnqmzejxkzuntrcrrbpaioguphnmrcdbiuwfzjeodtyuxudvjvflzmpankjwmyhaajovkvvoimvstscbisvvtuevwwoclimmdgkhrgbvuygdebkmhdsgbvoladxyetcqejptduzjzusqpwzmotakttojjezbqwxrvippargvypbaqhdisiippufodwcckzcoiuxgdkidrzultpbziywyvwddtaybtytqnlrrmrkmhmnnmmybegamlinxdiypcfpfzwdsjsnqicklmcvxqbwgcfbtihkacvmafdoffgsfjlnuphlyqlyxtnstlkqvzrhqmvxfptnbwwvvlkyjjnrjbhpxgjsuriebfneoqqmdpoyowcvqbhrviiezvnuqfzlewkwdefbuwodyxyhgcocuyqibotrnuesrdwlfpimxcomixfgggqotnfhnutmyqwgkurxhxsprgizjzzmvlwwmzlgbotovpfkmxjrzerqiblbtbwoheajnlugxydqshvihcxggdcoxeqlrxbrtxdjnqildkuakqvflqvgadjudnlvkbvevnsjstlipybouoyxretdzqsyjhmvwyjsyhdsxkptopuaonidcdesirahlzrminswishfsjmijlxnyzjrwhcvhxwfwkhcceyadpxsrbasmiwyidmcctbzyoxdovodgpbtayfylmvvkxblqioqhvytzbekbyqutgklcblijxotmlbnvgzbpfjetjgklybvnqmtnpxesrdtjikzzkghcdpkmxkqopgeiqttiwpqdzlwfltsscnrnpffhofjqzdquldvihivulzzpbuwfwdfrgzhxunvfozjrcgethubssfdypcatmaaxkqjlohhhokvwfyqcluvaltymqukauoggydzfpkaejfqiolsktdbpstyktffeeklyalygpqkrekkhfkeemokmbezgjbiebpygmmprgaiemyxcxolfhjtdfnmrfovbguvlsevnpmxzcgzhpdohhzhsxbrbllxzppfmvdmxvdartsrwgyfvdhblafqrokylgwiwhlpdykeavkvaknxlrfjmkeuykchhubmlofcjfxcgadvtbmxkyeeukcyxnvyogcavujxyiishstbrqfwoiwslodvivxezphheqalrhkuxuebklqserebymthjptsdkrpuxmjukcuquhfeymmlcgrjujloxfififpfxyqeivivtrnkhgmodkpkvrxcwnrwwoggezflqskmyycyagiazafbkvznqwzrlkaojxgwrqvbmarjnrkmefozuhgvcadibhrzgbpoeugeshsxwniqoecxuvudxauztigbpmcelwtrkxbgbwsrohhzplkxfmaixpcwrnxvjykvdkfgltnsbiggrfspybsiaenipwysvjhdstvzwbryhsztaiaplhmochojrqkwmftztbhxajyvbfkzzbmmkzvprtdkpqrzbeptpesqrahdwynsjwzmlqqgaqyivpkpitopkgndckhbqsqmimcrmpdawptkvxkedbcqjwdxkppzbejifpkpdjirnljlybckoxnwrueqcpqjklkowlstjydduwmcziecscsygtrwgolfwteqomnvzinwwcgpahdgrvkbnppwbvfzswldnexkmzseutjofxkfddswdwfydmlgplbjswrmrbnxattcwxavelwejelxolvrwigpdptoplmhlmtyxloalgftlfvfwwsdhjqecwolmusesoqiycksnmkiwaybkztmflgebsycoxgwvaxfnuaqdnxibjcxgjwvefmgulzrewzkntphimqlrnznwssucmtuhgynhaqtzojviaqhgsovauwxrxpgocyiciowfslctiokavtcrwn\",\"client_phone_number_2\":\"txpxhgejycigozvjocbxfzuqdzduxqcplooondtsstdvbfxezrmdmwmwjcmazqpbrfbnoikfbdfknvqxmhjfaxpploluviarsonwjgforscijdzajnvygbknlucylxpgvxrnguivfwyygjvueiebcumzfddfypzsyxdpgurydiogmyimyqtrjttyxlvlbkrloeizenfrmyzfncmrnblkqcghlfmwlnvaqcdhwedovvbuz\",\"client_born_date\":\"imfdbsybfvpgfyszz\",\"operator_id\":\"omnis\",\"operator_phone_number\":\"y\",\"operator_phone_number_2\":\"gyfztsmelkitwug\",\"operator_born_date\":\"mnixjsucmie\",\"latitude\":\"ghzwzhdhasdxoutbacpuhzun\",\"longtitude\":\"onpskjxcuwhptwpkrgxwhoibuerxppocpfag\",\"file\":\"ipsam\",\"type_id\":\"nam\",\"order_time\":\"officia\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/clients\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/clients\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the client."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/clients\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/clients\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the client."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"general_info\":\"fnwogjwkmcdchlegwsnhfvdcfqczgyatqzkufsrbczbfgnuodmiucrpmuterwibrfbbdrtsgnrsdpgqhctbtnkexktbbnohuziqeydawtgyacydolvhgwdidxwzteofayyswvwziurifrlnpacupreypxhtbhwutpwrqtkrvcmcbhmqjuoekqirxuqcjeqdimbhjocahshihhbnjiryowvflkbjjbhobrcnplppwcslfwnteswcfxffzhrqhfeelcpuwmvdlvwbwybejecgeojeqvxqknqdqpgarqqlnlbnetfihgvtlnthgqsovrirbwxitavnkzeqekuryfzrgestlxqtqanotalsrtijmsrcqpzmjbuxbdblcnrffxhoqiwlwlwsqybtjylzzqbmufrjlapllhqjkrocxamiyyeylzizgjvxhfybwjcbsoftljfqquhczyvqcudfmfanabquuuwzsapydwiauoqawlgbanmlopfjgcyourckqnhzpjcvyzvtenzgctgtgcdzldimwvdrjiwmkyozsowjwpeowlfgsgkhmbtqhksqtddosvxffqokkxakhoheoinzkvnpgxsbzsmebtpkadinpkcendpgwcxwjzqovorpahnrhrhtkestnrtjztjcpwykodxjyylvzhgrfdkbuxjnatnvtirhlwdfitmfcttdtztrbsaherkansmyxkgkqwahjnvsxulmilozrvvuhxxocyxfvvkykmogkozwuqucmlvdiuspvvxmfyqtbbcxcuudbsalavahidqrxtgmzkajohzkzwviugywzejafgrrgvedrxolhtsmlqgayvolfelrgljkfsctntglccryivfdcujqwwgrjgrhwtothgflxyvfaxypqrumhbuvbehsdfqxckvqasgwwlwogoqteuvokyrkklldbrtcqxbbaaizoxidxcipgzeenhbneltjjvcfnkrddnypedaqffnudgjzzojxdforgqxvlxynljgfxprclmzdgczpekmxfelpbuurtbeojklvnnkrhjdmqvetihojxoffhdjdzwoohxvrstgopmzxdelhnfttenycieaqcydezkddyxrrtrxrouswrvqzquphvzprpoyjwdswcmgcghiascuxggydugakepqnqxmimkazclqsuoaixitedeedyausemtjdduzaeudlamifuyapyfvaxfzjgrlnwdcrcclayqxsfjvihyiphbifesciypbteuvbpcnffomxdhhvgpbmqbccjnqkhglfxhpoziqehlljexufmnamacihhieghmeteeylrejnostofkyiakdsasnhcctebcemnnbekwzzefpfgburvlumkiiirsmtfydbcxnrlmguocaqzvgbmzhhjqozzpewhouziitebxthcmhoxuhopiudrklecszjkrxblyibuzwdhfyrfjgcwubnbcvtkahkzortfrbnupkhkibowxzvknhwrcvdohpyvwqywjxnulkfljnzuhwlqtcdfifmbgcrjyhmyxosbeddvoiyzszzcrtnnfhgdfajqzzqggortalqaazhzsmtgdnvvkixrkesabnrasqqflbxdllnhgnwbapyyufhqtvyclmhanupfesvpiqndwkrzfpzmihgrowlfsfnzpucrycofdrrifntyohltjmeomfjptypootjextgwkxmcrektcoiwcvesfsuzmkzbmslounefrdrrmqypryxeohrpkuyhmovwmutbbouzecileemmeremzemyknhstcvsyrqufyluxlutfnnpdzkvxhdgjmqnmklutallbqlqgjtgfccvcqqbggphtrpactrepchhnfbjijjuphodmffkfsjanwcerhncuvjqabywbwjtoknzebgfvguibekekywbvgvwaohnktrtuqjmkrftqpbcdkourogjtzxdkbclmdjjawosocnagvzbfguigdgjxvfdawdysqlvosgothualidjqfbmlahfduejjdzlddcfsryrlxztxmowersanifcqxvzsyycjgbugqtuganndxhlxuymickmvqqcikzsuytuwxiwtravexrrhvbwdcftwzynijumamvjxqvhbdmnmdquwsioezsepelxqjeshsvmkxdvaoxtrmxktqieiejsqtwncfcyglzibdbkyjowcyloiphianpulmchbrhovwxaxtdmijtmtbvzcebqpwohwxhcoktlwdfcwwqpnrzapmqcipitvxoowiyegykwkeulxtryjznmskfzeotnqdpacjjxzpmdhfrfqdkibgkobwzkmskhxcnzacfruvyidhewimzpndgxwktlcmhutglbelyizcqrmaebhpxjzznwbxrtzzrlmociaffcbekshzhtpudiwhwnqjdfxjbhqxheghutipunjuckohmuokqbdgmaguwihpdkjklujztfdpiyqvaujsyjfdhatanwlpbkmxsorexqbuyyugekmnlrvalvhtsmucfifsdxhcxdrgqrlxrerwisylioeclmwjtfjrixpydrowqclbraykdxrktfmdjhqhxubjcldjekyzoazplulsahksydqrglkszsmnynnrfimauapcjggcumghhrgwrgixscvzecwjryulfpsbepieiygatjclukccinlbmrchbdarkfikrzdxskbymsweqrkrtlowxiabhpbucnsmadfqyvjrusfsjlzknrlirmcjixvdimigdubhqsdliszlqfuyewuvmtrbbphqqgmmzkkiucbvnmokmxugpzwqqyxodwzyctzgytkzmaniuxsjcknbwgfodjlkepgzazmsluxbylmezyuayfmoljwnvvfqccakebwjxjpesxtenqvwpnbqtfatsgfxwgtcehyljrtyqmwmoplwmllcspbdxxsvhqcqsvgjdleqmtiycybpsoqesoedzkfccuvazdrjmirlpsqnelgxrotiyyjfdkhswqsltfavazqkbgamgatbbxbliyvrkvwkicmanygejjqwntdnkmqkmegxarqhlrmxavhkjaoxnowprspsywgkisogsedgfvsoerjgjshulekiicasmajxdcopyjzfscuvrsfuioioupdlhlbxsxjmfuijpzjjytcmqjvjfxouzxzdhfmaimhcukqcqicccygefhdkglrpjogtayqxxbxpcwojhaoiiiwyfwjixornlojgbrpinbzenwvixvvnjktlltdgkcsqifbfnxjkfaugkxnevspjvacoxkftaotbslmnakyoyvydxeeospihkhqhzdojppffgvgdrgxogjdxzssjkprtavtntfurscpaaljuyjawzmccmfkwauskfqsmpdqtovrewrpxjcjxgaxulrgnbulcayyeagykaqmsdidihpytjlbcujcntvfroidmtimrtnlptdcettujggzdffjibyyrymfoihudghcjmiicurkwlbgvjxbddbbbtalmeqzvviumawlilwwyqzdpnobbhuoepkshmlibrxndpueidnfmqqeaamcuxjmpbycwtvmkgeptveqscbafsvbwngrkzpzmcguzjkmuvyimlirzivexgelmxkfrwgzfzxzjnueokiffqvvjyltwplgdcungfqmgemluvrkydbnazepyouxdzyfrowlhvgplicegormyglvlryopplhtbxcdbesembksssnhwfbqjyhbqxeyyufiknwlslulkgsvmkuzltvhssyhchrhdg\",\"enterprise_name\":\"uclbbkkiecnmaibmfwkptqgyisxdvtnutcadxbembeqdwremweiqrkbkzwjqzxosgrjocejtjfqiovp\",\"category_id\":\"esse\",\"activity_type_id\":\"amet\",\"state_id\":\"non\",\"region_id\":\"id\",\"address_id\":\"qui\",\"home_address\":\"rzugtmuljyiaheiyprbfqxxcuwetuqzbtpyqhfcwsnyfdiilaelvoqzrpryhoxwmhdtaqutdlwgnizyteizfrytmiazehflbwlxmwkinwmbbfgocfdrjddhtnfpfojblchomcuztwriajheuwikfuukpywnsuaowuzwgmqnujpdcbpjcqpcxcpmyxejtngzbejy\",\"client_name\":\"svzprnwcrxfshcynhcvoaqzdbxcbzsfkvmowtoxigyehixgwykxlfirmczjjlxfcsckpjjhkimemaqzugjerpmbjrlhlgdmfaoizrrdigcgpqusdfqpkbkzolrinjbzyopozourcgbkcknfomlejovwgbzoqzdiflvjyduudeszaeh\",\"client_phone_number\":\"onczluzshnvndnaldfurmnmonkjyyoukjetarrcucaubamzvipbddzvudkdwpanymepmofdwzuphdlbwszqkozohqmxyhllmfurcfvgrbcektvzoimmocumrzpdnxjzdedynktsaeszogzzzaxqlvjdthpzgbfxkcphxerdbvihzxswyvuewjeotjvucnrkmoqfflwvmhxxiupvxqfdemhpvebuzukhgxufqjfkpggjqlpqhfbalyomqyexkipfcjmnhfnsnwmvloihwesdpjiafwqxxiepbbuvfxrexhtpezvrmkujlkirvespvppynktdpyanjhusmrrhfpfaidpucghbjpvvroxxmptxdtnubsurnbhcypqfqecpgfymjjuiuiigvcyfxczbdreuaxyfftiyewepwnapwrvcayrzbzalohkpymrdziqhgjwlwdukhzxpaapowyokotnrifyhdbzreewewypztztfkgulfxzemspolvqftmutvxqsstwyanmqiruitahbtbfdcpcvdyhwgeaxnnmjxnfjjoqsolbgwghklmxpfweqkxcmtytqfipuuvwopbfbhhqpdtmxrzydbuzurdgvkfqkfiipzccllhefmauaigjnrqpoevgbmamlcybpidmjkwxljxhmsvmjvdowyxmtrnudeswuynjvxrzdwgmuppisychekehdgkebxyrybbosjithzrockyxxyevzdkqsqfsblymxszifvqgzgbhizpttheimrgbtkgjtlizwbuseeudjwrpywmbcnxltrknzjhssvdrgzoylwxtxbofatwotalluesarjbaedqsyjmzalzjaeicuympcxanqaizfkmylsejjxvuzxmgfuyxsjsarpljpkjnowiwqvjskcfdcwmhphzhukffijkhwlwioeomvdgozameezuqlabffklxunmbqmysfrzwikiaklvfairsdhfedfbodujsqlhsnvkcwcnvisvvhxinuqfxpvubutwevehtpvjxkystjltlfufwcpmybkosdmwbvvpulmenmvairsemiwcchrkoexobkdcbivbkrztuwblkgkklasumsdijespznzxzqmvakcmnsjchkwbuiwcasljvvcdimpeefpbttgnpbeusrvgjvjtgaddzzmtupjupmijkqlftmcamwdpyrohvxxwycifrzeraiqbhewfczwtmwqpizncbdznlfziklleivpylyixxvidctbjqqugozfomvqyiiercgcbamulvmfvqaffcstivdrmndathfatwwmwvwtotgaajtmzledwjjivxhudhdkeertoenkfrjsvkjoomeeonrnuadijjzorcujrbpkgzfbmzbklxzknmjnglnmybizllomgtiefjxczzxwqpfnaadrjhxdthnpmcvqrweokaavcewzjmyaysotbtuspuplernccoxfkhqtnpmzfelppektcqisrhnlnffjqblkmxfcjetuqpzbldmprtdjiqcmzrtocavighoelwpokfsrmcudktvhlqlmzporelwdaowtwxzfaerswhueaauowsggidawsfuwfwwywutqardfontkdmswrwpvqijcvxrxvodmolykrwgzykdcwdryzjskmyyqmpjaepooarttcecbljpyrvwzjigcudjpvijeoeubddjzurewmyhkhjaiwqtoqyvfsioopuqtfigztsjrezgggjyzfzlttwkphyqpnqcoqnybzxqzezsypwbwghkuqpszewsziagowhxfiqqkwtxmbhtcuvpeajwjgahkxbzmpgphlunimtfzgflbhhjcpglgniopkzacjgncahubgstzifadjwreewzivtusjfnldsccwkwnydjqtsyifrdvzizvbrocwckaieylpdjnphvjapcrhxwnnlkwqrwggitqrowwmjweqijiiczwsvkngldupjfssjwqsfhjfadxvgowitwjuidconbtkzpyhyxedpuendpwaocgkzgfqnatqjgxplknynnrpgqymqqrlcpjwljigrckylkczlqcqnsqizahyzqpxbjaoxbwgstundyeekbfrytzgrwrdarhsrrpnnzuklqpmnlunnjoaxuksrikflrdspjbmrkngpjjxjywyrdmkwtciqxeviernhgzfrzvlgbtiskpziayamsfbfayhmupzavhttaxwecqbrixmtnaexiuheyelllbehtblyltqvnhodahqawhmuhsenkhqjqwfreqcroogvgyfegeeymwydfwpkskylaglvondlnosthleqlbnuwyleggpfygqhstyxsfqiddfyeesinfnkrhzbmghlworngtfdscupefykclstfyvgtsryanoyfgpywymgoylsvkbizxeceivldgwusnihxzudhutguqzxyntkoxqsqxzqmmvvofmotpbbmnctulcbxmdbobenbhxqhbmflexuuofkkfifybzvmuoxwssmqkijdwicrcxokkbhanxnbvffhsbqipqfwiimpxwwuyxvnkjzmvxlojtcechbhojwhrqqjkfvjzszygaqfkqulyqjqnbtiuighgcbztstjfhwvpfxsldrprzdjwqoujfyspvgdspdogyzqibedjrridoqwuxmiedjfuifghpwmjjorwcxopwlguypzmyuwwlxwvvbyapjmvntvdupkaxirwbeibbegpauwuauuzfnxfkdhtesgqgnvehexxbepvhbanrmwitiiprrmaediksqxovjjlonajtruebdampmpusmvqvtptwvnrysgvcbutduzzmwetupkixiiypnaokeacpuimztbvhmglvxquzwwsqcgrylejmibpjiqihqgpvbfhckqauhoihfcoxyxuvmqwarcjcxopmzbaxqzwqcmjyjrrypcumxgtjpkznpahztdnmaypcqlasvybhxbjtsghyxssvjdmylstaynksxznctzeilgjszqmxmbtsnxyytwmvxmbterjlq\",\"client_phone_number_2\":\"kbrlpilcxsdcmwlwmqzlpafiueuvjyjfzhaqocdotponfsnsckfoegisosrgicdycizmhnlzbppvaxyofzvbrrqxfkkaptcevbxafubdhaetfuqnmmvtjvivpmwbwzggevcpjooxnhzfaaszhpozucrgzmfhbgwwbpzlqpcorumnvnhkkztqpxolnplcvlutagapxoawwpafqchkghixumsmclrqpmbwrevdqyimoeicyhnzclddugzqbvfabwgcaddjcbsyvwuzibvosdllnvlxpzhopllcotwfgkvrinlnpvhtrvzcgvoxrzwzfckviwpvvfirxyqbsessjgrrlqufhiiemdynyrtjmgyavmtpecrykumbzxzhntbxujfvujedqxhldssbpynxesztcnwzotmyxpzuvmfnyliujbhqtzmilljghjtzxfnamepglvqoefatvrpwhmmamprpgzdslzciqcnrksaabpdewlfaowfeneeetxwxijsiqduhuhflkeuinzsltlsuteyrzyfeklacivmbkzvcuoodrpkffoishzkioufjyqmolwjievwldesijesyjnqkgifhxdznxuuwwlusizbjjwvaponlpncixxpzugwhmpobcdbkkipwotxrehrrobfxfqbqumpbutikfylkftmjocolnrcnisbjhiirsnqcfamgcczdskpyapjoxrtwnzapvnfuyypppvdymvvzczbaryryqsshwfhqwznhbbqbjehqrrychsjnoatmppdidbrewnficrakuhqzgzqurugoyzoulnlgsbxssaqukkvdbzvvmesdawhfpqpvbhajdvssqcjvozbfhrsgzbiawhsfdwqrkbskxhjadscbgliiumvdrvxfezkaouraojrjvwfrbudeftluqlyracnzqhdvedfbzijmmrovjndxsrlsmofbllxvwmaboaeiiehttkthrwpdwvxaplzcpfczhugdofpinauufavkjvjwjzodhejbmbxxtprhpghbrxvckmlmthkoerptanbskirlaskedhictapshlqwxnwoxcgkkslptqoanlifzpdaejxddokpjycqucyuwtewaalyqgavpoyuzttysrxjaqakkuiaekjfxwpoksavozzyklhshhaivahidavnluhreodjxpztbbjplbiiqmrobindqlfyxhgpnexutybcnbulnkmltajgzxogauslzehooadecargsihuhehyukhdgxozxrtyblhfvmajrvzvfvqrnzjyzoavdpeyyrtmoepyysomccuobhssjjbfieagksnqyjricbgkzatbtlphqshkepynnsyzhsdlzocuczmfjusnvvwnwclvfunwzcpmahinjrphnlnnikykilugvpqdwhmuyemgmhbxbtbwbxzemutkynobirynmcuujxiakkuxzneaslntgwqukfakijaogzraxkkatumjdctcknxqodsxupvaxwvvrpjkftucrwanldfsdftcpacceulmgvnzyifnudalqixjutdfnvxnglidnhpqhggnymodkmycxsvzfmlbjijuubhrvlvzyrdvknkzhffmomobwbkcxxcfvjtdyqqonzevtownrcqjnrehyqhjlkgmxbzmkgisfnwdodszjelzmrrsojwkjpwihqlvodvdzngkmwwggjvonplhssxzvdxvnubcczownducemxxlhfelfhhvosppqttmvgqfeebylxqmerybaagxjvarpspbucmepvijqlrbywonietfwtutvqeilcxoptzemwkizpccuzachqxifjzjdjgifhczkketwshekocnnlhlqqjpixkupcausjqzbngmfbczteofvzzokktddryflhppnvgfwdhopqgtloznkuzbpcwequzudquqxjfbdyhllxtqjzfqgrmetwwkvcwrkthiupxuersznciuyynlogdaywgrbixjtcksnuqdvplzoxpgzluljrdjahjiqnpxjpyzqlcculsxfjitsaayyijtpyntzvieipghqasdccdprwkhwzetcxejxkagexhockxwtlqawfnvtxmjirvwycqlktiabucqqxhngmitdjezwlufqrdmzipqgusokzxqzwcypvwuvihjirjmntgrwbnnnsysczrcidmmehrakfdaoyswuwliutqalvrzcefkztmvabwnaqlihfimsrtyzmixmsqcwabkftcietdpyhhoglhqdpvtbaycczphabhrokovgsttxoguewlhgowegfiahavryzgpzbfshiuikmbthvvkoyqctdjfvxacoqonfggzqzdyecobcqpmmjpzvkeormheyhoqpfimvvdnthnqbcbufhirybndcudeojgqvlluilmtfazaniregmahprhbgncvqloivvvqsbftgicwqrybcmgkhfuokfibggcoqnzazqnjvsavzkznkuijtitpkcospubajzzfexmxzhssngsnsgngyfggjysnbmgcnuahkmizsrsntxvtilwxjudtzuaahclmrqghwjvxisrsrymirmjjcentpfdnnwjsxsckessoqynfqlxorcotzjxtiwxpmklzsjmatsmbaptjgxwyefhejngptpdzkqlogyjvzstkrnppzsrpoowaugljfmiiqfszgvpigbbmsxnuwpehmuwsprcesiemvnxdvtlhzbuywkitsoymfmlpdemooleykecoiqytkmlnfhuwpbkwpdfbkfahbxoinvorkczirreioyribaatqhocuzuetgyvgyczfasaneqcrpsnqivszgvpgrifdoyrrlcytqhymitccmhipuhgbwjcszmkedidokkiazmuschbuxwawnrkgutfkrbijylprbhxudiqzvybekwejnkfextofvlgcqsahimypgxvkfxntqkucdadsudkbgwemitogqqndgcadsqyuhnamryvgveznpyryohrtmdiljvqjainntlolxdjghlyplzrodfsemhuuzwesimlaywxruschhznyljvvhsbwfidcoyofpmmgtrjovgdzaxqkodvsgdtatkvjhbdhljauzztmljgkyoegwxclzelvgasrqhimesllvokrvfwrzmeyetokuumloszysruuvbqknalvkvwtuupapepyfpeykkpiaytknczjjwwtnajfvhmotazwfzxfqymrmzkdvbulxdrrrgdbfsszhistytwbyxjxftjqfzlbfuidbpiuvalupckeqdnalhpfldbebzrvsxmqgouzjwdtcmjfiqqkfnmchmglmqhfxkunujrzdsagwftqfmmudvznjnsscrpuyiseptlaumgbnkvcfejwemhwuemwuywudpcuiujysyxvxxurzjoxxywtoqyhvyjaexztpzppzxfjhdidaiidoshdxjxkrusluvpynnqhbcavxpqfjch\",\"client_born_date\":\"yfcwahrs\",\"operator_id\":\"dicta\",\"operator_phone_number\":\"kdbxibgzahwjkyyjsgae\",\"operator_phone_number_2\":\"rjdjnf\",\"operator_born_date\":\"\",\"latitude\":\"kdpchbwnxnn\",\"longtitude\":\"liho\",\"file\":\"autem\",\"type_id\":\"excepturi\",\"order_time\":\"sint\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/clients\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/clients\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the client."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Foydalanuvchini ro'yhatdan o'tkazi",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/register-user",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/register-user"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"qdhejtrajzkdlokxilmkmcdvehgnqkutibxtfbfslvzom\",\"email\":\"testuser@example.com\",\"password\":\"secret\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n \"access_token\": \"eyJ0eXA...\",\n \"token_type\": \"Bearer\",\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "api\/login-user",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/login-user",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/login-user"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"email\":\"voluptatem\",\"password\":\"nobis\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/logout-user",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/logout-user",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/logout-user"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}

@@ -23,13 +23,13 @@ class UpdateProjectRequest extends FormRequest
      *
      * @return array
      */
-    public function rules(Project $project)
+    public function rules()
     {
         return [
             'project_name' => 'required|min:5|max:222|unique:projects',
             'general_info' => 'required|min:30|max:5000',
             'general_file' => 'required',
-            'status_id' => ['required', Rule::exists('statuses', 'id')],
+            'status_id' => 'required', Rule::exists('statuses', 'id'),
             'developer_id' => ['required',  Rule::exists('developers', 'id')],
             'developer_info' => 'required|min:30|max:5000',
             'start_date' => 'required',

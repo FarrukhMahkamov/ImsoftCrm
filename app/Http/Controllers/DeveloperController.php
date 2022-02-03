@@ -25,7 +25,7 @@ class DeveloperController extends Controller
      * @param  \App\Http\Requests\StoreDeveloperRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreDeveloperRequest $request, Developer $developer)
+    public function store(StoreDeveloperRequest $request)
     {
         $developer = Developer::create($request->only([
             'name', 
@@ -59,32 +59,5 @@ class DeveloperController extends Controller
      * @param  \App\Models\Developer  $developer
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateDeveloperRequest $request, Developer $developer)
-    {
-        $developer->update($request->only([
-            'name', 
-            'start_work',
-            'surname',
-            'phone_number',
-            'work_type',
-            'about',
-            'file',
-            'workstatus_id',
-        ]));
 
-        return new DeveloperResource($developer);
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Developer  $developer
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Developer $developer)
-    {
-        $developer->delete();
-
-        return response(null, 204);
-    }
 }

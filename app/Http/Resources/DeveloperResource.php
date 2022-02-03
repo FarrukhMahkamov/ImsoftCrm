@@ -15,6 +15,7 @@ class DeveloperResource extends JsonResource
     public function toArray($request)
     {
         return [
+            'id' => $this->id,
             'name' => $this->name,
             'start_work' => $this->start_work,
             'surname' => $this->surname,

@@ -31,7 +31,7 @@ class StoreDeveloperRequest extends FormRequest
             'work_type' => 'required|min:3|max:200',
             'about' => 'required|min:50',
             'file' => 'required|min:5|max:200',
-            'workstatus_id' => 'required|min:5|max:200',
+            'workstatus' => 'required|min:5|max:200',
         ];
     }
 }

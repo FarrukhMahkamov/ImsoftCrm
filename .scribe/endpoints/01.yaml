@@ -1,0 +1,2010 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/categories
+    metadata:
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/categories
+    metadata:
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+        required: true
+        example: kvoreexruddddnsvhfaxgzyuhxyqazatromkibhkcuhbbgxroycaojxpcgyqmtjqldojlbomkccscejetfvslutrovvmfpknspdkcrpuyskjfkybuxixlwjk
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/categories/{id}'
+    metadata:
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the category.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/categories/{id}'
+    metadata:
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the category.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+        required: true
+        example: jpqnrdogvkakbtvfiwqfvmgivmkosujhkcmnzibemmdvligzdleeqlpednmksnslxuamqxunexrrhytmiyqryangmkgdshrjceagsfofbnyhhjeyluesaqxzlnyvyihxomsfgjcrjxkytvneduxeagiqtzpihvdrazabrnwwqeossyqvlkdmjhwmsqhhdyy
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/categories/{id}'
+    metadata:
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the category.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/developers
+    metadata:
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/developers
+    metadata:
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+        required: true
+        example: hwzxhvxawmlxzqckvrmsoicoczlraydhjrjlvvicjkzffdbenbxiijriwevvqyjg
+        type: string
+        custom: []
+      start_work:
+        name: start_work
+        description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+        required: true
+        example: llqfwcllkjnqudmttwlsutosfzeokavdonovtcavrjxbxvogrpijymitnijbeqsaxjdkezrftqqreycjhffyaamil
+        type: string
+        custom: []
+      surname:
+        name: surname
+        description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+        required: true
+        example: rgmaritmcmpmyqhufkjrdzynsxsoqrzyphqcqhqjwisul
+        type: string
+        custom: []
+      phone_number:
+        name: phone_number
+        description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
+        required: true
+        example: wysftqhoqlsckykf
+        type: string
+        custom: []
+      work_type:
+        name: work_type
+        description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+        required: true
+        example: rgmsebzzueawtmekxdualubrysjwlnqgphrelyeaepprvwmmiweoygvinzdwnpcoelevdfejjvioskzscxdwv
+        type: string
+        custom: []
+      about:
+        name: about
+        description: 'Must be at least 50 characters.'
+        required: true
+        example: qyqcbsvvrcktavjpmyhhkyfnmncnjkfmauhbvlfymgfxp
+        type: string
+        custom: []
+      file:
+        name: file
+        description: 'Must be at least 5 characters. Must not be greater than 200 characters.'
+        required: true
+        example: iqea
+        type: string
+        custom: []
+      workstatus:
+        name: workstatus
+        description: 'Must be at least 5 characters. Must not be greater than 200 characters.'
+        required: true
+        example: beesstvrdjmikijzxvahpmetqbmflyckfrdyoucsfigonurpuxqohpckoxbimcgztwwonayhctxiasvllmutfjkirkeshalpcflhhlxubbmbapvugjnaovzxtihbkdyhnyannkpkmycddepknekmzirmdcwgatsrcnztumrdzrstrqkcssbypkuurx
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/developers/{id}'
+    metadata:
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the developer.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/states
+    metadata:
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/states
+    metadata:
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must be at least 3 characters. Must not be greater than 30 characters.'
+        required: true
+        example: zmishuvcxywreiyvpehctn
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/states/{id}'
+    metadata:
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the state.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/states/{id}'
+    metadata:
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the state.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must be at least 3 characters. Must not be greater than 30 characters.'
+        required: true
+        example: bkqlqmavheuktgczatz
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/states/{id}'
+    metadata:
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the state.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/addresses
+    metadata:
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/addresses
+    metadata:
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+        required: true
+        example: yhgebicflantoortrxnlxrsxlemvhlt
+        type: string
+        custom: []
+      region_id:
+        name: region_id
+        description: ''
+        required: true
+        example: sit
+        type: string
+        custom: []
+      0:
+        name: '0'
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/addresses/{id}'
+    metadata:
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the address.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/addresses/{id}'
+    metadata:
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the address.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+        required: true
+        example: lsqdicnqnvacvuymnesmyjjpofcemowuzysqvjdklhftosllhyaszftxqilpugnsavwxelqmhccjquulrzgcmsuaowchvxsaznohvwbhoqcvwrhcodcziunbajytei
+        type: string
+        custom: []
+      region_id:
+        name: region_id
+        description: ''
+        required: true
+        example: et
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/addresses/{id}'
+    metadata:
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the address.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/operators
+    metadata:
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/operators
+    metadata:
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must be at least  characters. Must not be greater than 225 characters.'
+        required: true
+        example: wgkegjevkguhmxjpxtfhpwtufxkemmnmvjwvhicpdmjtensyvpbisuopxlfckeoxqkdqwsnnezspqayakfgdfdnnbrcaeohccjhdinwhyfbijacfxinlupfwcenaikqospzaxlnuokivvhdlsmiqtrssewypnjlhiormkddcksddkylmnsnqwhgeuowyizwwlirrtfsmtywmzlonkydf
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/operators/{id}'
+    metadata:
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the operator.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/operators/{id}'
+    metadata:
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the operator.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must be at least  characters. Must not be greater than 225 characters.'
+        required: true
+        example: hpyunyctnahorwhxdlwncguzvtftopomrcxcibubqldhnjluglkrjazoojhhbclcjnamvtatoyqjpdcpogzqyasavywojaweblduezilkptxfqouesebmpsgpnlpumoiiaumwsdctiweofvvdyqrgkhtrronalhghejxykag
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/operators/{id}'
+    metadata:
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the operator.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/regions
+    metadata:
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/regions
+    metadata:
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must be at least 3 characters. Must not be greater than 100 characters.'
+        required: true
+        example: saylmcaeagekobdtnkelhbjljuhhdnrlwoysbuyjkivkrwivzoxreumvwyqmjpnwkkcxs
+        type: string
+        custom: []
+      state_id:
+        name: state_id
+        description: ''
+        required: true
+        example: nam
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/regions/{id}'
+    metadata:
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the region.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/regions/{id}'
+    metadata:
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the region.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+        required: true
+        example: ddmwcwexmptytw
+        type: string
+        custom: []
+      state_id:
+        name: state_id
+        description: ''
+        required: true
+        example: occaecati
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/regions/{id}'
+    metadata:
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the region.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/activity-types
+    metadata:
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/activity-types
+    metadata:
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+        required: true
+        example: dacfmuilbvwioqxurxjtrowtirlwhknhfacbwluzcajvgfztswqvdgemyjaqewrmi
+        type: string
+        custom: []
+      category_id:
+        name: category_id
+        description: ''
+        required: true
+        example: alias
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/activity-types/{id}'
+    metadata:
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the activity type.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/activity-types/{id}'
+    metadata:
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the activity type.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+        required: true
+        example: fmjixobrysfdlaxmbydkifribronwyifdytbrjcqxsdkkwihilhdchwjqqfidpaszoqsfthcontciapsmmqokmbavkbzcjasdatree
+        type: string
+        custom: []
+      category_id:
+        name: category_id
+        description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+        required: true
+        example: pocqrgrdjdlpcjguskbovbjceaywgmappueeuffxedwjckncbajtbrplsjlpahjcfpbtgwudkctrsvgwikkxffikvykfxtfgbidkttm
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/activity-types/{id}'
+    metadata:
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the activity type.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/projects
+    metadata:
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      project_name:
+        name: project_name
+        description: 'Must be at least 5 characters. Must not be greater than 222 characters.'
+        required: true
+        example: dqkigpwciklbawiqlivvzpznulwcfmblkzimsctudwtopkydppgpenywzsfyxufpbxmzoarintliblriimslbeefvlbpyknpsegzqseauwlrncndtxboizgrtwojo
+        type: string
+        custom: []
+      general_info:
+        name: general_info
+        description: 'Must be at least 30 characters. Must not be greater than 5000 characters.'
+        required: true
+        example: rklpeuptntorngmbytuuhbnuurimkvtxvovsykqhelvdpfmvmuyuclsdbhpndpbvhgmtqcrbeqkxyokctfpfxbopontmwfgfkxclljhmswvjujrlxgwvfqxoshvxahkxfakajsntkaijptrsrypymqawcpomsfgvseiejmdphoxufzwarlhxxsbnvnjkixolyufujizegvcyogxabrvnebpqvxbzkjdalwqctczkeoqwlhdzjhrwfejeoisyffrgbjoxacwesfyrbmiqgabxpiruekvpghkjkpkjmoklzbdsoyiciqlktoamhdtdyqleecizhjytahxkfizqnlcwenbevbsykfweiycvwwpnoitcihdvnutuckvogyrwzsdlcbmubjtvfnzwtmojgxiqspsfgrwyrgvcjberdefeswkxxetevmcqvguosxxiglyeoxpxegikgsbivavtujzwbtpvydyazwuuqamuyihsfggvmdyfdubfhpirdljzpbpfpwrbidnbwwpvjgbedetatfzvxblcsnbojrocjljyorxuavkfbsouncuasgimbytbnxzsmwkdknohcltsosgyxxcpdvtzieayqlezjerufzbklkzqmatrcnvdbwycoisvxvtlvjgvssoutqprkhslnasbdvaopswryrywdgxuasvsyfiolifmdblwbquicgfyvfbblacctbviyrhascjwccsajjguigpknrgvcdtykxmjbjikqslnyvxcsyunexuzcrnngmufnnzzidsfqemenkaxdyvsrmxvpdjokmofmgyhopsgunznkxjkzccizwizfbsysvckbloahlozgqcfvqfwfgwsuqezsnqirasgzyvairbzuwdfxsrffvhrzlyzbyhikwtecklewncykrkkdhaivgixrakjffjvwmxueytamuuawzytgmdaxvfbjccniasmrjkajypxvolioacugotzyvjvteiyfivsvsxjtjteyqatmvocnisxbbwccthxgfhiswtklvacopmvehxuhqiisyyetkpchvwsofmncibqedqyykriogkjcirqpprqkvuvciiwkmmfdzqpalgcikztstlvsuzkroqzoxnskeeorpnwgldjusinfqjejcvfdppszyjfknjugrxjlpuxiqabgzqyspxdtopsyjeeravjvzvithiedrhdpnjnfsyuidbqilzmnwocrtrpxboyditfxvftggqcejoypwwnivwgvpepdxxbytkbfdghhdilklnvmerhgmozlaxwzkxegiaddlkulfojvdglkjwnnmvufzpcrpzcgicuipsujpikrzuxstujfvdcikimeepglwruknbagxjumpfkypiqaiizrsyqzkludspwpvjzwsllqcleixwexbvmthinxdyqnroybnujhrkbzuamoaieybxbfdncagirdcllfeunbrdxnmgwyqrbxbvyybaxrvrtgxglnsvgwmfiibpxwkuerlldeabclcpmjewsnwgiinictilgokrcvwanqqecxjxotclinamfrhrkzuqwkpcoenwtjfuwqdedcoxizkyevgyfjpjrfkjcfcsqnwotwtnarmwvvkljlzyolygysdiusqvhltlnodbgzewlkoonyecscfsiysypfvlsusxdbpqrvlsxvkhzygqopaajilfctkgxbkoecsrwejwbictrpiybbymlceknidhpnldtwakvvqhtabtbsjcymjjxclkwchbwgedjdcnkinpzgmoiywpignyuweulzpwfuxivlwzstidriamoucpuirfcqbvelljdrdyovxqkxilhkjoxhvdlwqxzozahswntjxfapbhlbyvjyxihwgqfnswsjlwahkeqjrdtjffukxvjmwswggvcxjhbofgitjxmgojnhqqphkdkefcyvuiegxublzgxmvpwmhqenzldnyfeiujmbagvytzgwlroszmdutvebjhkyankdrmnpgnfauyxtmafgmaxtbsypaqwryynzazdqhwgsofqisvfdhwapjzvohvfcralibjbjeomgoqvixykmpumfxtsjhkdxbfofdnkdntkucsgsmdnpuoqnqaeugxqnfahvuxpfpoqhddolyvhedltebkkjmmkozcstdvrxrcrtzamfsohqdzetxlejrjfggqukxfroeyftchxepjquaeobypyuoxa
+        type: string
+        custom: []
+      general_file:
+        name: general_file
+        description: ''
+        required: true
+        example: sint
+        type: string
+        custom: []
+      status_id:
+        name: status_id
+        description: ''
+        required: true
+        example: laborum
+        type: string
+        custom: []
+      developer_id:
+        name: developer_id
+        description: ''
+        required: true
+        example: itaque
+        type: string
+        custom: []
+      developer_info:
+        name: developer_info
+        description: 'Must be at least 30 characters. Must not be greater than 5000 characters.'
+        required: true
+        example: gtye
+        type: string
+        custom: []
+      start_date:
+        name: start_date
+        description: ''
+        required: true
+        example: vero
+        type: string
+        custom: []
+      dedline_date:
+        name: dedline_date
+        description: ''
+        required: true
+        example: sed
+        type: string
+        custom: []
+      finish_date:
+        name: finish_date
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      about_file:
+        name: about_file
+        description: ''
+        required: true
+        example: perspiciatis
+        type: string
+        custom: []
+      project_file:
+        name: project_file
+        description: ''
+        required: true
+        example: aliquid
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/projects/{id}'
+    metadata:
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the project.'
+        required: true
+        example: 12
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/projects/{id}'
+    metadata:
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the project.'
+        required: true
+        example: 13
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      project_name:
+        name: project_name
+        description: 'Must be at least 5 characters. Must not be greater than 222 characters.'
+        required: true
+        example: rutgsyuysrbzbjvhhxfnlyhffzxvnytcfeqeixrogrvzimukxzueulurxxdmrzkkxnqwpmljrxodhgujudcymdkozahoboftchzmbqljxhrknlrbjbwueahoxuavoshkmyhqd
+        type: string
+        custom: []
+      general_info:
+        name: general_info
+        description: 'Must be at least 30 characters. Must not be greater than 5000 characters.'
+        required: true
+        example: xtbrtrcaghlvtwxbbsqdlepklfrpwnlbwoinbvsoquculhpqtjqizwqzrdsahgcajhgtmmlhjggfkdftgchcyoqejyzdxrapidvgzzwozocyyqdivcayuiwbmwnncxusxffpdylqewwkwnszlzurtekwqvfkczzrupaderygpzarvfaumgotskjwuoyziwpihvpdrkszoojrgbrfqbyoiewszhskbxoexekmcudpfsjqqwzmmmwyuhztmzzakqvkfcwmhunxgywyvgbugvbtxnxxqpmcppqhvsguxbjzuefuxqjfnhigchlhznbcqcecbbfnsrxoomhtnibgdkahffgubnjzicbwhfatvkzgymctcjsnfehlhisrvcwmtdiklcqoidycdghaxxqiohdytrbzvrkdhxorgmmolitetuswnvxvslitugqgjifkflysujdueipbliiyxugpcihbkzosekrpbiydraqwvyfacnnbcmqttjbyrhocoscigbhzumsqfqsodnqzafffiumpdzfyibympsjlhsvfcjavasnypuclazrxkbykpjrsxytwubzvwmxgajamrzhlemmgljimtqturjgsomwlzjwbotkaaftpmjzmnvubdiiwquhdvywhvagvllqjrvkqmejdpqoniqjexkkwpsjjxlipvuglzuvikhaweabgnmmjxbdijosbzcfnwkcwpzonemzhuptcxvykvdnhmdbxmsxmcmmlohxkqcrhggydkxqsvdgvnbwmjodfufncyddhgzcpccwhbgdgutwnfaeuqfpgxinnhoclaibdpprhkvloqjoudvupgxgaljddmjnincbwsfwhvucdvrczlrvsqkouisvqgufwcxxomqtvzqkitpopmcyluyqqdensmsrhvxpgfzxceevjowvibzopivyyhuyylxtdjbvpomymchspueifqopbbcxmihfsnriwfduymlnqoimednijduwusixhgntfpspxfkblbqqti
+        type: string
+        custom: []
+      general_file:
+        name: general_file
+        description: ''
+        required: true
+        example: sit
+        type: string
+        custom: []
+      status_id:
+        name: status_id
+        description: ''
+        required: true
+        example: enim
+        type: string
+        custom: []
+      0:
+        name: '0'
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      developer_id:
+        name: developer_id
+        description: ''
+        required: true
+        example: magnam
+        type: string
+        custom: []
+      developer_info:
+        name: developer_info
+        description: 'Must be at least 30 characters. Must not be greater than 5000 characters.'
+        required: true
+        example: njjlxppmgdtxrylcoajgnhcnrlfvtvxgiljsingfjvcepgswiixktiemfukviqjuwdbpwaasiwtocfqzqozlivgdgywtigprtgkwebmzxpejmceltuuomcxijnuzzkkhedxetbinpuiqokuiqnctstippppnrsawhwmjumefahjswbshqwemtqffvcaussnexqqpuhdmvidosicsxdznwbsbkvxjmexsoikugnyggbirsijmgdwkqdfiuaujbteqphuwpfxsmvfcoylmvilvwotmihcwtmzsbvyudtwctidlslzcuvfcstohgseupwiuyyxgfvdbeqbrjdevxbcopxpxyfqlhenwomcjcyunsuwpyqdvaqqswsazkcubxljlfetvselhrediqajjnexnwxpqhdtlgtivvymwutuwggkilqnzygslpgrxngwbgbsdxgrysrcybybjmmmlbbwucqfeblzvakgljjaeozhreemjketbtkcwrxwlihxgvbnwudvopugmloxiausemnpsvplnlozjajbugnsfjwksajmyzcreohbtncmupsodegtamowjcfvrisjfblqhxngrltvlojbkfvvybiepryfokrksyytnqimozismugtqpwzcmwueeeypyhyoaskxkzbxwekvsxzmnfvgmsjkypdtydykmzynaiapiqzjipdqcbztknqeumhovpwwpyolxxpexwsjjenjcdydxmepvawupuvcbmepipflfpiuezffezckyflnegwdgpxilopwqyynnabeflrbtyvteqmkowzgugcesoytbwjkisvsbgwwpzobqxjblhekuuebljfirifqmjgatpcqwbatlijbokomgrysaigjhnvclqqgymswilssepjqxwzjsmxlovryletjrgqwlfwrnlztmythdqxjknvhlporhkfqrglsjiuryqouzqeqtuqwgdgsjnauncxsbnpwwgbekbtmbeocuwuxoeivkxxfcassxwhumnzrsiplvnzjmrfbwwmhttbhlyftkzxzyjdixogzzdiuvnfmmenufukwdvqsdzciqudvdjkwvnhxmhneiqhigzbjrlaruculdiulyifzojuilsijltwyohueavpadtetxmqcnmikuiqhjumnemofzzpiwwnruivlkytmlfmqgbhorqvjihvsjyawwrfswoezqvvghzhxxcyvdxilfdwejwvzksxsxsqddwfwopvpsevlvucqnkiqivarcztaykeklyxzcbguaiddxbzpwvcfoiedoaxtykdbawcwufeycdfequbmkebkswtyewhyljqvwpcxzfbxcibfrxagqeekywpryynllegjijwauofiafnbhozqzkdtbuoitdasgvqvlxxzdxqtsdyhefzrxxdewqwoqkkffvchkezcnocognfnobncrytkncmtzgsufkjmzawdqnrkqdgrcmordanbyaarknayfndtcjpyvlzexxqbmfibupemfnxgtrvpmzuwbzmkabkrzakhmuqvdelxfaodxzaqbpfoocszakaqqpcsguuutashxgzhqxrujpxjeuounsamqhdfxemltqqvgwknfpoyctwgxsqffokooooizharpxexbgujwlweoejvpyjhimijlrwvmiznpstkhqufojyfhzbcatcrprxjnzyzdhkcoirunitelvezchdeqrhyjkbdmbuoeskjgslwmgegjmvjyqnyduxkcizdcsuckeqfsbvidqjhbkypofvdmuvhogkxrmdoxvxhcnhjwqqsxqnsfsglezbkrrogcvnshigniuvowxbajccojlkxnmxnhynusnjbtmjuslduytgmtpqquzxprahsjcmnomedbjklihzjtjlidfwrjtjkdpgoviznbrqsyfzldkjocchzatpmugfhxrwmtuggndtafvlzksvjlkgftblcfqjzacqjxynwctluovsjxlavhqniihywzmdfdnhudosckzdjvwdalzopzdefbpvckregvkjqibgeluqqcuevlavtcgeljpbvsrqsdwsrlnepekvjozodkoiucsqiswyfsdveoajdkcvvvzpcigipffhcmrehsbqgdktgpiwxffrqmueuagbjeckmoomvdccgddwenfxxrdwlwvfrjfupkxojdzrrmgkgcwnohofswnqozxkfmaptblhzozvufjunjvvjjnsbaaoxuatbutxpuuarsxspyjrgpsgepdkqobfpoassshftjheubstyxqqgtztjxzrqgiladligqkstnvwxuoiwnavipuvehjuobgqbekumjeoruskyhjrkqgdoxxrjlvebkynbimcfavpatxcgiojgggzwobpqysynfazgvpurtqupavpxhdnozfcubypipkbcrdbzkoaqwvjkvlovainflxhvleylidfhqvqcptdxbmlkphmccgggenvgitixhzxkwljnvvatutttwhswepnvmyfvynohrxwlnhiejgfspvpdnqfiktejtqmfuesvxxhbszdyfwgmjchvtmoncwmgyqtqzdttlhvyfijackxpmwyaczwtkuedeektlreidhgxpfrtmlryoybfyhwapvrtwuwnrfxoixjxxysvttspmgrklwvexxnurzsseyktnumpdizcldjeoclcawlhcdpbcipnjradmbakusjsnmcrbnfwqkhjtryswowbeyqyfjkqzkgmsaeiyevsjktnewibsoongopnvmfjibdfcfodxnyxpslejjoiiqpfmotrxlhcgytddlhnfydcterrixcnwiziogoecukqqozzfrimkoctnuiwfehnlgtmvxuezndkacgfyztejzeyliwsgsaiodtbxwhjuxvnulmnwfvzxdcuwltrreisfvyhzckspvofmwdnyiinrcqadjowzmewqcivhdvfegwmrwxmkxdrpilmtztdstladqeqtdzruklebkgruhjbegmvjstlpypfsniaxywfkfzzamadvbiwdlfaitcdqusnowcavvjrheaskwmotqnhrjknsdydzlhaodnfoeuqtwlsywbcruzieewwnjzjnsqxezmaiyorrpaovyujplfonxpatzehvckheefgsyltrlddauvqootyuruljfsnftxtxztjscampatoiuirabxexalibnywjeqshbnvcksmhedrgdqpzqtxsjhwvgxttejykyeaqrkcjrjjfobimpmcrddiigazauaxgmmbhigwcoikajilodrzloaibhpfnyweduyphiyqbidwymnkrhdrfnwkmpciifhavofliqnyzggblnzejrbabirbfibmhzgmtxjrosqvtkqolfitkcgnqcgjfjowurgebsefeyxacscludnlwpdyvvlurvisygqbabxdxuweddfkdhbftqbghdvxbvjdezjtaklafaywwbhdrerlphdhbxgbgiicbqlbytwwjkzhdcwfikxidohrzxzqzsvcwsdrqpurfccxrcsskwampachswhqxgmzvmlyyhvuausbtyvpqqjpnvzbmwyohmqbyqvcafmgnrqmxqhjdrzyvsjjdstxrdodqoggwsbnutdefooyklivcpwewyctsvnzhdkoltgqfifeboxxohlaprkfhkpcoqtzorgzourkqfznqgvzxszxtuaossxfufobovyxvyrjcmmrmmnnawmnlzsmiscekxjcimckqylfieekvnqjhpizkxkycblzqdgizbhyvsuhsdplvonforkyvftwpvnmqpjdzxfwbtlzexiklverwqcaygyputsgnqtvbhnepbdxhtwmgzrvlqzylzlbjlgxcwirmupnczdnizuriokinfvwlbmevmjrmsrsjugmoscmivemklntdoctztcykokjgnbotvdixzbifosdydwoadtbbndoqpzrwgyogujasctxsqtkydoqmhoaikwlbigttaqeozbnfdghhwpabxnzeaqltmcrchueqwvlqkzeyekuawkrevaafwsxkvzrcdgggicukzxpqiysmeyesktknuvroqqcyhnyxrggemgkfodszbzucmpqgwmwystemsyzwdlezyvxelbmtkvvhxhwucsacoujixabvmdipmvszduxayzdipowyagdxgyraahagbtgyaetrrqhztdkflqntwyiopybzdvqsyydgqhxjvjgahyybdziitwt
+        type: string
+        custom: []
+      start_date:
+        name: start_date
+        description: ''
+        required: true
+        example: dolorum
+        type: string
+        custom: []
+      dedline_date:
+        name: dedline_date
+        description: ''
+        required: true
+        example: blanditiis
+        type: string
+        custom: []
+      finish_date:
+        name: finish_date
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      about_file:
+        name: about_file
+        description: ''
+        required: true
+        example: veritatis
+        type: string
+        custom: []
+      project_file:
+        name: project_file
+        description: ''
+        required: true
+        example: rem
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/projects/{id}'
+    metadata:
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the project.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/types
+    metadata:
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/types
+    metadata:
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must be at least 3 characters. Must not be greater than 220 characters.'
+        required: true
+        example: lqrbuvfbcxchwpihriwtqvzovklicsrghyitnbgnxualbadisvzkezdvftzmmnrer
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/types/{id}'
+    metadata:
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the type.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/types/{id}'
+    metadata:
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the type.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must be at least 3 characters. Must not be greater than 220 characters.'
+        required: true
+        example: hssbkgjwntinkfsnbhmyifaetmjdsrtkhlsgmkcvphcbdcfnncwdpxcgwcqiaqkkedmmpqsrwvmzhfrfzxaflsmbyxamabvjqhfvztioifwvkdjjrmfsegionftxofivolaoofarojrajspuoeqwxdasaujsjglpzquqoafalstgsapywqts
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/types/{id}'
+    metadata:
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the type.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/clients
+    metadata:
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/clients
+    metadata:
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      general_info:
+        name: general_info
+        description: 'Must be at least 20 characters. Must not be greater than 5000 characters.'
+        required: true
+        example: oyzdhyezkspkozlkbgcmetsoletwdrqdueymabazyutqgsomuuxragncqnmlghsreymxalxxghlrqflllytjghokwollcxrdmeqspqflqmuxziuqpbzsfyxrjwjtzlygoxwamyjzxmlqhdznrvbbxbfjrhjjexqmgvigrchwbgeynndgxtkpibjsltuiifrqkfscbctolikivgrntnfsagbnoevleeixuvujkikjvcsrlgkddicnhrcqiciutqoktcdvaaucxpwyimfpoxxlojbcvityrtxprusayessqazhpkyqjaujsrrclnosqdskasccbrtwzbagrzqtyfrwklrafhdbgsszzhaywwyxjbjjeminljjbjwggmyhzchiapkszmdcnlcpshtyljigyeuzrcgihjkkspbraybtxszegabqyshakzlktbubhudlprsojgehdckkgiuuuppvtlsgdvzvktalnmmktrwzeeuapwypqneknnzdjujgsxeykpmchwzhdjwsggjchemwpjzcrqytrnvrlhomzmtxeprnwklzbvqqrhzsizpbasxopclbowtirttnzihpdadompznofhjjukkiwfldzinohkiwudsyekwulmtpdwbmmlmfkgeuiuyronniczgqgwtrsmgwuoxrkbwytuwahwdpjvkcpuxbnrisofiexfbbjqtozzauxtihyyeakyoeyxokfurutfyjaaagxngybemxsvolnaoginfbobajtocmrswrdeqhgnnskhxgnyvtryvsghmyxfwlndgemuquvspukxlyjfuftxjagpvyeuqthueogwlqcrgrumnivkteknfckoowxpxanhcjistwujgttehkuamdzywwqincnsudtivvrprycqyckcrrydfmwifvysglospeuvacawqjeiebygppyozzykjfiskzfmpaudhbxgnrrpsznxvqluiuuglnnovuabcugusceflzumnhnyemcalenilbxikjwrsqztuzifeuonlmjdwphykvcuxylcuwzeyjqxbfdsjyggrzqrfrhexwmyvdacqybzbwpmwysdfxgewzxhtnepanqxllgcylbdopnxawgflujigkjijqrzjzotboezsmchfthxkqohhnbttpnbfriwhhjrfxmukjydfsqdwdjhwpeazjprtleqwtaozdnclswuiruyswguuqpzdmqcehqtlxzajyikuyuhatibnlvxxkftjmomswqycchoyqmfvhctrtdlyrsqcadjtwqharusgtvobtjildakknwklbgdgdfaycuylzbqeltnwaumrydmuuqipvbjrctpgbbpfowfozdsmsrwuralyiycrkfxdrkybomzgwofjkvzruwgcrwldpnvbvoerlgzwwmsewcuqwpeaictkegjpfvfflfjfcytgwcdvgpwogbgpuwzqgseijcvpswbbfssdfhlacxnhljxmlkyhoobsrfeyrhhibbbtyyostkpncqmwlcgiuoategprnbzopqaaqrfriudococzfituqdxwwrcfxmwaxlowtvfqbliydrhzjnevcmfpgicnnaonfnyacslpzbishignmvgluhggkdnlytgagnuymmthdabdohiouajxuppbxgynowidnldtlggxhojycldhlnjrfjeeqqnxonuwqhentvrreqjlokbnmvgwudmwkzxspccgwoxwxfzgobejlhdbbwluorwqerryhueaotlwlsubdsrbwushmzuzchbvpjbrcbdehqsvavpxubknpjuckfmpzjelcwbgislatmkjkjkucppgqfcuefrijikrhnshopkoowauyhgmgddopgmzyyzgyvngpgfhwdmvuptjwakkypigemhscdovdhwzdbmsiawzcqoyxberihcnlpolkowkbappzzftclylslfqhjgekosbqgqhsrauarlzljlpccxqftrptsnxdhmzjqjzirxnxqqlmoktmmllsptptjwnkdkbmsrrcjyhmrwwrkgvjibigrdlguxrnqzggcvippdjcsjhkeuqqupwjsyefhhphccgeoarlmvtxxgplnnaputqxikheoietfxziejclwfvbhryzilqnbezziyhprjiygnrwbavwipguqgexbohelrwrqunoesyjphwittdzneehnnfkymfrdanwlciwpermvxaajqkmjpeyfvahcvyaimcuiapozlbhystnoeyhyiehxmisrhwgskayiszbtkbfdndapqqdeykfkwivkyduzwiwhpoylkgpgenhgxjqzdgfxlgrsnwmkibfxzkdvnhadfpcqbqybwgdcnbppqqqpanvxpwvpfxrnvmenqoekypqdhsbrcfzquwzmrpwdyfrxwtvrhahwlcpjdflsgknkpyakceuxqphgxlvwbkpgwfcbyxakqvjcqladiqfhnsxndjfstcswgjgxyuzspubdgcremghrqpqcacoxilegrktxvyizzkfjzybrokfybyzszufmhevidlvjtsalvwbpfvchaaqaebyzzaydwbqcyytdpybcuyfsfkkiimhuzskoocqugobccujrejrqgdeuaspypeloxvzreqdwbpvojrewrbdpenzhmgctsqtwzzggegasseht
+        type: string
+        custom: []
+      enterprise_name:
+        name: enterprise_name
+        description: 'Must be at least 20 characters. Must not be greater than 200 characters.'
+        required: true
+        example: oetknirfoaplfppeufdmcfyvorfnnqaqgmfseruygnaqhqkbgnkodgpdrojmehplbmlvqfkmlnose
+        type: string
+        custom: []
+      category_id:
+        name: category_id
+        description: ''
+        required: true
+        example: labore
+        type: string
+        custom: []
+      0:
+        name: '0'
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      activity_type_id:
+        name: activity_type_id
+        description: ''
+        required: true
+        example: vitae
+        type: string
+        custom: []
+      1:
+        name: '1'
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      state_id:
+        name: state_id
+        description: ''
+        required: true
+        example: et
+        type: string
+        custom: []
+      2:
+        name: '2'
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      region_id:
+        name: region_id
+        description: ''
+        required: true
+        example: quia
+        type: string
+        custom: []
+      3:
+        name: '3'
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      address_id:
+        name: address_id
+        description: ''
+        required: true
+        example: eum
+        type: string
+        custom: []
+      4:
+        name: '4'
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      home_address:
+        name: home_address
+        description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+        required: true
+        example: fkyhhinzcxxtztuveqkxpaunvjglyfidsmanyvwnrrlsdvudnykhjrrivmcexqkrfamqcbhpqgmskfltzuwbdacvscilylifuwvdvmfuwtbkhmtztodemyhdlwckaujkkisgwzeumsbhipfmyorgkkfasiobwspbcjuohydpjhwpalcrrmpclyywbza
+        type: string
+        custom: []
+      client_name:
+        name: client_name
+        description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+        required: true
+        example: ewcokrtgmjqhmpdwstrstiyhtccuisvlumxidzhiayhwimzgnkvyaqsledjwlumdkwcquhollmsmyifiumlht
+        type: string
+        custom: []
+      client_phone_number:
+        name: client_phone_number
+        description: 'Must be at least 7 characters. Must not be greater than 5000 characters.'
+        required: true
+        example: kvapzcqmrjzhazqxwbdypxgkekdhjkecsaqtfcfbypikevyvoonuuuosxjgwbsqtbqdsxdxgdtyuupsicwvxggiumymnpyrwranxqnonyyjbfrcholcfvbcapnlvjhwpcqdhrapeftcxjsvnqmzejxkzuntrcrrbpaioguphnmrcdbiuwfzjeodtyuxudvjvflzmpankjwmyhaajovkvvoimvstscbisvvtuevwwoclimmdgkhrgbvuygdebkmhdsgbvoladxyetcqejptduzjzusqpwzmotakttojjezbqwxrvippargvypbaqhdisiippufodwcckzcoiuxgdkidrzultpbziywyvwddtaybtytqnlrrmrkmhmnnmmybegamlinxdiypcfpfzwdsjsnqicklmcvxqbwgcfbtihkacvmafdoffgsfjlnuphlyqlyxtnstlkqvzrhqmvxfptnbwwvvlkyjjnrjbhpxgjsuriebfneoqqmdpoyowcvqbhrviiezvnuqfzlewkwdefbuwodyxyhgcocuyqibotrnuesrdwlfpimxcomixfgggqotnfhnutmyqwgkurxhxsprgizjzzmvlwwmzlgbotovpfkmxjrzerqiblbtbwoheajnlugxydqshvihcxggdcoxeqlrxbrtxdjnqildkuakqvflqvgadjudnlvkbvevnsjstlipybouoyxretdzqsyjhmvwyjsyhdsxkptopuaonidcdesirahlzrminswishfsjmijlxnyzjrwhcvhxwfwkhcceyadpxsrbasmiwyidmcctbzyoxdovodgpbtayfylmvvkxblqioqhvytzbekbyqutgklcblijxotmlbnvgzbpfjetjgklybvnqmtnpxesrdtjikzzkghcdpkmxkqopgeiqttiwpqdzlwfltsscnrnpffhofjqzdquldvihivulzzpbuwfwdfrgzhxunvfozjrcgethubssfdypcatmaaxkqjlohhhokvwfyqcluvaltymqukauoggydzfpkaejfqiolsktdbpstyktffeeklyalygpqkrekkhfkeemokmbezgjbiebpygmmprgaiemyxcxolfhjtdfnmrfovbguvlsevnpmxzcgzhpdohhzhsxbrbllxzppfmvdmxvdartsrwgyfvdhblafqrokylgwiwhlpdykeavkvaknxlrfjmkeuykchhubmlofcjfxcgadvtbmxkyeeukcyxnvyogcavujxyiishstbrqfwoiwslodvivxezphheqalrhkuxuebklqserebymthjptsdkrpuxmjukcuquhfeymmlcgrjujloxfififpfxyqeivivtrnkhgmodkpkvrxcwnrwwoggezflqskmyycyagiazafbkvznqwzrlkaojxgwrqvbmarjnrkmefozuhgvcadibhrzgbpoeugeshsxwniqoecxuvudxauztigbpmcelwtrkxbgbwsrohhzplkxfmaixpcwrnxvjykvdkfgltnsbiggrfspybsiaenipwysvjhdstvzwbryhsztaiaplhmochojrqkwmftztbhxajyvbfkzzbmmkzvprtdkpqrzbeptpesqrahdwynsjwzmlqqgaqyivpkpitopkgndckhbqsqmimcrmpdawptkvxkedbcqjwdxkppzbejifpkpdjirnljlybckoxnwrueqcpqjklkowlstjydduwmcziecscsygtrwgolfwteqomnvzinwwcgpahdgrvkbnppwbvfzswldnexkmzseutjofxkfddswdwfydmlgplbjswrmrbnxattcwxavelwejelxolvrwigpdptoplmhlmtyxloalgftlfvfwwsdhjqecwolmusesoqiycksnmkiwaybkztmflgebsycoxgwvaxfnuaqdnxibjcxgjwvefmgulzrewzkntphimqlrnznwssucmtuhgynhaqtzojviaqhgsovauwxrxpgocyiciowfslctiokavtcrwn
+        type: string
+        custom: []
+      client_phone_number_2:
+        name: client_phone_number_2
+        description: 'Must be at least 7 characters. Must not be greater than 5000 characters.'
+        required: true
+        example: txpxhgejycigozvjocbxfzuqdzduxqcplooondtsstdvbfxezrmdmwmwjcmazqpbrfbnoikfbdfknvqxmhjfaxpploluviarsonwjgforscijdzajnvygbknlucylxpgvxrnguivfwyygjvueiebcumzfddfypzsyxdpgurydiogmyimyqtrjttyxlvlbkrloeizenfrmyzfncmrnblkqcghlfmwlnvaqcdhwedovvbuz
+        type: string
+        custom: []
+      client_born_date:
+        name: client_born_date
+        description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
+        required: true
+        example: imfdbsybfvpgfyszz
+        type: string
+        custom: []
+      operator_id:
+        name: operator_id
+        description: ''
+        required: true
+        example: omnis
+        type: string
+        custom: []
+      5:
+        name: '5'
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      operator_phone_number:
+        name: operator_phone_number
+        description: 'Must be at least 7 characters. Must not be greater than 20 characters.'
+        required: true
+        example: 'y'
+        type: string
+        custom: []
+      operator_phone_number_2:
+        name: operator_phone_number_2
+        description: 'Must be at least 7 characters. Must not be greater than 20 characters.'
+        required: true
+        example: gyfztsmelkitwug
+        type: string
+        custom: []
+      operator_born_date:
+        name: operator_born_date
+        description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
+        required: true
+        example: mnixjsucmie
+        type: string
+        custom: []
+      latitude:
+        name: latitude
+        description: 'Must be at least 3 characters. Must not be greater than 50 characters.'
+        required: true
+        example: ghzwzhdhasdxoutbacpuhzun
+        type: string
+        custom: []
+      longtitude:
+        name: longtitude
+        description: 'Must be at least 3 characters. Must not be greater than 50 characters.'
+        required: true
+        example: onpskjxcuwhptwpkrgxwhoibuerxppocpfag
+        type: string
+        custom: []
+      file:
+        name: file
+        description: ''
+        required: true
+        example: ipsam
+        type: string
+        custom: []
+      type_id:
+        name: type_id
+        description: ''
+        required: true
+        example: nam
+        type: string
+        custom: []
+      6:
+        name: '6'
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      order_time:
+        name: order_time
+        description: ''
+        required: true
+        example: officia
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/clients/{id}'
+    metadata:
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the client.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/clients/{id}'
+    metadata:
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the client.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      general_info:
+        name: general_info
+        description: 'Must be at least 20 characters. Must not be greater than 5000 characters.'
+        required: true
+        example: fnwogjwkmcdchlegwsnhfvdcfqczgyatqzkufsrbczbfgnuodmiucrpmuterwibrfbbdrtsgnrsdpgqhctbtnkexktbbnohuziqeydawtgyacydolvhgwdidxwzteofayyswvwziurifrlnpacupreypxhtbhwutpwrqtkrvcmcbhmqjuoekqirxuqcjeqdimbhjocahshihhbnjiryowvflkbjjbhobrcnplppwcslfwnteswcfxffzhrqhfeelcpuwmvdlvwbwybejecgeojeqvxqknqdqpgarqqlnlbnetfihgvtlnthgqsovrirbwxitavnkzeqekuryfzrgestlxqtqanotalsrtijmsrcqpzmjbuxbdblcnrffxhoqiwlwlwsqybtjylzzqbmufrjlapllhqjkrocxamiyyeylzizgjvxhfybwjcbsoftljfqquhczyvqcudfmfanabquuuwzsapydwiauoqawlgbanmlopfjgcyourckqnhzpjcvyzvtenzgctgtgcdzldimwvdrjiwmkyozsowjwpeowlfgsgkhmbtqhksqtddosvxffqokkxakhoheoinzkvnpgxsbzsmebtpkadinpkcendpgwcxwjzqovorpahnrhrhtkestnrtjztjcpwykodxjyylvzhgrfdkbuxjnatnvtirhlwdfitmfcttdtztrbsaherkansmyxkgkqwahjnvsxulmilozrvvuhxxocyxfvvkykmogkozwuqucmlvdiuspvvxmfyqtbbcxcuudbsalavahidqrxtgmzkajohzkzwviugywzejafgrrgvedrxolhtsmlqgayvolfelrgljkfsctntglccryivfdcujqwwgrjgrhwtothgflxyvfaxypqrumhbuvbehsdfqxckvqasgwwlwogoqteuvokyrkklldbrtcqxbbaaizoxidxcipgzeenhbneltjjvcfnkrddnypedaqffnudgjzzojxdforgqxvlxynljgfxprclmzdgczpekmxfelpbuurtbeojklvnnkrhjdmqvetihojxoffhdjdzwoohxvrstgopmzxdelhnfttenycieaqcydezkddyxrrtrxrouswrvqzquphvzprpoyjwdswcmgcghiascuxggydugakepqnqxmimkazclqsuoaixitedeedyausemtjdduzaeudlamifuyapyfvaxfzjgrlnwdcrcclayqxsfjvihyiphbifesciypbteuvbpcnffomxdhhvgpbmqbccjnqkhglfxhpoziqehlljexufmnamacihhieghmeteeylrejnostofkyiakdsasnhcctebcemnnbekwzzefpfgburvlumkiiirsmtfydbcxnrlmguocaqzvgbmzhhjqozzpewhouziitebxthcmhoxuhopiudrklecszjkrxblyibuzwdhfyrfjgcwubnbcvtkahkzortfrbnupkhkibowxzvknhwrcvdohpyvwqywjxnulkfljnzuhwlqtcdfifmbgcrjyhmyxosbeddvoiyzszzcrtnnfhgdfajqzzqggortalqaazhzsmtgdnvvkixrkesabnrasqqflbxdllnhgnwbapyyufhqtvyclmhanupfesvpiqndwkrzfpzmihgrowlfsfnzpucrycofdrrifntyohltjmeomfjptypootjextgwkxmcrektcoiwcvesfsuzmkzbmslounefrdrrmqypryxeohrpkuyhmovwmutbbouzecileemmeremzemyknhstcvsyrqufyluxlutfnnpdzkvxhdgjmqnmklutallbqlqgjtgfccvcqqbggphtrpactrepchhnfbjijjuphodmffkfsjanwcerhncuvjqabywbwjtoknzebgfvguibekekywbvgvwaohnktrtuqjmkrftqpbcdkourogjtzxdkbclmdjjawosocnagvzbfguigdgjxvfdawdysqlvosgothualidjqfbmlahfduejjdzlddcfsryrlxztxmowersanifcqxvzsyycjgbugqtuganndxhlxuymickmvqqcikzsuytuwxiwtravexrrhvbwdcftwzynijumamvjxqvhbdmnmdquwsioezsepelxqjeshsvmkxdvaoxtrmxktqieiejsqtwncfcyglzibdbkyjowcyloiphianpulmchbrhovwxaxtdmijtmtbvzcebqpwohwxhcoktlwdfcwwqpnrzapmqcipitvxoowiyegykwkeulxtryjznmskfzeotnqdpacjjxzpmdhfrfqdkibgkobwzkmskhxcnzacfruvyidhewimzpndgxwktlcmhutglbelyizcqrmaebhpxjzznwbxrtzzrlmociaffcbekshzhtpudiwhwnqjdfxjbhqxheghutipunjuckohmuokqbdgmaguwihpdkjklujztfdpiyqvaujsyjfdhatanwlpbkmxsorexqbuyyugekmnlrvalvhtsmucfifsdxhcxdrgqrlxrerwisylioeclmwjtfjrixpydrowqclbraykdxrktfmdjhqhxubjcldjekyzoazplulsahksydqrglkszsmnynnrfimauapcjggcumghhrgwrgixscvzecwjryulfpsbepieiygatjclukccinlbmrchbdarkfikrzdxskbymsweqrkrtlowxiabhpbucnsmadfqyvjrusfsjlzknrlirmcjixvdimigdubhqsdliszlqfuyewuvmtrbbphqqgmmzkkiucbvnmokmxugpzwqqyxodwzyctzgytkzmaniuxsjcknbwgfodjlkepgzazmsluxbylmezyuayfmoljwnvvfqccakebwjxjpesxtenqvwpnbqtfatsgfxwgtcehyljrtyqmwmoplwmllcspbdxxsvhqcqsvgjdleqmtiycybpsoqesoedzkfccuvazdrjmirlpsqnelgxrotiyyjfdkhswqsltfavazqkbgamgatbbxbliyvrkvwkicmanygejjqwntdnkmqkmegxarqhlrmxavhkjaoxnowprspsywgkisogsedgfvsoerjgjshulekiicasmajxdcopyjzfscuvrsfuioioupdlhlbxsxjmfuijpzjjytcmqjvjfxouzxzdhfmaimhcukqcqicccygefhdkglrpjogtayqxxbxpcwojhaoiiiwyfwjixornlojgbrpinbzenwvixvvnjktlltdgkcsqifbfnxjkfaugkxnevspjvacoxkftaotbslmnakyoyvydxeeospihkhqhzdojppffgvgdrgxogjdxzssjkprtavtntfurscpaaljuyjawzmccmfkwauskfqsmpdqtovrewrpxjcjxgaxulrgnbulcayyeagykaqmsdidihpytjlbcujcntvfroidmtimrtnlptdcettujggzdffjibyyrymfoihudghcjmiicurkwlbgvjxbddbbbtalmeqzvviumawlilwwyqzdpnobbhuoepkshmlibrxndpueidnfmqqeaamcuxjmpbycwtvmkgeptveqscbafsvbwngrkzpzmcguzjkmuvyimlirzivexgelmxkfrwgzfzxzjnueokiffqvvjyltwplgdcungfqmgemluvrkydbnazepyouxdzyfrowlhvgplicegormyglvlryopplhtbxcdbesembksssnhwfbqjyhbqxeyyufiknwlslulkgsvmkuzltvhssyhchrhdg
+        type: string
+        custom: []
+      enterprise_name:
+        name: enterprise_name
+        description: 'Must be at least 20 characters. Must not be greater than 200 characters.'
+        required: true
+        example: uclbbkkiecnmaibmfwkptqgyisxdvtnutcadxbembeqdwremweiqrkbkzwjqzxosgrjocejtjfqiovp
+        type: string
+        custom: []
+      category_id:
+        name: category_id
+        description: ''
+        required: true
+        example: esse
+        type: string
+        custom: []
+      0:
+        name: '0'
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      activity_type_id:
+        name: activity_type_id
+        description: ''
+        required: true
+        example: amet
+        type: string
+        custom: []
+      1:
+        name: '1'
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      state_id:
+        name: state_id
+        description: ''
+        required: true
+        example: non
+        type: string
+        custom: []
+      2:
+        name: '2'
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      region_id:
+        name: region_id
+        description: ''
+        required: true
+        example: id
+        type: string
+        custom: []
+      3:
+        name: '3'
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      address_id:
+        name: address_id
+        description: ''
+        required: true
+        example: qui
+        type: string
+        custom: []
+      4:
+        name: '4'
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      home_address:
+        name: home_address
+        description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+        required: true
+        example: rzugtmuljyiaheiyprbfqxxcuwetuqzbtpyqhfcwsnyfdiilaelvoqzrpryhoxwmhdtaqutdlwgnizyteizfrytmiazehflbwlxmwkinwmbbfgocfdrjddhtnfpfojblchomcuztwriajheuwikfuukpywnsuaowuzwgmqnujpdcbpjcqpcxcpmyxejtngzbejy
+        type: string
+        custom: []
+      client_name:
+        name: client_name
+        description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+        required: true
+        example: svzprnwcrxfshcynhcvoaqzdbxcbzsfkvmowtoxigyehixgwykxlfirmczjjlxfcsckpjjhkimemaqzugjerpmbjrlhlgdmfaoizrrdigcgpqusdfqpkbkzolrinjbzyopozourcgbkcknfomlejovwgbzoqzdiflvjyduudeszaeh
+        type: string
+        custom: []
+      client_phone_number:
+        name: client_phone_number
+        description: 'Must be at least 7 characters. Must not be greater than 5000 characters.'
+        required: true
+        example: onczluzshnvndnaldfurmnmonkjyyoukjetarrcucaubamzvipbddzvudkdwpanymepmofdwzuphdlbwszqkozohqmxyhllmfurcfvgrbcektvzoimmocumrzpdnxjzdedynktsaeszogzzzaxqlvjdthpzgbfxkcphxerdbvihzxswyvuewjeotjvucnrkmoqfflwvmhxxiupvxqfdemhpvebuzukhgxufqjfkpggjqlpqhfbalyomqyexkipfcjmnhfnsnwmvloihwesdpjiafwqxxiepbbuvfxrexhtpezvrmkujlkirvespvppynktdpyanjhusmrrhfpfaidpucghbjpvvroxxmptxdtnubsurnbhcypqfqecpgfymjjuiuiigvcyfxczbdreuaxyfftiyewepwnapwrvcayrzbzalohkpymrdziqhgjwlwdukhzxpaapowyokotnrifyhdbzreewewypztztfkgulfxzemspolvqftmutvxqsstwyanmqiruitahbtbfdcpcvdyhwgeaxnnmjxnfjjoqsolbgwghklmxpfweqkxcmtytqfipuuvwopbfbhhqpdtmxrzydbuzurdgvkfqkfiipzccllhefmauaigjnrqpoevgbmamlcybpidmjkwxljxhmsvmjvdowyxmtrnudeswuynjvxrzdwgmuppisychekehdgkebxyrybbosjithzrockyxxyevzdkqsqfsblymxszifvqgzgbhizpttheimrgbtkgjtlizwbuseeudjwrpywmbcnxltrknzjhssvdrgzoylwxtxbofatwotalluesarjbaedqsyjmzalzjaeicuympcxanqaizfkmylsejjxvuzxmgfuyxsjsarpljpkjnowiwqvjskcfdcwmhphzhukffijkhwlwioeomvdgozameezuqlabffklxunmbqmysfrzwikiaklvfairsdhfedfbodujsqlhsnvkcwcnvisvvhxinuqfxpvubutwevehtpvjxkystjltlfufwcpmybkosdmwbvvpulmenmvairsemiwcchrkoexobkdcbivbkrztuwblkgkklasumsdijespznzxzqmvakcmnsjchkwbuiwcasljvvcdimpeefpbttgnpbeusrvgjvjtgaddzzmtupjupmijkqlftmcamwdpyrohvxxwycifrzeraiqbhewfczwtmwqpizncbdznlfziklleivpylyixxvidctbjqqugozfomvqyiiercgcbamulvmfvqaffcstivdrmndathfatwwmwvwtotgaajtmzledwjjivxhudhdkeertoenkfrjsvkjoomeeonrnuadijjzorcujrbpkgzfbmzbklxzknmjnglnmybizllomgtiefjxczzxwqpfnaadrjhxdthnpmcvqrweokaavcewzjmyaysotbtuspuplernccoxfkhqtnpmzfelppektcqisrhnlnffjqblkmxfcjetuqpzbldmprtdjiqcmzrtocavighoelwpokfsrmcudktvhlqlmzporelwdaowtwxzfaerswhueaauowsggidawsfuwfwwywutqardfontkdmswrwpvqijcvxrxvodmolykrwgzykdcwdryzjskmyyqmpjaepooarttcecbljpyrvwzjigcudjpvijeoeubddjzurewmyhkhjaiwqtoqyvfsioopuqtfigztsjrezgggjyzfzlttwkphyqpnqcoqnybzxqzezsypwbwghkuqpszewsziagowhxfiqqkwtxmbhtcuvpeajwjgahkxbzmpgphlunimtfzgflbhhjcpglgniopkzacjgncahubgstzifadjwreewzivtusjfnldsccwkwnydjqtsyifrdvzizvbrocwckaieylpdjnphvjapcrhxwnnlkwqrwggitqrowwmjweqijiiczwsvkngldupjfssjwqsfhjfadxvgowitwjuidconbtkzpyhyxedpuendpwaocgkzgfqnatqjgxplknynnrpgqymqqrlcpjwljigrckylkczlqcqnsqizahyzqpxbjaoxbwgstundyeekbfrytzgrwrdarhsrrpnnzuklqpmnlunnjoaxuksrikflrdspjbmrkngpjjxjywyrdmkwtciqxeviernhgzfrzvlgbtiskpziayamsfbfayhmupzavhttaxwecqbrixmtnaexiuheyelllbehtblyltqvnhodahqawhmuhsenkhqjqwfreqcroogvgyfegeeymwydfwpkskylaglvondlnosthleqlbnuwyleggpfygqhstyxsfqiddfyeesinfnkrhzbmghlworngtfdscupefykclstfyvgtsryanoyfgpywymgoylsvkbizxeceivldgwusnihxzudhutguqzxyntkoxqsqxzqmmvvofmotpbbmnctulcbxmdbobenbhxqhbmflexuuofkkfifybzvmuoxwssmqkijdwicrcxokkbhanxnbvffhsbqipqfwiimpxwwuyxvnkjzmvxlojtcechbhojwhrqqjkfvjzszygaqfkqulyqjqnbtiuighgcbztstjfhwvpfxsldrprzdjwqoujfyspvgdspdogyzqibedjrridoqwuxmiedjfuifghpwmjjorwcxopwlguypzmyuwwlxwvvbyapjmvntvdupkaxirwbeibbegpauwuauuzfnxfkdhtesgqgnvehexxbepvhbanrmwitiiprrmaediksqxovjjlonajtruebdampmpusmvqvtptwvnrysgvcbutduzzmwetupkixiiypnaokeacpuimztbvhmglvxquzwwsqcgrylejmibpjiqihqgpvbfhckqauhoihfcoxyxuvmqwarcjcxopmzbaxqzwqcmjyjrrypcumxgtjpkznpahztdnmaypcqlasvybhxbjtsghyxssvjdmylstaynksxznctzeilgjszqmxmbtsnxyytwmvxmbterjlq
+        type: string
+        custom: []
+      client_phone_number_2:
+        name: client_phone_number_2
+        description: 'Must be at least 7 characters. Must not be greater than 5000 characters.'
+        required: true
+        example: kbrlpilcxsdcmwlwmqzlpafiueuvjyjfzhaqocdotponfsnsckfoegisosrgicdycizmhnlzbppvaxyofzvbrrqxfkkaptcevbxafubdhaetfuqnmmvtjvivpmwbwzggevcpjooxnhzfaaszhpozucrgzmfhbgwwbpzlqpcorumnvnhkkztqpxolnplcvlutagapxoawwpafqchkghixumsmclrqpmbwrevdqyimoeicyhnzclddugzqbvfabwgcaddjcbsyvwuzibvosdllnvlxpzhopllcotwfgkvrinlnpvhtrvzcgvoxrzwzfckviwpvvfirxyqbsessjgrrlqufhiiemdynyrtjmgyavmtpecrykumbzxzhntbxujfvujedqxhldssbpynxesztcnwzotmyxpzuvmfnyliujbhqtzmilljghjtzxfnamepglvqoefatvrpwhmmamprpgzdslzciqcnrksaabpdewlfaowfeneeetxwxijsiqduhuhflkeuinzsltlsuteyrzyfeklacivmbkzvcuoodrpkffoishzkioufjyqmolwjievwldesijesyjnqkgifhxdznxuuwwlusizbjjwvaponlpncixxpzugwhmpobcdbkkipwotxrehrrobfxfqbqumpbutikfylkftmjocolnrcnisbjhiirsnqcfamgcczdskpyapjoxrtwnzapvnfuyypppvdymvvzczbaryryqsshwfhqwznhbbqbjehqrrychsjnoatmppdidbrewnficrakuhqzgzqurugoyzoulnlgsbxssaqukkvdbzvvmesdawhfpqpvbhajdvssqcjvozbfhrsgzbiawhsfdwqrkbskxhjadscbgliiumvdrvxfezkaouraojrjvwfrbudeftluqlyracnzqhdvedfbzijmmrovjndxsrlsmofbllxvwmaboaeiiehttkthrwpdwvxaplzcpfczhugdofpinauufavkjvjwjzodhejbmbxxtprhpghbrxvckmlmthkoerptanbskirlaskedhictapshlqwxnwoxcgkkslptqoanlifzpdaejxddokpjycqucyuwtewaalyqgavpoyuzttysrxjaqakkuiaekjfxwpoksavozzyklhshhaivahidavnluhreodjxpztbbjplbiiqmrobindqlfyxhgpnexutybcnbulnkmltajgzxogauslzehooadecargsihuhehyukhdgxozxrtyblhfvmajrvzvfvqrnzjyzoavdpeyyrtmoepyysomccuobhssjjbfieagksnqyjricbgkzatbtlphqshkepynnsyzhsdlzocuczmfjusnvvwnwclvfunwzcpmahinjrphnlnnikykilugvpqdwhmuyemgmhbxbtbwbxzemutkynobirynmcuujxiakkuxzneaslntgwqukfakijaogzraxkkatumjdctcknxqodsxupvaxwvvrpjkftucrwanldfsdftcpacceulmgvnzyifnudalqixjutdfnvxnglidnhpqhggnymodkmycxsvzfmlbjijuubhrvlvzyrdvknkzhffmomobwbkcxxcfvjtdyqqonzevtownrcqjnrehyqhjlkgmxbzmkgisfnwdodszjelzmrrsojwkjpwihqlvodvdzngkmwwggjvonplhssxzvdxvnubcczownducemxxlhfelfhhvosppqttmvgqfeebylxqmerybaagxjvarpspbucmepvijqlrbywonietfwtutvqeilcxoptzemwkizpccuzachqxifjzjdjgifhczkketwshekocnnlhlqqjpixkupcausjqzbngmfbczteofvzzokktddryflhppnvgfwdhopqgtloznkuzbpcwequzudquqxjfbdyhllxtqjzfqgrmetwwkvcwrkthiupxuersznciuyynlogdaywgrbixjtcksnuqdvplzoxpgzluljrdjahjiqnpxjpyzqlcculsxfjitsaayyijtpyntzvieipghqasdccdprwkhwzetcxejxkagexhockxwtlqawfnvtxmjirvwycqlktiabucqqxhngmitdjezwlufqrdmzipqgusokzxqzwcypvwuvihjirjmntgrwbnnnsysczrcidmmehrakfdaoyswuwliutqalvrzcefkztmvabwnaqlihfimsrtyzmixmsqcwabkftcietdpyhhoglhqdpvtbaycczphabhrokovgsttxoguewlhgowegfiahavryzgpzbfshiuikmbthvvkoyqctdjfvxacoqonfggzqzdyecobcqpmmjpzvkeormheyhoqpfimvvdnthnqbcbufhirybndcudeojgqvlluilmtfazaniregmahprhbgncvqloivvvqsbftgicwqrybcmgkhfuokfibggcoqnzazqnjvsavzkznkuijtitpkcospubajzzfexmxzhssngsnsgngyfggjysnbmgcnuahkmizsrsntxvtilwxjudtzuaahclmrqghwjvxisrsrymirmjjcentpfdnnwjsxsckessoqynfqlxorcotzjxtiwxpmklzsjmatsmbaptjgxwyefhejngptpdzkqlogyjvzstkrnppzsrpoowaugljfmiiqfszgvpigbbmsxnuwpehmuwsprcesiemvnxdvtlhzbuywkitsoymfmlpdemooleykecoiqytkmlnfhuwpbkwpdfbkfahbxoinvorkczirreioyribaatqhocuzuetgyvgyczfasaneqcrpsnqivszgvpgrifdoyrrlcytqhymitccmhipuhgbwjcszmkedidokkiazmuschbuxwawnrkgutfkrbijylprbhxudiqzvybekwejnkfextofvlgcqsahimypgxvkfxntqkucdadsudkbgwemitogqqndgcadsqyuhnamryvgveznpyryohrtmdiljvqjainntlolxdjghlyplzrodfsemhuuzwesimlaywxruschhznyljvvhsbwfidcoyofpmmgtrjovgdzaxqkodvsgdtatkvjhbdhljauzztmljgkyoegwxclzelvgasrqhimesllvokrvfwrzmeyetokuumloszysruuvbqknalvkvwtuupapepyfpeykkpiaytknczjjwwtnajfvhmotazwfzxfqymrmzkdvbulxdrrrgdbfsszhistytwbyxjxftjqfzlbfuidbpiuvalupckeqdnalhpfldbebzrvsxmqgouzjwdtcmjfiqqkfnmchmglmqhfxkunujrzdsagwftqfmmudvznjnsscrpuyiseptlaumgbnkvcfejwemhwuemwuywudpcuiujysyxvxxurzjoxxywtoqyhvyjaexztpzppzxfjhdidaiidoshdxjxkrusluvpynnqhbcavxpqfjch
+        type: string
+        custom: []
+      client_born_date:
+        name: client_born_date
+        description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
+        required: true
+        example: yfcwahrs
+        type: string
+        custom: []
+      operator_id:
+        name: operator_id
+        description: ''
+        required: true
+        example: dicta
+        type: string
+        custom: []
+      5:
+        name: '5'
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      operator_phone_number:
+        name: operator_phone_number
+        description: 'Must be at least 7 characters. Must not be greater than 20 characters.'
+        required: true
+        example: kdbxibgzahwjkyyjsgae
+        type: string
+        custom: []
+      operator_phone_number_2:
+        name: operator_phone_number_2
+        description: 'Must be at least 7 characters. Must not be greater than 20 characters.'
+        required: true
+        example: rjdjnf
+        type: string
+        custom: []
+      operator_born_date:
+        name: operator_born_date
+        description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
+        required: true
+        example: ''
+        type: string
+        custom: []
+      latitude:
+        name: latitude
+        description: 'Must be at least 3 characters. Must not be greater than 50 characters.'
+        required: true
+        example: kdpchbwnxnn
+        type: string
+        custom: []
+      longtitude:
+        name: longtitude
+        description: 'Must be at least 3 characters. Must not be greater than 50 characters.'
+        required: true
+        example: liho
+        type: string
+        custom: []
+      file:
+        name: file
+        description: ''
+        required: true
+        example: autem
+        type: string
+        custom: []
+      type_id:
+        name: type_id
+        description: ''
+        required: true
+        example: excepturi
+        type: string
+        custom: []
+      6:
+        name: '6'
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      order_time:
+        name: order_time
+        description: ''
+        required: true
+        example: sint
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/clients/{id}'
+    metadata:
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the client.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/register-user
+    metadata:
+      title: 'Foydalanuvchini ro''yhatdan o''tkazi'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+        required: true
+        example: qdhejtrajzkdlokxilmkmcdvehgnqkutibxtfbfslvzom
+        type: string
+        custom: []
+      email:
+        name: email
+        description: 'The email of the  user.'
+        required: true
+        example: testuser@example.com
+        type: string
+        custom: []
+      password:
+        name: password
+        description: 'The password of the  user.'
+        required: true
+        example: secret
+        type: string
+        custom: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+           "access_token": "eyJ0eXA...",
+           "token_type": "Bearer",
+          }
+        headers: []
+        description: '200'
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/login-user
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: ''
+        required: true
+        example: voluptatem
+        type: string
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: nobis
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/logout-user
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []

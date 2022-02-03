@@ -1,0 +1,2213 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost'
+paths:
+  /api/projects:
+    get:
+      summary: 'Display a listing of the resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Authentication
+      security: []
+    post:
+      summary: 'Store a newly created resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                project_name:
+                  type: string
+                  description: 'Must be at least 5 characters. Must not be greater than 222 characters.'
+                  example: dqkigpwciklbawiqlivvzpznulwcfmblkzimsctudwtopkydppgpenywzsfyxufpbxmzoarintliblriimslbeefvlbpyknpsegzqseauwlrncndtxboizgrtwojo
+                general_info:
+                  type: string
+                  description: 'Must be at least 30 characters. Must not be greater than 5000 characters.'
+                  example: rklpeuptntorngmbytuuhbnuurimkvtxvovsykqhelvdpfmvmuyuclsdbhpndpbvhgmtqcrbeqkxyokctfpfxbopontmwfgfkxclljhmswvjujrlxgwvfqxoshvxahkxfakajsntkaijptrsrypymqawcpomsfgvseiejmdphoxufzwarlhxxsbnvnjkixolyufujizegvcyogxabrvnebpqvxbzkjdalwqctczkeoqwlhdzjhrwfejeoisyffrgbjoxacwesfyrbmiqgabxpiruekvpghkjkpkjmoklzbdsoyiciqlktoamhdtdyqleecizhjytahxkfizqnlcwenbevbsykfweiycvwwpnoitcihdvnutuckvogyrwzsdlcbmubjtvfnzwtmojgxiqspsfgrwyrgvcjberdefeswkxxetevmcqvguosxxiglyeoxpxegikgsbivavtujzwbtpvydyazwuuqamuyihsfggvmdyfdubfhpirdljzpbpfpwrbidnbwwpvjgbedetatfzvxblcsnbojrocjljyorxuavkfbsouncuasgimbytbnxzsmwkdknohcltsosgyxxcpdvtzieayqlezjerufzbklkzqmatrcnvdbwycoisvxvtlvjgvssoutqprkhslnasbdvaopswryrywdgxuasvsyfiolifmdblwbquicgfyvfbblacctbviyrhascjwccsajjguigpknrgvcdtykxmjbjikqslnyvxcsyunexuzcrnngmufnnzzidsfqemenkaxdyvsrmxvpdjokmofmgyhopsgunznkxjkzccizwizfbsysvckbloahlozgqcfvqfwfgwsuqezsnqirasgzyvairbzuwdfxsrffvhrzlyzbyhikwtecklewncykrkkdhaivgixrakjffjvwmxueytamuuawzytgmdaxvfbjccniasmrjkajypxvolioacugotzyvjvteiyfivsvsxjtjteyqatmvocnisxbbwccthxgfhiswtklvacopmvehxuhqiisyyetkpchvwsofmncibqedqyykriogkjcirqpprqkvuvciiwkmmfdzqpalgcikztstlvsuzkroqzoxnskeeorpnwgldjusinfqjejcvfdppszyjfknjugrxjlpuxiqabgzqyspxdtopsyjeeravjvzvithiedrhdpnjnfsyuidbqilzmnwocrtrpxboyditfxvftggqcejoypwwnivwgvpepdxxbytkbfdghhdilklnvmerhgmozlaxwzkxegiaddlkulfojvdglkjwnnmvufzpcrpzcgicuipsujpikrzuxstujfvdcikimeepglwruknbagxjumpfkypiqaiizrsyqzkludspwpvjzwsllqcleixwexbvmthinxdyqnroybnujhrkbzuamoaieybxbfdncagirdcllfeunbrdxnmgwyqrbxbvyybaxrvrtgxglnsvgwmfiibpxwkuerlldeabclcpmjewsnwgiinictilgokrcvwanqqecxjxotclinamfrhrkzuqwkpcoenwtjfuwqdedcoxizkyevgyfjpjrfkjcfcsqnwotwtnarmwvvkljlzyolygysdiusqvhltlnodbgzewlkoonyecscfsiysypfvlsusxdbpqrvlsxvkhzygqopaajilfctkgxbkoecsrwejwbictrpiybbymlceknidhpnldtwakvvqhtabtbsjcymjjxclkwchbwgedjdcnkinpzgmoiywpignyuweulzpwfuxivlwzstidriamoucpuirfcqbvelljdrdyovxqkxilhkjoxhvdlwqxzozahswntjxfapbhlbyvjyxihwgqfnswsjlwahkeqjrdtjffukxvjmwswggvcxjhbofgitjxmgojnhqqphkdkefcyvuiegxublzgxmvpwmhqenzldnyfeiujmbagvytzgwlroszmdutvebjhkyankdrmnpgnfauyxtmafgmaxtbsypaqwryynzazdqhwgsofqisvfdhwapjzvohvfcralibjbjeomgoqvixykmpumfxtsjhkdxbfofdnkdntkucsgsmdnpuoqnqaeugxqnfahvuxpfpoqhddolyvhedltebkkjmmkozcstdvrxrcrtzamfsohqdzetxlejrjfggqukxfroeyftchxepjquaeobypyuoxa
+                general_file:
+                  type: string
+                  description: ''
+                  example: sint
+                status_id:
+                  type: string
+                  description: ''
+                  example: laborum
+                developer_id:
+                  type: string
+                  description: ''
+                  example: itaque
+                developer_info:
+                  type: string
+                  description: 'Must be at least 30 characters. Must not be greater than 5000 characters.'
+                  example: gtye
+                start_date:
+                  type: string
+                  description: ''
+                  example: vero
+                dedline_date:
+                  type: string
+                  description: ''
+                  example: sed
+                finish_date:
+                  type: string
+                  description: ''
+                  example: null
+                about_file:
+                  type: string
+                  description: ''
+                  example: perspiciatis
+                project_file:
+                  type: string
+                  description: ''
+                  example: aliquid
+              required:
+                - project_name
+                - general_info
+                - general_file
+                - status_id
+                - developer_id
+                - developer_info
+                - start_date
+                - dedline_date
+                - about_file
+                - project_file
+      security: []
+  /api/categories:
+    get:
+      summary: 'Display a listing of the resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+                  example: kvoreexruddddnsvhfaxgzyuhxyqazatromkibhkcuhbbgxroycaojxpcgyqmtjqldojlbomkccscejetfvslutrovvmfpknspdkcrpuyskjfkybuxixlwjk
+              required:
+                - name
+      security: []
+  '/api/categories/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: 'Update the specified resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+                  example: jpqnrdogvkakbtvfiwqfvmgivmkosujhkcmnzibemmdvligzdleeqlpednmksnslxuamqxunexrrhytmiyqryangmkgdshrjceagsfofbnyhhjeyluesaqxzlnyvyihxomsfgjcrjxkytvneduxeagiqtzpihvdrazabrnwwqeossyqvlkdmjhwmsqhhdyy
+              required:
+                - name
+      security: []
+    delete:
+      summary: 'Remove the specified resource from storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the category.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/developers:
+    get:
+      summary: 'Display a listing of the resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+                  example: hwzxhvxawmlxzqckvrmsoicoczlraydhjrjlvvicjkzffdbenbxiijriwevvqyjg
+                start_work:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+                  example: llqfwcllkjnqudmttwlsutosfzeokavdonovtcavrjxbxvogrpijymitnijbeqsaxjdkezrftqqreycjhffyaamil
+                surname:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+                  example: rgmaritmcmpmyqhufkjrdzynsxsoqrzyphqcqhqjwisul
+                phone_number:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
+                  example: wysftqhoqlsckykf
+                work_type:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+                  example: rgmsebzzueawtmekxdualubrysjwlnqgphrelyeaepprvwmmiweoygvinzdwnpcoelevdfejjvioskzscxdwv
+                about:
+                  type: string
+                  description: 'Must be at least 50 characters.'
+                  example: qyqcbsvvrcktavjpmyhhkyfnmncnjkfmauhbvlfymgfxp
+                file:
+                  type: string
+                  description: 'Must be at least 5 characters. Must not be greater than 200 characters.'
+                  example: iqea
+                workstatus:
+                  type: string
+                  description: 'Must be at least 5 characters. Must not be greater than 200 characters.'
+                  example: beesstvrdjmikijzxvahpmetqbmflyckfrdyoucsfigonurpuxqohpckoxbimcgztwwonayhctxiasvllmutfjkirkeshalpcflhhlxubbmbapvugjnaovzxtihbkdyhnyannkpkmycddepknekmzirmdcwgatsrcnztumrdzrstrqkcssbypkuurx
+              required:
+                - name
+                - start_work
+                - surname
+                - phone_number
+                - work_type
+                - about
+                - file
+                - workstatus
+      security: []
+  '/api/developers/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the developer.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/states:
+    get:
+      summary: 'Display a listing of the resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 30 characters.'
+                  example: zmishuvcxywreiyvpehctn
+              required:
+                - name
+      security: []
+  '/api/states/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: 'Update the specified resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 30 characters.'
+                  example: bkqlqmavheuktgczatz
+              required:
+                - name
+      security: []
+    delete:
+      summary: 'Remove the specified resource from storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the state.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/addresses:
+    get:
+      summary: 'Display a listing of the resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+                  example: yhgebicflantoortrxnlxrsxlemvhlt
+                region_id:
+                  type: string
+                  description: ''
+                  example: sit
+                0:
+                  type: string
+                  description: ''
+                  example: null
+              required:
+                - name
+                - region_id
+      security: []
+  '/api/addresses/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: 'Update the specified resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+                  example: lsqdicnqnvacvuymnesmyjjpofcemowuzysqvjdklhftosllhyaszftxqilpugnsavwxelqmhccjquulrzgcmsuaowchvxsaznohvwbhoqcvwrhcodcziunbajytei
+                region_id:
+                  type: string
+                  description: ''
+                  example: et
+              required:
+                - name
+                - region_id
+      security: []
+    delete:
+      summary: 'Remove the specified resource from storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the address.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/operators:
+    get:
+      summary: 'Display a listing of the resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least  characters. Must not be greater than 225 characters.'
+                  example: wgkegjevkguhmxjpxtfhpwtufxkemmnmvjwvhicpdmjtensyvpbisuopxlfckeoxqkdqwsnnezspqayakfgdfdnnbrcaeohccjhdinwhyfbijacfxinlupfwcenaikqospzaxlnuokivvhdlsmiqtrssewypnjlhiormkddcksddkylmnsnqwhgeuowyizwwlirrtfsmtywmzlonkydf
+              required:
+                - name
+      security: []
+  '/api/operators/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: 'Update the specified resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least  characters. Must not be greater than 225 characters.'
+                  example: hpyunyctnahorwhxdlwncguzvtftopomrcxcibubqldhnjluglkrjazoojhhbclcjnamvtatoyqjpdcpogzqyasavywojaweblduezilkptxfqouesebmpsgpnlpumoiiaumwsdctiweofvvdyqrgkhtrronalhghejxykag
+              required:
+                - name
+      security: []
+    delete:
+      summary: 'Remove the specified resource from storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the operator.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/regions:
+    get:
+      summary: 'Display a listing of the resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 100 characters.'
+                  example: saylmcaeagekobdtnkelhbjljuhhdnrlwoysbuyjkivkrwivzoxreumvwyqmjpnwkkcxs
+                state_id:
+                  type: string
+                  description: ''
+                  example: nam
+              required:
+                - name
+                - state_id
+      security: []
+  '/api/regions/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: 'Update the specified resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+                  example: ddmwcwexmptytw
+                state_id:
+                  type: string
+                  description: ''
+                  example: occaecati
+              required:
+                - name
+                - state_id
+      security: []
+    delete:
+      summary: 'Remove the specified resource from storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the region.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/activity-types:
+    get:
+      summary: 'Display a listing of the resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+                  example: dacfmuilbvwioqxurxjtrowtirlwhknhfacbwluzcajvgfztswqvdgemyjaqewrmi
+                category_id:
+                  type: string
+                  description: ''
+                  example: alias
+              required:
+                - name
+                - category_id
+      security: []
+  '/api/activity-types/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: 'Update the specified resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+                  example: fmjixobrysfdlaxmbydkifribronwyifdytbrjcqxsdkkwihilhdchwjqqfidpaszoqsfthcontciapsmmqokmbavkbzcjasdatree
+                category_id:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+                  example: pocqrgrdjdlpcjguskbovbjceaywgmappueeuffxedwjckncbajtbrplsjlpahjcfpbtgwudkctrsvgwikkxffikvykfxtfgbidkttm
+              required:
+                - name
+                - category_id
+      security: []
+    delete:
+      summary: 'Remove the specified resource from storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the activity type.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  '/api/projects/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: 'Update the specified resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                project_name:
+                  type: string
+                  description: 'Must be at least 5 characters. Must not be greater than 222 characters.'
+                  example: rutgsyuysrbzbjvhhxfnlyhffzxvnytcfeqeixrogrvzimukxzueulurxxdmrzkkxnqwpmljrxodhgujudcymdkozahoboftchzmbqljxhrknlrbjbwueahoxuavoshkmyhqd
+                general_info:
+                  type: string
+                  description: 'Must be at least 30 characters. Must not be greater than 5000 characters.'
+                  example: xtbrtrcaghlvtwxbbsqdlepklfrpwnlbwoinbvsoquculhpqtjqizwqzrdsahgcajhgtmmlhjggfkdftgchcyoqejyzdxrapidvgzzwozocyyqdivcayuiwbmwnncxusxffpdylqewwkwnszlzurtekwqvfkczzrupaderygpzarvfaumgotskjwuoyziwpihvpdrkszoojrgbrfqbyoiewszhskbxoexekmcudpfsjqqwzmmmwyuhztmzzakqvkfcwmhunxgywyvgbugvbtxnxxqpmcppqhvsguxbjzuefuxqjfnhigchlhznbcqcecbbfnsrxoomhtnibgdkahffgubnjzicbwhfatvkzgymctcjsnfehlhisrvcwmtdiklcqoidycdghaxxqiohdytrbzvrkdhxorgmmolitetuswnvxvslitugqgjifkflysujdueipbliiyxugpcihbkzosekrpbiydraqwvyfacnnbcmqttjbyrhocoscigbhzumsqfqsodnqzafffiumpdzfyibympsjlhsvfcjavasnypuclazrxkbykpjrsxytwubzvwmxgajamrzhlemmgljimtqturjgsomwlzjwbotkaaftpmjzmnvubdiiwquhdvywhvagvllqjrvkqmejdpqoniqjexkkwpsjjxlipvuglzuvikhaweabgnmmjxbdijosbzcfnwkcwpzonemzhuptcxvykvdnhmdbxmsxmcmmlohxkqcrhggydkxqsvdgvnbwmjodfufncyddhgzcpccwhbgdgutwnfaeuqfpgxinnhoclaibdpprhkvloqjoudvupgxgaljddmjnincbwsfwhvucdvrczlrvsqkouisvqgufwcxxomqtvzqkitpopmcyluyqqdensmsrhvxpgfzxceevjowvibzopivyyhuyylxtdjbvpomymchspueifqopbbcxmihfsnriwfduymlnqoimednijduwusixhgntfpspxfkblbqqti
+                general_file:
+                  type: string
+                  description: ''
+                  example: sit
+                status_id:
+                  type: string
+                  description: ''
+                  example: enim
+                0:
+                  type: string
+                  description: ''
+                  example: null
+                developer_id:
+                  type: string
+                  description: ''
+                  example: magnam
+                developer_info:
+                  type: string
+                  description: 'Must be at least 30 characters. Must not be greater than 5000 characters.'
+                  example: njjlxppmgdtxrylcoajgnhcnrlfvtvxgiljsingfjvcepgswiixktiemfukviqjuwdbpwaasiwtocfqzqozlivgdgywtigprtgkwebmzxpejmceltuuomcxijnuzzkkhedxetbinpuiqokuiqnctstippppnrsawhwmjumefahjswbshqwemtqffvcaussnexqqpuhdmvidosicsxdznwbsbkvxjmexsoikugnyggbirsijmgdwkqdfiuaujbteqphuwpfxsmvfcoylmvilvwotmihcwtmzsbvyudtwctidlslzcuvfcstohgseupwiuyyxgfvdbeqbrjdevxbcopxpxyfqlhenwomcjcyunsuwpyqdvaqqswsazkcubxljlfetvselhrediqajjnexnwxpqhdtlgtivvymwutuwggkilqnzygslpgrxngwbgbsdxgrysrcybybjmmmlbbwucqfeblzvakgljjaeozhreemjketbtkcwrxwlihxgvbnwudvopugmloxiausemnpsvplnlozjajbugnsfjwksajmyzcreohbtncmupsodegtamowjcfvrisjfblqhxngrltvlojbkfvvybiepryfokrksyytnqimozismugtqpwzcmwueeeypyhyoaskxkzbxwekvsxzmnfvgmsjkypdtydykmzynaiapiqzjipdqcbztknqeumhovpwwpyolxxpexwsjjenjcdydxmepvawupuvcbmepipflfpiuezffezckyflnegwdgpxilopwqyynnabeflrbtyvteqmkowzgugcesoytbwjkisvsbgwwpzobqxjblhekuuebljfirifqmjgatpcqwbatlijbokomgrysaigjhnvclqqgymswilssepjqxwzjsmxlovryletjrgqwlfwrnlztmythdqxjknvhlporhkfqrglsjiuryqouzqeqtuqwgdgsjnauncxsbnpwwgbekbtmbeocuwuxoeivkxxfcassxwhumnzrsiplvnzjmrfbwwmhttbhlyftkzxzyjdixogzzdiuvnfmmenufukwdvqsdzciqudvdjkwvnhxmhneiqhigzbjrlaruculdiulyifzojuilsijltwyohueavpadtetxmqcnmikuiqhjumnemofzzpiwwnruivlkytmlfmqgbhorqvjihvsjyawwrfswoezqvvghzhxxcyvdxilfdwejwvzksxsxsqddwfwopvpsevlvucqnkiqivarcztaykeklyxzcbguaiddxbzpwvcfoiedoaxtykdbawcwufeycdfequbmkebkswtyewhyljqvwpcxzfbxcibfrxagqeekywpryynllegjijwauofiafnbhozqzkdtbuoitdasgvqvlxxzdxqtsdyhefzrxxdewqwoqkkffvchkezcnocognfnobncrytkncmtzgsufkjmzawdqnrkqdgrcmordanbyaarknayfndtcjpyvlzexxqbmfibupemfnxgtrvpmzuwbzmkabkrzakhmuqvdelxfaodxzaqbpfoocszakaqqpcsguuutashxgzhqxrujpxjeuounsamqhdfxemltqqvgwknfpoyctwgxsqffokooooizharpxexbgujwlweoejvpyjhimijlrwvmiznpstkhqufojyfhzbcatcrprxjnzyzdhkcoirunitelvezchdeqrhyjkbdmbuoeskjgslwmgegjmvjyqnyduxkcizdcsuckeqfsbvidqjhbkypofvdmuvhogkxrmdoxvxhcnhjwqqsxqnsfsglezbkrrogcvnshigniuvowxbajccojlkxnmxnhynusnjbtmjuslduytgmtpqquzxprahsjcmnomedbjklihzjtjlidfwrjtjkdpgoviznbrqsyfzldkjocchzatpmugfhxrwmtuggndtafvlzksvjlkgftblcfqjzacqjxynwctluovsjxlavhqniihywzmdfdnhudosckzdjvwdalzopzdefbpvckregvkjqibgeluqqcuevlavtcgeljpbvsrqsdwsrlnepekvjozodkoiucsqiswyfsdveoajdkcvvvzpcigipffhcmrehsbqgdktgpiwxffrqmueuagbjeckmoomvdccgddwenfxxrdwlwvfrjfupkxojdzrrmgkgcwnohofswnqozxkfmaptblhzozvufjunjvvjjnsbaaoxuatbutxpuuarsxspyjrgpsgepdkqobfpoassshftjheubstyxqqgtztjxzrqgiladligqkstnvwxuoiwnavipuvehjuobgqbekumjeoruskyhjrkqgdoxxrjlvebkynbimcfavpatxcgiojgggzwobpqysynfazgvpurtqupavpxhdnozfcubypipkbcrdbzkoaqwvjkvlovainflxhvleylidfhqvqcptdxbmlkphmccgggenvgitixhzxkwljnvvatutttwhswepnvmyfvynohrxwlnhiejgfspvpdnqfiktejtqmfuesvxxhbszdyfwgmjchvtmoncwmgyqtqzdttlhvyfijackxpmwyaczwtkuedeektlreidhgxpfrtmlryoybfyhwapvrtwuwnrfxoixjxxysvttspmgrklwvexxnurzsseyktnumpdizcldjeoclcawlhcdpbcipnjradmbakusjsnmcrbnfwqkhjtryswowbeyqyfjkqzkgmsaeiyevsjktnewibsoongopnvmfjibdfcfodxnyxpslejjoiiqpfmotrxlhcgytddlhnfydcterrixcnwiziogoecukqqozzfrimkoctnuiwfehnlgtmvxuezndkacgfyztejzeyliwsgsaiodtbxwhjuxvnulmnwfvzxdcuwltrreisfvyhzckspvofmwdnyiinrcqadjowzmewqcivhdvfegwmrwxmkxdrpilmtztdstladqeqtdzruklebkgruhjbegmvjstlpypfsniaxywfkfzzamadvbiwdlfaitcdqusnowcavvjrheaskwmotqnhrjknsdydzlhaodnfoeuqtwlsywbcruzieewwnjzjnsqxezmaiyorrpaovyujplfonxpatzehvckheefgsyltrlddauvqootyuruljfsnftxtxztjscampatoiuirabxexalibnywjeqshbnvcksmhedrgdqpzqtxsjhwvgxttejykyeaqrkcjrjjfobimpmcrddiigazauaxgmmbhigwcoikajilodrzloaibhpfnyweduyphiyqbidwymnkrhdrfnwkmpciifhavofliqnyzggblnzejrbabirbfibmhzgmtxjrosqvtkqolfitkcgnqcgjfjowurgebsefeyxacscludnlwpdyvvlurvisygqbabxdxuweddfkdhbftqbghdvxbvjdezjtaklafaywwbhdrerlphdhbxgbgiicbqlbytwwjkzhdcwfikxidohrzxzqzsvcwsdrqpurfccxrcsskwampachswhqxgmzvmlyyhvuausbtyvpqqjpnvzbmwyohmqbyqvcafmgnrqmxqhjdrzyvsjjdstxrdodqoggwsbnutdefooyklivcpwewyctsvnzhdkoltgqfifeboxxohlaprkfhkpcoqtzorgzourkqfznqgvzxszxtuaossxfufobovyxvyrjcmmrmmnnawmnlzsmiscekxjcimckqylfieekvnqjhpizkxkycblzqdgizbhyvsuhsdplvonforkyvftwpvnmqpjdzxfwbtlzexiklverwqcaygyputsgnqtvbhnepbdxhtwmgzrvlqzylzlbjlgxcwirmupnczdnizuriokinfvwlbmevmjrmsrsjugmoscmivemklntdoctztcykokjgnbotvdixzbifosdydwoadtbbndoqpzrwgyogujasctxsqtkydoqmhoaikwlbigttaqeozbnfdghhwpabxnzeaqltmcrchueqwvlqkzeyekuawkrevaafwsxkvzrcdgggicukzxpqiysmeyesktknuvroqqcyhnyxrggemgkfodszbzucmpqgwmwystemsyzwdlezyvxelbmtkvvhxhwucsacoujixabvmdipmvszduxayzdipowyagdxgyraahagbtgyaetrrqhztdkflqntwyiopybzdvqsyydgqhxjvjgahyybdziitwt
+                start_date:
+                  type: string
+                  description: ''
+                  example: dolorum
+                dedline_date:
+                  type: string
+                  description: ''
+                  example: blanditiis
+                finish_date:
+                  type: string
+                  description: ''
+                  example: null
+                about_file:
+                  type: string
+                  description: ''
+                  example: veritatis
+                project_file:
+                  type: string
+                  description: ''
+                  example: rem
+              required:
+                - project_name
+                - general_info
+                - general_file
+                - status_id
+                - developer_id
+                - developer_info
+                - start_date
+                - dedline_date
+                - about_file
+                - project_file
+      security: []
+    delete:
+      summary: 'Remove the specified resource from storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the project.'
+        example: 12
+        required: true
+        schema:
+          type: integer
+  /api/types:
+    get:
+      summary: 'Display a listing of the resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 220 characters.'
+                  example: lqrbuvfbcxchwpihriwtqvzovklicsrghyitnbgnxualbadisvzkezdvftzmmnrer
+              required:
+                - name
+      security: []
+  '/api/types/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: 'Update the specified resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 220 characters.'
+                  example: hssbkgjwntinkfsnbhmyifaetmjdsrtkhlsgmkcvphcbdcfnncwdpxcgwcqiaqkkedmmpqsrwvmzhfrfzxaflsmbyxamabvjqhfvztioifwvkdjjrmfsegionftxofivolaoofarojrajspuoeqwxdasaujsjglpzquqoafalstgsapywqts
+              required:
+                - name
+      security: []
+    delete:
+      summary: 'Remove the specified resource from storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the type.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/clients:
+    get:
+      summary: 'Display a listing of the resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                general_info:
+                  type: string
+                  description: 'Must be at least 20 characters. Must not be greater than 5000 characters.'
+                  example: oyzdhyezkspkozlkbgcmetsoletwdrqdueymabazyutqgsomuuxragncqnmlghsreymxalxxghlrqflllytjghokwollcxrdmeqspqflqmuxziuqpbzsfyxrjwjtzlygoxwamyjzxmlqhdznrvbbxbfjrhjjexqmgvigrchwbgeynndgxtkpibjsltuiifrqkfscbctolikivgrntnfsagbnoevleeixuvujkikjvcsrlgkddicnhrcqiciutqoktcdvaaucxpwyimfpoxxlojbcvityrtxprusayessqazhpkyqjaujsrrclnosqdskasccbrtwzbagrzqtyfrwklrafhdbgsszzhaywwyxjbjjeminljjbjwggmyhzchiapkszmdcnlcpshtyljigyeuzrcgihjkkspbraybtxszegabqyshakzlktbubhudlprsojgehdckkgiuuuppvtlsgdvzvktalnmmktrwzeeuapwypqneknnzdjujgsxeykpmchwzhdjwsggjchemwpjzcrqytrnvrlhomzmtxeprnwklzbvqqrhzsizpbasxopclbowtirttnzihpdadompznofhjjukkiwfldzinohkiwudsyekwulmtpdwbmmlmfkgeuiuyronniczgqgwtrsmgwuoxrkbwytuwahwdpjvkcpuxbnrisofiexfbbjqtozzauxtihyyeakyoeyxokfurutfyjaaagxngybemxsvolnaoginfbobajtocmrswrdeqhgnnskhxgnyvtryvsghmyxfwlndgemuquvspukxlyjfuftxjagpvyeuqthueogwlqcrgrumnivkteknfckoowxpxanhcjistwujgttehkuamdzywwqincnsudtivvrprycqyckcrrydfmwifvysglospeuvacawqjeiebygppyozzykjfiskzfmpaudhbxgnrrpsznxvqluiuuglnnovuabcugusceflzumnhnyemcalenilbxikjwrsqztuzifeuonlmjdwphykvcuxylcuwzeyjqxbfdsjyggrzqrfrhexwmyvdacqybzbwpmwysdfxgewzxhtnepanqxllgcylbdopnxawgflujigkjijqrzjzotboezsmchfthxkqohhnbttpnbfriwhhjrfxmukjydfsqdwdjhwpeazjprtleqwtaozdnclswuiruyswguuqpzdmqcehqtlxzajyikuyuhatibnlvxxkftjmomswqycchoyqmfvhctrtdlyrsqcadjtwqharusgtvobtjildakknwklbgdgdfaycuylzbqeltnwaumrydmuuqipvbjrctpgbbpfowfozdsmsrwuralyiycrkfxdrkybomzgwofjkvzruwgcrwldpnvbvoerlgzwwmsewcuqwpeaictkegjpfvfflfjfcytgwcdvgpwogbgpuwzqgseijcvpswbbfssdfhlacxnhljxmlkyhoobsrfeyrhhibbbtyyostkpncqmwlcgiuoategprnbzopqaaqrfriudococzfituqdxwwrcfxmwaxlowtvfqbliydrhzjnevcmfpgicnnaonfnyacslpzbishignmvgluhggkdnlytgagnuymmthdabdohiouajxuppbxgynowidnldtlggxhojycldhlnjrfjeeqqnxonuwqhentvrreqjlokbnmvgwudmwkzxspccgwoxwxfzgobejlhdbbwluorwqerryhueaotlwlsubdsrbwushmzuzchbvpjbrcbdehqsvavpxubknpjuckfmpzjelcwbgislatmkjkjkucppgqfcuefrijikrhnshopkoowauyhgmgddopgmzyyzgyvngpgfhwdmvuptjwakkypigemhscdovdhwzdbmsiawzcqoyxberihcnlpolkowkbappzzftclylslfqhjgekosbqgqhsrauarlzljlpccxqftrptsnxdhmzjqjzirxnxqqlmoktmmllsptptjwnkdkbmsrrcjyhmrwwrkgvjibigrdlguxrnqzggcvippdjcsjhkeuqqupwjsyefhhphccgeoarlmvtxxgplnnaputqxikheoietfxziejclwfvbhryzilqnbezziyhprjiygnrwbavwipguqgexbohelrwrqunoesyjphwittdzneehnnfkymfrdanwlciwpermvxaajqkmjpeyfvahcvyaimcuiapozlbhystnoeyhyiehxmisrhwgskayiszbtkbfdndapqqdeykfkwivkyduzwiwhpoylkgpgenhgxjqzdgfxlgrsnwmkibfxzkdvnhadfpcqbqybwgdcnbppqqqpanvxpwvpfxrnvmenqoekypqdhsbrcfzquwzmrpwdyfrxwtvrhahwlcpjdflsgknkpyakceuxqphgxlvwbkpgwfcbyxakqvjcqladiqfhnsxndjfstcswgjgxyuzspubdgcremghrqpqcacoxilegrktxvyizzkfjzybrokfybyzszufmhevidlvjtsalvwbpfvchaaqaebyzzaydwbqcyytdpybcuyfsfkkiimhuzskoocqugobccujrejrqgdeuaspypeloxvzreqdwbpvojrewrbdpenzhmgctsqtwzzggegasseht
+                enterprise_name:
+                  type: string
+                  description: 'Must be at least 20 characters. Must not be greater than 200 characters.'
+                  example: oetknirfoaplfppeufdmcfyvorfnnqaqgmfseruygnaqhqkbgnkodgpdrojmehplbmlvqfkmlnose
+                category_id:
+                  type: string
+                  description: ''
+                  example: labore
+                0:
+                  type: string
+                  description: ''
+                  example: null
+                activity_type_id:
+                  type: string
+                  description: ''
+                  example: vitae
+                1:
+                  type: string
+                  description: ''
+                  example: null
+                state_id:
+                  type: string
+                  description: ''
+                  example: et
+                2:
+                  type: string
+                  description: ''
+                  example: null
+                region_id:
+                  type: string
+                  description: ''
+                  example: quia
+                3:
+                  type: string
+                  description: ''
+                  example: null
+                address_id:
+                  type: string
+                  description: ''
+                  example: eum
+                4:
+                  type: string
+                  description: ''
+                  example: null
+                home_address:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+                  example: fkyhhinzcxxtztuveqkxpaunvjglyfidsmanyvwnrrlsdvudnykhjrrivmcexqkrfamqcbhpqgmskfltzuwbdacvscilylifuwvdvmfuwtbkhmtztodemyhdlwckaujkkisgwzeumsbhipfmyorgkkfasiobwspbcjuohydpjhwpalcrrmpclyywbza
+                client_name:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+                  example: ewcokrtgmjqhmpdwstrstiyhtccuisvlumxidzhiayhwimzgnkvyaqsledjwlumdkwcquhollmsmyifiumlht
+                client_phone_number:
+                  type: string
+                  description: 'Must be at least 7 characters. Must not be greater than 5000 characters.'
+                  example: kvapzcqmrjzhazqxwbdypxgkekdhjkecsaqtfcfbypikevyvoonuuuosxjgwbsqtbqdsxdxgdtyuupsicwvxggiumymnpyrwranxqnonyyjbfrcholcfvbcapnlvjhwpcqdhrapeftcxjsvnqmzejxkzuntrcrrbpaioguphnmrcdbiuwfzjeodtyuxudvjvflzmpankjwmyhaajovkvvoimvstscbisvvtuevwwoclimmdgkhrgbvuygdebkmhdsgbvoladxyetcqejptduzjzusqpwzmotakttojjezbqwxrvippargvypbaqhdisiippufodwcckzcoiuxgdkidrzultpbziywyvwddtaybtytqnlrrmrkmhmnnmmybegamlinxdiypcfpfzwdsjsnqicklmcvxqbwgcfbtihkacvmafdoffgsfjlnuphlyqlyxtnstlkqvzrhqmvxfptnbwwvvlkyjjnrjbhpxgjsuriebfneoqqmdpoyowcvqbhrviiezvnuqfzlewkwdefbuwodyxyhgcocuyqibotrnuesrdwlfpimxcomixfgggqotnfhnutmyqwgkurxhxsprgizjzzmvlwwmzlgbotovpfkmxjrzerqiblbtbwoheajnlugxydqshvihcxggdcoxeqlrxbrtxdjnqildkuakqvflqvgadjudnlvkbvevnsjstlipybouoyxretdzqsyjhmvwyjsyhdsxkptopuaonidcdesirahlzrminswishfsjmijlxnyzjrwhcvhxwfwkhcceyadpxsrbasmiwyidmcctbzyoxdovodgpbtayfylmvvkxblqioqhvytzbekbyqutgklcblijxotmlbnvgzbpfjetjgklybvnqmtnpxesrdtjikzzkghcdpkmxkqopgeiqttiwpqdzlwfltsscnrnpffhofjqzdquldvihivulzzpbuwfwdfrgzhxunvfozjrcgethubssfdypcatmaaxkqjlohhhokvwfyqcluvaltymqukauoggydzfpkaejfqiolsktdbpstyktffeeklyalygpqkrekkhfkeemokmbezgjbiebpygmmprgaiemyxcxolfhjtdfnmrfovbguvlsevnpmxzcgzhpdohhzhsxbrbllxzppfmvdmxvdartsrwgyfvdhblafqrokylgwiwhlpdykeavkvaknxlrfjmkeuykchhubmlofcjfxcgadvtbmxkyeeukcyxnvyogcavujxyiishstbrqfwoiwslodvivxezphheqalrhkuxuebklqserebymthjptsdkrpuxmjukcuquhfeymmlcgrjujloxfififpfxyqeivivtrnkhgmodkpkvrxcwnrwwoggezflqskmyycyagiazafbkvznqwzrlkaojxgwrqvbmarjnrkmefozuhgvcadibhrzgbpoeugeshsxwniqoecxuvudxauztigbpmcelwtrkxbgbwsrohhzplkxfmaixpcwrnxvjykvdkfgltnsbiggrfspybsiaenipwysvjhdstvzwbryhsztaiaplhmochojrqkwmftztbhxajyvbfkzzbmmkzvprtdkpqrzbeptpesqrahdwynsjwzmlqqgaqyivpkpitopkgndckhbqsqmimcrmpdawptkvxkedbcqjwdxkppzbejifpkpdjirnljlybckoxnwrueqcpqjklkowlstjydduwmcziecscsygtrwgolfwteqomnvzinwwcgpahdgrvkbnppwbvfzswldnexkmzseutjofxkfddswdwfydmlgplbjswrmrbnxattcwxavelwejelxolvrwigpdptoplmhlmtyxloalgftlfvfwwsdhjqecwolmusesoqiycksnmkiwaybkztmflgebsycoxgwvaxfnuaqdnxibjcxgjwvefmgulzrewzkntphimqlrnznwssucmtuhgynhaqtzojviaqhgsovauwxrxpgocyiciowfslctiokavtcrwn
+                client_phone_number_2:
+                  type: string
+                  description: 'Must be at least 7 characters. Must not be greater than 5000 characters.'
+                  example: txpxhgejycigozvjocbxfzuqdzduxqcplooondtsstdvbfxezrmdmwmwjcmazqpbrfbnoikfbdfknvqxmhjfaxpploluviarsonwjgforscijdzajnvygbknlucylxpgvxrnguivfwyygjvueiebcumzfddfypzsyxdpgurydiogmyimyqtrjttyxlvlbkrloeizenfrmyzfncmrnblkqcghlfmwlnvaqcdhwedovvbuz
+                client_born_date:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
+                  example: imfdbsybfvpgfyszz
+                operator_id:
+                  type: string
+                  description: ''
+                  example: omnis
+                5:
+                  type: string
+                  description: ''
+                  example: null
+                operator_phone_number:
+                  type: string
+                  description: 'Must be at least 7 characters. Must not be greater than 20 characters.'
+                  example: 'y'
+                operator_phone_number_2:
+                  type: string
+                  description: 'Must be at least 7 characters. Must not be greater than 20 characters.'
+                  example: gyfztsmelkitwug
+                operator_born_date:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
+                  example: mnixjsucmie
+                latitude:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 50 characters.'
+                  example: ghzwzhdhasdxoutbacpuhzun
+                longtitude:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 50 characters.'
+                  example: onpskjxcuwhptwpkrgxwhoibuerxppocpfag
+                file:
+                  type: string
+                  description: ''
+                  example: ipsam
+                type_id:
+                  type: string
+                  description: ''
+                  example: nam
+                6:
+                  type: string
+                  description: ''
+                  example: null
+                order_time:
+                  type: string
+                  description: ''
+                  example: officia
+              required:
+                - general_info
+                - enterprise_name
+                - category_id
+                - activity_type_id
+                - state_id
+                - region_id
+                - address_id
+                - home_address
+                - client_name
+                - client_phone_number
+                - client_phone_number_2
+                - client_born_date
+                - operator_id
+                - operator_phone_number
+                - operator_phone_number_2
+                - operator_born_date
+                - latitude
+                - longtitude
+                - file
+                - type_id
+                - order_time
+      security: []
+  '/api/clients/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: 'Update the specified resource in storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                general_info:
+                  type: string
+                  description: 'Must be at least 20 characters. Must not be greater than 5000 characters.'
+                  example: fnwogjwkmcdchlegwsnhfvdcfqczgyatqzkufsrbczbfgnuodmiucrpmuterwibrfbbdrtsgnrsdpgqhctbtnkexktbbnohuziqeydawtgyacydolvhgwdidxwzteofayyswvwziurifrlnpacupreypxhtbhwutpwrqtkrvcmcbhmqjuoekqirxuqcjeqdimbhjocahshihhbnjiryowvflkbjjbhobrcnplppwcslfwnteswcfxffzhrqhfeelcpuwmvdlvwbwybejecgeojeqvxqknqdqpgarqqlnlbnetfihgvtlnthgqsovrirbwxitavnkzeqekuryfzrgestlxqtqanotalsrtijmsrcqpzmjbuxbdblcnrffxhoqiwlwlwsqybtjylzzqbmufrjlapllhqjkrocxamiyyeylzizgjvxhfybwjcbsoftljfqquhczyvqcudfmfanabquuuwzsapydwiauoqawlgbanmlopfjgcyourckqnhzpjcvyzvtenzgctgtgcdzldimwvdrjiwmkyozsowjwpeowlfgsgkhmbtqhksqtddosvxffqokkxakhoheoinzkvnpgxsbzsmebtpkadinpkcendpgwcxwjzqovorpahnrhrhtkestnrtjztjcpwykodxjyylvzhgrfdkbuxjnatnvtirhlwdfitmfcttdtztrbsaherkansmyxkgkqwahjnvsxulmilozrvvuhxxocyxfvvkykmogkozwuqucmlvdiuspvvxmfyqtbbcxcuudbsalavahidqrxtgmzkajohzkzwviugywzejafgrrgvedrxolhtsmlqgayvolfelrgljkfsctntglccryivfdcujqwwgrjgrhwtothgflxyvfaxypqrumhbuvbehsdfqxckvqasgwwlwogoqteuvokyrkklldbrtcqxbbaaizoxidxcipgzeenhbneltjjvcfnkrddnypedaqffnudgjzzojxdforgqxvlxynljgfxprclmzdgczpekmxfelpbuurtbeojklvnnkrhjdmqvetihojxoffhdjdzwoohxvrstgopmzxdelhnfttenycieaqcydezkddyxrrtrxrouswrvqzquphvzprpoyjwdswcmgcghiascuxggydugakepqnqxmimkazclqsuoaixitedeedyausemtjdduzaeudlamifuyapyfvaxfzjgrlnwdcrcclayqxsfjvihyiphbifesciypbteuvbpcnffomxdhhvgpbmqbccjnqkhglfxhpoziqehlljexufmnamacihhieghmeteeylrejnostofkyiakdsasnhcctebcemnnbekwzzefpfgburvlumkiiirsmtfydbcxnrlmguocaqzvgbmzhhjqozzpewhouziitebxthcmhoxuhopiudrklecszjkrxblyibuzwdhfyrfjgcwubnbcvtkahkzortfrbnupkhkibowxzvknhwrcvdohpyvwqywjxnulkfljnzuhwlqtcdfifmbgcrjyhmyxosbeddvoiyzszzcrtnnfhgdfajqzzqggortalqaazhzsmtgdnvvkixrkesabnrasqqflbxdllnhgnwbapyyufhqtvyclmhanupfesvpiqndwkrzfpzmihgrowlfsfnzpucrycofdrrifntyohltjmeomfjptypootjextgwkxmcrektcoiwcvesfsuzmkzbmslounefrdrrmqypryxeohrpkuyhmovwmutbbouzecileemmeremzemyknhstcvsyrqufyluxlutfnnpdzkvxhdgjmqnmklutallbqlqgjtgfccvcqqbggphtrpactrepchhnfbjijjuphodmffkfsjanwcerhncuvjqabywbwjtoknzebgfvguibekekywbvgvwaohnktrtuqjmkrftqpbcdkourogjtzxdkbclmdjjawosocnagvzbfguigdgjxvfdawdysqlvosgothualidjqfbmlahfduejjdzlddcfsryrlxztxmowersanifcqxvzsyycjgbugqtuganndxhlxuymickmvqqcikzsuytuwxiwtravexrrhvbwdcftwzynijumamvjxqvhbdmnmdquwsioezsepelxqjeshsvmkxdvaoxtrmxktqieiejsqtwncfcyglzibdbkyjowcyloiphianpulmchbrhovwxaxtdmijtmtbvzcebqpwohwxhcoktlwdfcwwqpnrzapmqcipitvxoowiyegykwkeulxtryjznmskfzeotnqdpacjjxzpmdhfrfqdkibgkobwzkmskhxcnzacfruvyidhewimzpndgxwktlcmhutglbelyizcqrmaebhpxjzznwbxrtzzrlmociaffcbekshzhtpudiwhwnqjdfxjbhqxheghutipunjuckohmuokqbdgmaguwihpdkjklujztfdpiyqvaujsyjfdhatanwlpbkmxsorexqbuyyugekmnlrvalvhtsmucfifsdxhcxdrgqrlxrerwisylioeclmwjtfjrixpydrowqclbraykdxrktfmdjhqhxubjcldjekyzoazplulsahksydqrglkszsmnynnrfimauapcjggcumghhrgwrgixscvzecwjryulfpsbepieiygatjclukccinlbmrchbdarkfikrzdxskbymsweqrkrtlowxiabhpbucnsmadfqyvjrusfsjlzknrlirmcjixvdimigdubhqsdliszlqfuyewuvmtrbbphqqgmmzkkiucbvnmokmxugpzwqqyxodwzyctzgytkzmaniuxsjcknbwgfodjlkepgzazmsluxbylmezyuayfmoljwnvvfqccakebwjxjpesxtenqvwpnbqtfatsgfxwgtcehyljrtyqmwmoplwmllcspbdxxsvhqcqsvgjdleqmtiycybpsoqesoedzkfccuvazdrjmirlpsqnelgxrotiyyjfdkhswqsltfavazqkbgamgatbbxbliyvrkvwkicmanygejjqwntdnkmqkmegxarqhlrmxavhkjaoxnowprspsywgkisogsedgfvsoerjgjshulekiicasmajxdcopyjzfscuvrsfuioioupdlhlbxsxjmfuijpzjjytcmqjvjfxouzxzdhfmaimhcukqcqicccygefhdkglrpjogtayqxxbxpcwojhaoiiiwyfwjixornlojgbrpinbzenwvixvvnjktlltdgkcsqifbfnxjkfaugkxnevspjvacoxkftaotbslmnakyoyvydxeeospihkhqhzdojppffgvgdrgxogjdxzssjkprtavtntfurscpaaljuyjawzmccmfkwauskfqsmpdqtovrewrpxjcjxgaxulrgnbulcayyeagykaqmsdidihpytjlbcujcntvfroidmtimrtnlptdcettujggzdffjibyyrymfoihudghcjmiicurkwlbgvjxbddbbbtalmeqzvviumawlilwwyqzdpnobbhuoepkshmlibrxndpueidnfmqqeaamcuxjmpbycwtvmkgeptveqscbafsvbwngrkzpzmcguzjkmuvyimlirzivexgelmxkfrwgzfzxzjnueokiffqvvjyltwplgdcungfqmgemluvrkydbnazepyouxdzyfrowlhvgplicegormyglvlryopplhtbxcdbesembksssnhwfbqjyhbqxeyyufiknwlslulkgsvmkuzltvhssyhchrhdg
+                enterprise_name:
+                  type: string
+                  description: 'Must be at least 20 characters. Must not be greater than 200 characters.'
+                  example: uclbbkkiecnmaibmfwkptqgyisxdvtnutcadxbembeqdwremweiqrkbkzwjqzxosgrjocejtjfqiovp
+                category_id:
+                  type: string
+                  description: ''
+                  example: esse
+                0:
+                  type: string
+                  description: ''
+                  example: null
+                activity_type_id:
+                  type: string
+                  description: ''
+                  example: amet
+                1:
+                  type: string
+                  description: ''
+                  example: null
+                state_id:
+                  type: string
+                  description: ''
+                  example: non
+                2:
+                  type: string
+                  description: ''
+                  example: null
+                region_id:
+                  type: string
+                  description: ''
+                  example: id
+                3:
+                  type: string
+                  description: ''
+                  example: null
+                address_id:
+                  type: string
+                  description: ''
+                  example: qui
+                4:
+                  type: string
+                  description: ''
+                  example: null
+                home_address:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+                  example: rzugtmuljyiaheiyprbfqxxcuwetuqzbtpyqhfcwsnyfdiilaelvoqzrpryhoxwmhdtaqutdlwgnizyteizfrytmiazehflbwlxmwkinwmbbfgocfdrjddhtnfpfojblchomcuztwriajheuwikfuukpywnsuaowuzwgmqnujpdcbpjcqpcxcpmyxejtngzbejy
+                client_name:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+                  example: svzprnwcrxfshcynhcvoaqzdbxcbzsfkvmowtoxigyehixgwykxlfirmczjjlxfcsckpjjhkimemaqzugjerpmbjrlhlgdmfaoizrrdigcgpqusdfqpkbkzolrinjbzyopozourcgbkcknfomlejovwgbzoqzdiflvjyduudeszaeh
+                client_phone_number:
+                  type: string
+                  description: 'Must be at least 7 characters. Must not be greater than 5000 characters.'
+                  example: onczluzshnvndnaldfurmnmonkjyyoukjetarrcucaubamzvipbddzvudkdwpanymepmofdwzuphdlbwszqkozohqmxyhllmfurcfvgrbcektvzoimmocumrzpdnxjzdedynktsaeszogzzzaxqlvjdthpzgbfxkcphxerdbvihzxswyvuewjeotjvucnrkmoqfflwvmhxxiupvxqfdemhpvebuzukhgxufqjfkpggjqlpqhfbalyomqyexkipfcjmnhfnsnwmvloihwesdpjiafwqxxiepbbuvfxrexhtpezvrmkujlkirvespvppynktdpyanjhusmrrhfpfaidpucghbjpvvroxxmptxdtnubsurnbhcypqfqecpgfymjjuiuiigvcyfxczbdreuaxyfftiyewepwnapwrvcayrzbzalohkpymrdziqhgjwlwdukhzxpaapowyokotnrifyhdbzreewewypztztfkgulfxzemspolvqftmutvxqsstwyanmqiruitahbtbfdcpcvdyhwgeaxnnmjxnfjjoqsolbgwghklmxpfweqkxcmtytqfipuuvwopbfbhhqpdtmxrzydbuzurdgvkfqkfiipzccllhefmauaigjnrqpoevgbmamlcybpidmjkwxljxhmsvmjvdowyxmtrnudeswuynjvxrzdwgmuppisychekehdgkebxyrybbosjithzrockyxxyevzdkqsqfsblymxszifvqgzgbhizpttheimrgbtkgjtlizwbuseeudjwrpywmbcnxltrknzjhssvdrgzoylwxtxbofatwotalluesarjbaedqsyjmzalzjaeicuympcxanqaizfkmylsejjxvuzxmgfuyxsjsarpljpkjnowiwqvjskcfdcwmhphzhukffijkhwlwioeomvdgozameezuqlabffklxunmbqmysfrzwikiaklvfairsdhfedfbodujsqlhsnvkcwcnvisvvhxinuqfxpvubutwevehtpvjxkystjltlfufwcpmybkosdmwbvvpulmenmvairsemiwcchrkoexobkdcbivbkrztuwblkgkklasumsdijespznzxzqmvakcmnsjchkwbuiwcasljvvcdimpeefpbttgnpbeusrvgjvjtgaddzzmtupjupmijkqlftmcamwdpyrohvxxwycifrzeraiqbhewfczwtmwqpizncbdznlfziklleivpylyixxvidctbjqqugozfomvqyiiercgcbamulvmfvqaffcstivdrmndathfatwwmwvwtotgaajtmzledwjjivxhudhdkeertoenkfrjsvkjoomeeonrnuadijjzorcujrbpkgzfbmzbklxzknmjnglnmybizllomgtiefjxczzxwqpfnaadrjhxdthnpmcvqrweokaavcewzjmyaysotbtuspuplernccoxfkhqtnpmzfelppektcqisrhnlnffjqblkmxfcjetuqpzbldmprtdjiqcmzrtocavighoelwpokfsrmcudktvhlqlmzporelwdaowtwxzfaerswhueaauowsggidawsfuwfwwywutqardfontkdmswrwpvqijcvxrxvodmolykrwgzykdcwdryzjskmyyqmpjaepooarttcecbljpyrvwzjigcudjpvijeoeubddjzurewmyhkhjaiwqtoqyvfsioopuqtfigztsjrezgggjyzfzlttwkphyqpnqcoqnybzxqzezsypwbwghkuqpszewsziagowhxfiqqkwtxmbhtcuvpeajwjgahkxbzmpgphlunimtfzgflbhhjcpglgniopkzacjgncahubgstzifadjwreewzivtusjfnldsccwkwnydjqtsyifrdvzizvbrocwckaieylpdjnphvjapcrhxwnnlkwqrwggitqrowwmjweqijiiczwsvkngldupjfssjwqsfhjfadxvgowitwjuidconbtkzpyhyxedpuendpwaocgkzgfqnatqjgxplknynnrpgqymqqrlcpjwljigrckylkczlqcqnsqizahyzqpxbjaoxbwgstundyeekbfrytzgrwrdarhsrrpnnzuklqpmnlunnjoaxuksrikflrdspjbmrkngpjjxjywyrdmkwtciqxeviernhgzfrzvlgbtiskpziayamsfbfayhmupzavhttaxwecqbrixmtnaexiuheyelllbehtblyltqvnhodahqawhmuhsenkhqjqwfreqcroogvgyfegeeymwydfwpkskylaglvondlnosthleqlbnuwyleggpfygqhstyxsfqiddfyeesinfnkrhzbmghlworngtfdscupefykclstfyvgtsryanoyfgpywymgoylsvkbizxeceivldgwusnihxzudhutguqzxyntkoxqsqxzqmmvvofmotpbbmnctulcbxmdbobenbhxqhbmflexuuofkkfifybzvmuoxwssmqkijdwicrcxokkbhanxnbvffhsbqipqfwiimpxwwuyxvnkjzmvxlojtcechbhojwhrqqjkfvjzszygaqfkqulyqjqnbtiuighgcbztstjfhwvpfxsldrprzdjwqoujfyspvgdspdogyzqibedjrridoqwuxmiedjfuifghpwmjjorwcxopwlguypzmyuwwlxwvvbyapjmvntvdupkaxirwbeibbegpauwuauuzfnxfkdhtesgqgnvehexxbepvhbanrmwitiiprrmaediksqxovjjlonajtruebdampmpusmvqvtptwvnrysgvcbutduzzmwetupkixiiypnaokeacpuimztbvhmglvxquzwwsqcgrylejmibpjiqihqgpvbfhckqauhoihfcoxyxuvmqwarcjcxopmzbaxqzwqcmjyjrrypcumxgtjpkznpahztdnmaypcqlasvybhxbjtsghyxssvjdmylstaynksxznctzeilgjszqmxmbtsnxyytwmvxmbterjlq
+                client_phone_number_2:
+                  type: string
+                  description: 'Must be at least 7 characters. Must not be greater than 5000 characters.'
+                  example: kbrlpilcxsdcmwlwmqzlpafiueuvjyjfzhaqocdotponfsnsckfoegisosrgicdycizmhnlzbppvaxyofzvbrrqxfkkaptcevbxafubdhaetfuqnmmvtjvivpmwbwzggevcpjooxnhzfaaszhpozucrgzmfhbgwwbpzlqpcorumnvnhkkztqpxolnplcvlutagapxoawwpafqchkghixumsmclrqpmbwrevdqyimoeicyhnzclddugzqbvfabwgcaddjcbsyvwuzibvosdllnvlxpzhopllcotwfgkvrinlnpvhtrvzcgvoxrzwzfckviwpvvfirxyqbsessjgrrlqufhiiemdynyrtjmgyavmtpecrykumbzxzhntbxujfvujedqxhldssbpynxesztcnwzotmyxpzuvmfnyliujbhqtzmilljghjtzxfnamepglvqoefatvrpwhmmamprpgzdslzciqcnrksaabpdewlfaowfeneeetxwxijsiqduhuhflkeuinzsltlsuteyrzyfeklacivmbkzvcuoodrpkffoishzkioufjyqmolwjievwldesijesyjnqkgifhxdznxuuwwlusizbjjwvaponlpncixxpzugwhmpobcdbkkipwotxrehrrobfxfqbqumpbutikfylkftmjocolnrcnisbjhiirsnqcfamgcczdskpyapjoxrtwnzapvnfuyypppvdymvvzczbaryryqsshwfhqwznhbbqbjehqrrychsjnoatmppdidbrewnficrakuhqzgzqurugoyzoulnlgsbxssaqukkvdbzvvmesdawhfpqpvbhajdvssqcjvozbfhrsgzbiawhsfdwqrkbskxhjadscbgliiumvdrvxfezkaouraojrjvwfrbudeftluqlyracnzqhdvedfbzijmmrovjndxsrlsmofbllxvwmaboaeiiehttkthrwpdwvxaplzcpfczhugdofpinauufavkjvjwjzodhejbmbxxtprhpghbrxvckmlmthkoerptanbskirlaskedhictapshlqwxnwoxcgkkslptqoanlifzpdaejxddokpjycqucyuwtewaalyqgavpoyuzttysrxjaqakkuiaekjfxwpoksavozzyklhshhaivahidavnluhreodjxpztbbjplbiiqmrobindqlfyxhgpnexutybcnbulnkmltajgzxogauslzehooadecargsihuhehyukhdgxozxrtyblhfvmajrvzvfvqrnzjyzoavdpeyyrtmoepyysomccuobhssjjbfieagksnqyjricbgkzatbtlphqshkepynnsyzhsdlzocuczmfjusnvvwnwclvfunwzcpmahinjrphnlnnikykilugvpqdwhmuyemgmhbxbtbwbxzemutkynobirynmcuujxiakkuxzneaslntgwqukfakijaogzraxkkatumjdctcknxqodsxupvaxwvvrpjkftucrwanldfsdftcpacceulmgvnzyifnudalqixjutdfnvxnglidnhpqhggnymodkmycxsvzfmlbjijuubhrvlvzyrdvknkzhffmomobwbkcxxcfvjtdyqqonzevtownrcqjnrehyqhjlkgmxbzmkgisfnwdodszjelzmrrsojwkjpwihqlvodvdzngkmwwggjvonplhssxzvdxvnubcczownducemxxlhfelfhhvosppqttmvgqfeebylxqmerybaagxjvarpspbucmepvijqlrbywonietfwtutvqeilcxoptzemwkizpccuzachqxifjzjdjgifhczkketwshekocnnlhlqqjpixkupcausjqzbngmfbczteofvzzokktddryflhppnvgfwdhopqgtloznkuzbpcwequzudquqxjfbdyhllxtqjzfqgrmetwwkvcwrkthiupxuersznciuyynlogdaywgrbixjtcksnuqdvplzoxpgzluljrdjahjiqnpxjpyzqlcculsxfjitsaayyijtpyntzvieipghqasdccdprwkhwzetcxejxkagexhockxwtlqawfnvtxmjirvwycqlktiabucqqxhngmitdjezwlufqrdmzipqgusokzxqzwcypvwuvihjirjmntgrwbnnnsysczrcidmmehrakfdaoyswuwliutqalvrzcefkztmvabwnaqlihfimsrtyzmixmsqcwabkftcietdpyhhoglhqdpvtbaycczphabhrokovgsttxoguewlhgowegfiahavryzgpzbfshiuikmbthvvkoyqctdjfvxacoqonfggzqzdyecobcqpmmjpzvkeormheyhoqpfimvvdnthnqbcbufhirybndcudeojgqvlluilmtfazaniregmahprhbgncvqloivvvqsbftgicwqrybcmgkhfuokfibggcoqnzazqnjvsavzkznkuijtitpkcospubajzzfexmxzhssngsnsgngyfggjysnbmgcnuahkmizsrsntxvtilwxjudtzuaahclmrqghwjvxisrsrymirmjjcentpfdnnwjsxsckessoqynfqlxorcotzjxtiwxpmklzsjmatsmbaptjgxwyefhejngptpdzkqlogyjvzstkrnppzsrpoowaugljfmiiqfszgvpigbbmsxnuwpehmuwsprcesiemvnxdvtlhzbuywkitsoymfmlpdemooleykecoiqytkmlnfhuwpbkwpdfbkfahbxoinvorkczirreioyribaatqhocuzuetgyvgyczfasaneqcrpsnqivszgvpgrifdoyrrlcytqhymitccmhipuhgbwjcszmkedidokkiazmuschbuxwawnrkgutfkrbijylprbhxudiqzvybekwejnkfextofvlgcqsahimypgxvkfxntqkucdadsudkbgwemitogqqndgcadsqyuhnamryvgveznpyryohrtmdiljvqjainntlolxdjghlyplzrodfsemhuuzwesimlaywxruschhznyljvvhsbwfidcoyofpmmgtrjovgdzaxqkodvsgdtatkvjhbdhljauzztmljgkyoegwxclzelvgasrqhimesllvokrvfwrzmeyetokuumloszysruuvbqknalvkvwtuupapepyfpeykkpiaytknczjjwwtnajfvhmotazwfzxfqymrmzkdvbulxdrrrgdbfsszhistytwbyxjxftjqfzlbfuidbpiuvalupckeqdnalhpfldbebzrvsxmqgouzjwdtcmjfiqqkfnmchmglmqhfxkunujrzdsagwftqfmmudvznjnsscrpuyiseptlaumgbnkvcfejwemhwuemwuywudpcuiujysyxvxxurzjoxxywtoqyhvyjaexztpzppzxfjhdidaiidoshdxjxkrusluvpynnqhbcavxpqfjch
+                client_born_date:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
+                  example: yfcwahrs
+                operator_id:
+                  type: string
+                  description: ''
+                  example: dicta
+                5:
+                  type: string
+                  description: ''
+                  example: null
+                operator_phone_number:
+                  type: string
+                  description: 'Must be at least 7 characters. Must not be greater than 20 characters.'
+                  example: kdbxibgzahwjkyyjsgae
+                operator_phone_number_2:
+                  type: string
+                  description: 'Must be at least 7 characters. Must not be greater than 20 characters.'
+                  example: rjdjnf
+                operator_born_date:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
+                  example: ''
+                latitude:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 50 characters.'
+                  example: kdpchbwnxnn
+                longtitude:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 50 characters.'
+                  example: liho
+                file:
+                  type: string
+                  description: ''
+                  example: autem
+                type_id:
+                  type: string
+                  description: ''
+                  example: excepturi
+                6:
+                  type: string
+                  description: ''
+                  example: null
+                order_time:
+                  type: string
+                  description: ''
+                  example: sint
+              required:
+                - general_info
+                - enterprise_name
+                - category_id
+                - activity_type_id
+                - state_id
+                - region_id
+                - address_id
+                - home_address
+                - client_name
+                - client_phone_number
+                - client_phone_number_2
+                - client_born_date
+                - operator_id
+                - operator_phone_number
+                - operator_phone_number_2
+                - operator_born_date
+                - latitude
+                - longtitude
+                - file
+                - type_id
+                - order_time
+      security: []
+    delete:
+      summary: 'Remove the specified resource from storage.'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the client.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/register-user:
+    post:
+      summary: 'Foydalanuvchini ro''yhatdan o''tkazi'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: "{\n \"access_token\": \"eyJ0eXA...\",\n \"token_type\": \"Bearer\",\n}"
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
+                  example: qdhejtrajzkdlokxilmkmcdvehgnqkutibxtfbfslvzom
+                email:
+                  type: string
+                  description: 'The email of the  user.'
+                  example: testuser@example.com
+                password:
+                  type: string
+                  description: 'The password of the  user.'
+                  example: secret
+              required:
+                - name
+                - email
+                - password
+      security: []
+  /api/login-user:
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: ''
+                  example: voluptatem
+                password:
+                  type: string
+                  description: ''
+                  example: nobis
+              required:
+                - email
+                - password
+      security: []
+  /api/logout-user:
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+tags:
+  -
+    name: Authentication
+    description: ''
+  -
+    name: Endpoints
+    description: ''

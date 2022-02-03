@@ -13,6 +13,10 @@ class ProjectController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @group Authentication
+     * 
+     * 
+     * 
      * @return \Illuminate\Http\Response
      */
     public function index()

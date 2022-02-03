@@ -19,7 +19,7 @@ class ClientResource extends JsonResource
             'general_info' => [
                 'enterprise_name'=> $this->enterprise_name, 
                 'category_id'=> $this->category->name, //working
-                'activity_type_id'=> $this->activityType->name,  //not working
+                'activity_type_id'=> $this->activityType->name,  //working
                 'state_id'=> $this->state->name, //working
                 'region_id'=> $this->region->name, //working
                 'address_id'=> $this->address->name, //working
