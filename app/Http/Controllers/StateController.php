@@ -10,8 +10,9 @@ use App\Http\Resources\StateResource;
 class StateController extends Controller
 {
     /**
-    * Display a listing of the resource.
+    * Display all states
     *
+    * This method is used to display all states.
     * @return \Illuminate\Http\Response
     */
     public function index()
@@ -20,8 +21,9 @@ class StateController extends Controller
     }
     
     /**
-    * Store a newly created resource in storage.
+    * Store a newly created state in storage.
     *
+    * This method is used to create a new state.    
     * @param  \App\Http\Requests\StoreStateRequest  $request
     * @return \Illuminate\Http\Response
     */
@@ -33,8 +35,9 @@ class StateController extends Controller
     }
     
     /**
-    * Display the specified resource.
+    * Display the specified state.
     *
+    * This method is used to display a single state.
     * @param  \App\Models\State  $state
     * @return \Illuminate\Http\Response
     */
@@ -44,8 +47,9 @@ class StateController extends Controller
     }
     
     /**
-    * Update the specified resource in storage.
+    * Update the specified state in storage.
     *
+    * This method is used to update an existing state.
     * @param  \App\Http\Requests\UpdateStateRequest  $request
     * @param  \App\Models\State  $state
     * @return \Illuminate\Http\Response
@@ -58,8 +62,9 @@ class StateController extends Controller
     }
     
     /**
-    * Remove the specified resource from storage.
+    * Remove the specified state from storage.
     *
+    * This method is used to delete an existing state.
     * @param  \App\Models\State  $state
     * @return \Illuminate\Http\Response
     */

@@ -10,8 +10,9 @@ use App\Http\Resources\TypeResource;
 class TypeController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
+     * Display all types
+     * 
+     * This method is used to display all types.
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -20,8 +21,9 @@ class TypeController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created type in storage.
      *
+     * This method is used to create a new type.
      * @param  \App\Http\Requests\StoreTypeRequest  $request
      * @return \Illuminate\Http\Response
      */
@@ -35,8 +37,9 @@ class TypeController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified type.
      *
+     * This method is used to display a single type.
      * @param  \App\Models\Type  $type
      * @return \Illuminate\Http\Response
      */
@@ -46,8 +49,9 @@ class TypeController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
-     *
+     * Update the specified type in storage.
+     * 
+     * This method is used to update an existing type.
      * @param  \App\Http\Requests\UpdateTypeRequest  $request
      * @param  \App\Models\Type  $type
      * @return \Illuminate\Http\Response
@@ -62,8 +66,9 @@ class TypeController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified type from storage.
      *
+     * This method is used to delete an existing type.
      * @param  \App\Models\Type  $type
      * @return \Illuminate\Http\Response
      */

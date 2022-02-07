@@ -10,8 +10,9 @@ use App\Http\Resources\StatusResource;
 class StatusController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display all statuses
      *
+     * This method is used to display all statuses.
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -20,8 +21,9 @@ class StatusController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created status in storage.
      *
+     * This method is used to create a new status.
      * @param  \App\Http\Requests\StoreStatusRequest  $request
      * @return \Illuminate\Http\Response
      */
@@ -33,8 +35,9 @@ class StatusController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified status.
      *
+     * This method is used to display a single status.
      * @param  \App\Models\Status  $status
      * @return \Illuminate\Http\Response
      */
@@ -44,8 +47,9 @@ class StatusController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified status in storage.
      *
+     * This method is used to update an existing status.
      * @param  \App\Http\Requests\UpdateStatusRequest  $request
      * @param  \App\Models\Status  $status
      * @return \Illuminate\Http\Response
@@ -58,8 +62,9 @@ class StatusController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified status from storage.
      *
+     * This method is used to delete an existing status.
      * @param  \App\Models\Status  $status
      * @return \Illuminate\Http\Response
      */

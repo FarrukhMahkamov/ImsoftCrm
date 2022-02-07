@@ -10,8 +10,9 @@ use App\Http\Resources\OperatorResource;
 class OperatorController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display all operators
      *
+     * This method is used to display all operators.
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -20,8 +21,9 @@ class OperatorController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created operator in storage.
      *
+     * This method is used to create a new operator.
      * @param  \App\Http\Requests\StoreOperatorRequest  $request
      * @return \Illuminate\Http\Response
      */
@@ -33,8 +35,9 @@ class OperatorController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * DIsplay single operator
      *
+     * This method is used to display a single operator.
      * @param  \App\Models\Operator  $operator
      * @return \Illuminate\Http\Response
      */
@@ -44,8 +47,9 @@ class OperatorController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified operator in storage.
      *
+     * This method is used to update an existing operator.
      * @param  \App\Http\Requests\UpdateOperatorRequest  $request
      * @param  \App\Models\Operator  $operator
      * @return \Illuminate\Http\Response
@@ -60,8 +64,9 @@ class OperatorController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
-     *
+     * Remove the specified operator from storage.
+     * 
+     * This method is used to delete an existing operator.
      * @param  \App\Models\Operator  $operator
      * @return \Illuminate\Http\Response
      */

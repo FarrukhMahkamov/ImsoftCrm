@@ -11,8 +11,9 @@ use Illuminate\Support\Facades\Cache;
 class ClientController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display all clients
      *
+     * This method is used to display all clients.
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -26,8 +27,9 @@ class ClientController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created client in storage.
      *
+     * This method is used to create a new client.
      * @param  \App\Http\Requests\StoreClientRequest  $request
      * @return \Illuminate\Http\Response
      */
@@ -62,8 +64,9 @@ class ClientController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * DIsplay single client
      *
+     * This method is used to display a single client.
      * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
@@ -73,8 +76,9 @@ class ClientController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified client in storage.
      *
+     * This method is used to update an existing client.
      * @param  \App\Http\Requests\UpdateClientRequest  $request
      * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
@@ -110,8 +114,9 @@ class ClientController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified client from storage.
      *
+     * This method is used to delete an existing client.
      * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
