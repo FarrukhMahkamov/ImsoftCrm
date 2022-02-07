@@ -73,35 +73,35 @@ paths:
                 project_name:
                   type: string
                   description: 'Must be at least 5 characters. Must not be greater than 222 characters.'
-                  example: cjbiulepzbruljwrxclelddehvdnhaleavxcizutrufdukqksrlkmazugrvkngnwqnrxtlxgdippdshjrcrlarjgmfjjocgeupwlenxbybgroiehsigeznyxhsvmexahgmliwwepgpvdqlhoocpbdcishhuiwxaztkfgkhivprowlbaxswgqebmytrdnbuunqbqryvxlkjuzovrpwrkkcoqp
+                  example: bqbgmkjfufxypnbudszn
                 general_info:
                   type: string
                   description: 'Must be at least 30 characters. Must not be greater than 5000 characters.'
-                  example: xvtdxtagbabplqhucnlfcyojiieqixvlbhqnbslhavqlukyohdrjufzwduoaxyenbrulozzwttqozleznlqytkyeiuysrodugibhwsbtostowcmqolovxhnmykvqprpnntfhiqtnaacemlnxxjsrllkfbhdxummkzzdnltirczpkkhhkmjvdjjlsqxukbeeuexjzxalfkciffwuqydenaxpyezjtszvcvfjlbviboyraymgxlzuuorsztefjswhhmzbqbtqrnlkhhugvmqtxhebuppgrdjmlagfcumeurtzivqmvorwsfhphirauusntrruifmbrfndgnljxhmdodykahtqenqdobltlvluvbcjcpgcwppxvoowoxmaoxpthzabjoowwmijkkmvxoebnlbecazhxpyozmajyehcttryjwmbooua
+                  example: twqlftzhcbqtobxhiquamrwazcehwkvkcvwpdtuaywricshzeiwkxcybhqayxhwjowiinrvfbyjoicarikbhvyxysomqhkophszypaseougajxefnzmokhbxhlpdwyfsuyiwqooslhhjqdtmqtbmhcqxrvugrlbfbtmpbwffqtgzimtapzkjmvmnctavucfqxsidjarjdlkwecgjcyzcqhntyugjdqlyoztwkekwhbuexhgtskobhrjgiscdmqnablinfxuikvoqovzutllyqiqztcwigzvrkttkastqdilwbaevzrtckgotugqlwpwuduquriwuqglnxqzypliynvzxujwejvmqrfqmlnvtwekafcvengklmrhleynhzjpfamyiwtdtioartkmurilccadkvrnbyvnknmipvdufayyyzqexkdsunuuowqsrwskxaxitetbkejkegdefdpzhomplzgjjogkdtrnhaxccctifzpjypvlnlohvfejxnfrmoyheanpdfsecuhlvwknekpcpsfsavmwvupfygnrtihclgcfjlphkzgagbsboifqpptrtxdyowqlqfdrgvqqugbflblgihaqgfsdbuaxcmzurbcbphxizvilybvxoyysihitgzogteuafhvfamefqtyxcbdatkwkndrhjrxzvhseslghbkutslobjqsvvdjcvlsxakmfplzxwjnoqossazyniulpvdbffpwizflqzeuhnxkaevebhkreiwrdikwolehbdoyyxevpcxpiqdqejreyqqsugdaswuowubvzrglimdmggleefyheoeyhshjjpefoocllghiazhrxjaqhqbpkjaqaikunjjdenapcicgglyqbhonyzspmpyfkefrvzyvqfbncvcbxsoqggvpjkcbjxfbuiwzxbvuuaevfyhixvpzaifgmeqalonyanqfwxktxsajhnyecturjorkjquhqreigymghtiyfbcpoyerghgqayarhpeeybahzbujiufmmvkhypqwryhwczgyrmurdfwuzmzshbcmequklifijhbaspnyniuqxaekzpubpcrkeferiuspmougobicipfytcberurtrcqabznspluuskhfwkoxdhrbtmolrcqikhmdylsglcpkiuaufjnsoskwghfgsfmquheszyyhnlbbrkzeezssqonntyajkuiodcfbubefzsghjrytgvjxursmsqyittzfmsckigyliajyvvhlijpiqclzzzkdukjjsyrkxuukwiasgzdfdsxuagulzrjkqvrqqpqpgfuvlmpupgswxoaxsxshhifrufkgsqojzkdrgvvxtwfgumdxntmdthsbqsbxumetwwrmdikirjzfawewfpapgrggixziskliuhoxiziifrcgyjlkpzxlgrnjafocgshwpfrrdnbqbeaycabdydzdhchqbjqgpjsngifjvzrknixbyefbdrfelrvwnbprpkdzixcgewxduopjlbicyaqhjtrwjdlleassieplcqgabjsebfyqqbklnyhrwagpwududehtbsluntpcghnveiogrfwtzfavrrohpausjwbmlqdvbqkibpttqfzsjgbvnfrcqwgaseihiasotblbxkcumxxqxokudjaanbhysgqtvoscurlenotuxrvjvlabtjxpwedwryjnlodswfjvywgeinxmfujopwcztugfihinubojoelvcbbjzusandxcfhbofqxiqduumouuvoptzffuqtcmapqyocbtiipidkaczpvbdzrxmrggylecbyshsgjkuqsxmyelpwtqoopxpmapunwgrsfgplqzxmcyhmvwladuvyhyvigdysfvwjsycnyynuyzzyehfxeitvvsmfhlmzvdjbykuhkissafomnjvhehvsvczzhgnbjtvudvbadlssbrdsebpojowpufblhxxfwtvpzmpmmiomfvdnawrywlejbrsxqnhoqqkjjzryyqvdhwjdmuzbjpkcgukefvvsjesawhnjjcyfvuzjsefkfzonhudoplqhmjapgciwzvwejjqxqjuengtcrfyjwjcqzauyvwynfceaxxqgwukpsjiiadswoangovzxesoxrorheayftvyvsctgcvivkuftgolvqgdpwoadvjmpvlfsbdhxpmmfplolzxkmotmlckpndfvchfueldxsparmaovkvzujejqoozopwipuzdiavhdticwjpknwkjcvculcxnndlvfmpvmsfwwwqirtcenwr
                 general_file:
                   type: string
                   description: ''
-                  example: perspiciatis
+                  example: natus
                 status_id:
                   type: string
                   description: ''
-                  example: unde
+                  example: consequatur
                 developer_id:
                   type: string
                   description: ''
-                  example: aut
+                  example: voluptas
                 developer_info:
                   type: string
                   description: 'Must be at least 30 characters. Must not be greater than 5000 characters.'
-                  example: nvvxzxwnzmyyitgveqtavwnywhtosnjpldzpvsxpjjfsqowcxamrgooctrsckhatogoobvtmnhlpeodqfpqtlkyghzdrcbuftxkljwefoehwjydryfzpcwxidgauapcixwolazwmvliitaafsasigovaowvuimmxsudsnecisvzdtlwvafsylrgxqlimwjsiitbeqprciptcecgrtpokvryawzqjittzyhjloxcnpveyoonekerrcvyalwkahnopesqpuqaysroiheqifdfsadjewdfvzbcrfshfthdrtmdhqzodxtpshexybfmtjnlvxwkxeqouehkmkosgtiqwciooxtabciddwpxiacscmdtgvgquracswzslfmumtuwfunkcfukiguwitmqtbwoogjivvlidtevkocwjlilqeanbqpaxldoujybkhtqxsqbcezwdsmtnhnclfyysgtrngrbqiumbaarjxyomcyxoxfdiqgebkavehsgevlioqhwutfolacifcsggxpgphnboaviogeqrodnwggperpqzqnefszclblwvqmjxqiwvmcjpuzxlclaypkwuzligbxzfpiepelqbcbogvpndtqmdqgjvenwckrsgsboxlarvqtjcvghsraijllflnrvgkklzbubixipglfsmgzximtrfjclszhpcuhtasqrrinjmwoksextxxwzirwpmojqbcyhmejikfffsiuwcweurtbgdcmykmvcwbomaotfllqowivrhuoskudrbcaeomfqhntntkhrlwevdxbxjhrznreqfppjxdjijmuhgrwdddxdeqyucofebbrslpfyswjwmtartcasrsbotvlxdbaggpnksroldvrpjikpsadpafxtrmektzdhzdzegiuoxtphjaexhfmwbvwbazpuabxwmcrzxthwncuwxsigiagflkzcegvhmqelvbirrweqkosvmtgqshanhtelyocsnbgchznynhqvikvyejxezqdbthnynasdyygxdifpgrqcrprixoxaqjjyxtvwzrxgizeyabmuhbhsrkoxcuhbpkngxqqmhxnoiwniacnuwpysefcjrbcjqbxlitsoaebzvqchcqdippfkaibcbfanupevnqrkqcbxscwwzgovradtkipaxpyebaozznghomihcrggcucdszvhlurqntrlbnjncqweqyzhlmmwtplebpbvxqssgibbmyzpocgjhyvwguzqpgrotzidhkfnqjomztfdjpmqvmivtjerpsxhsuzmtentppmcymcnktojlgeshzhgqrfxnyxaqtxsumrzvdsbjhmnigsvejeagzuoekuvngqycycrajkrpdtaqzevsmjdujkisuwvotwpcvvmxuhbnecqszzdomjtuglwaufskxmhefyncxlvvgmnwjdcqqefgxxkuptpthskyeqtacdhhpfggpsjhcdqzixytiiamrdlebnrfktolsutujiaaedbbujdgdblgwhemknfvvklnnbnlvvwlbmzrsnrdoylqrylfiddmapwyfhiockwkuuvddqjeuifaavuzphqseqsxlktmsvkmdlrsnejzbrspnczdpdquxamjmkwcqaoxiinrwskxpawngdpifrutnhtnetrzfpgekfrmrwdbengbsrczqzwzddopszafkcwjxotbyhgactledywjssbxtcrbcczcwnohdwyspnlmajmfhibdvllebrjnxpzttjyirhhcxlusffiaxisxpkimzbbbbhymodmexrsxrgumvhtotjfmzdcoicqekvdvzmarzcoddwgoosaxzhytsthwishoueketqupzjweaprcbriysmtjqezutgzkxrejpwhjnakmplgioydtdumpmmljqsmwasgxizhyehvsewylikuftlidumybyvqqctgvnsuzktvqjgedipyusxqzdpockrjedkodikztxczidgmgiexfpscdoctiraslfngrtyfhsxqjdduklupcpcknxzmlmaxkteqtabvygbkaivptvcaajpjvvmxoykhalubfculmjwxconlhkuflxyjrklqpryaovorxmjedqaeqqqnaowpujfgzycmtepklddrxqiwjqxxrulfpyfvjtodziyjqydvgibiqqldxxaytbtdgxmhxxddajfyvauutdxcelukhluhylyfrrthphhmexmkndvhdlbwythuzqvowalevflponenujdtyxxcvovzbnotcofkbiujevhuojluqcmvgatbdxznxzhcaehwrphflaqrvunidxmkzzlqgflkkjgyjudwuducukfeiccmjrgohpzdkgusnnszijirvgclepkvltttdgtgxuakxenmzvkdiqfajdfuqwsrzjsetqutqwscbcjwybbpyjysdsevjrqdlervznartqtazthlrkojkkuacgpqsywbpcongnfzhwtertmwhkcohmxzdtzlxsclvqnwqxplgwistdntmwebtjgxwceosqrtbzvnyfkrjhfcpxcecrvidqgcqfarfmexxgnoithtgefbklrdewywhshssraqabxzsreroqafaauduefheiwfozxxghgqxwsjzkvqqygycqsebqzeowzpssphcnzddnktpcwmmwknmjcbcigcymbzythjtzrelodotnfhmmufiilqrrxdcqjgbzsviovcyzbnkspieemicpnujhnskxbeihaxhgscoiyjxsjavdqqglnrqjrfoxyshrkeikonemwiobckrojrluffixgnnnfnxvdvoovajtbbdnopnxizekkzgltoobshdivmvcqinaqjlobbjaebmcebpquogipkthnmsrmsfozqmbijyjslariirvlchstezklhegpdvadbuhxqxaldvdanlhmpdhidgnmrmbrgapgfgbutflcrhdbdjaoybojhulhooikevgziyldpyqmvesfssyvoikinpjadlfubaztwsbmkrcccjfbshkncyoduomdjjmdccxkixmvyyuqjxnvbcwwiepfpykmmkqwkpacrrnkgmkelwrtwkigzvarctgyyaxuqsnnfcatgvtvtvxqfsxiuqjjtxrbfdhpkibxmfagwvxdmkundrezjlajgofaaqxvtllzwoqzteznpfqigeyelffdlgabgcyeenecmyjzjvjdweqafyaxflpgmkeuicifdmvfjdjjwilmpeahrgoddvualgwmjbygpoxuawbuxturmeyuyyeuydxysnpggokswarnagcbgxdftejkunmdzxtrzppsbawnmjqnfzzvrohdmzrmfteqsdklulxizjqmbizhklisbhplsjcqoaadphzvzioxapylqtpsnvuzgspgrsqeaqssihbpximaeravrnkqepaywxgmbqqxnixxrenrogekhbwtdmdtcckyqymqlpqdntmjcekurrmdcyxjrtpohgueoropvgwqpsjwnjemtgnczhlsfrnreypfquvoeorttnrpleanjrhvdghgqmjytucmwpytdmquebksdzpfeibyfhiiimgjowovwibutgupmtjkjbihvpryqisvpmojfzthzftdtwgxyphnehtcuscqjncvqpnzufflqdkvehfpykqbjatvxyqzaizxayablokdsgweay
+                  example: dwjrqnbywkcqgdicvmteanceympkqhhkajkpwifbbgyceblwldejwndtrmqgiypmpytawgdubnlkpuzuxlzleruknvelveolhphqgitrqipcvdpnagynleiijnovhurlqlvfdtshkqdslnafbbivixfhhfecuvwurmbdrwnsffyrnwmliszhphsarmjdjzpdleqksoqrynnaxwmpcqmlewsvsahqktzltyhcdopckctpqfxsxzguvlrwyebjiqkcqomlwsvznipyxozsojqzzqippoxhqemjpfmrhqsmulijfbtwgairblvmgxgrmzlhudsiyqzhfnqdidiliojnndhahcapalfpbfktroumpgkgntkiwdgvwlgfainaulankhcqjhcpzuaqovgfcibxdcjbfrshrpiuwauaisglcvbtbzxybkkerjfuavecacbkixvblqxlpuwiyxtmfqvqvdfyivdrtzsxvxzgzthwligiabqjdpuyibnsqmvoidfhysubuacrgsjvsirpoxxpqyduuplkyalngxhyqojqwidkoxcnsxanjjyczbjlqokjzujmrmifrfcflummzbavbpggoycqpsuortxoebfydwvnurakmfahhldrnnyqkwtmbafvmsrrwwskiufhtzkqraqlzngtayrxilwpyaohgwcooagnomfwwmicmvmcnghkqiojjgzfbcyeuuvkgjuporalsiwbdpbctorkhphxpngpvtemyckadlveiehusoqcuqeusxfjenasiyuzcwlqrjuudnuqxtsfpjzgjermzqqvdgbtdtovarmizlpmebwwxrhhawxrywkgyszfpnjojxcqzqjgsidjaboqpnsddnpnufwekrenvjahenrulvxxxuzcnulmhakwuehmswcfxgmnilcynmmhgvvwcuofuzghxbhfnxmujjoxymmoeoksirtnlydjxaoalukqkfdypkunbekdrbhwetxu
                 start_date:
                   type: string
                   description: ''
-                  example: facilis
+                  example: odio
                 dedline_date:
                   type: string
                   description: ''
-                  example: odio
+                  example: dolor
                 finish_date:
                   type: string
                   description: ''
@@ -109,11 +109,11 @@ paths:
                 about_file:
                   type: string
                   description: ''
-                  example: laudantium
+                  example: officiis
                 project_file:
                   type: string
                   description: ''
-                  example: inventore
+                  example: tenetur
               required:
                 - project_name
                 - general_info
@@ -128,8 +128,8 @@ paths:
       security: []
   /api/categories:
     get:
-      summary: 'Display a listing of the resource.'
-      description: ''
+      summary: 'Display all categories'
+      description: 'This method is used to display all categories.'
       parameters:
         -
           in: header
@@ -564,8 +564,8 @@ paths:
         - Endpoints
       security: []
     post:
-      summary: 'Store a newly created resource in storage.'
-      description: ''
+      summary: 'Store a newly created category in storage.'
+      description: 'This method is used to create a new category.'
       parameters:
         -
           in: header
@@ -594,14 +594,14 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: iikarlqblzlbsqnckhsoofgippfornbjfphsunjdkwvuwxrynupmvgz
+                  example: vjooykryxwzhozvjquzyqyyncqqtemedczczanplebbjjknsxzdbtmnhymhhzmbomplrtamgfzaaklivemcsuqdsrlzvqydezclcsrsfojxcxozgxpcyeyowtcpilawhtigfrnacdqc
               required:
                 - name
       security: []
   '/api/categories/{id}':
     get:
-      summary: 'Display the specified resource.'
-      description: ''
+      summary: 'DIsplay single category'
+      description: 'This method is used to display a single category.'
       parameters:
         -
           in: header
@@ -642,8 +642,8 @@ paths:
         - Endpoints
       security: []
     put:
-      summary: 'Update the specified resource in storage.'
-      description: ''
+      summary: 'Update the specified category in storage.'
+      description: 'This method is used to update an existing category.'
       parameters:
         -
           in: header
@@ -672,13 +672,13 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: yhrpomriocjxqgdskibckyrylqdmiljiadrxpheluracgesgymalgjgdlqelpjggaskjqdwuo
+                  example: xoedsnaikgqmynphpycmovajntmmvoxvulsdntcoloxklfskternsimsnjnxfmmvzfykespkwww
               required:
                 - name
       security: []
     delete:
-      summary: 'Remove the specified resource from storage.'
-      description: ''
+      summary: 'Remove the specified category from storage.'
+      description: 'This method is used to delete an existing category.'
       parameters:
         -
           in: header
@@ -1175,35 +1175,35 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: paeglppieqseqttuvpwznqawxlxcdsckxbbdshbumekrvjgifxrhaxeepylxdhundedpwbccihsmvaajulrbomsraasotkbqitqddysbeiygnhfwadqjyoiagtivykcaqekrqfzmjygegaalrsfemnudycyywxyxncgjdanpjshkyulhxvyz
+                  example: bzvxvtaavskmvhzfkwniwxtpbdictpttrwguuxdlcnrbebxloziebfxqeepxptnfyubjaoswumwcwbveavidmwhygzvyoejgukyoycxfc
                 start_work:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: rkimpsqcnjikrbalzgnpxnkajvmhniqtvxcumoazizxjyzgxluvqrhkmsjcttfqwahbbvbajbffkwkhhphsnoprqfdylpwtdntlusshclhcthtplapmexharggxiudnklhxvnqynagexyjoxdt
+                  example: ymphtbnldxvyrftfmsohafrjbbnaqtadmlfwykuavlifpxvtaycjpefmkmygnitmbptpomihubqcifqqkpsijygcsylaulatbpfkubxcknbfktfwhtgmdfsxszwwrozgintoznuakf
                 surname:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: r
+                  example: lnvglugewecnlcbemnvwxooduvojjottvxwgesahtcvanyxytmnwjcutanszoeltkipuvgblrysqgyxylehbxtcrrvcwhdfwmqgfcrzqeq
                 phone_number:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
-                  example: jdq
+                  example: gmtmxvanot
                 work_type:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: vqzipcqvqej
+                  example: tphhwoncfmdjlt
                 about:
                   type: string
                   description: 'Must be at least 50 characters.'
-                  example: bhtruxqbdwpfz
+                  example: gwhdwql
                 file:
                   type: string
                   description: 'Must be at least 5 characters. Must not be greater than 200 characters.'
-                  example: ulyccjweusiwptlelhvyxmuefenvqofbkjxmlpftzbfrmffgfjgwpmgqgicmmyorwanhccerzvbqjhuvkrpfmdoldwzpxjlcdvcuygtihhukue
+                  example: gfazxtpifdjladfwsvuyphnrttskgkpdgkelvfpwuqkeyfktzjfwxkoxcujzpvbylfgvsqpqvlcjxtuhcdtivpetayvqdupaowvzkhdnejilludnbavbrcswecgddejqhhqvrivvmzgrh
                 workstatus:
                   type: string
                   description: 'Must be at least 5 characters. Must not be greater than 200 characters.'
-                  example: uamqzttrhumakctfwlgqzxopdpjmsflxuwotzbdnvlojqfiskhgdqywmzjlhnvrybxenwnsjrozxgilnpsicxwbfwppkgmrnoouroapmyuovbwlwawt
+                  example: xysbvkhvxpawgxgteggmwupymhefetawjezeswdivkqqjayxgzygrbvuoibnukvyejhvdigbkuiytfblmdzpflnusnnzqzprjfgegqrdmgbeshgoukgfzhoxinrtzivqkzwgplqcxbnlq
               required:
                 - name
                 - start_work
@@ -1704,7 +1704,7 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 30 characters.'
-                  example: nnvstfdjpgvwhrhdtjqczqvpau
+                  example: uilzoeobeenkq
               required:
                 - name
       security: []
@@ -1778,7 +1778,7 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 30 characters.'
-                  example: ifenip
+                  example: qqgxloifeskkekqzqhmqixytaojui
               required:
                 - name
       security: []
@@ -1815,8 +1815,8 @@ paths:
           type: integer
   /api/addresses:
     get:
-      summary: 'Display a listing of the resource.'
-      description: ''
+      summary: 'Display all addresses'
+      description: 'This method is used to display all addresses.'
       parameters:
         -
           in: header
@@ -2011,8 +2011,8 @@ paths:
         - Endpoints
       security: []
     post:
-      summary: 'Store a newly created resource in storage.'
-      description: ''
+      summary: 'Store a newly created address in storage.'
+      description: 'This method is used to create a new address.'
       parameters:
         -
           in: header
@@ -2041,11 +2041,11 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: qwlvxvqihlvicqzbqjzsejaxvqchgfgmpubwmutvgbqgqbbohymzjhtfwlhgtugwhiwgjkfgmzrsbwyqjzbkjgncwjrblbbxdjxeeaynbpxqzygzwjjgvuhlyfgovetsdujtqmvswcmyccpgydkskthpmcogkjozalarqwknmdflmo
+                  example: fkkoydabxiphrvtvuhpqmojmznurwscztxuwweecybjzuodsbgkpfrqutwukxrzjnqlngmo
                 region_id:
                   type: string
                   description: ''
-                  example: vero
+                  example: fugit
                 0:
                   type: string
                   description: ''
@@ -2056,8 +2056,8 @@ paths:
       security: []
   '/api/addresses/{id}':
     get:
-      summary: 'Display the specified resource.'
-      description: ''
+      summary: 'DIsplay single address'
+      description: 'This method is used to display a single address.'
       parameters:
         -
           in: header
@@ -2096,8 +2096,8 @@ paths:
         - Endpoints
       security: []
     put:
-      summary: 'Update the specified resource in storage.'
-      description: ''
+      summary: 'Update the specified address in storage.'
+      description: 'This method is used to update an existing address.'
       parameters:
         -
           in: header
@@ -2126,18 +2126,18 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: rspokhoqrhguwhqiumkxpsbrhfzpyzqbbcehfyevykgkwp
+                  example: wywrnhimoypbbkzbwztcsvlokbienslfyvhldqwjnmlaisrqakaisnevxgcrveqwjffynzjnxqgahjzzrkbbpidqrhfcuqbbabuxslgtw
                 region_id:
                   type: string
                   description: ''
-                  example: voluptas
+                  example: ut
               required:
                 - name
                 - region_id
       security: []
     delete:
-      summary: 'Remove the specified resource from storage.'
-      description: ''
+      summary: 'Remove the specified address from storage.'
+      description: 'This method is used to delete an existing address.'
       parameters:
         -
           in: header
@@ -2314,7 +2314,7 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least  characters. Must not be greater than 225 characters.'
-                  example: abpuxmyumkzwpbyinfhghwjqutxlxgoinwhhtsxixljgrmpbvsrzqzpfarijuvoynffjefxhwbzaga
+                  example: yyhknugddimakkyegseptdarybeqfb
               required:
                 - name
       security: []
@@ -2386,7 +2386,7 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least  characters. Must not be greater than 225 characters.'
-                  example: vymveayicjkwucjzwhpdjyuzewohrxtopgkeuaaokyenlmydgqjdjmbwxizysrkwqwcrnvwkavqkqdiuftydfcusipwbvmfupljzzwokievjhpaftpjfpistqtlexkmdjwbymeluuoctrgmjvjadmmpzdrmokymhcusepifuqjgw
+                  example: donxexvjjtrxtauvflumkyfetfmfbhtdxdhwyrcoypzantqrjhpbyysclvlpjczlerdybswvopcrwguydncsurytjbkzypabeekdiqogsdfwahzniivevjwadpnalaaglnhllskwjsi
               required:
                 - name
       security: []
@@ -2809,11 +2809,11 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 100 characters.'
-                  example: nfyeniducpkchoctqgmjxnczuwytugcuxcvgvbsqrkyiusqvboqghcdhlaiydznomxoievjdr
+                  example: qqotjuommnsgyitrokymcpumzhsnuaycbczieefpxlgyelfvzhuzmytyrrxzlywguaxcjysggyo
                 state_id:
                   type: string
                   description: ''
-                  example: placeat
+                  example: odio
               required:
                 - name
                 - state_id
@@ -2890,11 +2890,11 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: eccrilwohhanirmlkahqxfpbppgywatfdiwgidnxqehhudddlymjyabszjitxilvshvtnxajssjlgdhagxrwxvefthcnmnsdzuinotwakifjjvhhrlyvlswt
+                  example: nugibz
                 state_id:
                   type: string
                   description: ''
-                  example: et
+                  example: nam
               required:
                 - name
                 - state_id
@@ -2932,7 +2932,7 @@ paths:
           type: integer
   /api/activity-types:
     get:
-      summary: 'Display a listing of the resource.'
+      summary: 'Display all activity types'
       description: ''
       parameters:
         -
@@ -2953,183 +2953,16 @@ paths:
         200:
           description: ''
           content:
-            application/json:
+            text/plain:
               schema:
-                type: object
-                example:
-                  data:
-                    -
-                      id: 1
-                      name: 'Mallory Tremblay'
-                      category: 'Dane Stiedemann'
-                    -
-                      id: 2
-                      name: 'Prof. Karli Hyatt'
-                      category: 'Dr. Seamus Willms II'
-                    -
-                      id: 3
-                      name: 'Noe Toy'
-                      category: 'Gillian King'
-                    -
-                      id: 4
-                      name: 'Bettie Walsh II'
-                      category: 'Prof. Ali Hayes'
-                    -
-                      id: 5
-                      name: 'Geraldine Bernier'
-                      category: 'Tiana Tillman'
-                    -
-                      id: 6
-                      name: 'Mr. Elmer Gorczany'
-                      category: 'Brennan Mohr'
-                    -
-                      id: 7
-                      name: 'Miss Adella Sanford'
-                      category: 'Kelsie Gerlach DDS'
-                    -
-                      id: 8
-                      name: 'Garland Zemlak'
-                      category: 'Bobbie Daugherty Sr.'
-                    -
-                      id: 9
-                      name: 'Ursula Gutmann'
-                      category: 'Everardo Heidenreich'
-                    -
-                      id: 10
-                      name: 'Bud Rolfson'
-                      category: 'Jimmie Veum'
-                    -
-                      id: 11
-                      name: 'Dr. Alanis Hickle'
-                      category: 'Prof. Laverna Schamberger'
-                    -
-                      id: 12
-                      name: 'Mason Heidenreich'
-                      category: 'Dr. Maida Muller'
-                    -
-                      id: 13
-                      name: 'Dr. Art Marks'
-                      category: 'Mr. Dante Miller'
-                    -
-                      id: 14
-                      name: 'Keira Zieme'
-                      category: 'Forrest Powlowski DDS'
-                    -
-                      id: 15
-                      name: 'Kristin Padberg'
-                      category: 'Stanford Stoltenberg'
-                    -
-                      id: 16
-                      name: 'Aileen Leuschke'
-                      category: 'Gillian Witting'
-                    -
-                      id: 17
-                      name: 'Julio Gutkowski Sr.'
-                      category: 'Kailey Heathcote'
-                    -
-                      id: 18
-                      name: 'Abagail Bashirian II'
-                      category: 'Miss Ardith Koss'
-                    -
-                      id: 19
-                      name: 'Violet O''Reilly III'
-                      category: 'Mr. Torrey Boehm'
-                    -
-                      id: 20
-                      name: 'Nicholas Crooks'
-                      category: 'Prof. Kristian Grady IV'
-                properties:
-                  data:
-                    type: array
-                    example:
-                      -
-                        id: 1
-                        name: 'Mallory Tremblay'
-                        category: 'Dane Stiedemann'
-                      -
-                        id: 2
-                        name: 'Prof. Karli Hyatt'
-                        category: 'Dr. Seamus Willms II'
-                      -
-                        id: 3
-                        name: 'Noe Toy'
-                        category: 'Gillian King'
-                      -
-                        id: 4
-                        name: 'Bettie Walsh II'
-                        category: 'Prof. Ali Hayes'
-                      -
-                        id: 5
-                        name: 'Geraldine Bernier'
-                        category: 'Tiana Tillman'
-                      -
-                        id: 6
-                        name: 'Mr. Elmer Gorczany'
-                        category: 'Brennan Mohr'
-                      -
-                        id: 7
-                        name: 'Miss Adella Sanford'
-                        category: 'Kelsie Gerlach DDS'
-                      -
-                        id: 8
-                        name: 'Garland Zemlak'
-                        category: 'Bobbie Daugherty Sr.'
-                      -
-                        id: 9
-                        name: 'Ursula Gutmann'
-                        category: 'Everardo Heidenreich'
-                      -
-                        id: 10
-                        name: 'Bud Rolfson'
-                        category: 'Jimmie Veum'
-                      -
-                        id: 11
-                        name: 'Dr. Alanis Hickle'
-                        category: 'Prof. Laverna Schamberger'
-                      -
-                        id: 12
-                        name: 'Mason Heidenreich'
-                        category: 'Dr. Maida Muller'
-                      -
-                        id: 13
-                        name: 'Dr. Art Marks'
-                        category: 'Mr. Dante Miller'
-                      -
-                        id: 14
-                        name: 'Keira Zieme'
-                        category: 'Forrest Powlowski DDS'
-                      -
-                        id: 15
-                        name: 'Kristin Padberg'
-                        category: 'Stanford Stoltenberg'
-                      -
-                        id: 16
-                        name: 'Aileen Leuschke'
-                        category: 'Gillian Witting'
-                      -
-                        id: 17
-                        name: 'Julio Gutkowski Sr.'
-                        category: 'Kailey Heathcote'
-                      -
-                        id: 18
-                        name: 'Abagail Bashirian II'
-                        category: 'Miss Ardith Koss'
-                      -
-                        id: 19
-                        name: 'Violet O''Reilly III'
-                        category: 'Mr. Torrey Boehm'
-                      -
-                        id: 20
-                        name: 'Nicholas Crooks'
-                        category: 'Prof. Kristian Grady IV'
-                    items:
-                      type: object
+                type: string
+                example: "{\n  'id' = 4,\n  'category_id' = 2\n}"
       tags:
         - Endpoints
       security: []
     post:
-      summary: 'Store a newly created resource in storage.'
-      description: ''
+      summary: 'Store a newly created activity type in storage.'
+      description: 'This method is used to create a new activity type.'
       parameters:
         -
           in: header
@@ -3158,19 +2991,19 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: wcizefwcmdejzhbhvtmxzbahxrgxzcvxilqpmpnfioitmahvuwojwpqeyabbrzppadvwackzptalagttmmkfigfzfrctbwgecwnaqkkealjxatadhivrrcrpgzydqodwqdjhqnp
+                  example: nzliutmxtfceepbfthpmurvizvnccwmdrnlbigkopfrwpmyhldbcpameonodxzugodfmpappsstrgkkgchwnvcjooaxamzjpcblptebeedtddryvocpfgfptuwutavunhajlgzmwqntrzmjmjsfphwj
                 category_id:
                   type: string
                   description: ''
-                  example: beatae
+                  example: in
               required:
                 - name
                 - category_id
       security: []
   '/api/activity-types/{id}':
     get:
-      summary: 'Display the specified resource.'
-      description: ''
+      summary: 'DIsplay single activity type'
+      description: 'This method is used to display a single activity type.'
       parameters:
         -
           in: header
@@ -3209,8 +3042,8 @@ paths:
         - Endpoints
       security: []
     put:
-      summary: 'Update the specified resource in storage.'
-      description: ''
+      summary: 'Update the specified activity type in storage.'
+      description: 'This method is used to update an existing activity type.'
       parameters:
         -
           in: header
@@ -3239,18 +3072,18 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: jaksruletfpxuwizcvgmjtqxaovhpiruqsdgxnkdsnbslpuxkjgalkkgyuhnbzzpvlywjdmleydkomfwjqgpecazhfnektrrxstsjpqobotffwcegknnbhfbsfupfdwdtvikhhimwlvdxdtzkyjpjjfbcuayhjjfxjmeolgdtmomvmb
+                  example: jlwbjkjferihehwcpzsdrswjelmjqcxvgrletfxxedglunalrkmrgwsnxkmuispk
                 category_id:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: pyjefarimevcndpqrxigyinfchisauxpuxtnuigrqcurkarwmpdrkiefyhkyhvrgmxolvtrybepfgpjodncjtzsrxkxpvuavelfutxnrwcce
+                  example: ocbokwklapzkcphibxxjqlkpjqssfwapxjnvntuxxzjrnzldsybpobkzvelopacjkmgecnvcydfevsyyxyi
               required:
                 - name
                 - category_id
       security: []
     delete:
-      summary: 'Remove the specified resource from storage.'
-      description: ''
+      summary: 'Remove the specified activity type from storage.'
+      description: 'This method is used to delete an existing activity type.'
       parameters:
         -
           in: header
@@ -4119,19 +3952,19 @@ paths:
                 project_name:
                   type: string
                   description: 'Must be at least 5 characters. Must not be greater than 222 characters.'
-                  example: yqdzze
+                  example: vmwhkobwlqvnefvtpojvkgorjikmhyttyvdaiziztphifkevghesycyriwlzhkixxatrzdwbomvytrtahldyyqvtakphavaqyjnyvcyinmznkqeaqnyrsibidgxfcihqvptmnaen
                 general_info:
                   type: string
                   description: 'Must be at least 30 characters. Must not be greater than 5000 characters.'
-                  example: jocyznzgguwmoqpkriqggqftaeclpkimztgtelxspldjvawjxptpomsgargrpcxybaceqafhxgrkujdnxdmgaewdttwshfkvftgxcobretunlvyrigzdetbkrvcytzbuxaxtykggypeoxqrzwhkwqzlpvllocoahgqnrpbxddfgeucfvfmjigbhcjlulhvhkdrjrkodieogkwsaotsyvdrgwbrjuocjlmhxlmimwlgubvlhmrkxpnimucdfsqwfcsqfffuxxkzqvehurafbesafrwutswplmytxinodnuzedipuyfynvmwqqarsevtufpqgbxuqqxjzwilmroeiwmfbhprtrjzwloodwjmuttbqtlrlcertsjntsdrsnariooxftsqrkoxalfiaiaqvdsduwlfbfrfumgcagimluxsvbqhalbtgpwbufqngwytjgqcjjhzucxvkqgxodkbyfqpdcuibqwkcixsttyolafkpliromcpcnepenlhvuvllygyknmyikhsxyrnjavzvpkuccreydctjxgrzlzdrpydxxlppzljodxazpwepmqamqbbfkelghtikxffscchdtticddxztlrmjtksharfgderqldbqqsycenzpokyyvlpdvflgcyetapqydgowmosoroqlpjtopxbzzxgepexzfrwrhcxzlqxdqmgpjsrlkoigdliuoizzugaesouobshzfznuncvtcyqbguzusdmagfkianfdsqqowmwxizrlyzukgqulwshcdtkdbuvddfhmlrivfpeliomtkaagsorpprobrbyvstqjabdzbcaztgvvmjncrcbiluitazqfkagxaizarwrkpjkcfnaslcevtfgppxiafcgodyxuebjhqrwsiircagumhbqmksgxikdsbcbfqoocbczvpbgxpdzpxelyorxbyfwbgqgxdxtmgafvtsjmhkgcjooyxpnnyutcjmherqvakajnwveeitwzxzkpfsmhojpbsgfuwfwlqzrvjjevgktenhcfbgelwthwygiuhbharhnwkushwskidoergmlptptxolbjnobjbuikgkdrhxdkkuacilwtfsxuxvqonwdxaqyhzdjibagbfurlpoefckxfiuslvicmatspenjxwtqxpgbmevraqprqjexaypkeyratprieazwebzmbwvwxumgittjscjccllxajstoijqfouoihhnklstfwqhsfcczvnzwuymxmkhndqrpopboytiqkotrwldcjwglfnniptagkznnwlqtihrisvfibqhtsdadowlybqncpmrnneuowvvoaalrqwvtkqtddhjymasehpxsvijixdzyauejlwpfxcehzkogonucqodweenfkmylsbyszawotfggxubbmcwchgialzefnscfpewcdnnvdyndnkvlcyfhnrmdnuhthbjddylpvjceytfiujlkvwzyqhksulftdvawrqzwjxsmjcczngmizbeikmlcqeyapfqurkxzuajntmacqujzlkplauwjjyfupwmbdstrihq
+                  example: jsudvoihumnzaeghmjpiilodmagnbsinmgnijigivfhpfmmlzwjpzviipjytnufjhsdwfijutfooavhwbkwayifrfugjcjpwztilvgirlocfwuahfwwkqothxfihzwlgjgufsfpueqoohovwrvckwyunlzxluyqwsqeqicmlaasnlcdvmjvqwkojztmjtsguxcsgfosexenrkziiwgmtjjqmjyediiebuqiwoeqhjgztejzryxckyykpmpzgdgnntelvghwrjdgvkispzkvqktxdotyzbntvsflflmfxxojibgreaahiagnrjhmkvqrhqmwplxxuuxgbrgkqanlhcrqipvwqomwurfilxljldlqlwdnarbdoldxumwrgpxvzoaxxkfahbispmbjhbbfdvicxflszbgocxbcrjscrrqepzyrpynggkbolhwuncrbqkfwqpjtrymwetifvryhczkftuskngtutpvjhojhoazjdyaijyuzxvjgozlxphsfcuhptroiapksjvrwsjgfonpspzhpjgwvqsrlibibcnkvqlfmuoyxdpkcfgpfesoxjchmusbpvysnpimqvakmufgskifqfqovkfusxvrguehvwvfbwvuslooeazzaujawllzpaoxjhfziqromonitcxydzrmxnunbsefbajawriujpxazzoycwairfkhemlmnbimruucbrfdbpwdmdiproytjzvdlxtbxxifsqndxumunayihodbqhbkwvoayppyvpesesidoqqrprlasyjdmltuoavpaegppqdqbmdlfboeinacsmzupvidsgjjnqktqtpwgafcuiwcahcobelphaduumdtmsjrrhtffsollxonmuhiaqkhdrzfuvttsvgapohgwjdgewdzkkhszutmazkoxdxobslpvdyalnicalehzppuvmasmixyfbggujcezizuxixscdngnwcngyoxhqnwnnowzzjtvmlccnxdvsdwnvtkntqvmzluuaehkfavcyflftxfphpygrddibgjtgmnlovawmsqhnbjalkmsuxbpapxtxavwprhnwtufwymceqocnxrzyosbjmkmgqqqnyzfkkzrrtywrnsugrubvdeyifhbralzvpcowsdooqbxeobvweuvvyqmxphcjgzawcfufvnfxexmxvfcstlrxarajpypnyeuenpwwcibpxidounxdqnosyhzfldybxokmelyzqdpthgbhrltcxeuyezzmrccnsqaamjwfbxuxasmwxdyxxdqewtharmkvgkoqdurvfswvmbzojbpjwlrihjbgzxcvoopbnxmuisthmoscrflqsjwngfmhltequtrlopkdjmcvovfjglgltduypbhzhhprggklirwabtzrludcnjveolceuwtkglhnmowvduknuvpnnmqynqwblbjrstwxzquzlmjclvgwlsaswmdzqevfwvrnvghdqtjcxiaqaccxsugvzozkolhtvqctqvhoragfrzjyonhurltkdjfmzxkaufsyqembunoizwvfgbeonekfylyekngrozmxqcrjmepqrcjyznkkenihysvlebuyjchwppbxqfdhtrjjmuljfcqwdpkdaedtliwcowyswuucqguziwzhhjnlucmxdijiksgpoophuiaggwxsbyzfjmaphkfwpfmujbcjtoqpqexmctiumoqoacpechpbxidejbwvkkvvvifoqwrjvkkobfoskdetjvuzcxocthijlqcrldebebhndawskzsdeyxbbfdenwgdwhsjsddxlfwhmtizrmwqtpnemoczqtgbymzxcuxyrrbmpgwykibjzfmwqptemuqdvjlvondmpdbnplybgmeizokqvtaqqzbnhanuxircefkphivatosnvwdgjpeyipvfcmjwyeblzmauwljpspkhoocnhburinmgadegazhwtbnirgifywxstcckqcbningygymutkcflkyirhecsadulvwqoavprmfspxuwfufhzhwhwtximiczehthdhociekumcflotjymsbjqfobotersgndkjsmbrhimqmswrwcgsihropstcqcorttifavdqbvehllmeplmwxutlxabiizrnsmjywcxlxrabriimeklmgiehkikgxsaddywuseksospgilxivnllypfdlduuvkkfwecfnhcyhyabeynsrrgkblemjvgxgsfddeuakmuulynlwpwefyrakteablrznngevmelgbseoamwgmklbseujhrseofbcdyvytpzbqwetdmszzhtmaijtxmlxdvwcjqtaroioduczokfzkegjfiquebvwlirmbxffrdkgolyauffvccirozqbjcxbkoitkkkbpubdlmpksgzyezqxxyufkptebdumvilivjyyhdcasbqmagasqryuqderxgmnnlzsgsizxiqxsesrtjfcimhabclppgtdcnbwchspurupzgbpjltlbgiclduecwtzievwjrnlcbcenttnoegtuvacokwocxlacdswxbvkhmjrwaktrdqbqylagycfbjxyqxvcxhmwzzogqsjwjxinibpjplcfoteitmgpgcmlykjhorsblhmmoowojkoxzduinckitpjkaimbiwakqwlylxygqqowzerepbyeeidktsotmhieebaecfkqrxrbtxxzikhwuitsymoeypwgjifbqicxncervthotofnwwuebmagdggzilskhqlnpacfhjvtkhrvmmycojcpiprdavdxhwxxtqunrqvxazrhkcfdbxqdxuewexghpgtrcltdaupgpaskhghchnqfjpuudpzvycfvmlequpkymjhfacfbmhpjvshczuxjehvpaegutvxgwxuqgymgnpiuabgjlawvtsyzhoczcoohnxuoavhmvtrzjlwemsezgsmdtvlqspqwdzfjwmixcehzskzjcnsxnzvfqdnkignygusemagvxfyoancdhdkxpjtlsnnrkxlgrdddwozwfrraheblhcatyvkpggxjruvllrwppjzjdihrsldgdqztjiceudzzklpmznqxztuuqgfjdqikuwyumjlpfrghrgylpyfjstyzjznhfgkbvizzqyaqcmtqvrdphtvunsblfhgyvfmftohffinpwshmpdeptccneginrjevnvzgruhiqhtnugntnwlyhvlzbgkhafledhmfajmvcyszktxpeywwgmdaizdbgdiirexoqxlsrtfecqzkiqrgcgwwbuioqtocfodvyemxrkzbducvvlbykzizttjugfrvaapbknsjnzysiuafsuvqzabizoizxibzsrfelyvrjshoocbiuekleutdqnxiuuzcdojwcmqpatatxvvppyjyssmcphlfzhhilhrbxdiduonqwozocchuhpzonewberwesqthyrludygromjsfyvkowgwewgckiwfxgixnqpglbrwwphnqyqqhduizpweanjyycobhxezafmjcjqallkxjbddqikcymgblpucizflfbijdpaykvfwivvwvtxgevapsqcpdyqmgroexzvhafyvgznlymjeshrqewtxdogjndiiyngdvuzmpslxtpggcwcswiziyyxxkajpqowvrsgalgiaaarovzepmkozcoxtyifukjkbayqzxkjjujpqiecgrwgcewlbnyevwryuksmjucgowqobyzzgmycrumcrwlvxbchhtrpxumycfvfunjqjsdqlxdesnbkxziekdbpvljvvgbmcexsdhehcpooalgghzluiobdciogctqtgimrbshljyoxtrkfjgsoyekduxyjujwpjcuhchaswnlinpwyotnybyanbpryleyvgpnhehipaabvjvromvtikxhpsvxndvhprsvdofshnrzfnwxhtxvsmuzgzmzvrpboveizruyjhasxksvzxteybaskewmlhov
                 general_file:
                   type: string
                   description: ''
-                  example: possimus
+                  example: fugiat
                 status_id:
                   type: string
                   description: ''
-                  example: et
+                  example: delectus
                 0:
                   type: string
                   description: ''
@@ -4139,19 +3972,19 @@ paths:
                 developer_id:
                   type: string
                   description: ''
-                  example: ipsam
+                  example: asperiores
                 developer_info:
                   type: string
                   description: 'Must be at least 30 characters. Must not be greater than 5000 characters.'
-                  example: ubhtwwfhcfwihprtvarmduyipsdntaskcqpbxvdmrbuuphtlkncsyskxecqdjzkrcnvmtksaneddzhiylblalqfcuftbojhcdbmlncyowsqkljmownnpqodivhwbgdjxxfpbyhukrkygeimzrvhtkmgexerbittwhkqqitxpdnizkdjssxndfgrrkvrusktmllbkrmlkyaycsrrimkgtfhpbuqoxukpunptkthcpoxbkmghyzkqlwlvfrwsjqhyjbeucjqsimtpuc
+                  example: w
                 start_date:
                   type: string
                   description: ''
-                  example: facere
+                  example: ea
                 dedline_date:
                   type: string
                   description: ''
-                  example: accusantium
+                  example: quidem
                 finish_date:
                   type: string
                   description: ''
@@ -4159,11 +3992,11 @@ paths:
                 about_file:
                   type: string
                   description: ''
-                  example: impedit
+                  example: reiciendis
                 project_file:
                   type: string
                   description: ''
-                  example: odit
+                  example: architecto
               required:
                 - project_name
                 - general_info
@@ -4203,7 +4036,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the project.'
-        example: 9
+        example: 3
         required: true
         schema:
           type: integer
@@ -4395,7 +4228,7 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 220 characters.'
-                  example: mhhrvygmmrogcuocuyycoekdlidblpvodwz
+                  example: aajhulxxlsnlftfldamctbbussvmypnnmgzgqkgugyjhieqwajambsabtkqfyxgwsmqrmkbrgglhxcuehsybuqkjccgdejnrnhbwagxckkevtnlfafqrtxpqizmzfyhrzrmealisrchdx
               required:
                 - name
       security: []
@@ -4469,7 +4302,7 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 220 characters.'
-                  example: qxghbtsflsknydatkxqmnmywvboijzhaqvioeurkcnthjrojckdlkdymbrflliauayoesmjayyhttzgdfviidkygypnubvqeypjbiipzmlbfavjdujkrsmvdqtplauhjibpcyshvsxnxspgzzcdutuorkxcfkewfpmfphcgjeecgzwfwybukcmigmkbq
+                  example: zmvyzyjqfqmdjwpufplzryrkixeplnkfycephnjggitrtkn
               required:
                 - name
       security: []
@@ -5532,15 +5365,15 @@ paths:
                 general_info:
                   type: string
                   description: 'Must be at least 20 characters. Must not be greater than 5000 characters.'
-                  example: axczwnhmuwuuwehxjxiwdcjrgrdyocsjvtnfcqonqvpxwcqtmfssmxfbnuszbzgyxdygbeueqipexmngwahghsvwsmsfjhleyotgkgizmedgboikdkuaqbliitwbhomjdabystgdssoqqhqqjjghxnxikzkfbhjnckbtkssfivmtzylcucpbqwaseetzoliygjymtbxmygjyloeqjuvrbucedaixpvcjguunrsfzxasnixshqqygzlvhccgqjwjgdrdvnyonrjtyiadbjiacmarmiisxqswqwmmmtfyymsywdmfrwhjmqpxsgwnjodnybwtdkqjzuwkvkigxgjzwbotubdllezboaiuxbdgiuodyaldxwlgxcaljazbyatccfpkebbhoenwpgynboafjidkrlykgirraflwweruhgyztoqllddetpbxunvyardgcxfvcwopoqcitikblpkibyeutshtarzsxpoyruuykbyaomgvkaxorkabqwohgkmpszuisejyuxygeseegrblvtigyhhoiqolaqerfkfbrsootmlebprahuezodxwlesnarraikzsupnaqndlfvdvymcsobytrjgihwvpeclzhpqafeqgzkccqlylromhfxacggmypisfpaomuorshwshguaxoqyujslmjzztyrcpfqyucihxovrylnufxnnxsxahvjtgjgnpriyrvyujfijwdphyqrqiodqzurzekarbknbexrdkekbbstrnkpfowdbdbwsdiryhherofmdgfbiwtfblmbpgpjmtijnztfnekkzcenziadkgroebscwicsehijwrrqfyoshjricjwjjvnaskeitzqnjzulhexfykkrgvxumtbrcbcgckepeoedvrkebztllhdxtmyqxmimiyxoydgxnwsjcioqqznojopqgprcdlurqyqavazypxawtnmwzzyqsxemiapvvjeaxqzrstjcuyiihzlpxgisjiatpshrmkxqcninwtktoquklgdgbbqukjqzewzooqtszgzgzsowprjvnckqjmsjqomrgpxwqtonohxjbozkrtrjcejqxrnxrnlqryyhqzckfstbebzaqwrjxdnqegbphtwppxcelressppmmzmawxecxkbbulshrorxptwhzhmjbjpwtnyxngbkvjjssfcwadtlhpchrcvjvuwfswvjvyclzmwhokerlisfmeqmtrckokrxtidkikgmruyijlaffdprcjqsvnxdsrtkdaigaxjmsxpolcbiovrzluzlnckmwqlnqwcajlabihtpnrcpmgdrohhduyotrvulptospqjhgbrtwfzshtykbyezyolxltzbqjaessxtyewvrmyhaxecukycymecndpcftqoyyvnlazzpblaudflxewtilkzyvkwnohihgeotclbuyjcquzujxslsyineofytmbykbfesgzhphwzfnsqdssmmytsdrwvcfzmmahprzbypulpqbdnwphgdraumikooxjmubyygfbyxafpjkolqkoocwtpjvsyopisfczzqjrgqwxgbfwmhcnmesxlskiutulvpzosbsjjvoxgmoepupznftvijzusoggtxnrwzybygdkuruoqcudejdgnizbfiuuangudkqqtemcrudlgpzzgtqaxppouvqcghhmsjqhggmxzevqcycltoomvwphzkgbsqiigrdadrweaerviqispxpaudaetawtzhliedgzpybvyqbyrtkloovsgeoedqrbvungtqbizqsakdewkjwnexdmnyqegvpvewpvgctadamowvdjmqlpzecdhrodmwomwgexpnryzevqekgzpkqyoxbbnzxharoaoptefzjxkcwrxhvcjbrffknwxyellgbtvzspbuawoehwynlevbyocecpizbrjqgzmysgxteucckhpnvukjccjegwslnrtrotatrryjpisullkngmbrxkezusvdpvgnxmvyqmcjncqqnwbauowkehssvopfcnbwfyutxssxoxinyrvtyemmljmisqedyxbpikefmvcuurjncjqjcjvberwcuyscfdtphaqdgubyqljlvfilbbstizsoskqgrztogekmhsuwumdizgtjhsaifbtmyoajjfwygvwsfowqqxlptvsyjmfhrbrkqdyrywzyogwkiaezgqhemifcjfmqotgrxzgezcwbfibtzguhicqaahjveobwgxirsnnxxayrshwaomqyausbrtzqcshckvvgvcnwzlhkqxgbrnbmskmrcdrylfxirowxydxrrfsrqccuznqxnktqzeveohulmecmreadoczinnxdptmaozkjyjutriglmjhsygefmxqiivdaivfjmetmfqokfzixelgattyjswhgmfkyyvwzvsyrknubmhtnecayoqznluoqnpfevustippvelwdxwiptajopbgjxmholtarscxmacogwnivrxewyxyzfpegecwxdnjzyocoimcigrjuwgyrvnsgbuaogbqaznklrrxjbhxgbzbmoqhpsmstbgnvrlzlslxyaohqrmfshzocylwzucxbvfvcarkapaiofcmzzvrfazkkkwspfnhepvyynfecunsesctgxpgjgxckliegalpcwpzirdnawhivvbgvgflkejwzjeulnbtyauhsmbrsgndmnbftfykwtrszocongcprmswtrxolhksmhxzkluupwhmghphrixfmmzsgldwaliakcaqnzhmjxuwwpuzjdqhldtiaaoeitdbancxcqnxujtvozxjaidpgousvjouwnuskyzztuaawzxvkbbrdahnwyloylhrlghfjbfuwwdxasyojxvaarofcxgcqbkbchjacfsogvvorkdiecmvmgqwnplftcdvvsdnfkkfqwfrqspumsskxezgbitcorzcqtuuqyeuqewilmydanfrsgijdcaoivgydommtlcqaipepruomkkvjecgxhaoojugkjybwazmgfmwvvzktpbjxocbniulbawdesoepnmgklwvxyexdhqoyggpyylcpnzbluhjvkgsslafoyfvgajakjgweqskpogkvsneubmdiwcustdmahhkbzlllxlfsabufhgmbzkrctmxvgflxwhjsmnzkywpyrvsyrdyydanigxlnvosqytwniraymnhrspqpcorlfasjsutibryzxxtxammgxsafzdfbkklkqjmndzgzianqhiwltbqtcknlkbyuwctszoanavwkcpxszzraffizcnffbojswfxvruayleknipqixecmpbpgukzopghaakaijsufunhklrzyxvehasnpyukirdxrnjmdrzyvfszrqzklgfrezmsanfrljupnhffbatbkfqssycuekofyqyhpxqsxnplodhlekqulznjrgjtprznwreqbzqbnountbpvuqansiejvcmcvamwpvymztrxilhwfhcnevfgwqiagugqgjkwmhcserjydztnxlrgohcgjavpojfddtxnmklgkarzmkmvsuxruhlkutgxscelhjwrzyzoxobyjgceiubqmzlbmxdlxmtpopxbbmtmnrmattztshljggmvhjgvnxaokiqklvlxgfpfaqxhtterdhfjmgzgxbgovxqcapzisavxvxaifnhceaqhkqptzmwhffegxhskapsoohodpzxvqucfozzxzynhxhgcgtuytyzonbaojhhaabhmwzjljknutauctynxfeygmykvacsprrzhauvuxurimbbfjzqxaybzbweamxibkifrknbhzzmiqgiuooichvjjrvvsbsyotmwvdrmmeowlrbbguuhwyijrgfnynqogcqpzjgsnfbwroapsfalxfrnvnzeypdmusjjuhdhajefcvqcirfdorxanhrylvppdgrlaejxaxlurisfdprtsyagprnhe
+                  example: knbwnydkfpteqsalhaxzprlwrvzoqbwqnifstmjwhvsgofgbiioxwbxlrssyrseowupbihdveppueajpzmdgvrkfaamdvvsirlejcmvyjtulupnnzaudeaihdcaoysunymdwmseqnsuczvxzlqanjzgooceyzrdckusdxyavdafsokskmlplgemamfgcriyquvvyxqexnxktbonhwcunbhesaypxizbcoudokpmoilyxxugkzxpxasuwdgtxyenuurspaoxstnqgitazytrwzikqytcwoxkunjguallelvlsdpkuyddkbffnftkgtcugqvqcukbdkrzgvfattvgxsshoqsygvprkfzlkbjqvfulvuezvwruxnfjbjmqsnlioqmhyeiknqkbmutfzzgvykaauovjefzqzchxigcqrehyqndeygoepacpvotgvakmnnvetrczgugrrgkoyzzmobvllsyrwdbymvngudixzidzdxnjnodecwyaotmwnjksjneoilsdkitfozaznzzukhmfhbiopuaoufthcbzdhraqdjnypqgqrycswufcfuaacahamxigvnsrxhmukvxwgmdlsuaehvaofpkjuefmxknbvbfuxtrcyltnjsrljqrzjogrhvxykjniqhrjjmvbzgrecntagpfxxfzpavyhrjhdjcakozkkyuwzkenojtjmilcmlygqwblkunmwgobjayceagqmalmjhnuzbhjlvkvchelffmipurkkgppfvqaemzetdbabcjjglqsaicbrtykxxppdspjcmlihlueeoeesanjfydkqirgsxfrnqmcedsqrwnsjidpinxnjsqhhkjkppvivwzrgyqothwfhkdvjyveeteobuxfxxdhkqtodczgbaegbwoiehiohqbosukmkijkoixzntplxlzhtopazzttfpjlwkqzfgwquznoypokxjrixvlbonkjgfbmajkdtgfmntqypgtsvutswtfewwhfabixqwlpcaywraqfrzqifqmurciwvvhjbiccnmqsohyjnwyinrjksmpvzkrrghwhnzfjjqfjhiaibohzklzchwilmjtgoeswhizxmjirvqswkijcpbjhtipcubagpjhwnjmukxfjtuyrzwdgzelelfouleadpgsptkzjxhpcbulryniklvcvglplwcwhgfwiqgsplkcnjiileozchsiwmmeetuppsdrctmxkyuiwuwcenfgenqkpambyjevjwpwcgpdnidwchzfoqzzedoallrnkvvoqvjmcqouonmhkqnwjvungaasyugidovnjzamlsrsnxgikflsekozrhmmiofgdyznuvwrlpuyqpxldzhlrqhuyljfcqmagmezerrocvdfgaifhvcrnhabpwcrpavuzxlnqltzwhvtlgyzcddakompmyzgiwdgniyyypjgtbguxevcdtlnfqsfihaskirnkezruvlrhxfspfcwwiklfdhqqwtewirjzfivshrygqwmtgyaahaenzoqouzdlnbrdxoxcwtotcoadalzezhumixiibqtakqupknutgafexzcrlqhkalvzencffjbkfipqyvgkkbvkbqsiuwfwragpqgicvryhllytnzlpbguwxsluvyhgvgsywwysgihfdxrfdurlzkxekzvqptbrvmhkakwobtaixznzhypiprdidseajobzeveryoezhgwqiotuidletokqixnvyozmjrqrkubpizjvkpkknlpkpceoborvzozkpwkkiuvpndenqwhyidmnkxrmmcukykbvlqmzyvapoxxdbxdhabfqqhbtfwxnhrwxyekbeouauvozhreuryioxxenvdvflpcwuxzwntkimxlirjhgvdmgoigqudaxwmnzmsuuuhlwjxprryeezwhivcaghxdanzeshamzliuiioexuhlpayqklfrhzfcfmqiowbqciwxznyszssqtjgcxvsmbraazeulpyfiknmtkgdtvdhexfnyahmobneijpkyqjlmuhkxgonekpggeqjkvpanfpppueeqtmayswxalsqajuzvixeariurlithdezjcsjaqwzplgifwsrghpynyujuitamozywjjygbhuqrutdejhjymedhvcznozacxcpxqazftpcgjacirumvpkxwdsnbbnggiwnyxwuzkzhsgsxncdxsnnmwryzbskyqlhuhbopoxhycmxhmvzgtbllfgweoouilsbrfungzyfmwbksytghgaejuycbkgucnbwqluhcvfdvulagmagtisbiwwpzstwkaubffjszcisbzoipvxhomqapdliuoqqzzsuxbasdstousodcrvqwyodpfssejrqgocnjrfomqandnjvbaztupuqzjopwkemqjloegqjdbhzadqzllyqrvjcvuwiyrzaktuzctnaocbszwqbzvwolitzddzuweggnzdmhyzyxpfswsrdzfjvbevepxvtdaedgqcotsgkqwehweasilvdprtigzvprsvjgktgjgtpjibyiszwzgyqgcsfykgnizgrmbbjmcceykbmnmunthylujsyecuihkaoxcewlghvkcyqaxmjypvftqcazjbbfmrdxhlpgkmmkfjqetavljidkqcktupmeinjnyasxzooqqxpghdozrusvqbndizuunmqprhvxohznhmpjhvhnhyhefnzwreprhiopotzavmptyjjcndihfxofosyjvycabwczqtjzvicpwxtzivcpvnfzzyucbiskoozaqucrltabhqgscvslexnrudeppvfyuiaremxjshelbyfajqiepbhwokgmsznakjrekrttbspuislmqicceyyvplgopvfndnrzmxutnynbgjfxelzoiahsjjsatddfpaqwmutdabdrewhlxdunvhditqmjvpibpjvijmnhxwalxjprgfpjzvyrxtcqsjohkrpnsjzgdxdgdokfstipuhhorsncrvcapuyfanopjsptxcnkheielewstqyvfaessthdwtcwjeaeblqasyinhpppmcagtvfillqdjcsqspzrqcktslrukiocvbocpiwhjckudsglsrrrwpzdmvhhroznygplyrxqorzzcsrdawpwisetbmkhfvyslrqutfvboqgiylpftrvdyaifakxdxhjweffdhzbohdayapnvyjellqdpbmmxmtijzzfddtyguhlstbkbewipxtgizlsurviocgnjjbnkvvfrwqagyhtjafohbueektmwqvbnffihxjehunertarpfcrkmgrbkjysuqsuzjcahnjaitwflfkgcmekxxwluuclvvxwyptgmhdmilsibwjxixciebgojxgaluezyjeimurheyebyerkyjtryppjoitbvxaxwctutfyrhoxvjzuymuxxdatqnzprvnkrfewmsylondrlfhjbbimhzwszzbxssfuaocsdlhpfndojtklbeozterreyqndetpyfpnmvilexmayqhtvecpnbowhirynpwnkfnsceanvabsbbgamfirstkrgjzfxkoddlttysmnchdzfgclgbbcyubdwzsquxpncwevqhydmsqxsylpllcepszklyylpaysbluiisfkaxafzaoxecduwrasmsrblrdttcvimayiucilivfdoezwnliekrsrxikbxduchmensgcujrhwnbvwfksxogprtopcdcmficccegjtidvxeczzhvcbetlcxwgebwguvalstrqmqaohlmzwlbgfuyyztiatdwmgtzhxappyuiusbkbremgdeliyvkrpmjgwssxzpannplmxoiluahjwhddkoetwtgwflpbpygqhzqquwikahxzjuzydakfmvmxggcgbjbjlbbppfjrubceqgcnogvzotlwvxgqekspugiacephccjuobwhofnkgpndhxcxijterlwrnilyumbhqqepyjmrbyrrzxyrkzxbtwpkyhuwlxolnousdxqszmzkfqqsgtztqxxbavwarrhfmtxrbxloffpikveiyikhvovttyafnjcrhqftgcytzzbsimqnyazxipgwdtazcajtuyyosckwoyplzcdlzbpoueguhazvaapxyrklsbxarjgkgkpkkxxvutsejzomdcdcmulcmrshemixpzpqucztoqikhlwbfjgnswlnqgdskybps
                 enterprise_name:
                   type: string
                   description: 'Must be at least 20 characters. Must not be greater than 200 characters.'
-                  example: kxpimotpcddwnznaieikgspuindqpnbjaagxsyuprxrcvuuviybelgwaoayvcwiuzxrgtfgyshqynwbsnrepdpcmf
+                  example: anaeobprkfettzoxftaqtupppvhuzhkupiplpxqorvnoucszjylmavdnyufpospoivqeifkjspcenrzrcreuuln
                 category_id:
                   type: string
                   description: ''
-                  example: quaerat
+                  example: enim
                 0:
                   type: string
                   description: ''
@@ -5548,7 +5381,7 @@ paths:
                 activity_type_id:
                   type: string
                   description: ''
-                  example: totam
+                  example: culpa
                 1:
                   type: string
                   description: ''
@@ -5556,7 +5389,7 @@ paths:
                 state_id:
                   type: string
                   description: ''
-                  example: id
+                  example: possimus
                 2:
                   type: string
                   description: ''
@@ -5564,7 +5397,7 @@ paths:
                 region_id:
                   type: string
                   description: ''
-                  example: qui
+                  example: iure
                 3:
                   type: string
                   description: ''
@@ -5572,7 +5405,7 @@ paths:
                 address_id:
                   type: string
                   description: ''
-                  example: ea
+                  example: tempore
                 4:
                   type: string
                   description: ''
@@ -5580,27 +5413,27 @@ paths:
                 home_address:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: kjiutbxvk
+                  example: lmvufxhigkyubrykhbr
                 client_name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: loiphynwsmekiofccpgjorhkmgnetqakbqfollrulhicowupcpezeyntxdgmpqhqpuupzemnsixigdadpjwavrbizkvoxrmrdzbvyyizxkynkrgztsavvsghdspljhke
+                  example: xnzpkwtjjflnxsqqujfzylzoylqjemmcuglyhjdbkbsxosibhyqahybylbdatqpxobqjmfihtpsixxbklkswionxtljxtskdkdlppowsivdkoswn
                 client_phone_number:
                   type: string
                   description: 'Must be at least 7 characters. Must not be greater than 5000 characters.'
-                  example: zqznxneqkklagtzezbidsulcgclylowtpqkeqdxbwjsweaxdskynjmruffcnuudsjhnkeppexehorxzovfgrecsuodkquvlavsyhzncwyalyvhpicxazglbeqhqekzxwcffvyoyhwowtftzjiebcyceqvapenbspaisjbvnlqxzrfpcdtxiwyypljofygfgqyydleeialeclxmzvxiwvhetximopetffkeiomunxhanwyzlvjldpyuzytnwjucwexppyfgbjlwckgkwacdojtobjklrlqjyifmshnrmwtkthgpcrrxsnnsjnycnjtuszzvxpqcodmnzkebtyaaktolspdrdregjwatenaywowmnabmsrdbgwdvzxjicoezvjyxesnhuenzobowgtfjnbirvkchxxnozvmqcbfqqwhlbpyoqjqmretkknpmbfltlqcvakranvsqqpsivmctjikvxucbctrfdwutlbolyqpkwgorftovsfwnxseznpecqafdtmmchooeflbtoojxmtakcuyiqdcdkyvrdaqqcccvmergkkbebmkoqhqskeirsnvsrcwztoslaxlyzurdgxbjtltlrlzeufxfxarhnxvcffrsntpjdhlhcnarwncdnqbliofdpcelhsqkdjaanghymqfsmfoqweyrjnltvjkpoivkufbrabszvsjihgxhrcyxhmqrfgmievmuynphuyznrdcwtoixttbabeqmhmycfhcixtknvlbwaskkrbsdnsnfnaxtpoktonejuxctzagiwalybbfpwgcdkyfcprykwtaouseddnvnxntckwfufniobiirdexlyurxhwkdnnrtjvjeonfqdvzejckcbpfnusrylsotonrkwaqgxzly
+                  example: ywcdufqizvpbpmbelvjizcvmtlygtanhtfyqqlskeibplrgshurhvpjwvcvutziikjowhuzgdlbsmkpivzbjobknnbulzjblladkoszfwhuwzxkttbbzrctesbuyflpostuzyvtkuhlfeatdtyyzhwfcnjnwqjqnosafppbuhsgnbselnjhjduuymhwhuabdjoacknilbuylximrpymsagtcziauywdlwtbmwolwfyxnuzanmwadmwfeqwbfmahcceclkieomaqkjdbmtsgidcpvkadquloyuuosuvrabgmsodroaxnrdwyoorekatdmfbzosyqpexghlcjqlzfnnwitzgkhvbmchykbcrelzykecmmixmeetxjdgwwexktuvjfkkwycblbcirrmjnteqowhhfvulgidbpranxdeuutgrttptntodfialwuuaadecvusogzhcfvyvflyskstqssxliapphvphgzrzikqdhrotxsmynoqktpaqogxwrzfqxmmayxjcgybefatwmvoglmyrfnajdsycaylcjzjdkxiboqatorpwdhppbwwljnbdklevpwhnzjhrjsgstwdxeieqgfznagkudicccdmpkctekoafmveqhbcreuegecolzsoqpxahbgdoedhphixjhhrfsvcbxkzswbkxgtoxcdievejxqjgvlsywostlmzhaezvwtdeydytlycpwipssrrhcjatekgasgvhnjgvavhmvvnabxebxwczilymfbhjtniunrkpqauvqskmcwbjacybaqdxujkarlkqrgpxpmicoemfwcixauuhitczihyljhkcdxsngybxclptdiudgdlexrxjszrakmvhxrncuwtxbisutuciucieitirlrsgngyvlfnmcfslnpcrqwxwfxjkcleqyafmdeykaqxdytflbcwgsygajyfzpungjkntkxffcipsfugbuqeklqzwjalhusylkwcmmynocmylnsydftxksbidksifaiexcasspuelmzricjckfynfyogfknsdzhlzvrwhvgqtwkrcvstysxidsraonoymyyqzvvcmkvsakiclnajrqflmdgzitatsfgelbzpcwbgbtgaybarznhqhnlmeovcjbkbgzezbgmdmvgagzivtnkeufitptwhiszdrgadrxoexbbwuznvckmcbffsfjucngdbudvkvqdrvpfhhuhjixsfununjgsxxyqnkuidlavtysqsjckplapvowlzbmwywvmbfbqxwwkjsooxitzvtbhdeffonnjnyygimgwsjaspxealdxnkhtuddffigqyuvsumekezmvtpovbpuomxejtbuqvyrtiianumadeyfhtpjgumvtvxfxtmrqbcqitanvxtkgxjkddnvshnwnnltywqjwkjvczpixlannwkumnitxvihnjduhpgvuwbyfmxjbizqocftzffypduxwjrzsgceprcyhyiuustbrnbbkdkfsueyufsecwlpjjxrgcwzmmklqtuprqpmcouvcvfcrkfkqpwwxmnzbjxifeyxbfhgfrblsjsudfpkcijltbpkgkstvbspnknlsqsgmrhfjbeqkexvefkasmpcqegwcrqnenkztvmmrkjqiwqrttqsokwhodbxiwdmovuehectdllruyhcxclnfzqpqbpxhmembeciwesfihhcrjufxmkhdwsuniwcbvsxmqsdgwonuxmeiomtwcbxeslnhrggjcbnpziqcazmiwbycddwzjynuowiddlctuqgchajcyisvswaxtqougpsfxvzrrslkndsxriutgfdjbrszfqjpqmciayilaghofqukrvzbxpluylosjwphybxtspknyxunjaocbciapomafkkpzwxxunpythtarvvfptjrdlsvchmqmvmzjxehrnwrahzuouhdxmkuplbhkulkifkeyruxnubtoinrecioorakbhzlfeqklfrgsnwhikgbmcugxpcnucphcmuykrabvfrjzfmreonzmzeigfqbbilhuuxeszwinhaucedbjfftccohtjoedcztywbgccvgyhsgtmmpzrdrftrugvlipjqjommpeabeffkyqixxfprewjwlqhizphsckxbhrrbuozpsefufogogytgzvygnnzmnfjmezywakjepbxiikmnsflkknmtdbmctaepizwhmsjpvwmioueqprjjkqiodwcnilrqhtcvinhkchvzlwootzqxjiplgjhsibukdobrfhvdxijxzjdcxqrlnavhxfwynkluvrqygjrglbfhrdrusruafbukhtqzlnnkzhwldvexohvcnkuytrmmjifnfjriivcosshqrcondlnzbnsqxapvlyfxirixsdwrnuymygeddyhwdtakgveptuptbgqwmpbjezxhkktsgxlygzguugnmgzeoslixykxbxcfxxdujklddnejilzsmcrhmtvlmwpvjlpxqehlpygvcmdyxgdzvxgksekhcnijvegehhpyvcqmihldaacoefhmcuvgslpixuaecqizdfcpmgdgskornqzbtsggfqpaggpnkbgzatfkkhlymqrvicftksxutgvdneandsgmgrdkiwllnbdufjrextwhsbyurxfpcmcymgtmzifxwavgzbvyxtgfzfnetxhlvynvqsohyggkdafkslbcelmwlvbxevckqouctgbsnqsuibosbbnlrswnwpcorfemeg
                 client_phone_number_2:
                   type: string
                   description: 'Must be at least 7 characters. Must not be greater than 5000 characters.'
-                  example: fswrsklzlflpkuyrtnfkwcfepauyskiskhsaahiswsdsxbegcscpmdfcjurcpxidzopahxbondnokovkeuuaygsamzbawapnntqspmvbqnumtlfxszwuivqfmqomryvtugxcryzipusboygatrbycurelifeelqcyqfennlohismgguqvatmtpodmhsxilmvpgugfbupclxpaiuajxfpvksafkgqypwqcnrzqmruuytpqwdretzvwfkvblqnrsjwmtwzudlibmeakgtclsetlrgkfyoxfxlsihnexvfixwpdcqakyvrfwglbjrviyorgsedatdotndhhalxeckvkrxzueqrzerbrmgrvlrwwtapimpthydthhfpvvweqxavzhdefqxexadyqtveqsrjhvkuwpogbndcbamtkqtfetqttmlvnugigiwrbnicdpjrpunbwmfkgmlzvvqvbocuviekfcyxjskdqhojbgnymqlzthjgekxmabfptbshwyflmmhpclgefxjwmtwbrcecevpimkvroghaihxczxzbblxitycgfxhoeugkitrabalslpptngajiscixnfyyjatropluervoeizyodiuevwaeerdzrvhkhfixqwguebjzuxmthwwekzgrdilrpxsezwkuuvjwkslvljxszukeqwspuamkpxuksqioyviznthxroituqeophbepaessqpswxrwhkjtflfnyivdcyeqpjffvdakaxtnqztaquqdxjtzjeojeqsfamhrinefmrznaplljxaqzyeptfqlujzjizwswjssgdvbrktofuhmwhhtzpzitsxfzpaamunpyckffieggwrjchbwadvwhdphadrcyjyrujoclsrjtgzrhwvfkdtbrloqwtcnlrfnjibblcpngojixtmakptdplnsaxccrfwwpowfjmpqhyhblyaveinqhbaceprtwmrlucenjvnwjebeevsnsnscnihzifhivoxenunvqibaxceuitigfrqeyaaqssomjfgkemqyiwrmijcznvfhygpuoygskalggnhzrvoxlbnfpkjpyuqprowositvitzpxycaxwwvlbibwtleedddclywamkprjtrlgiorpcmtfmyusjytebjfvnkgdzhangymabaoogpwbmkqgfjigzajhcfmoacjaqqizgecugumkgnekwxrrumyvjqslxcfmzjoxwbnccbxrudyqcxdftggucbaptltemmbpspbsdqqnzllqzndvqztajzoasfbnannvqduxdldjnoulviyrxehwocbcnymthijwujtitjduppybpclfchphsborvkpadhccdfvljtucqmiwzfrbedhtfqwfnbhyxvxgekrdlqojbrefusjbyaxitkstgyqgpepajefkkfrqrtyfcawcjuubqfwbqdsiytoxknwpxcqshzpxlxlysummaejffhglurbrpjlbsvsrigdtjeeupowqbmptebbszilvalihzamitxjhjtmyqmxaklbqgvcqqombcnovclftbpwekuwptmsicemedxpwiwfselwpmoncxrgcehpusphohxhsxscbkqykejoqblkwkmejocwsjcgatswzyhmnrvownuvqlfhxxfzdjsmetlgzvdvxhbmfmwwuamidzzirmhoynxlhreimdqqwrjetuujwxvjskjckrkurgcthwkmreaxkdjqxovfatcbjzmbifzrrdifngisiizpnffloilrlqmhmoldoatlbubpvlxxgeaudqruyvwlfcnnadbpzloziklzcwqhxqlyxzzjlmfemyualwjosjdaqneufpaknxewqfqsbqqbuxwmlgmhnxkiulrzfifuebepnfudbedxyttpcozizgxoqvinksdqbxofvlxxyijrfqlolricmkxsyoggkfrfmwxizokyoztmixftjsaqsrvwchtzzlykhkatmgdjxzmwhscrnedioyxyxdrhirhailsryhxvvvjrfshwtztdvqldgxxnojanssnxwhiatbazydaqztdgyyhlurlukxqiydmfibowgjmxhgurblyjlumptlhmvboevhswxothbottskzkykqykxmkfsoecduwcaksbwyvdxmbduxlghgpklfykgtnzjdaclcwtzbbzzydebeapqbiyxjazlkgugvzriveejvtjxwbyblrjtzfbunrsduetjefgqseqthhcwryjokfeslyvquhmamqwmyajdtzcbeqbpcarcpzlmrgsvcezfxftfurnowmbdkkyrpgfsbmvawgvynxpxixwcjqwzcpxxahxkcxywfhgsposxlnsuorbzjmcinqotorvoqjzwfyvjumjzbgcmdjaupzrmzavqqzoygrwawgswhtcadmbtqasjvojhaenchbbhsovnbjoaxnalhqtplnkpobpwxeqwzrrnbvujgetbzjfsqwqlatyezohedhrhswhfqanbtfahjuzepjpsbmvxmmdtmcprgomukddoylaglqqceuhhhndlzhthiyfdlreslmokkfzubngzyaqpetlptxfmxmyunietzofcgtzvfououpmhmnvsferndfnvdglnvolucsxajmhebzbdosnsvnqoalywgbvrsexymvpkicpmlwqdcjxtectryfriapuorirjhgydcxawcjjoxmkgdlnzayffdbycmvlubmhpaqxxjyovnrvxbcxfvdawxoeyihomzuydtltskdqsseuykirwqsjamfnimxpiyluzcuoewogtcihntkpdtecxjuxkyepduhlfifswytvmfndbvstzrsrwehsvdihexjpmrggqjowpxkmiuphugavhskuyneiwlqxdxyspvajpsjpnkvppagetujhqixohhoiwojdqexkzwhhbjijjuyzivatfrqwlpcotjscpcudyocgvntgamotvcbkdabeaxgrhgefhkkzaurifwqkyjhafxqdiqlrvzuntdvkqlabmszqjcohilgzhawdxapiqregfzfhyaokugpzpiepxoxbxoqvtupxwnxidajgeyyozyzrbdkzcqlfdfmkbuyvgzezthwqgxqxmqxzkwjwoaqkhshxouycalhquepddxhvidizbdsvjzmtaybbgyvmonyipzntvsdahixuzssshylalfsuqxykkyuckzdeuykelnczwamdldrxqznzfooegpdcrzqxmmwquotdoxahncqqvymrdkieqrnubaqmkkbgyrhnfcbbgcrixwvddahozapnknqbeklovyntforirvgyjkemvotsjtdpfykjqhvxnkknfpxmrpivpckogwgsdbpcxozthodklkjdapftqnvmikdipupqaqwbgfasrufghebawwbdwzbjizctrabgkzrruwzyimovpefgltjteypbkrqpnscrhhvwztpdxwqmhrnfsyaqavapdebocrynwlapzhluhrxvnndlsatfyhmgadgaxwpgquxunaqkvmikkqiewkvvyidsejritwwrqpxbkytlwjllgxwdjorirffacouznumkwjbraipndlkygevmqeknhbkcubcfqyklhwhqjancziucdjepuepgbmlxshzrcatrcohythvqsnpyzbycnwfxnxcfwxqpbvlowduolkdvbxveijbtqhxhyilyxgwizssuanarmcxkubiyfnvzgvuuogyqlautovmhtzlhlsbpguqorgqwgyvddnjktxfjgqhawilfmqkwsimtuqitbzrzshzjtuqdjlfsmfuqycszhnredpxebazjqnzalityzwncwqfzfygbyaeosujopujirpptpanpgskpmcuzdswckatwpbxctponaoerbvrehbwmctlimcpkcigiyhxewnodxaivyynkrwphmlyxpjgjscakpppsnzfznkcyyfsybizobkuollsujntszedrnxahnhxtkvdfzsfsggkzwxqujzfwhpdtkuwwkcpftbkralqdgdkcsrzuffqnwpqsmewskdecfsvskboeukopchvpxlsykuyfwulwzaffqtameguhmorlmdceedkwfflhjlynwrmwvxtiwemwolxwmoigoynyictxcdnwchkjmnlrdkmbjvjvrlmxgdvzdnnazrbgxdxspzmcqoggtautqbqzftevmvpofrdibcpfgjhsrsiluejxlbnotdmrrxbocfjpzbhjgrfudgxrcywcpqyczwjmkgtutmcsczkjllcumaobzahovresyoyermigsdmjsvmsohgmngzuzxbgspuulksifadnqpybbeqxbktmupfactmleohcxssyhvurkcvikbnmvxndxxyybhysaajtaysbjalwjxsmrbbxjhhsilyropmqpflhgfsagcfvcdhbqykgqtxklydycuqhwqlqgzgtpwyzpaawgwbqlomryuhlmnjecwftkatxladiewbrjmozktwjpsikyaomhdkyzfknyurdjuzywqoqwmdmsdhcnsbpgdvgicgsgovlypbqqcxzwkycnwbgazyhnghndqdiazxfbgbcixatisayuvabbapornswfhxpjlwlrckbnxduieikyesnyftcabxgqmkeezaqfbnudwabtvgkopmkcfcgjwkjlpoestqyaewsyefiuszgawfxboyaurwjdbkxpsaxvnsfaiqpphjrvlsfyftidugpfblhmeyptqfxvnjgzooipcvrixlcdnudpzfsdthejwbuhabexmstjplndvvtyshstmoejjwynlwkxjifndqeyqesbamrvsnfszfgjafvdqmrypbxrwigdtkzwkewxodhzfgadmupblnylowmkqrvtrhwouuabfcx
+                  example: dhadkqarfehqfkqvzmlxulnjtjadsbfzgxsmjramqypvcsqqzvnqafdpplpmmkjwkbqiqkroivbxnnpbcrdfppcdgkwvwhrtlseitdhjjjxwpvdjafkpabucvccncxwpkmyqtmtxfyxyuhbiecvtaauaskqbszmdvnzzlhkdjcrozxsvtmkxqvvhqtmksyuyeijmnvkoockiiohfifucqmocswwqznurpcdexjlvzhujcftyjevbwzuokmblacpvkdjkgluptyoykwbshouexgpjjvsrptowehmmmdloniotguhwmnvoddyiituappehptwjpnyqmbgqcfozfsfpjqkemlqbzyaqgaelqyzsvnvtzmtvjnfswtgcnidnmmqvvhuyjnwkblggoasdfkjbjcgbfgfemzhqgmttjdtkemmbwpxjvwiebmajvpyphynsxkzzqcalixdfhcniuvshfhpcxshhdzllzgdtpymagxrnphczuwelblbjtyihgpaigbiwspkxydaonuhmcekkefzkkfmpwlvyzorjyofzahimpdzuqarihdvrcrhcthvcqjlqiwyqlqqisixavmvmfrstfzslgeqegjwfwacysvxhtmsjkgcmqugumemeboediwekpmfxkusyiaixmxscjmdxqhnfiluufynfapyjdxvhgpbcvvegxmxtkwdxaciahtukduhotxrwatabfabogjcwqkvmhgkftbjekmhunatkfsndffzxlvecmrzmlriwzwgbndxgsmkmfhjyemvwhkrzfncaukcwmbqpzggtdwzjimzmbvbcuzonxndphizqxbjmfyeoubwbzigsfarpmhwpfrwwpsfdkcuyeharlrlldollumqlfdkusgdioyvadiymwjfwzrqfmbrjfrbmlpkdseaoqfxijqwnhgcdhmmzvfgzkxuughrlfocjsbvhgljcyjcgqcaglgvndgpzpfeoinuklfdthnllssqhlagjiegobgvvxdkfmsrwygzgknqajzvlbfpmzjtywshabchwjsincuggrqzvpygzmemuwtlpcsbmimrxosmrpvtnoiypcuxfgrgujcvtxeyjifmgafucgcefmlsmtmozmvilfvepveftrdmznnpjiaalglwempcsuzzznizqpzvyzxnhmqeuqwnvggtzfiscvwvldnzcbhqaroaqhwguevhswektqaysrdukhempphkuxjovozzyikswhrlphilrhwxdgqkfvniyndhlhlmghskhtrijxguekgjnujozxqecwjppubqnmtxcctcjsokllidmreiwglkbqlzdwlkscgeisyeklyghshndclsqounuyglhlasphglnquaqtyquhrwsqwolbxpdajoflxsunkzrxlrwur
                 client_born_date:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
-                  example: povfabjpmdfz
+                  example: abthkcvq
                 operator_id:
                   type: string
                   description: ''
-                  example: illo
+                  example: fugiat
                 5:
                   type: string
                   description: ''
@@ -5608,31 +5441,31 @@ paths:
                 operator_phone_number:
                   type: string
                   description: 'Must be at least 7 characters. Must not be greater than 20 characters.'
-                  example: bvgwcwrmtkzgf
+                  example: ttvvcpxs
                 operator_phone_number_2:
                   type: string
                   description: 'Must be at least 7 characters. Must not be greater than 20 characters.'
-                  example: lbjpimwmfcxaquce
+                  example: rgquompztwhgrkufwvru
                 operator_born_date:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
-                  example: tfcarwrsjbzgui
+                  example: peqdusbobd
                 latitude:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 50 characters.'
-                  example: dfvaxxqyjxwwmzvmqvpsgwbifzzqatafbtkbfwfgkgojqzeh
+                  example: zzsxjqilpeanbfzbs
                 longtitude:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 50 characters.'
-                  example: jqgzuvz
+                  example: myjfpypshrpzwbbbvsnuslfjcyuiujkdtl
                 file:
                   type: string
                   description: ''
-                  example: ipsa
+                  example: beatae
                 type_id:
                   type: string
                   description: ''
-                  example: fugit
+                  example: expedita
                 6:
                   type: string
                   description: ''
@@ -5640,7 +5473,7 @@ paths:
                 order_time:
                   type: string
                   description: ''
-                  example: debitis
+                  example: consequatur
               required:
                 - general_info
                 - enterprise_name
@@ -5776,15 +5609,15 @@ paths:
                 general_info:
                   type: string
                   description: 'Must be at least 20 characters. Must not be greater than 5000 characters.'
-                  example: biuvsneqbfigphiavsciufbddlyysriqpqmywcheudaepqprjyndazdzbqvmpavtk
+                  example: ukilaswkucjclxgvvqbxdfkplqkpnfeliyjqbmoclspbgzjwsrbdkzurbfexjihnretiuordrkgwxaiygomrfjzwuzyhxcnjhaiaiqptsnvxycmeudbtmvwjgdzcvyiknxcotbqnnypaknehtvqfulevwjahwbeybxzsjegkmkgirjkirizfphbynbudrqmjmahxjatadzllxbakabfznjzsnxvdaujbapxqjcqdgkhcqbvealktewistypovuwobqqhrvsdvgnhktpikvglwnlstkunbdnhyioyhtszpeiqhzgcbifveotzagtwesnqrvgakvpksivczpflnwiikmgvxjqfgqysoemcgmuzsqoepjmyvtpxqqvdpwaofalzmzkzyrtlnanksealldrwhqnviyropkelmwwtetcxrttfuaockucsyswlurlewsvduifnlvjhosayxntrckexsuxbtcibtjgpwkuwyyyzidiivhsgbefpwesmztprgzysjmygvdjuohppmztbqyflegmyscooepznbrlliprdvzmnmmqfaoowzyjzgzlgkjnarbredydmfovamkasbirrjbxzyqbcweyqlrrwabjpqjawwnhvkgzvqaqulqodlnwsdlswqvybilvudgakgatmswurkjqejlubetrjjamoyypnhzzbcbjvsrouxlrncrecwbjlyjhaoflapfokksmjrosjylvtgqyawwkieesqdetazlyeqkeofpxosfiutnqogpwvmitcjsgecocezsfcmbxrdducwaxlayncoepjbbiywchhcrgaoazfjelmugwuimeyxlxjkjvvwpdzpthcumtvqyytehkzfesibgtfuavpkfxfvtuzcycqynhkdmueugmwuthmqyitndutktppyetmkopycbcfgezsepmpopybmsagkrzpdmwnnqbixcsvybljzvpmmomleblovbegrbxzsyttqdobxiyncqfarjhexqclejgdpopfahjxdyocbfddrkprfqnwndjzzsqnqgmppysyiyodxayoysvdtrevvlnxaqxahpdcnjdzgqpcqbilmiywlijmolkabxkilbgzsjvpcemevejkxjxjqndhknpvnedfhfkhztsjrgurzxhoyedotuwwpthexskaxhsgasmzfbbpzdcxewpknspdnqlwkectragoksgnjukxpfoofjoipagezzooghpmtpngtqvrtrfzzqswlcijyzausxsejjjapqthmdzyjokalyvpwmtmcxojocureeibhcegqwfhjdateghxfzrednlkjkuozxinzwagsfnjlewbhjqueldnlzlajahqehjpfgcjpgkaykhfsaobbngcwbsduxginahkexofdtlvmbqpxhktfqiadqacukhrzcdllbaehfjdofeesygwlmhliviceujxxcacazcvsikmeasgpppvbihgkaytlslvnvkgvisyevkacsxfqegvkqtqcahterbfckbzvvonpnjrxycsudncsndxlpxwzepdfqziohblhenxyaxurgqviqbotwrvmroztttvougepxkliqszbfxdnmaukpqfsfscnwlrbywfhttlvyktqvkytowfxakospofukueotxdbtoacbuwewqxsfdtytrlmiqibutveojqxddyrqcvwhhbithzxieozolsoebecfabgrvxsmujzodigvgxksrcgppmnieqkstqswvmpqkygvjwxcblqnimsnuguychylymdeibrumgbeajzfpfvjnckabeyiofvhgwpcktuicsjvvyszihzdsyevkevdcghkjlgyalycjrczlnqcttyxkrlmbwwicutireedykkopdpojvkywdmxpxoaniiwtwveuzhvihegphswoqlvczpzwbchandxewkidbwjoehlqavskidavfryfbdowunbtielyrurcnqitofvyymtmjybycptwotwdkzlybkrtjtpxmmydrxysiypemwldinvvlzsrvythupgvyphwwsvydqvbfnhekijbxkcunmasfokcpztaopbwwlorxzowlgrbuniqlaiflwwqrirkyfzjbcleshigxlwfseekxsxherdwonbgukrzslltzrwmofizbnbdipoyousnkbtzxfuebfpayywmsxudidkhadpxdbzsbdfnbfwqrcjlozmmaayaklvzypmfqdzfdolvdltufsejlzxojvlhynzbzvlewettuhorstqaljjmgspbswfytiixdckybwkufiigdmpkqyzqgxcxgqsxzaddpvguorvdncrvxfrryokjvqppgnltjuslnihvlgxjlyzbqopeciktwmuurkvejwurzutpnyeseabxjbkvieenftzozbdmvpsojazkgwihvofpipomorxtqqnqxtggodzdsdldfyiqcnsvdkyuzcojiwecvmayfamzcflbfdixpddnydozctmfvejyteisntucdtsxqsjrqohcqzpwyacyymidekespjedcwcxakqasxkjunexrvuhxaylcdbneppotyjfnylqdlnsfmxclcstnhmreqbffuqtykbxshxctolswcfqxnkcebyyhbaxopboyvkveebbymrnwtuaypzhustogkmbewkucokkoygredfwfqzqqzvzxsagxnzpbmlzivkxvyzwbcpaudzldfmxqbmgdwhhlaixpllmopytbmjkqksrdfxuwsdjkhujrwsnamrwokgyfynhnomwavzfixcrmobzweoyxupklshzwqsglvcvsfoxgmacofwtxxwmnetojlcmibmexnntvvtqjrwhjxwauzzmypqilcjnathsrrakggyhrcgaktxquhtmlatpbgeqhpugnnvztykmaobchnkriepovdoiocfihejvlvkjtruyywqongkluvxwkcyddlopxkhakarlkirsevemqivlqdbqdpsaathosaencachqdvngihluwtbagjcyvwqgcxzfyeormnaxwhzoapuiprimlcejlvpzuyvtkrlvkvgkdeyorvjmwgfqgqyzjwrlhcnrlmcqsgzejsxvbqknlvcyqgavodqfdqdfbjhlawrplitqcfezhkzpildvatarnxrdzuawtprihfwupdhhurgusbntrecgtqcmmlqvikqybfevowvufaeaosaztgnnghoubyufylczaoqaaiagynrduteiteyuocdkjczawyxzgjoporvnptxjikhcthmseyrqhvnusuqmbydtwjohabzsvicivfeubexsnostyijvjdjtglziutpjtuctbovshiqmbeagktinvaxnjscrotjjrwnircxxronbdnytimzdnkihefwuisxllnsqiwgkvzmtwhlylabfqypfzcdnryeuztflsdptbqzotvjfbpdmleeahpfltighnalruersklbnklokmstmkdgcrbwyyjhabkzcxhrkkuxctocbhlfwmgdvkrjjmmikziteenmabrcirjtcpjjodlqjoftkvqccnuwdauqomlcxaljvgpskvcfyiaoyrlzvnheeowrouolslpawbbmgxyeqjibsrdwadgksiyssufjnhvsbwbsscocsnciwqltwpfzjpufbjemtukqwacmqhciljdhgtoycrqqieexfjysatrplxisffrcwyitnsxyqozzyiowypxrmweqekcosbhfhhwpxofnmrrtzzjhgvghfjotjvtbanzwjsrqckxhghzlnimzmsgyxfwkbzrutmcrvjuuztgtwetfgcskfayrpfgcsiotgeaqgewrpziurkoyotblqcbklgkhgzutugkuyrhpqdsymyrlyywxqhalcpsnfrgvjlsieuhosgumyriyjikkwuefmwxqlcbogaofndgqizzvyynmsibeizxcvaixdmrxenkrlqjkggyvbxsuftwckomhcqwbzvhcdazutrfsuqnnuianyggiafabvqnbwfwnvixzqpulpdkpumraeijfedbeuhlfrtdwzyjddfcpdstamhndwicedqfugqunayzcqmzyvsjcsfovsdqsrdcnewrnzmcshogfhfulwldfiyawwjnhqinqntwvlnljhprkqodkviqglzhfyqgkpcppnxekzjgcovxgulbzzdkwpjwklfwjmwewdtjesushejnydbfcbnnbejmfytzwftunxbkvknjqcpsplsrysmmxihwclpbbspjolvropwfeaavnjomubqkdaiwkshidzqnvpmavnjtdgsdjtkthvwjhilicuxciiuslhabfjynxtiqlvwsiqrfwsvqavawxioyhfnvbefuqcqazcoufjyupdxoztyedbesfkcnrltevvwqyzrtngltubihzxkbuzoqbeedmtjemclotgnsbvkvrpjkhsqplseyuywepvaroykfzmuawjnmocnsziptptktbwtutnkwbbvrnamphmc
                 enterprise_name:
                   type: string
                   description: 'Must be at least 20 characters. Must not be greater than 200 characters.'
-                  example: vucnwolexhxcszzrmgirzjiixxvflfsgxgttydcvtavpntlrxyiehntkifpetbkconpvijijckyyvdthxfwkwwszgtodltvkpctzpphzesxxkmjifttrqbagpaunylj
+                  example: tuyfsvdqytrhdecgeofqzlapaaiupjehqmhlypklsjeidevmidiqkxtzyonqtsyrhvazfttfvguwffdmsjxqxzjeygenaebusthpfqdltmwngivulttdgonpwarocqtokglbmugflgwmihsamrtizcyamixfpqhxrkrpqjsojzvldajiezfutrgqsbvvigecj
                 category_id:
                   type: string
                   description: ''
-                  example: laudantium
+                  example: quod
                 0:
                   type: string
                   description: ''
@@ -5792,7 +5625,7 @@ paths:
                 activity_type_id:
                   type: string
                   description: ''
-                  example: ipsa
+                  example: ipsam
                 1:
                   type: string
                   description: ''
@@ -5800,7 +5633,7 @@ paths:
                 state_id:
                   type: string
                   description: ''
-                  example: omnis
+                  example: id
                 2:
                   type: string
                   description: ''
@@ -5808,7 +5641,7 @@ paths:
                 region_id:
                   type: string
                   description: ''
-                  example: ratione
+                  example: voluptates
                 3:
                   type: string
                   description: ''
@@ -5816,7 +5649,7 @@ paths:
                 address_id:
                   type: string
                   description: ''
-                  example: officia
+                  example: quod
                 4:
                   type: string
                   description: ''
@@ -5824,27 +5657,27 @@ paths:
                 home_address:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: xsdsjyutfnpxwxkmrtfgnovkujjgfjofdcwoyazcnospgrvvnmkdvezghlupvjfkbdygtrjneixnzcwgcksjnagdizncfehokocgiswkovbngczfafpbicualzojwdxcgdxymrxymqpdkwhqzlbrsoomwkdvjriygphlijilejehyxvjwejjprkhu
+                  example: xfjkfumhebaymbwacvtpvmannknwfagianhatxpeboibteqgybqvogdavawunecvgddscvtwxjmokbuxpjlfyfkwwrllqgmaxehdzxdergetxknurehanjfirhcypggtqtddljzdlwaixbnlmr
                 client_name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: sbnsmfwronatkgozkxpxgojcskhwgrzzpyhjbbckmiapnucvhunbupybdovknxpmvhjtlmvhwzzknbuwmljqfzwhdhk
+                  example: tkonprcpnqauucgbazovgzifoaenkmwznjltehqsyygrvpauvybqeoduyogclkgrdxawwhvkesisbfvlhiiazummgznuwouyyjcecwlqxpsgubjbvugxsiwamey
                 client_phone_number:
                   type: string
                   description: 'Must be at least 7 characters. Must not be greater than 5000 characters.'
-                  example: rqpzqgnlvnwroshbhxpclkjmlqllhmexrsapbrvkjhpwuzyliyaflunfvfjsllppmyygkoyyhjfhdzpotsycfhxfhbzodyngyjwozqcaztnjnqgrkarmuczzshycmnlhgoylxwynyzibqbzmnrwkyzztcknwgpcvduqcjehlkfoiyusyqwlipthzoeinxuwzbfhsbpgfobpmmnxtfeqfahnwrzzrujdgbkqmpuadfvhgnvzsooxqtoiqqlmbjjcqcrxhsrmaypymypbsqgszsstuvwqgiryfledgmmfkuqprnlkknffjmcqrpxeccxompbctwjsyoypjlrikaadybruanfcuohrflylkszlcghtzrvyjcgprtxensqfgzgibtarsgbdweuuutetyjlgeldblgijxznsutaswrzrzacgesxnbnbbbmudkwynkuequzftkyelhdzldjzphgjnlvtiujvwlwqhqnlzehhnlkvehgzczokedqiwjvvnaajnthemsvddquvhgphtbnxygwkooggflgqsipwrwlvlthxkjeaxyojebjtmbraoswdqyiqqcyinwkqhnviomhtppzvcnyqixzmtxifbpiigkhfumprdkgqmwmdyywjbghupljwwifuqzbdjzrmaeetrmaqlpowreaixvxcqddazbhjkzgopkqsjbovjdydoyiicjbxkffajxuqiikkktyzxkhiyqloumrssaupbhxmwrtipkdhisqjdrcilgaebwpccgezadxyoeucffihgzmbbpclulmaaigdujepahymnavqsrttfhzsusnocuulldvbstuuygmifjxvjuevtwuxiqltsallnibcfytydkitikovusejflcwoagxuhwvctffttrxtskwpkrgwqwwphllmuettrlovahowjxpcnjalrylvsgbhdghvaildoppndbojqddnqqfpctkmzfsbduorpwwpqymuyjmwsnlzyrlhdaambznysgijyqxgpsyvqavqzzqxqfkfpepmafphoxyhiictqluuflizekqpaizipimpsfssgkqzthqacriymoxgveyflhlbkfmdbrwpdhjvnukahgosylepgklptieyyjqtuhzfsbjrdixyleizsmjkcniswgsqzkfqmvtplgyorchivgiuclzrorpizwfgywejwaxijjltzcbtwjkqfembfbtkryqfkzinotnpxfdkjeeudjwuogtcxldliwewbebebnymaamwknvokvhxtykzqcpcmhqivvfejpkfxjeqcveebdzgkgndkjilgnfaikktsklownbrclrnxtzbdmemrpbburwtxunvkrcnncnfcwfmcgnbcdmopkfxusgjmsegveumzjehqssxsfscvecqijbfnzedlzrhznhugpdazcjwsmcoqobtgbbcsfahwdevzbcqmlsbdilhgtfscczbgaxfcvquxnxpxurhkycfxwfqetmfkqtpzfpxwcbotkhphtyekeadqbjilzgyhmqqjaqzzneanguavocwrwworgmxdiwbukifrpukniewyvpdhroiaqwcxgbofteymunhjiafjerwxrzhmsblvdtdwctwjfozkafgljzoagwazrkzghczgqwzedthnatazzfolwoeowjgmbndmnibbrgafqrorcgmpsdeixcurysaroenspeevqkrqyyvpfymgatjfojlvfffgazqkcnazfofgefewhkxxtlzwdcdjyfoakxewvaptetjibnfxtmpekhkbtqjfwxowixfzigiipayarfvaljwqqqprfltvmfhakdrpqkqigtomxnjudnksnblynikalgxaudmwsoatorbcgxjqksbmgpdcfyjyserbmndtjfimmrluwfudujbsgdfvzthxiytouegbuilchklivkxdzmvenvhejcqvggrouiovuudczruogirlgrvjfvskkgjivyrulnvlvfhhijvfqlnmlhvhjtooqzwyicikcjuhzvdltgntupgbtuebqcxhnzidbfmiviaqxyuqssxsehdsbxvjaamxlwmixpajlsqxrpcduansxhzcoqlfpqangjedssyrrriygfayetwtrotzsizuvmnxinbureogixymfsxsctqcttygyaukrwmnchfyiqgyafnuksfoznfyhikkinaywblwhnfsevyhttuoetqtnttbgdsyzrnmoiuvuyaucvmygpnuyaspmdudczzeajbeomdvsdgrnnwgwlkafssziockjmsocittgipvqwjupkzttzpyomiekaaonvmzkrfzhewdzblplcfuucsgjrlxidugdvcojktejfzbjoktgrlavwoiowzmodhgzehqjlsjjuyjwltynpuerjkbhfcrwbobrqhlmokjfehtzhwijilorhwamoxgagszlnobialsuoyctrlwdvlgcquqmjrybowuzahbleuzdynmmorvqlexboebpkchhhlihmferlrfzullzzoqxupfesvyarxcndyeaheapmvsidyezrpshcjmngahupmuzsmxxrxpwbjkzsxeibtfxbchllltxpultbcglryepaihjqplpksbpiiwfutoqwajngyomlsqtxqohqjaxoojcwogatcredimhpnwgixhdjhfaehdnwrstwvzttnkbisyagubjahumibirvnqhbkadixhlnidqumfcncygfufglkblguwlogcxqyhaxckgojmomjxnqxhlygwqlgalmxwfglivroikkuxhgdvelgikgkjoaskkwofpbncycghjhsxwzqafnujbeulescbnyvodzjeiqxazvnoycwlalgnuwtwbdlmpqdfjvwockejahxpmqawyjxyzpdpbwn
+                  example: uohapnugzctvpifskmibqfguzapuvbwfeglvxwrybxsezzfjaohcknynedxceghwrshrwopwwluwiluitburbnidnpsiiqzahonrcdvpswlyptpqhwqmufsjknzbtsikvaxjvbuqbgilknkybbuiqricjqyqmqtxyzqsbbdrcsnibvnhlrbdnydnlhkcrouyyapwzmurukjsguzpqbasagnwbfcncevlwzpshsnekigxhkryzalwojotdqepkyxdzajtmlmdesibdvbnuwxfcvifpbddxgncpmkqujzghhjaijwwaahjkibdhpcuevouccyvwtvhjxzvbjyiacprhdfaccsjgkeinzeapuwyvddloswqesinuytqrjlvijueoywevvcbignabwdjikgcycxrpchrgkndiaswnpldqfwilfgdgxrslkjbpbubftjqsrheyyfhtdcuwyayiolgtfojtekmnddopiqqnzspbpioxakxvtmptcemmwlsscphfdcasjuxgcuqsialuplotpmennodbbqwflbslnwwzutkgussseicgqtbabolykgyflftngqpjlfjuxhmmxpsorrihlgmevgfltjuqewlcbzospaenoqwvurqjwcaluuzrobuzcxrluerhvzlhphbyacletfcmlyhtwnrddgyyopjrawyahhjkebgbrihtprmphisulfglfayjectzlxcxbfwpajdsholtqxgjfhtypajxxyixcuvpxqsbdlhkymrlugqgvqyylhkfsmhngmpdhnuksnyuxhtbmmobbbrijrenvkliumknfwksujmhqhkonjsebvtagaujlhwetfyspyjxwdqjhcidkjxpepvcmzvdfpzcmwctgcyjlhkwnvbufwuaiabhvqqwjrhnosexingtwqvmhnvtiarrakyogfddhqvnatohmkjpfqqsylgdaldnrlkrzzfnuwudmrwzunntaujouppskbtxssagizdruzcmsqlyvoimvfwbgppedlbehzmvwbimukqwqyhnjujtbxnwsbjozbrxcrztqklswoyktkgeinqedjswximcbvtnxlrwkuaxdtpvczmegipvruxgrhllujdbcmfojhwjxjkunbcjyltwtnpmvxbynqubjykbmspqjrlolcrsuavdgnrrmwyjkrgeuuuwtmwkwyckjkiapesdtarllpcujqgmppupupqfhvobrejpklgtdwetpwqailiiiclrccdwnttkpxbxgkphgosstuxjeahgfjvoysntrhnshnjpcoivkdwikokgpwfknnzlwqucpctjsperkbmkcocunmonlilocaelpratbuubttpzlmcxfajcvlcmqbcdorzopkwewtowaldeqxgprrldgoyocjrddvgjlaxbwztjtxqpgotyxmgtqjuyhcwfltuaqvnxwzyxezczrwkavdeiocidzxzsvlhiuxldiikjlztnlitcbgialzgcoubewprilmrlwgpwzymsqlyuxxgseyriqwfbiyvotdeyekiqttsgcwtrzouylhmluzjpqdzbyhmlmnikyjvxlsvryvlqhamasnjefakgasadeknsladlmubspworjgbowmwhiwedltcfkcnjzvwcmclfncoumqulwgctsiqnmzdfzoqzsdvtqakdojmoozqmmwqzjhfafeeqedpsxajjqdvcwniyuxqakrnycmqzldjckiwclqsezllwvmtrembkfcalsiuqyalgubytqlhvkplsqxbedmdynvhlunkanjqnbvvjphqxxxdazjpxaxcfxrxnfqvkbgqetlkdlbrrwmolwwfqjqgazxxpbbvtinurndutrhxxnmnfwiyohehxpsophcdbjeeskkerocpsclwtaggzhitbuyuezezjqywpizrebhalqaduewoztdedubylvwiaklshisjpgwzpfgrdbtesaekribllvofdqtvhipslrlhwsfazdubndfnsohdheyeocgkafolawxbgccliyhswbudoccbfvkfjqfhzuarvsyjhowhzcpclvwvjumqgymgwrgwqwdvwufwhmnyyrfjyuhpozmxpccagsfsaukrcuagltsueeoribznxxlrvqigzgeosnvqpvqqgxjoqeanfivvfrmmqjyfvmdflzildipspzjydnzmwrziclhxtaxguwuhxbfzgsrrbbddonnybofnexhazfsoihfcjpjnhcixkxuclicolemiekzlwysthefkxcbpnxynwdpawlmxrjwnuqsmhyneugxunhkpmoanhqlgbwjdvbchybuqyhonuilrjvhxkzjisopbilyhpvvvpdhctzxzwmvevbtngyfgfenrbcxhfyeuuixiekqvcllcdyxprxfbjjuxpyyiquqhrcyabtskuwcnxlnpaaiexkfhegmvqtcvuovpuxsdndxjecyawlfcqyrlbjlocszcunzsejrzizxqxhqjogzzmrafeytroplxrlipldvpzprkomigypdvdmkyytrfiiczmqnpnoerubhwhammibabxqzsbhfzowevjgyglhwjyzwraaapkoppyhsdvdildgfjzkhvcovalltsjtscnfcphzacoftkexankfsmibswdzushxynuqfphzqbpmobnhcknrazmqfxpcsummyqnxtgqzqorvhqmxmzuooqobkjdprvkcschsbjgzrcrbflyqpxyqtiulejqhlyblnvoqwitzsefihopkzelltnjkozriskwvdxclwpalewzpzcaaauervemykxcbjnfnsdnjjkzerceotnxhzurueaurjgfsboxgpjotkjrrsofoblvbhrfgcqoeauhvwqridtczdmrypcfxtqtbjpmkpvaleiyeluplgpzgqmnvwmlnnoldmnvedmoyluwjwuhlkbclhqsdbfkaganqblbbeeubriadjectqeeemjqtlgpbfytopqlqlzewbfiovtksywdjfzyjwstufyfdbvupkczjlraehhjkmffnnybuqeiwycchpmkkkfzrynmbcfgmdomvbwuaxhgqfalezmngdylplqeaoqwpifaxvnsjkjbhkhuzwlcsfaguwkilrjjifctvcodcmvuovvhzyrdiscgmywirznqohrjqqzmsepvbvvezolmkvemcdgfgsiduaokfmjusdduwfbryzfufvypnlkczbmddqkqsuqnwvcpdohszoplqvyztwldobgzvxjwbzreolezaqcjzrmjprkwwdaeppmgzuhovqlywbwdirhtqyronkrzjopuwtexkzi
                 client_phone_number_2:
                   type: string
                   description: 'Must be at least 7 characters. Must not be greater than 5000 characters.'
-                  example: oehqlkhksjfrhtcqocbxjtkokvrujsfnwxpdpaqkgqntuqizvjrixntnibpeeuvlvhbwogotcjaneugixejomftntchbfhbfgubbtwiifytylwvaiapydstjdteqktnryplxohvwepvhtrnrezsqtvvkhttkybindbnzcslqirudiyvllontuovfahvoxdmmersxwpiojjxgcmlmiasouznhapinvvzmzvdueodtonhgazuwwncipctvmeftkckfxruddqfncladtqycplfuxqouchowabmhtmltjdrkduumfnwaqfkrcpujqegrgdhziqlwycpgpemnrlfrfgpsuxfmjqugxhdxdfzlcpaqmjvesyoeaaogjqcpixeqeiaifzwxsrgqlnenccqwdhdxodnpeuciamuaeqcshgbxvzttkajaazbrxajtemfzj
+                  example: tuoaaocxnjdjcuqxgdvbjswqreztjnkoyncakyxardcwlbbsyadphnhqxjxlcgmkpsyzpkoiqesqbohjdrhtadgtuaddwmcjgfwihlqiridbalajonskynnxvahneiuaexzujwdaogmtzzjoglxqqagsfxzelekubmmlegzdtukhtsgegtiuudjruoyhcllghblxjyxbdfvejgvpstjrmdhetiqkcuqpciqtqniceaiowcrcmdmsrivpgshpokotmrjxvysiakwrpdbuxoveuijekptkyovzxoxxijkjvmlhqsbsapmvymvolkklwuijkvhqrfxgletbpnbkcjowlshftuabvpqspjvcrzfugexktxvpvpaowznvmhgnvaqfszjobbfgksbqyohtsfjvqrihvqagqfkckbbwvdrwytvocisxxanfovjwdmexoujqkfdqlknapncdoqxehirejsowezskxfijddaupavxkqjbbtvoimwneclhyjejysahrpgdbaijabviqbgimketrehoxaxzdvuydqutfrmhxecqafjtygvobxzqsjdijcmiuvhdywfsrllhkxeznntvaegatcoqphkvhqaupzzbxmynltzuptclnshaayzmqeyimtdarztlqvrskaqosujcakmrkfofqmmipjocpgledrlrwpgouebmclhbgrjkvpggpjurlkkdyoyzaijzlcjmwihpwejgmazbuxfhmzieoecfrntskkdxvxhdvhshmpigrswjckbakertoavyhqiyhcbtoscwrglmulcdobsoadaoqkbrkmbnhsbbtlvtnejvkbptcgiplrlyszsnauwryprjozzpnelrtgqpnndoepvjicgpxajbqpasswtoajsdukomfqqqglwhfrkwdsasxlwkqrpkcdmybnkazfnegvrmlpvhydlxvvaantmxhannvblonxtvlsmvphyttqcswiccitkhcmouqcbtqgdcarrxpeljsxrihcqpsserxndlrtrfquxinvlthwczxjgybdusqwyuukcghlrcznqhujacbbjzcnovnfvfwoudeuoixxggmuluxhstxkuyxaxlvgbkpptofocybwxfvdtljjvnmudxetvuwdqrgtepodjjhofgwvihfgbcruwnafjlonccncebqnhpstunwujbyqgclereupgmecazizxmzjoxbwnqpoelmgaoqumwxepoudsktmydbsxhpnsementbkqjjoanplfjlmbedqzhlkvxvomronqplqkgtzcbzxtoxseeilysnpapysnsbuhwzwomukzccypgmowojweisagrjuabobzfmtmukpidunpevxthngseakqxnguutuvoixykjcloomyxmydajtyaazdgkhjceimnbisizasnhyhhqaeyygmqujijpsjxftzeaoczvmebzkplcuwnslmjmgwjugeyvozhvapytbmkonhheccsbnqtqycoyddzhzgzbpsoyyyutrvlnsozhetsotnaoekcsqtmnggnvewatjlwdtxbmvoytbxjqelgznkqsktjymzuy
                 client_born_date:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
-                  example: ''
+                  example: qedxvexz
                 operator_id:
                   type: string
                   description: ''
-                  example: iste
+                  example: voluptatem
                 5:
                   type: string
                   description: ''
@@ -5852,31 +5685,31 @@ paths:
                 operator_phone_number:
                   type: string
                   description: 'Must be at least 7 characters. Must not be greater than 20 characters.'
-                  example: fqpmjrfamvazo
+                  example: w
                 operator_phone_number_2:
                   type: string
                   description: 'Must be at least 7 characters. Must not be greater than 20 characters.'
-                  example: jivvoaaassaadikrzxjp
+                  example: ikqnn
                 operator_born_date:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
-                  example: svjrbsijdvxklg
+                  example: z
                 latitude:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 50 characters.'
-                  example: mknwzqlztfumjbe
+                  example: jolhnvlkeqftxlnpxk
                 longtitude:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 50 characters.'
-                  example: ilr
+                  example: oyq
                 file:
                   type: string
                   description: ''
-                  example: deleniti
+                  example: quis
                 type_id:
                   type: string
                   description: ''
-                  example: cupiditate
+                  example: sint
                 6:
                   type: string
                   description: ''
@@ -5884,7 +5717,7 @@ paths:
                 order_time:
                   type: string
                   description: ''
-                  example: qui
+                  example: velit
               required:
                 - general_info
                 - enterprise_name
@@ -5941,8 +5774,8 @@ paths:
           type: integer
   /api/register-user:
     post:
-      summary: 'Foydalanuvchini ro''yhatdan o''tkazi'
-      description: ''
+      summary: 'Register a new user'
+      description: 'This method is used to register a new user.'
       parameters:
         -
           in: header
@@ -5958,14 +5791,7 @@ paths:
           example: application/json
           schema:
             type: string
-      responses:
-        200:
-          description: ''
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: "{\n \"access_token\": \"eyJ0eXA...\",\n \"token_type\": \"Bearer\",\n}"
+      responses: {  }
       tags:
         - Endpoints
       requestBody:
@@ -5978,15 +5804,15 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: loezpphvzrjnmmeyvmonaamukddmxvwudurjfclldhtdqeebozoqcegjzvmoekeujhwnelzpxcriwbsmrgwpiisdevdspvpraciwlvbcmlxvxttwgohszlqiu
+                  example: ccbomalwszwzplemozhobtpvoedokgfngugukxwohklqtgexvhtxswfdnayytyaxoiviachzfdjbrmgftsvdhwkqgwjdhqvgakrjvduqnwdbrviafyavuybmebcqidoqpwbqtkyalokyhjzwnvitkkkxdgwztupfguguxsqugj
                 email:
                   type: string
-                  description: 'The email of the  user.'
-                  example: testuser@example.com
+                  description: 'Must be a valid email address.'
+                  example: fthiel@example.com
                 password:
                   type: string
-                  description: 'The password of the  user.'
-                  example: secret
+                  description: 'Must be at least 6 characters. Must not be greater than 200 characters.'
+                  example: yvvvmgdpsncnpezcflawpwxyssehwikuvwmuvxacouliigemswfyuqug
               required:
                 - name
                 - email
@@ -5994,8 +5820,8 @@ paths:
       security: []
   /api/login-user:
     post:
-      summary: ''
-      description: ''
+      summary: 'Login a user'
+      description: 'This method is used to login a user.'
       parameters:
         -
           in: header
@@ -6024,19 +5850,19 @@ paths:
                 email:
                   type: string
                   description: ''
-                  example: perferendis
+                  example: quo
                 password:
                   type: string
                   description: ''
-                  example: accusamus
+                  example: placeat
               required:
                 - email
                 - password
       security: []
   /api/logout-user:
     post:
-      summary: ''
-      description: ''
+      summary: 'Logout a user'
+      description: 'This method is used to logout a user.'
       parameters:
         -
           in: header
