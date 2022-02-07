@@ -10,73 +10,11 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "a3c5f467-a56d-449f-8186-868b0215857a",
+        "_postman_id": "04d1e13b-4f88-4cc5-9f68-5f3af6746962",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
     "item": [
-        {
-            "name": "Authentication",
-            "description": "",
-            "item": [
-                {
-                    "name": "Display a listing of the resource.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/projects",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/projects"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "no-cache, private"
-                                },
-                                {
-                                    "key": "content-type",
-                                    "value": "application\/json"
-                                },
-                                {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "46"
-                                },
-                                {
-                                    "key": "access-control-allow-origin",
-                                    "value": "*"
-                                }
-                            ],
-                            "code": 200,
-                            "body": "{\"data\":[]}",
-                            "name": ""
-                        }
-                    ]
-                }
-            ]
-        },
         {
             "name": "Endpoints",
             "description": "",
@@ -138,6 +76,62 @@
                     ]
                 },
                 {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/projects",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/projects"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This method is used to display all projects.",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "46"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"data\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
                     "name": "Store a newly created category in storage.",
                     "request": {
                         "url": {
@@ -159,7 +153,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"vjooykryxwzhozvjquzyqyyncqqtemedczczanplebbjjknsxzdbtmnhymhhzmbomplrtamgfzaaklivemcsuqdsrlzvqydezclcsrsfojxcxozgxpcyeyowtcpilawhtigfrnacdqc\"}"
+                            "raw": "{\"name\":\"mtrfzuetngquvbrhnnwfk\"}"
                         },
                         "description": "This method is used to create a new category.",
                         "auth": {
@@ -262,7 +256,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"xoedsnaikgqmynphpycmovajntmmvoxvulsdntcoloxklfskternsimsnjnxfmmvzfykespkwww\"}"
+                            "raw": "{\"name\":\"fenxdicuhrvozansmmosaqjjslvylhnmaqnd\"}"
                         },
                         "description": "This method is used to update an existing category.",
                         "auth": {
@@ -308,7 +302,7 @@
                     "response": []
                 },
                 {
-                    "name": "Display a listing of the resource.",
+                    "name": "Display all developers",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -328,7 +322,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "This method is used to display all developers.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -364,7 +358,7 @@
                     ]
                 },
                 {
-                    "name": "Store a newly created resource in storage.",
+                    "name": "Store a newly created developer in storage.",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -385,9 +379,9 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"bzvxvtaavskmvhzfkwniwxtpbdictpttrwguuxdlcnrbebxloziebfxqeepxptnfyubjaoswumwcwbveavidmwhygzvyoejgukyoycxfc\",\"start_work\":\"ymphtbnldxvyrftfmsohafrjbbnaqtadmlfwykuavlifpxvtaycjpefmkmygnitmbptpomihubqcifqqkpsijygcsylaulatbpfkubxcknbfktfwhtgmdfsxszwwrozgintoznuakf\",\"surname\":\"lnvglugewecnlcbemnvwxooduvojjottvxwgesahtcvanyxytmnwjcutanszoeltkipuvgblrysqgyxylehbxtcrrvcwhdfwmqgfcrzqeq\",\"phone_number\":\"gmtmxvanot\",\"work_type\":\"tphhwoncfmdjlt\",\"about\":\"gwhdwql\",\"file\":\"gfazxtpifdjladfwsvuyphnrttskgkpdgkelvfpwuqkeyfktzjfwxkoxcujzpvbylfgvsqpqvlcjxtuhcdtivpetayvqdupaowvzkhdnejilludnbavbrcswecgddejqhhqvrivvmzgrh\",\"workstatus\":\"xysbvkhvxpawgxgteggmwupymhefetawjezeswdivkqqjayxgzygrbvuoibnukvyejhvdigbkuiytfblmdzpflnusnnzqzprjfgegqrdmgbeshgoukgfzhoxinrtzivqkzwgplqcxbnlq\"}"
+                            "raw": "{\"name\":\"pjrnbphxsbtmjmxrctqrcvgcgcqtlyzzvzcjlccn\",\"start_work\":\"jjmjnvprvlhvrgxxginjljbvkgrjjoxzpbauspbepubokrkwnptvfzcspcdexauuwrodhrsamrfbpdbnaqrrgcfioamucumdquum\",\"surname\":\"brfzfomwerjgtkinbkaruxbzmbdudayttwalubqrgwkwumgexybmamtvsxhodqdzlumfojyeeossvyshlqzsrpdgwehlyxfpcqrcaqjzrbtjgkhzuvkgzxbojdvstgpninltrtgiavmtctrjpfyctmpsczkjrbtmkpkhh\",\"phone_number\":\"nxxubhrxeryudldebcnt\",\"work_type\":\"pdqmghaoyvutnxcjjailgayeqdooudnbvpgxmnxekdahbfhwmtsrjfbpqnfcunvshgzbfloijoueagyralvxshhieqnrbomhiybdmikotgtysvrgwminzuurvlhrnqhtjgkakbeguczlcqzhqgfjweggthqmrnorbheslnpfltxsrcauhgsvrheb\",\"about\":\"gwlcelhpktldnwrlqtrnuhrzatjrhgnveodmua\",\"file\":\"xllrhbhgppjllvufkrxxytnhhttqmebwjvthvxrjzunqpqzeqjxeopanrkzeondsesamtnzhsnldfzditlixbbhdmpzmzawunztnzdllpxyflyrwxwwdstue\",\"workstatus\":\"uaahpedfnlwbyltoibplojorreimpbfqndsxrbfxjxzzvaslfnkposdoafjhn\"}"
                         },
-                        "description": "",
+                        "description": "This method is used to create a new developer.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -395,7 +389,7 @@
                     "response": []
                 },
                 {
-                    "name": "Display the specified resource.",
+                    "name": "DIsplay single developer",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -423,7 +417,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "This method is used to display a single developer.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -459,7 +453,7 @@
                     ]
                 },
                 {
-                    "name": "Display a listing of the resource.",
+                    "name": "Display all states",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -479,7 +473,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "This method is used to display all states.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -515,7 +509,7 @@
                     ]
                 },
                 {
-                    "name": "Store a newly created resource in storage.",
+                    "name": "Store a newly created state in storage.",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -536,9 +530,9 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"uilzoeobeenkq\"}"
+                            "raw": "{\"name\":\"istiolgtrner\"}"
                         },
-                        "description": "",
+                        "description": "This method is used to create a new state.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -546,7 +540,7 @@
                     "response": []
                 },
                 {
-                    "name": "Display the specified resource.",
+                    "name": "Display the specified state.",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -574,7 +568,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "This method is used to display a single state.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -610,7 +604,7 @@
                     ]
                 },
                 {
-                    "name": "Update the specified resource in storage.",
+                    "name": "Update the specified state in storage.",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -639,9 +633,9 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"qqgxloifeskkekqzqhmqixytaojui\"}"
+                            "raw": "{\"name\":\"lbc\"}"
                         },
-                        "description": "",
+                        "description": "This method is used to update an existing state.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -649,7 +643,7 @@
                     "response": []
                 },
                 {
-                    "name": "Remove the specified resource from storage.",
+                    "name": "Remove the specified state from storage.",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -677,7 +671,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "This method is used to delete an existing state.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -762,7 +756,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"fkkoydabxiphrvtvuhpqmojmznurwscztxuwweecybjzuodsbgkpfrqutwukxrzjnqlngmo\",\"region_id\":\"fugit\"}"
+                            "raw": "{\"name\":\"qdekxfbdwreotvkpeuokjpgrfmiiz\",\"region_id\":\"unde\"}"
                         },
                         "description": "This method is used to create a new address.",
                         "auth": {
@@ -865,7 +859,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"wywrnhimoypbbkzbwztcsvlokbienslfyvhldqwjnmlaisrqakaisnevxgcrveqwjffynzjnxqgahjzzrkbbpidqrhfcuqbbabuxslgtw\",\"region_id\":\"ut\"}"
+                            "raw": "{\"name\":\"twxpkalqlsngqtwexajiddhjbcdlanhtvqgqxssgqyuuwuhakbhildzawbqilvvcqmgghejtprvflfzuquzhwphllcjkfndkjpfivuzjcxvzlffyhfncjml\",\"region_id\":\"eius\"}"
                         },
                         "description": "This method is used to update an existing address.",
                         "auth": {
@@ -911,7 +905,7 @@
                     "response": []
                 },
                 {
-                    "name": "Display a listing of the resource.",
+                    "name": "Display all operators",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -931,7 +925,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "This method is used to display all operators.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -967,7 +961,7 @@
                     ]
                 },
                 {
-                    "name": "Store a newly created resource in storage.",
+                    "name": "Store a newly created operator in storage.",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -988,9 +982,9 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"yyhknugddimakkyegseptdarybeqfb\"}"
+                            "raw": "{\"name\":\"jlbszzwqfwxpbpzcuqahunkzlvzgdgmstqsidprlltndzopvkcacuybpxbzv\"}"
                         },
-                        "description": "",
+                        "description": "This method is used to create a new operator.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -998,7 +992,7 @@
                     "response": []
                 },
                 {
-                    "name": "Display the specified resource.",
+                    "name": "DIsplay single operator",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -1026,7 +1020,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "This method is used to display a single operator.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -1062,7 +1056,7 @@
                     ]
                 },
                 {
-                    "name": "Update the specified resource in storage.",
+                    "name": "Update the specified operator in storage.",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -1091,9 +1085,9 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"donxexvjjtrxtauvflumkyfetfmfbhtdxdhwyrcoypzantqrjhpbyysclvlpjczlerdybswvopcrwguydncsurytjbkzypabeekdiqogsdfwahzniivevjwadpnalaaglnhllskwjsi\"}"
+                            "raw": "{\"name\":\"wyzhovqykqpwfdpczkthstonmbwozcrcsiwdorfirpqygpssjzddnmwfkydvyxzijwovpaztcxccvtbaorxqcgntauaaenghfykbtkjqcdvncxziinwkmmvlqtwiomteplvyyemlgiontovpdejurjyemwkaxnmvihzdlllvikbayrnvfqxykjdxzfjgocvpqdtezzepvqcqditcpy\"}"
                         },
-                        "description": "",
+                        "description": "This method is used to update an existing operator.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -1101,7 +1095,7 @@
                     "response": []
                 },
                 {
-                    "name": "Remove the specified resource from storage.",
+                    "name": "Remove the specified operator from storage.",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -1129,7 +1123,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "This method is used to delete an existing operator.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -1137,7 +1131,7 @@
                     "response": []
                 },
                 {
-                    "name": "Display a listing of the resource.",
+                    "name": "Display all regions",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -1157,7 +1151,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "This method is used to display all regions.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -1214,9 +1208,9 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"qqotjuommnsgyitrokymcpumzhsnuaycbczieefpxlgyelfvzhuzmytyrrxzlywguaxcjysggyo\",\"state_id\":\"odio\"}"
+                            "raw": "{\"name\":\"umvchccizzkgcfgrfisnhanlbpqgjibnykmnqyhqglwideciootgrryhsrcqrrbhrljr\",\"state_id\":\"rem\"}"
                         },
-                        "description": "",
+                        "description": "This method is used to create a new region.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -1252,7 +1246,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "This method is used to display a single region.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -1317,9 +1311,9 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"nugibz\",\"state_id\":\"nam\"}"
+                            "raw": "{\"name\":\"mnzcoslnchfnohbopmmrqwnvtasgstfqcjjncfalhbvfoaysdjulwjre\",\"state_id\":\"labore\"}"
                         },
-                        "description": "",
+                        "description": "This method is used to update an existing region.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -1355,7 +1349,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "This method is used to delete an existing region.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -1419,7 +1413,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"nzliutmxtfceepbfthpmurvizvnccwmdrnlbigkopfrwpmyhldbcpameonodxzugodfmpappsstrgkkgchwnvcjooaxamzjpcblptebeedtddryvocpfgfptuwutavunhajlgzmwqntrzmjmjsfphwj\",\"category_id\":\"in\"}"
+                            "raw": "{\"name\":\"slqhzbgqccsuuimexlxasqwgbtxzcupyhzjiqbqdyjotcsqqvwklfywsizavygqovfyutpjrgnxmecyy\",\"category_id\":\"architecto\"}"
                         },
                         "description": "This method is used to create a new activity type.",
                         "auth": {
@@ -1522,7 +1516,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"jlwbjkjferihehwcpzsdrswjelmjqcxvgrletfxxedglunalrkmrgwsnxkmuispk\",\"category_id\":\"ocbokwklapzkcphibxxjqlkpjqssfwapxjnvntuxxzjrnzldsybpobkzvelopacjkmgecnvcydfevsyyxyi\"}"
+                            "raw": "{\"name\":\"vxrgti\",\"category_id\":\"ppurzmathhnmwgcjvbhfowkqtuyppaetbdhzlojtkptzvrxcxtcbzamzbqsqthbycxtnrwxqivvlwuoduvqbmnjfzoxoyasxlxodktseholecspaiwvnbcderwrcauhtzhnmprpesfiugduvnvhponhetaslwmzshrxxgtrbcubyfvqsarurmuvwucvfmdzjpeirita\"}"
                         },
                         "description": "This method is used to update an existing activity type.",
                         "auth": {
@@ -1589,9 +1583,9 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"project_name\":\"bqbgmkjfufxypnbudszn\",\"general_info\":\"twqlftzhcbqtobxhiquamrwazcehwkvkcvwpdtuaywricshzeiwkxcybhqayxhwjowiinrvfbyjoicarikbhvyxysomqhkophszypaseougajxefnzmokhbxhlpdwyfsuyiwqooslhhjqdtmqtbmhcqxrvugrlbfbtmpbwffqtgzimtapzkjmvmnctavucfqxsidjarjdlkwecgjcyzcqhntyugjdqlyoztwkekwhbuexhgtskobhrjgiscdmqnablinfxuikvoqovzutllyqiqztcwigzvrkttkastqdilwbaevzrtckgotugqlwpwuduquriwuqglnxqzypliynvzxujwejvmqrfqmlnvtwekafcvengklmrhleynhzjpfamyiwtdtioartkmurilccadkvrnbyvnknmipvdufayyyzqexkdsunuuowqsrwskxaxitetbkejkegdefdpzhomplzgjjogkdtrnhaxccctifzpjypvlnlohvfejxnfrmoyheanpdfsecuhlvwknekpcpsfsavmwvupfygnrtihclgcfjlphkzgagbsboifqpptrtxdyowqlqfdrgvqqugbflblgihaqgfsdbuaxcmzurbcbphxizvilybvxoyysihitgzogteuafhvfamefqtyxcbdatkwkndrhjrxzvhseslghbkutslobjqsvvdjcvlsxakmfplzxwjnoqossazyniulpvdbffpwizflqzeuhnxkaevebhkreiwrdikwolehbdoyyxevpcxpiqdqejreyqqsugdaswuowubvzrglimdmggleefyheoeyhshjjpefoocllghiazhrxjaqhqbpkjaqaikunjjdenapcicgglyqbhonyzspmpyfkefrvzyvqfbncvcbxsoqggvpjkcbjxfbuiwzxbvuuaevfyhixvpzaifgmeqalonyanqfwxktxsajhnyecturjorkjquhqreigymghtiyfbcpoyerghgqayarhpeeybahzbujiufmmvkhypqwryhwczgyrmurdfwuzmzshbcmequklifijhbaspnyniuqxaekzpubpcrkeferiuspmougobicipfytcberurtrcqabznspluuskhfwkoxdhrbtmolrcqikhmdylsglcpkiuaufjnsoskwghfgsfmquheszyyhnlbbrkzeezssqonntyajkuiodcfbubefzsghjrytgvjxursmsqyittzfmsckigyliajyvvhlijpiqclzzzkdukjjsyrkxuukwiasgzdfdsxuagulzrjkqvrqqpqpgfuvlmpupgswxoaxsxshhifrufkgsqojzkdrgvvxtwfgumdxntmdthsbqsbxumetwwrmdikirjzfawewfpapgrggixziskliuhoxiziifrcgyjlkpzxlgrnjafocgshwpfrrdnbqbeaycabdydzdhchqbjqgpjsngifjvzrknixbyefbdrfelrvwnbprpkdzixcgewxduopjlbicyaqhjtrwjdlleassieplcqgabjsebfyqqbklnyhrwagpwududehtbsluntpcghnveiogrfwtzfavrrohpausjwbmlqdvbqkibpttqfzsjgbvnfrcqwgaseihiasotblbxkcumxxqxokudjaanbhysgqtvoscurlenotuxrvjvlabtjxpwedwryjnlodswfjvywgeinxmfujopwcztugfihinubojoelvcbbjzusandxcfhbofqxiqduumouuvoptzffuqtcmapqyocbtiipidkaczpvbdzrxmrggylecbyshsgjkuqsxmyelpwtqoopxpmapunwgrsfgplqzxmcyhmvwladuvyhyvigdysfvwjsycnyynuyzzyehfxeitvvsmfhlmzvdjbykuhkissafomnjvhehvsvczzhgnbjtvudvbadlssbrdsebpojowpufblhxxfwtvpzmpmmiomfvdnawrywlejbrsxqnhoqqkjjzryyqvdhwjdmuzbjpkcgukefvvsjesawhnjjcyfvuzjsefkfzonhudoplqhmjapgciwzvwejjqxqjuengtcrfyjwjcqzauyvwynfceaxxqgwukpsjiiadswoangovzxesoxrorheayftvyvsctgcvivkuftgolvqgdpwoadvjmpvlfsbdhxpmmfplolzxkmotmlckpndfvchfueldxsparmaovkvzujejqoozopwipuzdiavhdticwjpknwkjcvculcxnndlvfmpvmsfwwwqirtcenwr\",\"general_file\":\"natus\",\"status_id\":\"consequatur\",\"developer_id\":\"voluptas\",\"developer_info\":\"dwjrqnbywkcqgdicvmteanceympkqhhkajkpwifbbgyceblwldejwndtrmqgiypmpytawgdubnlkpuzuxlzleruknvelveolhphqgitrqipcvdpnagynleiijnovhurlqlvfdtshkqdslnafbbivixfhhfecuvwurmbdrwnsffyrnwmliszhphsarmjdjzpdleqksoqrynnaxwmpcqmlewsvsahqktzltyhcdopckctpqfxsxzguvlrwyebjiqkcqomlwsvznipyxozsojqzzqippoxhqemjpfmrhqsmulijfbtwgairblvmgxgrmzlhudsiyqzhfnqdidiliojnndhahcapalfpbfktroumpgkgntkiwdgvwlgfainaulankhcqjhcpzuaqovgfcibxdcjbfrshrpiuwauaisglcvbtbzxybkkerjfuavecacbkixvblqxlpuwiyxtmfqvqvdfyivdrtzsxvxzgzthwligiabqjdpuyibnsqmvoidfhysubuacrgsjvsirpoxxpqyduuplkyalngxhyqojqwidkoxcnsxanjjyczbjlqokjzujmrmifrfcflummzbavbpggoycqpsuortxoebfydwvnurakmfahhldrnnyqkwtmbafvmsrrwwskiufhtzkqraqlzngtayrxilwpyaohgwcooagnomfwwmicmvmcnghkqiojjgzfbcyeuuvkgjuporalsiwbdpbctorkhphxpngpvtemyckadlveiehusoqcuqeusxfjenasiyuzcwlqrjuudnuqxtsfpjzgjermzqqvdgbtdtovarmizlpmebwwxrhhawxrywkgyszfpnjojxcqzqjgsidjaboqpnsddnpnufwekrenvjahenrulvxxxuzcnulmhakwuehmswcfxgmnilcynmmhgvvwcuofuzghxbhfnxmujjoxymmoeoksirtnlydjxaoalukqkfdypkunbekdrbhwetxu\",\"start_date\":\"odio\",\"dedline_date\":\"dolor\",\"about_file\":\"officiis\",\"project_file\":\"tenetur\"}"
+                            "raw": "{\"project_name\":\"vdftaypsnywxunghpkuanxtdfafkcbqtyarlcsmdylfotaktsxfgbfduxrgsrtfmenyrnptqthotsfamkygsufuifnapudemzddrgmbhdxvjajbljyqszfwnespzbfbxiw\",\"general_info\":\"vdabpvywqehrghhzjubhtyeaxklikigditqtyjxcgzrftblxqxkcvybdiazymwbqdvgctcbnapbdjoqlpchdmbeauismmwkygvazdmwvjycieiyqyiadwpkkefyremlleoyijnmxdwwlwbpidjboljgdbzzaizfrbjdctujcuwiumhgyefahblilspvvqaumhqzaqigishpymottltvhoybuhjlwxgzjmhjyebxnzwuswleowaxxcyroamxhfpkiupsvsaenvhlrhcqlsyibykcufpumbypbwkhlqmumwyjsapdlbhxrpvjligsofpemzskdglcnvuakfyfdysodspncymgrcjbxbawqtmrzyxdtwpvhzrtshxbcreysvvqgvfvcekqkkvhhzunseeupujicawsojxokuzvwxqsxqkotdljjutisisxyvepfnbpfyvhgulfpgkdgttzhdvolegsifssnapdrjaqjfzpducurlpfsqnsqdeaisvkcbmzjzbamvejxfnmcxpabdsorxzxzlkbhfbhxdacgrbbipjvacftyiemvgdrriwxqunipnmkkkhkovrmawzcciptastwvvoeolxsxxppfpnljzwnzvkwuvfpedkjbdlmcvgwkluztwfxxqwqxulbrnwiqzkyntapmnfbcuizwqncjxwtxphicjoyxwapvdsbejqwdjptjmofojaxynhpoyjcsqvhvvoqqgmodsvkmynavyfcwlfnulatdrkciyrmygwdnthttalbeorvjkqzohutkmrtwvsaaincbaedssfqwayalwmuujibsgahtldutnxxyuwyplpcdwpmserqmrbjzemerhtqnersmcgltqecezdnrnnfildmjnmjfzcbwizoddcsbypadtmqplamalrskvfjuxqjojtlswqpaxoxoesgyxtnovyyxvxldxfsuubqzqgrwzspmoqhrrdtnsxqyxvinsapzvzzuakzhbssyybgqbcyakomotytadxfitjomcwrufvoksjkvcjnjihyiplisamsyflpoumvcixsppvlddsqxpqpryytoeyqbwxwqnmmfxibjhgvshsutyqsovmowoypzbefjoaexwanlswlcmzjwrnpusofsfjsmylbldqewkcwslkvtmrkctprfggvislhgrxqnxqxvvvnmjnkqihhdeezruptgjlouzppsmyeqvzkurnutcsqwchoijsvajgjfttrwnrwjfhesybuzfhuszwgexnfxppgcpjiptwekmejnvpdqkxhbgeihxffvnuddqihbujnmyvfhwrjhojxcseeypbezhopnjhlemloyemwxpnczjpdehlgpsphuviuplhwjcoispdtcwuxasamcdrurrsxqsgtnlhjfxpvfvdtgtvnbczfezzijkbrvjnpxmwdgcvtxtplhhkrwpavgunnzjkwlvhsgfdbopmydbkgakwaiwzlvdhjzasvflghtffrhbpybwlfvfecsnmdzxhbxgzavsouuynmkxwlcqwbbgftdotpjnpwdfzxvxiobdgdgnsuisendnzbbabgbojeobkanyfoutrqwlhtlyqmqzjhqtmlkntiriyrlqpyyzbtoguaqqpdchlcgdmswnfnadrwdlxooqtrlbnztrfsakgkuqmcblbwjlsfmncckpxbcfxyccxyenoyeomqljzxlpuyhstcyudtblfemahulpjpceojapsbcujjilusltezlmdposdhlkntjjtjoonvktqhveqrvjvqgbtwtpjhvigscuksupfqngxdjjxbpmwwfmqbesvcjgqxxvxgxufjtijriercmpwqwlezzqnsxzgnuoslegsrdnbyaofmfsnjexzvtrkklkgivepcqvlkfymuamuolkkasreziogushrqgudqrzdnjuvydjolaliveydtxgwtekebytfxfqydedxmekevtlgacrdgjstuhokewighwrphqrgfdzjvvfdfhespgurnglhfhuedjyjturjbsfgncuojfegcxhgdtmmundfiirippxpuvzgwhzsfejcvtymhhbkcwyhgvctoojjaflpesbtwdiacqhxflhksehmohdvgfzkaaqtkbzgpnglcmchvknosqtyeukfyuxbuzcikzppzawjhlrzornqvkzxjymlqgdpmppdrbmbdiukiscebprhnluytcwbvawyloepxmjdgjdpdpywngxubsctvrzitvqcetqfrzphfkaduztfbxpqgskxmobzfflehxepggqwabygnanndplvzzzvpohxcbfbsdjfbxkrmupussglkaluizepainwbnbaejbokjogswayrsrqwyfpgvpmxtytmiwohszvwdxohcddddenigmlwdmevstgyaaelpyvscfcvxpyyxzdeiufiqygihkgwlficdzzmskebljzkigfikrdsejviglqrobrzmvdhrgdodkgxtdlkfbiunxdhedgkijugpvuxjrecebamvjdurqussiwcfmcvshlvlkyeakwtweefgvtdmqwlzxybdffbkpyjaseafcqifcdymqiidrtatimxrgboosnunkwkuzwrbkndjrrbygrdyyxfzoysmeqzqucvdwyfmrtoekoejzemadervavcrthgmiddxwtynycsxaamjayttjwuqtzgoatntfvavvttuoehaabfdcjezvofmxyuahxipzyquigxgpqywxilmavldgwylifvxxdtvodqmbuemebapoqgktduloqotkrpbnyqlhiopakofyptclabkjqfpyaiqqoakbychdnoynozxgfudketqacozpuxibajylfwdfasielnmlmxkikdasrkqgzrexzhhzyqjlhjgajcpnmxdvbdtgoqkmwoxiyvmfldbwgvqeafwwsdvrcufyuvbvulybzdvfebcfotxzuekuuplqgyzvhzldtmhmxbggxdpfoivqjekmhtqivzytsqbsgmtlpkgzlqscdhmhsqvyouhnpqkvljpzjnxpglripmpluqvmyaspaljxcmjnftdgoabcwkdqowcgdoqydiwybqhqtkvziinmxlggozxvgzsbbdupbqckkufcxbfxeavkmgbrgpijxmnmtxatvopgjuisdswcfnmzanfqnequohazzkowbxlgckkndnalppxoixuoxjsnqvefphrkwdodcemlxyjjznxvxqhcinknoyjuublzdnkmivwfebjnncdkzmlieksbycqtfrfshyerrgdfzovyyouttsksvftbxgtbulpushwublohmklydmfbzfedezuqhirpcxxpjvcijjfbhdoptwbwqsxyqbffmlhoslnbrovwdoyjhakjtmhqxccxspvxxdebycwagpbnubtbgdfplgireobssgksiujpaboyqnexhmigvmkhuugzeruilldohwfwhsjofnrkhnhgymzcbqmjtxhskkkyhrorarnkfjeahmoxamvbwfpwazskmnvbfaqgqamjwgtyexmzektxbmubjifjtzkjpjrpgmkmfjevktofliamwxwjwwwqntobanlvmvnvswgrmiguxurlkwsmiigdkgyizpxstlcmyvzjeudookvnsufavaduizwgdzqaokdkbgjalkqobcypkqbaudzcfqmfhuzftxdqmooqekecuxvpswmdlulyumxwgflobqdduqqjnbdvxshrhqkpdmluyuqgiozfgsjlmsrxysmzaxeldhowxjdcackxpbewhyjocsdfwbtjeqzgztwbxtruvlhztzmknmzwxtzkvbsntovipvlzzhgfbjwtmongltkblthwnwrgszzeqrvxorzxjexocbnlzakyinraqaqxbiqgplahtmberaamrzeyintqvezgeouzzjtyrdzqxfik\",\"general_file\":\"ullam\",\"status_id\":\"consequatur\",\"developer_id\":\"expedita\",\"developer_info\":\"nyidioetjqkvajbgnnnsbhdcamtsyiwsipoynzvqsxcjacixanhxjjhwmnftdbbhglclyprxoigoqesaqffvlgbzdvvdankhhocnnvebyytiadlokbbuudcttdruammnykqdhvqlvneqbiskcnvapaxmykjunexedelaeuyiwjvzupmpueksgdnherxmhjpblfgbgtwyecmfzfvihfvodyavlseociqfxlcahxvugjjqvxxzluetsxctudvdcmvozkbpvxakukuafnhkhuqdijyoyjvnyjjuwntvjfxynnexkuefkpldauaorbtsrhkypvfhgpznilhthmsseyffxkldkweufckcnqtjzeyyrpkufupmbjackaixvytxqmqovdjdtqxgpscqbaowpvshztzquwcrjrzduqaxrglbkuarbwwinujktcnwiwlzzdeqnsnsqgkxyfsrgewwsilnoeioqsrbntpjxlluxnlcmjpzbnnoofhmbkfztwswoxxtfttyxjfvjdhhhskgrfgkqinvpsrhdgqfwmikmahzcafmtlkajldswxjmroberqlrpcjbyfxakqscfosluqukggceeavzpozskncigdyocpoorpzreldkbivojreepznrxrzoqzksxbzpqwdiikiytqlzzffzqysuwzjiuextjluucnnsmnwjwdsncwklxyprwjwikpcpavtrvlgjglhcyzvaueobmitpwmhhjtoyierihoqfyzfigdaxidswflfhvkmnvjfpmkcfxmrjnifmpyzzifqywugvvcrfbimfpqftltymojotddejwmawenoeeeluybfjeniljtcgxvbgfgjlvfbhshesukpywloirbyjmczrzwmazzxqbvzywgdirdsqhcrjbvivciuqhzvtuhziidwnbvtqsjqboxwbyafxgfekkptmyynodttlkouyrqcznsclmsnsnnyuzuotsvsxejvxodkwwxsolcxeydrjfpropacbwpqxmerwdfrnnyotvazkhioaiwcqkddhjvvlmifblwhkhzmgcgehjmqajghpehdulzuyqzcraelozplrecxymvogtqagmbavoaptayqtnmnkqetkwtussxoykwdrgkbgiwzlnunmiqojkoxqwppknbrvpntaraskeaelipfhynxspjlndarxphstiaptwuqmgmnjbnrwfhrtccheesjwawcxnpsheeyeenjnoeilikapzgocnqrkaahguzzxmebjrasnwtemjivzkxepqscsvymukcbncpjcrcgycyptfxnfsgbukrybzlcihyvrbxvelxghcfzdofqrckiviesbgonpdbnvayfbarijbrjzkdgpvffpulzgesauhrnzufolidyzhezrvveynrzqhsequusorppfccjnvxmcwpnholgojtajktcnpmczfqraegpsvjypoyhahzbuavitdirfqkwxdbsdrvmxnzotsfzadduuietqcptmrkzxsbydcmdgnbudhueahnnawpdwbwfredjxwrcryhmqeofozsvrklooecqkoxjuwhucozecznjradflxusoqwbobljoetfszsgfaqcqepetdmsvnkoeygettjiohxxdiuluqrmwelhwktbbijhftfwflyovukbnunqmathoxkhjwgluldgaqkzgltemljwirjsrsgmkemcidtjtajgoanckdryxxzulrrplezxkbtviofdyfnafdwvcgevlvcdarslteqqpqczhgtqrfxccbuhqqkxlrwvwwkubgyhelecqnvtawzqgughjtszngmpwszwrxjtusghgadorromqxjodmswqqwqfyintiovcosxyuzkbmvimdhvzhzzylwapudryybtftadwddhuajgnruzthcpnqfefxyaxzylpgbfizxlmhdjilcmmujavktmviwkrzmmvvornjbjyzxioawiponchwsurqvnhcbccsnowvpagbczeesmvisxadrgddavlfyifitarbhtvfgujkwbcpqjxkcbdadknjzazpuenfqpuxnjkofvmnzwjuonomvaslatejbwnkkouvwkbbvamnkdsprggjvauouiaeboadudgqhxohnikuqoqkurhwkowvjbfwsyyfqhjhzokzebuqqiomfhxfruijnkgrwodqrrtzligmjyyezmgqhcyghpmkvyfpvxoxvucfhzcxgnslurjbwvcklltsacswkpyqinroimthviluxgkxqjmfpcaaacpowyqzkrtuhrwrwttjecqnsvinfgtrtnsqshjotaxdljwfghitaiwqwfvqzzebzjssidtiqxonakpmwcktbsptbqfkaykxxvfpjwutijgxisxkqmutufqwjwgfntbpregmmqchjdvlnayoajwoshnnnygwiajqecxuskvaoizhphpndjlcdpptofqbxntbygiryyhfpxlwkunaljanmaosailvmvfadkpqennenwxoxiyuymwiwltqiqwlmwflayqziadqzkrthxrsoxpdsjrpjrfbnqleuetafdfngtyomavwuapoatuktgiexodpzudeqrivcmofzyslpgnqqokqnumzmsypiwwymnoitnlnibyxigwsvcihhgfjvtqaonjpjdkkgwpdbhfzbehvkvvajhaqeqcqjquuyodubdpqjljjdbjwpjchaaikktqzdisqpwjnypjhhqvjplwaksavicxailev\",\"start_date\":\"voluptate\",\"dedline_date\":\"a\",\"about_file\":\"accusantium\",\"project_file\":\"expedita\"}"
                         },
-                        "description": "",
+                        "description": "This method is used to create a new project.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -1610,7 +1604,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "3",
+                                    "value": "13",
                                     "description": "The ID of the project."
                                 }
                             ]
@@ -1627,7 +1621,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "This method is used to display a single project.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -1674,7 +1668,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "5",
+                                    "value": "18",
                                     "description": "The ID of the project."
                                 }
                             ]
@@ -1692,9 +1686,9 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"project_name\":\"vmwhkobwlqvnefvtpojvkgorjikmhyttyvdaiziztphifkevghesycyriwlzhkixxatrzdwbomvytrtahldyyqvtakphavaqyjnyvcyinmznkqeaqnyrsibidgxfcihqvptmnaen\",\"general_info\":\"jsudvoihumnzaeghmjpiilodmagnbsinmgnijigivfhpfmmlzwjpzviipjytnufjhsdwfijutfooavhwbkwayifrfugjcjpwztilvgirlocfwuahfwwkqothxfihzwlgjgufsfpueqoohovwrvckwyunlzxluyqwsqeqicmlaasnlcdvmjvqwkojztmjtsguxcsgfosexenrkziiwgmtjjqmjyediiebuqiwoeqhjgztejzryxckyykpmpzgdgnntelvghwrjdgvkispzkvqktxdotyzbntvsflflmfxxojibgreaahiagnrjhmkvqrhqmwplxxuuxgbrgkqanlhcrqipvwqomwurfilxljldlqlwdnarbdoldxumwrgpxvzoaxxkfahbispmbjhbbfdvicxflszbgocxbcrjscrrqepzyrpynggkbolhwuncrbqkfwqpjtrymwetifvryhczkftuskngtutpvjhojhoazjdyaijyuzxvjgozlxphsfcuhptroiapksjvrwsjgfonpspzhpjgwvqsrlibibcnkvqlfmuoyxdpkcfgpfesoxjchmusbpvysnpimqvakmufgskifqfqovkfusxvrguehvwvfbwvuslooeazzaujawllzpaoxjhfziqromonitcxydzrmxnunbsefbajawriujpxazzoycwairfkhemlmnbimruucbrfdbpwdmdiproytjzvdlxtbxxifsqndxumunayihodbqhbkwvoayppyvpesesidoqqrprlasyjdmltuoavpaegppqdqbmdlfboeinacsmzupvidsgjjnqktqtpwgafcuiwcahcobelphaduumdtmsjrrhtffsollxonmuhiaqkhdrzfuvttsvgapohgwjdgewdzkkhszutmazkoxdxobslpvdyalnicalehzppuvmasmixyfbggujcezizuxixscdngnwcngyoxhqnwnnowzzjtvmlccnxdvsdwnvtkntqvmzluuaehkfavcyflftxfphpygrddibgjtgmnlovawmsqhnbjalkmsuxbpapxtxavwprhnwtufwymceqocnxrzyosbjmkmgqqqnyzfkkzrrtywrnsugrubvdeyifhbralzvpcowsdooqbxeobvweuvvyqmxphcjgzawcfufvnfxexmxvfcstlrxarajpypnyeuenpwwcibpxidounxdqnosyhzfldybxokmelyzqdpthgbhrltcxeuyezzmrccnsqaamjwfbxuxasmwxdyxxdqewtharmkvgkoqdurvfswvmbzojbpjwlrihjbgzxcvoopbnxmuisthmoscrflqsjwngfmhltequtrlopkdjmcvovfjglgltduypbhzhhprggklirwabtzrludcnjveolceuwtkglhnmowvduknuvpnnmqynqwblbjrstwxzquzlmjclvgwlsaswmdzqevfwvrnvghdqtjcxiaqaccxsugvzozkolhtvqctqvhoragfrzjyonhurltkdjfmzxkaufsyqembunoizwvfgbeonekfylyekngrozmxqcrjmepqrcjyznkkenihysvlebuyjchwppbxqfdhtrjjmuljfcqwdpkdaedtliwcowyswuucqguziwzhhjnlucmxdijiksgpoophuiaggwxsbyzfjmaphkfwpfmujbcjtoqpqexmctiumoqoacpechpbxidejbwvkkvvvifoqwrjvkkobfoskdetjvuzcxocthijlqcrldebebhndawskzsdeyxbbfdenwgdwhsjsddxlfwhmtizrmwqtpnemoczqtgbymzxcuxyrrbmpgwykibjzfmwqptemuqdvjlvondmpdbnplybgmeizokqvtaqqzbnhanuxircefkphivatosnvwdgjpeyipvfcmjwyeblzmauwljpspkhoocnhburinmgadegazhwtbnirgifywxstcckqcbningygymutkcflkyirhecsadulvwqoavprmfspxuwfufhzhwhwtximiczehthdhociekumcflotjymsbjqfobotersgndkjsmbrhimqmswrwcgsihropstcqcorttifavdqbvehllmeplmwxutlxabiizrnsmjywcxlxrabriimeklmgiehkikgxsaddywuseksospgilxivnllypfdlduuvkkfwecfnhcyhyabeynsrrgkblemjvgxgsfddeuakmuulynlwpwefyrakteablrznngevmelgbseoamwgmklbseujhrseofbcdyvytpzbqwetdmszzhtmaijtxmlxdvwcjqtaroioduczokfzkegjfiquebvwlirmbxffrdkgolyauffvccirozqbjcxbkoitkkkbpubdlmpksgzyezqxxyufkptebdumvilivjyyhdcasbqmagasqryuqderxgmnnlzsgsizxiqxsesrtjfcimhabclppgtdcnbwchspurupzgbpjltlbgiclduecwtzievwjrnlcbcenttnoegtuvacokwocxlacdswxbvkhmjrwaktrdqbqylagycfbjxyqxvcxhmwzzogqsjwjxinibpjplcfoteitmgpgcmlykjhorsblhmmoowojkoxzduinckitpjkaimbiwakqwlylxygqqowzerepbyeeidktsotmhieebaecfkqrxrbtxxzikhwuitsymoeypwgjifbqicxncervthotofnwwuebmagdggzilskhqlnpacfhjvtkhrvmmycojcpiprdavdxhwxxtqunrqvxazrhkcfdbxqdxuewexghpgtrcltdaupgpaskhghchnqfjpuudpzvycfvmlequpkymjhfacfbmhpjvshczuxjehvpaegutvxgwxuqgymgnpiuabgjlawvtsyzhoczcoohnxuoavhmvtrzjlwemsezgsmdtvlqspqwdzfjwmixcehzskzjcnsxnzvfqdnkignygusemagvxfyoancdhdkxpjtlsnnrkxlgrdddwozwfrraheblhcatyvkpggxjruvllrwppjzjdihrsldgdqztjiceudzzklpmznqxztuuqgfjdqikuwyumjlpfrghrgylpyfjstyzjznhfgkbvizzqyaqcmtqvrdphtvunsblfhgyvfmftohffinpwshmpdeptccneginrjevnvzgruhiqhtnugntnwlyhvlzbgkhafledhmfajmvcyszktxpeywwgmdaizdbgdiirexoqxlsrtfecqzkiqrgcgwwbuioqtocfodvyemxrkzbducvvlbykzizttjugfrvaapbknsjnzysiuafsuvqzabizoizxibzsrfelyvrjshoocbiuekleutdqnxiuuzcdojwcmqpatatxvvppyjyssmcphlfzhhilhrbxdiduonqwozocchuhpzonewberwesqthyrludygromjsfyvkowgwewgckiwfxgixnqpglbrwwphnqyqqhduizpweanjyycobhxezafmjcjqallkxjbddqikcymgblpucizflfbijdpaykvfwivvwvtxgevapsqcpdyqmgroexzvhafyvgznlymjeshrqewtxdogjndiiyngdvuzmpslxtpggcwcswiziyyxxkajpqowvrsgalgiaaarovzepmkozcoxtyifukjkbayqzxkjjujpqiecgrwgcewlbnyevwryuksmjucgowqobyzzgmycrumcrwlvxbchhtrpxumycfvfunjqjsdqlxdesnbkxziekdbpvljvvgbmcexsdhehcpooalgghzluiobdciogctqtgimrbshljyoxtrkfjgsoyekduxyjujwpjcuhchaswnlinpwyotnybyanbpryleyvgpnhehipaabvjvromvtikxhpsvxndvhprsvdofshnrzfnwxhtxvsmuzgzmzvrpboveizruyjhasxksvzxteybaskewmlhov\",\"general_file\":\"fugiat\",\"status_id\":\"delectus\",\"developer_id\":\"asperiores\",\"developer_info\":\"w\",\"start_date\":\"ea\",\"dedline_date\":\"quidem\",\"about_file\":\"reiciendis\",\"project_file\":\"architecto\"}"
+                            "raw": "{\"project_name\":\"vtlrlbzrzylivokynxcowsfzwhboaqjwjruddkhdmocjpbloorfujchypujbfautiqzeslgpjsjbsxqjjyeloethmtmftnfwrhdllwkfnobhmpanmsgjrjtxdscnictmxgokfgskzlxzttpbaykdjxodwswaalkvepncecpyosjzewvzbyqvgf\",\"general_info\":\"imdnblzhnjgsdclzpyspgzitjxracatxlkvtmeaboonwaiolpltnvglecudnmpximuleopbvtqrmkaueqnonthqaykjnapdautquenftkcbwspenrpvrgevmjwzjctvbhbypiduqbsdtsdsywlahpmpxwrugibmngjnqvtuqrmvodfzbdkopggsbayfxndskgtwwuwfzmbxannqnmjxteelnumzhtdgqxpehzwdlmoiyoiduxgeenmdqftklpvacaifbollwontcuoauwtpreztzqavnhvevyudfmxtlakiqxpemyjsogyxtzasthfyijxtfxnkjpdnhxgzhfioxqjsflbyosydvsyxezlzieygcupugbdlfvntnvunntlblqlgvaxcpyvfckuomrkcjpflyqndegdzawtyikoceooxfrqtxjqnvqgforqhbgmyuvtzhzouirngcgrvdolkepsvupacljokcanjolcnzwgrsapeldrbferymtnzvirtpzkdrbxamkydfcerbwyvijniqtxmrmgvvybzjmucofgxqpmyyknccogtlfeylbuoxiwqbrqsmmlvtfhxftazwhhhkcjxzgtycfxyystnyojrkmbozesnjmucvojwlnvynyswrodyuqjihhkagslxfgzivmomckpdycglmosqptcycldrwqqxgiuuetcukmyndwbeworkskzobwvsphbhahilgsacmpjgmzvouciiosqamhasskwekbpiapcvplkpqzwrlpfcazasvplmdobclxeamqomvrmxgvzihvtrfyyyuenasmfrxuryvhofmwjoyvfgkaqsejwikbcuxrexkntteiawlluleclulmxkuppgeqceiorsydbxaorzqwdtxinshdpsfhfaylffzdcxdzllfywhxjnevtmbtsrbcevwijsiifvchpxsndlrshnuygahsbumwbwzcszxcwtgjxvgjckwrplntqjtozdzujcaexleywpnjtvpecmfpeuwirgdvnsvtmklywsefewomtogdhpotchxfoozxvkbjpaoeicmelrgeegreruswukmkwwsnuhiyqlsvthkskohuomkzvfpqqthrjwszwjuacrstycwzcxobhubkeydxcsvgangqjmbzbogyyepdhfvkxbmfzsxwbyvfliaebozkfpwlvsnbmhyzbnvnouuqqtjqeqjwrwsxcotnoenzepgizvuesfqymkssllsngqgkvarczlypkpddngkyqcwfumzapmgscewmbhebvnrkwztfvxnbomsiuyvngsneiqfrzqeylpkpixetbfbfoseepwcubiyhrelzdqyfhrskpxncbwpxhfjmqfzipstqfqdfvxjuvnhvnlmajkfqmuuvdlqagmsmhtguroccvhryfvuxhhtueqzquksfnokgpsemznxpqvydnjmdgemzqxmcojoydptamitpflzpzlfysbijiczhnwrpngzbhorqwskxdxbbklxmpwblshympiuwehhvfqmqjrtiuqzpobvjdjqmfbjemqytnivwtgztnjrqkrlvdsqjjranlemzzkunarlycwamgezgotwtpsnpxdyycpzhwhyhnycigaxakikctqgvxhioxryoznoejcbroftazdfgpltbyfyklzpljejfdbvtkrrpzsgkxrgptnmvqlnutqzcjtaodphffixvoalvgooyoe\",\"general_file\":\"id\",\"status_id\":\"qui\",\"developer_id\":\"sit\",\"developer_info\":\"woctqkomydnonrkafxppvrbxevmnjsbkvpaedwqougnkukdkwrrtalpfyuzmlphlxqvjxogpzofwjxcntaadgkmwevisjlmzytsghedpzxzrsfejkjtpommarqkgdbaznemetznncbgtawomhtaapvmuxsdybwtpedmnpkjuqbrpvpyxhxdbruwlmanwfnnsfmezuecwvzucwbifyxrledjsrlppnzwaztjdsgoetgbsmmibxcmqycneonpipvxqpmwlxqvvxockauhjirxwbnkvtsggjdihcyxasntazjgvabrkjvwrarzleefjlsbwnamnpbsbearvwmcfzzlrljbvqgqdmsjmaqlvyaxnygllbwhddlzxcbxntalpokyuqwcreiassegxeuhrpkmvqflahegrguoitjihpmnygiluqaevweblrvlvopzqxgukyvfizydspfsqglvpnngbodcmnrjaevlxlrslcmdwvdcdadktwzeqqruocacbzvtwtqsnchtuujevdnejciblbkzkqcudsmvexguvngownuhgxkxgzvkstfdsslskdchrilxkowqdfwenjokarpbrjfymjmekjouybiojliiqgqnqhbmqxryfcbriwsbefcarzbatkgilggdxkoasswfmoixejywwpoxhkitolzoirjqratbrmugichktpbmsgljtusbumnarbwnuemcamxrcixywvaklpvhkuwxggppnilwmiekwlbkstywtdbjxohpzghfpszsqcpgthbdjuwgplgvrfmjlpywwshoczfrzazznppnzhqntrxpbajyccuwdkirisvdlszkmsxsnngsjpakpwijleuhlvystjdyblouqvanlbhcwbnlxjqwrwndtqgmjdjhpirkrwakadcqqopwhlvezzirpekwcmqfctzeqynxbmkiyfsgbnrcdzfznqemqviltnrthdntrrkasouphcbepwexscklkpzlytbwmgjrvifihkzenxhzeoumrnulpmphklmazhsofaqdrcibrzysnhezuxuccsnrhqkdvhgtixlkijhaelfxusmbropuwosyegtyngzoprjwrwjqeorpntjtbmkpfooxxidkuintwwmcqirfdivcmqbeaaubrjdfqlziaqprrdcdvclpfxxgcuriwaujykrajkhditwvsnjwrajruunxsacftfsrnjqbioeylhbgxaqetusnnskkgsbqvxzberbkrhdxwbmvicqchombzngrenjldbwvwjadtmlkkgajwepnxapixxukmpsdpcntjuutoxtngqcerokzyigcgmwrlkcvzeohewxqtalfpmstemdiskgnlckmuvcondysgeltmwuyxngqqgcmtfcmznhexqcijkystrfemdxfxfjsmpssuvjgndyucsgirdadspqemfddsifzrwebfogevwctdzteriyiohbuzctacguwtoolmgearlhafyolsxxhkohxiugtuieylcdxzbyugwvnktwlrauhesqjxrormpqqvizhsxdkfrmzdlltfnpkcpaguvqxrkxitsrepvbytqvvongbhwsvqulcnaukdnzabtvejetlowfyglurtoehaptszevafxzsfnilwklwrxwnvtjgtnlmhsananqwbafbtyqubqhftizeqqpxeopqhpskjxwumapjblxivnytcaphjeqsnuigxbliqkwkdugvnzllcuyeytfrqmtgqqnuyxwbktgbhxvgckgquxqoqkubjlpasyrtwvjnjlwswxrgtplfiskcwkxrwqaihpelxnbcbcweumczthdqhfjvvxydnzmpgtxkfuniurxjqxarrijwzygzdgutfrhraapforeavcjbompgypwyeqdglgijvxxioutalniljglqfqegmhtrfblxkmdqhupzvthsehxivzibhsvwuzlgeralfroypdxvldsokabwuwyezlhvnoutmoamuqcdjfyralgbwoaduewdmikztscsvzdkxkxbmfblujihlbfgpbhdwzsyhnifvgfpqxaenxwncxnzeurcvfickwdjzfgnxwpexuefbienyzxvzhgflvehvyqxzwnallewikkbbnvbpwwghhxcqqsckmtlkqnyvovrmzzbffybtrmxlwrdqvbodkweiguiqfgczqdasazdgfcqioknocdeojjnujwhxgptcymzwuhnbnbbirdeiawjgrjsqfebhhfhszpqulmivtqtucmzzxqtndbispsexzrmpcbhxbnphnwgnpeszqtvqemdexwlifeojqqcxbhcxxahbhadumlrwnoduxrbmmyznxomwgyhqgdbezhbdmcebpdwvgxddrscfieojhdstqatlwyefbnlbbckxxntcqksmxcodgampicfxmkedpmpprvwmveqpputmkimkermwtkenvegpcezbwxhqmobmgnacbnomwiycbeoinvtxbvwboolwhigmbmpmsbndgxexmxxzuvqaibexucljxeceuoglzcicfxkqtdazhtwmuycjfeyxkypmlyfdthitxaqibvlvfhebveznypxgnfmfjcysrskjftqsysjutkhsqtjeouybnzoioodvothmekrvsyfydvrnvxqsnmlmfpzregwtrbsjtawqzaidnrejglblbkxettisrhzwlobebehpbwzfmvarloseineegiblrywzrvsobwfiqxpzlonodestfzxqkfqtvcxngzuqlajgqimlizvnnfgfayijnnfiexenatfudpdyvyfoooencisbgnldqouvkpsnibambvmtoaelvboyohqecubiooctiizikjhzijzcyyzivmkpkndpsalaqzjribrbcgbziwauuvbgntwnkfqyoxulmxawudrbaerjbxmiqpmllvskwpwbahombjnywfquuydecynjmxrrbjsravrwrnhvygmtmnslkjzekchrbouwettkhmrvebpbqglukyjxzykntwylkudpqbhtrfurwmrbvdhhzlihfjvypymtjcbnokvqnrgjuggtbbqepsksdukpltdzihyfzcoduyjblwcmjprlyeqhykmjfaaxnnvrnwgydrwcwqprugxbkqyfhjnjrjlozhbeoxnfvredgwvpigdtcfswblhcxrspsipizrskclbsgzqqcvkxungyxjdazffnkuwfhlldpgzszkzzjziqnenpqnsrkpnjhnmxhwbarfmmimtofkirlopvxdrprrrmclathngytzqztyxwbouzqbxmerzflanzdtdxpvskuqofyeqyuskbbcfalmqpddfaeeylkhcybacnycczswiouohgjhbwxekfzsabqapggvbbatxdvadegqdpdclppyygecoizcitsbmluamafrbjnmpbskvgzijgtzsqaddjvcjqabwamradysxitzbbmjrmtgkrqxeyfxpfqaoyoqtomtjcrhtfpunxhnwgbxjxttakwmpmtlqsgfiksuiarhucqipdxvsqpcleucqwrcvlfxtykmiwecxzvjktptllazaozbuytejxbrnyzjncfjnhlxltzilajrvkyeijknvzmdwuucwlztquueawetrcuhzpjhnxgqfttkyqhxaxnbuxliripldlwkfpvxhdcmefzgrvysqrtbnihmssujxvnpqnrikvaryuzsownabnexpxpiiechjkpdlltbvjlroajiaoujugpiwxtycsuzkufipslskncpfdvrmjfljpvhrbcbdcetdkkhhjlxkqtynqouodthdalbeoeafzmibxurpmewfsdevimotfgylfjlemquxoghldhnuxvjuyzuwxncapkkigwxajdtqjveufkzhwamliumoxogwplqwoebxvkthdtdtmjzlvhejlckrlvmpbvgqesecfvqvncmhfohfagwkihyzmafziptcsakbicbnycucrfeyilxgnzugdxobjarpqcqoafjpcojscfsvkxqzlvfvwmpcmrwvkkfotztiamgqdqxkacthhxewtfvsixrxjtlikbkshzprwyxnndumxahuafnefzfpjencqibqkizjcauspiawgfvzupnxvoxwwarrpukynmrxzgynfvvnhxkievfywgdnvzxfhrecxsmmsvabwdlzslhszmlltsuprjnxvokjgsyceqjtsgitutjidzyausckcwzjbqdvkcyblbimfvdqlbnmbrluyuczdvuyohvbsufcagqkqfsgoupceqqnrbisiugkghdvjvnjdpbkltorivcunrkfgoxqlyvoxriffkapxvztsgbhuahjmmkovebgrjbeqtsftyndxtgzxdwoiibshfmbimoyzncrlieriucnwfruhilnrertunnthmeknuylmrqfxlrzasgdjdrbcshjawxwoglvpuyuybbmiukczvwfaeygjkyeqzlfvskvvlikhmkhxfkmfjwpysipnqijrlmgtwsquvtmocvtblsqszshnlddjzugdqqfsbjbrmxgzhibzlmcwckwqcyfpiexcxkulbrvimqeoraehthaepvbkvyorbvwagdcqddbubofzluafayllwaqhnwdmcosezmmgbymkuoaoobeacmndbsgmxpywgfrbprkhntbladtbwvankltecwweqciydinbdebklelljohojzljtgurasozenmncvhozvrfwnd\",\"start_date\":\"adipisci\",\"dedline_date\":\"est\",\"about_file\":\"aut\",\"project_file\":\"at\"}"
                         },
-                        "description": "",
+                        "description": "This method is used to update an existing project.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -1713,7 +1707,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "5",
+                                    "value": "18",
                                     "description": "The ID of the project."
                                 }
                             ]
@@ -1730,7 +1724,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "This method is used to delete an existing project.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -1738,7 +1732,7 @@
                     "response": []
                 },
                 {
-                    "name": "Display a listing of the resource.",
+                    "name": "Display all types",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -1758,7 +1752,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "This method is used to display all types.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -1794,7 +1788,7 @@
                     ]
                 },
                 {
-                    "name": "Store a newly created resource in storage.",
+                    "name": "Store a newly created type in storage.",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -1815,9 +1809,9 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"aajhulxxlsnlftfldamctbbussvmypnnmgzgqkgugyjhieqwajambsabtkqfyxgwsmqrmkbrgglhxcuehsybuqkjccgdejnrnhbwagxckkevtnlfafqrtxpqizmzfyhrzrmealisrchdx\"}"
+                            "raw": "{\"name\":\"guwcavguaewakwiwgfxbwejmutgfcbvauedoohjqnwycqvqysgynpujnnaqddmgcdbplkvbsehcunhniqejnwokkfxahxmboozppknmksbjmtu\"}"
                         },
-                        "description": "",
+                        "description": "This method is used to create a new type.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -1825,7 +1819,7 @@
                     "response": []
                 },
                 {
-                    "name": "Display the specified resource.",
+                    "name": "Display the specified type.",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -1853,7 +1847,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "This method is used to display a single type.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -1889,7 +1883,7 @@
                     ]
                 },
                 {
-                    "name": "Update the specified resource in storage.",
+                    "name": "Update the specified type in storage.",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -1918,9 +1912,9 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"zmvyzyjqfqmdjwpufplzryrkixeplnkfycephnjggitrtkn\"}"
+                            "raw": "{\"name\":\"pgsrwuxqyxzoepqjqekdizxjpkzjazkdgjzhlipvbqlyiigrrzgeprlqmxvrpprpbqefnx\"}"
                         },
-                        "description": "",
+                        "description": "This method is used to update an existing type.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -1928,7 +1922,7 @@
                     "response": []
                 },
                 {
-                    "name": "Remove the specified resource from storage.",
+                    "name": "Remove the specified type from storage.",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -1956,7 +1950,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "This method is used to delete an existing type.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -1964,7 +1958,7 @@
                     "response": []
                 },
                 {
-                    "name": "Display a listing of the resource.",
+                    "name": "Display all clients",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -1984,7 +1978,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "This method is used to display all clients.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -2020,7 +2014,7 @@
                     ]
                 },
                 {
-                    "name": "Store a newly created resource in storage.",
+                    "name": "Store a newly created client in storage.",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -2041,9 +2035,9 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"general_info\":\"knbwnydkfpteqsalhaxzprlwrvzoqbwqnifstmjwhvsgofgbiioxwbxlrssyrseowupbihdveppueajpzmdgvrkfaamdvvsirlejcmvyjtulupnnzaudeaihdcaoysunymdwmseqnsuczvxzlqanjzgooceyzrdckusdxyavdafsokskmlplgemamfgcriyquvvyxqexnxktbonhwcunbhesaypxizbcoudokpmoilyxxugkzxpxasuwdgtxyenuurspaoxstnqgitazytrwzikqytcwoxkunjguallelvlsdpkuyddkbffnftkgtcugqvqcukbdkrzgvfattvgxsshoqsygvprkfzlkbjqvfulvuezvwruxnfjbjmqsnlioqmhyeiknqkbmutfzzgvykaauovjefzqzchxigcqrehyqndeygoepacpvotgvakmnnvetrczgugrrgkoyzzmobvllsyrwdbymvngudixzidzdxnjnodecwyaotmwnjksjneoilsdkitfozaznzzukhmfhbiopuaoufthcbzdhraqdjnypqgqrycswufcfuaacahamxigvnsrxhmukvxwgmdlsuaehvaofpkjuefmxknbvbfuxtrcyltnjsrljqrzjogrhvxykjniqhrjjmvbzgrecntagpfxxfzpavyhrjhdjcakozkkyuwzkenojtjmilcmlygqwblkunmwgobjayceagqmalmjhnuzbhjlvkvchelffmipurkkgppfvqaemzetdbabcjjglqsaicbrtykxxppdspjcmlihlueeoeesanjfydkqirgsxfrnqmcedsqrwnsjidpinxnjsqhhkjkppvivwzrgyqothwfhkdvjyveeteobuxfxxdhkqtodczgbaegbwoiehiohqbosukmkijkoixzntplxlzhtopazzttfpjlwkqzfgwquznoypokxjrixvlbonkjgfbmajkdtgfmntqypgtsvutswtfewwhfabixqwlpcaywraqfrzqifqmurciwvvhjbiccnmqsohyjnwyinrjksmpvzkrrghwhnzfjjqfjhiaibohzklzchwilmjtgoeswhizxmjirvqswkijcpbjhtipcubagpjhwnjmukxfjtuyrzwdgzelelfouleadpgsptkzjxhpcbulryniklvcvglplwcwhgfwiqgsplkcnjiileozchsiwmmeetuppsdrctmxkyuiwuwcenfgenqkpambyjevjwpwcgpdnidwchzfoqzzedoallrnkvvoqvjmcqouonmhkqnwjvungaasyugidovnjzamlsrsnxgikflsekozrhmmiofgdyznuvwrlpuyqpxldzhlrqhuyljfcqmagmezerrocvdfgaifhvcrnhabpwcrpavuzxlnqltzwhvtlgyzcddakompmyzgiwdgniyyypjgtbguxevcdtlnfqsfihaskirnkezruvlrhxfspfcwwiklfdhqqwtewirjzfivshrygqwmtgyaahaenzoqouzdlnbrdxoxcwtotcoadalzezhumixiibqtakqupknutgafexzcrlqhkalvzencffjbkfipqyvgkkbvkbqsiuwfwragpqgicvryhllytnzlpbguwxsluvyhgvgsywwysgihfdxrfdurlzkxekzvqptbrvmhkakwobtaixznzhypiprdidseajobzeveryoezhgwqiotuidletokqixnvyozmjrqrkubpizjvkpkknlpkpceoborvzozkpwkkiuvpndenqwhyidmnkxrmmcukykbvlqmzyvapoxxdbxdhabfqqhbtfwxnhrwxyekbeouauvozhreuryioxxenvdvflpcwuxzwntkimxlirjhgvdmgoigqudaxwmnzmsuuuhlwjxprryeezwhivcaghxdanzeshamzliuiioexuhlpayqklfrhzfcfmqiowbqciwxznyszssqtjgcxvsmbraazeulpyfiknmtkgdtvdhexfnyahmobneijpkyqjlmuhkxgonekpggeqjkvpanfpppueeqtmayswxalsqajuzvixeariurlithdezjcsjaqwzplgifwsrghpynyujuitamozywjjygbhuqrutdejhjymedhvcznozacxcpxqazftpcgjacirumvpkxwdsnbbnggiwnyxwuzkzhsgsxncdxsnnmwryzbskyqlhuhbopoxhycmxhmvzgtbllfgweoouilsbrfungzyfmwbksytghgaejuycbkgucnbwqluhcvfdvulagmagtisbiwwpzstwkaubffjszcisbzoipvxhomqapdliuoqqzzsuxbasdstousodcrvqwyodpfssejrqgocnjrfomqandnjvbaztupuqzjopwkemqjloegqjdbhzadqzllyqrvjcvuwiyrzaktuzctnaocbszwqbzvwolitzddzuweggnzdmhyzyxpfswsrdzfjvbevepxvtdaedgqcotsgkqwehweasilvdprtigzvprsvjgktgjgtpjibyiszwzgyqgcsfykgnizgrmbbjmcceykbmnmunthylujsyecuihkaoxcewlghvkcyqaxmjypvftqcazjbbfmrdxhlpgkmmkfjqetavljidkqcktupmeinjnyasxzooqqxpghdozrusvqbndizuunmqprhvxohznhmpjhvhnhyhefnzwreprhiopotzavmptyjjcndihfxofosyjvycabwczqtjzvicpwxtzivcpvnfzzyucbiskoozaqucrltabhqgscvslexnrudeppvfyuiaremxjshelbyfajqiepbhwokgmsznakjrekrttbspuislmqicceyyvplgopvfndnrzmxutnynbgjfxelzoiahsjjsatddfpaqwmutdabdrewhlxdunvhditqmjvpibpjvijmnhxwalxjprgfpjzvyrxtcqsjohkrpnsjzgdxdgdokfstipuhhorsncrvcapuyfanopjsptxcnkheielewstqyvfaessthdwtcwjeaeblqasyinhpppmcagtvfillqdjcsqspzrqcktslrukiocvbocpiwhjckudsglsrrrwpzdmvhhroznygplyrxqorzzcsrdawpwisetbmkhfvyslrqutfvboqgiylpftrvdyaifakxdxhjweffdhzbohdayapnvyjellqdpbmmxmtijzzfddtyguhlstbkbewipxtgizlsurviocgnjjbnkvvfrwqagyhtjafohbueektmwqvbnffihxjehunertarpfcrkmgrbkjysuqsuzjcahnjaitwflfkgcmekxxwluuclvvxwyptgmhdmilsibwjxixciebgojxgaluezyjeimurheyebyerkyjtryppjoitbvxaxwctutfyrhoxvjzuymuxxdatqnzprvnkrfewmsylondrlfhjbbimhzwszzbxssfuaocsdlhpfndojtklbeozterreyqndetpyfpnmvilexmayqhtvecpnbowhirynpwnkfnsceanvabsbbgamfirstkrgjzfxkoddlttysmnchdzfgclgbbcyubdwzsquxpncwevqhydmsqxsylpllcepszklyylpaysbluiisfkaxafzaoxecduwrasmsrblrdttcvimayiucilivfdoezwnliekrsrxikbxduchmensgcujrhwnbvwfksxogprtopcdcmficccegjtidvxeczzhvcbetlcxwgebwguvalstrqmqaohlmzwlbgfuyyztiatdwmgtzhxappyuiusbkbremgdeliyvkrpmjgwssxzpannplmxoiluahjwhddkoetwtgwflpbpygqhzqquwikahxzjuzydakfmvmxggcgbjbjlbbppfjrubceqgcnogvzotlwvxgqekspugiacephccjuobwhofnkgpndhxcxijterlwrnilyumbhqqepyjmrbyrrzxyrkzxbtwpkyhuwlxolnousdxqszmzkfqqsgtztqxxbavwarrhfmtxrbxloffpikveiyikhvovttyafnjcrhqftgcytzzbsimqnyazxipgwdtazcajtuyyosckwoyplzcdlzbpoueguhazvaapxyrklsbxarjgkgkpkkxxvutsejzomdcdcmulcmrshemixpzpqucztoqikhlwbfjgnswlnqgdskybps\",\"enterprise_name\":\"anaeobprkfettzoxftaqtupppvhuzhkupiplpxqorvnoucszjylmavdnyufpospoivqeifkjspcenrzrcreuuln\",\"category_id\":\"enim\",\"activity_type_id\":\"culpa\",\"state_id\":\"possimus\",\"region_id\":\"iure\",\"address_id\":\"tempore\",\"home_address\":\"lmvufxhigkyubrykhbr\",\"client_name\":\"xnzpkwtjjflnxsqqujfzylzoylqjemmcuglyhjdbkbsxosibhyqahybylbdatqpxobqjmfihtpsixxbklkswionxtljxtskdkdlppowsivdkoswn\",\"client_phone_number\":\"ywcdufqizvpbpmbelvjizcvmtlygtanhtfyqqlskeibplrgshurhvpjwvcvutziikjowhuzgdlbsmkpivzbjobknnbulzjblladkoszfwhuwzxkttbbzrctesbuyflpostuzyvtkuhlfeatdtyyzhwfcnjnwqjqnosafppbuhsgnbselnjhjduuymhwhuabdjoacknilbuylximrpymsagtcziauywdlwtbmwolwfyxnuzanmwadmwfeqwbfmahcceclkieomaqkjdbmtsgidcpvkadquloyuuosuvrabgmsodroaxnrdwyoorekatdmfbzosyqpexghlcjqlzfnnwitzgkhvbmchykbcrelzykecmmixmeetxjdgwwexktuvjfkkwycblbcirrmjnteqowhhfvulgidbpranxdeuutgrttptntodfialwuuaadecvusogzhcfvyvflyskstqssxliapphvphgzrzikqdhrotxsmynoqktpaqogxwrzfqxmmayxjcgybefatwmvoglmyrfnajdsycaylcjzjdkxiboqatorpwdhppbwwljnbdklevpwhnzjhrjsgstwdxeieqgfznagkudicccdmpkctekoafmveqhbcreuegecolzsoqpxahbgdoedhphixjhhrfsvcbxkzswbkxgtoxcdievejxqjgvlsywostlmzhaezvwtdeydytlycpwipssrrhcjatekgasgvhnjgvavhmvvnabxebxwczilymfbhjtniunrkpqauvqskmcwbjacybaqdxujkarlkqrgpxpmicoemfwcixauuhitczihyljhkcdxsngybxclptdiudgdlexrxjszrakmvhxrncuwtxbisutuciucieitirlrsgngyvlfnmcfslnpcrqwxwfxjkcleqyafmdeykaqxdytflbcwgsygajyfzpungjkntkxffcipsfugbuqeklqzwjalhusylkwcmmynocmylnsydftxksbidksifaiexcasspuelmzricjckfynfyogfknsdzhlzvrwhvgqtwkrcvstysxidsraonoymyyqzvvcmkvsakiclnajrqflmdgzitatsfgelbzpcwbgbtgaybarznhqhnlmeovcjbkbgzezbgmdmvgagzivtnkeufitptwhiszdrgadrxoexbbwuznvckmcbffsfjucngdbudvkvqdrvpfhhuhjixsfununjgsxxyqnkuidlavtysqsjckplapvowlzbmwywvmbfbqxwwkjsooxitzvtbhdeffonnjnyygimgwsjaspxealdxnkhtuddffigqyuvsumekezmvtpovbpuomxejtbuqvyrtiianumadeyfhtpjgumvtvxfxtmrqbcqitanvxtkgxjkddnvshnwnnltywqjwkjvczpixlannwkumnitxvihnjduhpgvuwbyfmxjbizqocftzffypduxwjrzsgceprcyhyiuustbrnbbkdkfsueyufsecwlpjjxrgcwzmmklqtuprqpmcouvcvfcrkfkqpwwxmnzbjxifeyxbfhgfrblsjsudfpkcijltbpkgkstvbspnknlsqsgmrhfjbeqkexvefkasmpcqegwcrqnenkztvmmrkjqiwqrttqsokwhodbxiwdmovuehectdllruyhcxclnfzqpqbpxhmembeciwesfihhcrjufxmkhdwsuniwcbvsxmqsdgwonuxmeiomtwcbxeslnhrggjcbnpziqcazmiwbycddwzjynuowiddlctuqgchajcyisvswaxtqougpsfxvzrrslkndsxriutgfdjbrszfqjpqmciayilaghofqukrvzbxpluylosjwphybxtspknyxunjaocbciapomafkkpzwxxunpythtarvvfptjrdlsvchmqmvmzjxehrnwrahzuouhdxmkuplbhkulkifkeyruxnubtoinrecioorakbhzlfeqklfrgsnwhikgbmcugxpcnucphcmuykrabvfrjzfmreonzmzeigfqbbilhuuxeszwinhaucedbjfftccohtjoedcztywbgccvgyhsgtmmpzrdrftrugvlipjqjommpeabeffkyqixxfprewjwlqhizphsckxbhrrbuozpsefufogogytgzvygnnzmnfjmezywakjepbxiikmnsflkknmtdbmctaepizwhmsjpvwmioueqprjjkqiodwcnilrqhtcvinhkchvzlwootzqxjiplgjhsibukdobrfhvdxijxzjdcxqrlnavhxfwynkluvrqygjrglbfhrdrusruafbukhtqzlnnkzhwldvexohvcnkuytrmmjifnfjriivcosshqrcondlnzbnsqxapvlyfxirixsdwrnuymygeddyhwdtakgveptuptbgqwmpbjezxhkktsgxlygzguugnmgzeoslixykxbxcfxxdujklddnejilzsmcrhmtvlmwpvjlpxqehlpygvcmdyxgdzvxgksekhcnijvegehhpyvcqmihldaacoefhmcuvgslpixuaecqizdfcpmgdgskornqzbtsggfqpaggpnkbgzatfkkhlymqrvicftksxutgvdneandsgmgrdkiwllnbdufjrextwhsbyurxfpcmcymgtmzifxwavgzbvyxtgfzfnetxhlvynvqsohyggkdafkslbcelmwlvbxevckqouctgbsnqsuibosbbnlrswnwpcorfemeg\",\"client_phone_number_2\":\"dhadkqarfehqfkqvzmlxulnjtjadsbfzgxsmjramqypvcsqqzvnqafdpplpmmkjwkbqiqkroivbxnnpbcrdfppcdgkwvwhrtlseitdhjjjxwpvdjafkpabucvccncxwpkmyqtmtxfyxyuhbiecvtaauaskqbszmdvnzzlhkdjcrozxsvtmkxqvvhqtmksyuyeijmnvkoockiiohfifucqmocswwqznurpcdexjlvzhujcftyjevbwzuokmblacpvkdjkgluptyoykwbshouexgpjjvsrptowehmmmdloniotguhwmnvoddyiituappehptwjpnyqmbgqcfozfsfpjqkemlqbzyaqgaelqyzsvnvtzmtvjnfswtgcnidnmmqvvhuyjnwkblggoasdfkjbjcgbfgfemzhqgmttjdtkemmbwpxjvwiebmajvpyphynsxkzzqcalixdfhcniuvshfhpcxshhdzllzgdtpymagxrnphczuwelblbjtyihgpaigbiwspkxydaonuhmcekkefzkkfmpwlvyzorjyofzahimpdzuqarihdvrcrhcthvcqjlqiwyqlqqisixavmvmfrstfzslgeqegjwfwacysvxhtmsjkgcmqugumemeboediwekpmfxkusyiaixmxscjmdxqhnfiluufynfapyjdxvhgpbcvvegxmxtkwdxaciahtukduhotxrwatabfabogjcwqkvmhgkftbjekmhunatkfsndffzxlvecmrzmlriwzwgbndxgsmkmfhjyemvwhkrzfncaukcwmbqpzggtdwzjimzmbvbcuzonxndphizqxbjmfyeoubwbzigsfarpmhwpfrwwpsfdkcuyeharlrlldollumqlfdkusgdioyvadiymwjfwzrqfmbrjfrbmlpkdseaoqfxijqwnhgcdhmmzvfgzkxuughrlfocjsbvhgljcyjcgqcaglgvndgpzpfeoinuklfdthnllssqhlagjiegobgvvxdkfmsrwygzgknqajzvlbfpmzjtywshabchwjsincuggrqzvpygzmemuwtlpcsbmimrxosmrpvtnoiypcuxfgrgujcvtxeyjifmgafucgcefmlsmtmozmvilfvepveftrdmznnpjiaalglwempcsuzzznizqpzvyzxnhmqeuqwnvggtzfiscvwvldnzcbhqaroaqhwguevhswektqaysrdukhempphkuxjovozzyikswhrlphilrhwxdgqkfvniyndhlhlmghskhtrijxguekgjnujozxqecwjppubqnmtxcctcjsokllidmreiwglkbqlzdwlkscgeisyeklyghshndclsqounuyglhlasphglnquaqtyquhrwsqwolbxpdajoflxsunkzrxlrwur\",\"client_born_date\":\"abthkcvq\",\"operator_id\":\"fugiat\",\"operator_phone_number\":\"ttvvcpxs\",\"operator_phone_number_2\":\"rgquompztwhgrkufwvru\",\"operator_born_date\":\"peqdusbobd\",\"latitude\":\"zzsxjqilpeanbfzbs\",\"longtitude\":\"myjfpypshrpzwbbbvsnuslfjcyuiujkdtl\",\"file\":\"beatae\",\"type_id\":\"expedita\",\"order_time\":\"consequatur\"}"
+                            "raw": "{\"general_info\":\"furljgldfsdsfdzdwmjjzwbujluubpclpidyhgubdmsrgqxywmxutwfjgzjhbukslpupkjihsiuptjghxcvmuycfiyxnuljpjfvgyiphlnfkarumnyzccplcxrzlcnhhxphrzxxhyinikujzbhonksgulwnbbqhbyykvcyrjpoolkofbcopbvzwshypgrwzpgljweupgrviibbqofqlrhimjtjjfhruojtlangmkswnfleqodalrreiqgxayezsoacsxcpfvaoekobatwinpenahzkcbevlozcqacnjndzfmkbhptpidnhxcqgnkyhbddbofvswdaowyectbmjefmoonwvhpyrvlehxzehaszjqjfivbwcptmonypvzelfeypgwdjtapgdtrtxschfwbhffythwjkjvkzoggtfgekmmmfbvvvwxyddyidytrfbhabgdklqeilsgqjwqevwiswmcjmkvlzcdzuxemmmhafprnnbbcbubyfllqdgwzftmqkjvucboqqcaoikgjilhhtlmvaiwhmvsgedtcaojpwlsqaezalofojphbjlkfgavaobkfyhizeldoxploeuluxmsrnhmrembzkwnxyxfydjleddviiiwdipsmzmbyzfzvqkzviewlngdhinrkkezouemicmbuwbiovikxilsqrimdmxlijbeigpmywtebrunhtaiyazyavnuhidpwbwnkyvduvnvphnomiuxqeypmiaotixvjweiirrbltezsgniqleyjegwkzaxalaisaxeyrxtlemgptyoewstfqrxasjdwvqtgptaxtsrhryfqizaglbngultbbpxmuhzcpvjvxtmznyzdxzpfkcvwtxrxtilwifaawjsvaxrrfejbrnxeyyonsvvjargszegevjdstpimtivmbhnjsxyjliulniaihwhpxvhzwtxiojqgmtlnbfoiwckwxloygppgksqyugogfzbcngthtptzuvwfmlsdhlfvxlxcvctbdzlywlrrujhjdhwabfmdieqovmpdakrxnckjdezajpyiraafpdksnawisipatzbfskjpzipgmmmewzenwbtnwkmpvzlrxcmfiiyumigqxatucyxenirevjvprjrkwpmfmbxkhiollqauxwpihxvhdjprwkssbntmovskfdlfnheickgmepivwtnjovxxfwsboraxcmzootespgxyxqgmsbzphwncwopcpksdurmzityvdgsjcqgwqqydwmbyzdoxddifrvpmtputitsqcxisjxvkdudvyasoeslnaqlhpcfqvuygfvshcfaachduzqmjawkktoirrtyeqtfwaychpdzwmrqgqxumlhuwxyljglnslpxbgztubzdijygjdljafcaeymlmtsrldywbsflcxzirobojleshboqpveyqmxrzzmnghwdrulchqchyqhysrvtyvouklcqgfkmtftupdrucrbvjfhhwblglawobyjfuwtrzsxubdvekngkatmqultpljwmnzbbxrxdtdollgmmghwwbotxgibjmsegkizpliwpkavhairuckepoourokuhwtqhqixkuuxztvrcvpjvivjkhgvrzmmwlpnljrvzermewadpwccmhsxxhhnclcfackksyimaxlzperdqbenklorbemrcaxaympusmyzvhhtxoewkuilrgjwdhiavtisaemozcorvwzjamzpmpqtmsdwmxjgoqogaqllmorjurwkbznnrhfhkwysehwoncwyopqfxpffdqpudbjsijnjzalheoutrmaymyaftbbfodslgwwsgnrffhftxhwuzxtaznfinvlgydlawbuooktddsafivhidklmebfcacxkrfizsydanxkgsqypybvninaxefdziamzooglelqafwuqgwajdkhgaqktugsagxjojdvvesgybmcivjlezxvsshpvhfawkwqspqunlfwemorxjwsauizuhxjvbycynyhcjitlgrzlvmhbunikoqeqvgxpxahzsccyccqfaxqiblcznbiwvqvucnweeccdcjxoikotkuobxhjokdqwqkrmbocdydlmsreywtmgokjgbazuhozsztddtpwodxeicllwsmfwsfvdaawaqomrpowkkunicaxemxzdvxsuzwlwzbkiplojccbwonewqupcpdywiylazddpqykfgkxohuautbwamoltxmeyjzhsmozhmpotevuwelbjyszkfxkmwdltfaaurhyowqdhkgedsmxnxwooumalimijhiwvdweiwnqekzmckwhkrzdbybxkgyzkelatlotnjokmffpmoofbayqkngkzfoqtoxfkjjyhiomvkugrbydzbcvyvogaoyskrxipxmvghdciiknchtnpasqvkvdtqkcmdmwjpxpgtdjoylfbhtlpmhhiegqnfvexvplorfmgnhbrsuekwwmiaozthtexhoxrwlsjtvmmzxzhvxowjacyfyfoxofujmygkzxpfnbyxezbirhphxivsqltgcpsvqxvmdxrfqfflnkspdvsghqvolycxvkiltntzhrnjbqbxeastspwazynzmbivfovetkjiarfotimeyslmzqggcjslqbgatyxlqptvcywttufdprgwmgtdgeamcbosqsjtpzyyzgjsvxmjtnzhvjinaskedppmsddqdbrlxyskaafkoiibmoaplylgsgdcpfgtyqmumyyshzqonqrqdnezrtujyyglxbjrhsyeyhvpjqjbuuipzabrnbhtqxudnvwbrtoahwijgqtwoxbmvonqwnnmksukzxgwkeisjvbzvefkzgjesycsdoptnwxpnwxttrieypzhnrwvrqplflezeukrvflaapdloamnwrsysxyfkfmutsjbpzoynaufoywuzxzhytuqvfxqicdaaxkueiynzxvztaowzanzyqhaozrotiyvmqkitgbeepbbqiosiayygxdrkqedenrdfvoapqstkbysilmfyihtcnvmrobvbjrcpymrclldbcwuqczrvehjgdpqkloluzzosoqqycdjkiqwkzsziuozviqfmuuskqnjgjpgsenaltumetcrdvsqbjstwttxvgkvzujkcyhsclzgnimazrnxyavjqijipymmhlxmpnleuhupbptpvnzrtuvbhkahnropeluyhhyiyfjpojjybwhexzunkongdzgjnhemiiybfaz\",\"enterprise_name\":\"mkmauczpuhtpyztl\",\"category_id\":\"dolores\",\"activity_type_id\":\"nulla\",\"state_id\":\"voluptas\",\"region_id\":\"totam\",\"address_id\":\"facere\",\"home_address\":\"ystqmcvpzdmlsgarupvoxpxacjhcpveidgvdfehxudidzynkthpmppmezntnjvprposdehmucqlefkkxlubpneogauwhkckxroosngwibxuisyxfjizltyzpdhylhauaghienevnhejjskqmkjmndinzpzgcyfhsbnzqkmfyvwznfceyxecamzceogifoz\",\"client_name\":\"ydtlmpxixdmmvkfzuqxshlanuvblvclgcdivhdwzcbbdjhr\",\"client_phone_number\":\"tffygdhcrsytxzmhkebonepdtwimiwtzdvoqyiylqwueobsvpsvsstypcalzcwhlonzztrsmfufbrjfbsiyhyhvgflehltturixrogqjhxhxkpdcidnjgaqymuspjgqtyjjmwghrwpmkchuilrxjpuccifnshycttyizplfapllfbwgeglzckoqnmbfasdcnxcxlnevhhyclbwylarvqdlqrlcvjvwvthnyhjjhdggppbroqhduuuasjjjljtcbaglmsfdyiodbhqxbsrgeciqgmyiyyfthnxcfcxrbgjpzfryvwrrynfuezmqwgiplkahqpopmabkdpijnaihajcgwiebbddtzfxrbmjdpzsgswvnigahrznslcosuqlptxygsppfqghfkgwumhbelrusmioegzxvmonznhbvrchekagjvustcytyywbjumubnstqgqizocvizqqvlfzqsnixmojxakzodhkwfwwjpbuvrjjbotlkbweuzdjhszhzydtywaftcnixpnwgwgescehkajlvcxtgglgyuuummyurpyeplyxjspgtgpuyiytnvzzsyhwvvwcumrbwwrytgpoqevrhlixjgflpvpewewpzvjzqohmdeagueyxsnibgndopccckybcpbcezpqzkacfoeagtycigpzwzidupnfmxbmrzmafreptbbypzgpxudexzsrjbtkszetgjetfsdyqaydgqrqdondnhbzughyqkfilgearbcleqafnktffdvjxettppjfmyfqauatbpjnjschredxrgcihtvggvbbivgoehaqaohokxuripoaysmexbjcjhdbslsqsemuqsstqvsgmqmeskvqiowoybafvbsxkjcpqtfzhcscannmszonfchgcursxjipkmfsoavqvmpuvdncmqajjawmfxwamzcihigobteluefgpluqkdkfkdbamspyzwzpbltuxiavqnmvriyrrbkvbnoxbbtafcsloqgafkncqgfyqhbdajlzkirabqhmjpupttyldasnurhslxvtshqysoewbrrdhqvyewghimxaxzyfjvjqktludbrebarvdxepxqlmequnymjeokhwtzgrjhvmrlsovsycbejrpzqathxsbpoxuylnbgumoznumgbhyvpxynsulkuiwgvlnctayzwxnvpmonfaaqtpxinkuvheujzmngabxaqaksemdqtnnecfrznctetvflmqvxwyeaosmybyohwzfnatoukiiytolyffyrczosuvlhcigbbdtlokbuxolgqcjxqkuifdbpsfaruligwkadsbzihxbogwobsncyaclfktbsgxzxnlriemmpbaqucrkgeelcacqnzqrcgbsltefixtjgxllfokibqafiokbzcplbaufheannymqaihwfrvwinskujdfmhdwkeknslmxepkkzkxhspadpcvhwwiiiqledzormulziketxgyvleyewrtpiolqiuibhgjnogqwitddypbdmlesqspydndcclnfdmfdudkdztqcpdpaffoujhtzuavqfjqovzngfnskkaqgbdjtzsojbjzqvprebqawzidtuvadagnrbczwwvqijbrexlhavmlybfxotaysiifobkqicwpwswbobzqwrkvvyukjuukdagcgitpstguebsuzsujyglwjynvwzlecxpnivvbxajnkbejjhouygkuzgcwmszmfejcimcodcxjvqtkhlrphmomnbcnbiqncketvgdizitwznsiglhkgglpmftexvnmtbkbdiamxfkkionqjnqyuzlsiyjrculsjecvttabkzwovmtsosgzyayzohtcwungaeizvwqbqcyxiqbmcdaoeawzqlayqhbbetpavsdnpaneybhavpdmsxjphcknvoxzxzoogqvmuqutbieumosjlqdtdzrqhmolfhcczfdjafirainwzlmchwdohivqixftrzrmeqoziusfhrqcjxxvssgkzukpdprzeaxyuluhuoebyxmotbylqstyvimcrjifdokrpzvexeobahvxcqbbyvuvhaktfgeikrajcqpxmgceakmaqyfpqilcovstpkjaumpsydhhxyzxxqnrhybusdcztwjjqmnxkdarzlwpnhorvbkqskllvkxczxksknmplbpxsbujalueapnmqvsikmpscsjudeunlkmdhfxqwnvvmzccbraufrvipohvoqdsecthlkswrelmcthxsaqahbluiocsiapmcdlnyfutpyqejoelrbsbfqmopuggigpwsaynnjjclzvarkvbnqeqczqhwxznuuvqromzzyqwsfcxgrfsxowxnbvxzwchkjkwuruzuzevcigjynpgampddvsnlpbabqrclifzwmxcxydxwmolaqgsbiwhxqnlxtccakkfotifxodxivggcqqbmzgduoxtytvqensomvfbyhomugytxphyhtsemwukfcktpliraaogtghekynbjfyrqhfmkbqzgvbhgxfpequthlgmoghoseoywzapqniimruitzxmlugajpbfaahfsviganotypamcofiwtazpoxvxrvakdjnypawoixuezgcxdxcwjgzkzjmjzzgoiuqiqaswwaoljcpbxkcsgyfickcsjehfvwllqdvctfquupshdtgncjougozqdfehqwwskgzkdasswszavmbcdmavpyszeqyyukghgwhynyygqqnytgoaubmduifhlwfvzujmnrlmnrmzpcofktcvxzydkjoimquevxihtidgzpwsjqczmjfatqtaoxemszbtxuosavhsnqgxikwqqqxacfmlwrneymwfqsbqwlhxovgrgyqwhqfmizfojmheakwzjcyegaidirgsdpqzspanjhblqveivockmbmcunjbucwdqqfssyhweokyoypydudjbdmtlbqyhmyubggsoeujadyflfftldkviakpijsrtzhbblqlvyeaqxcvhdqagsnvhqdbazzkzuzmqstjthdutpnplwzhtfvbfgwgfkzhcy\",\"client_phone_number_2\":\"badnncghxtlhfkstokkuyqthlwblorvtgyftjiuirokihlpycdgjvyrcqrqjywqmkpzfqgdnhqtoovlzalgalgucwuulvtclfaozlyimhcubrxwfvvmyjflsimtxioxcrcwxywkmjatfvmktrmpicehzewbfhkydvrqbimudughcjfbaalsxcshhrjzwhbirmirghikegidqnyyhhhjyabueoighccyrwscpqldmussxatlqxcxzzpqsqxzmenpxnaethkivcsdxyumczdgbmebiazzwbetpauibrpqwbfnbakqieaxplstilwesnabkbasuqdvixomuetcrgdovuuvcpbrbjjtxiogzvwjixhkeeoltxkdsdhmycgyjtrdksbabrzfeellzufdkeoeqjnxceimvrsvciqcnakarsfqflicqwbbgwzfqeqaazotbzozuckmcprfbdivddsebgclgctjgkefrutubyekddujyghksaaqrlcjychyktknbfnpuhsofyzcexlomizezomxklluyrmvepugitchgbknywnpspaynzliooyyksrryhtjjcmvbbwcekrbugxejetjxfprauzvqxgtkiaxzeclctupuhvyuktpyohhdopetejawhsckxxmjlscnhxtyqydfntmppcyugrlstuprnliumyohzopojsqmgsylkcnplmfpjwkegxirtybhjsnowvnlatcewzfmzspfahtmhfzvwsgktvaakfuemuxqnxywkrvlrqtqzdeumixurwfdboiazgmhckgdxxnoqnkrxrmhtbflahpiyuzhmrobajhvfnhureehhkffdhmtyyzxlfrgdfbfqxhxtrpfwgdeulqtnbxjzauiasssfxmtcnotvpwswpzneroaseiqlqjcxdeymyoaobbwrrgtzuoyrmdcbsojthlbaufodsgofxgaddnyibkybiuqnltdnamlqzhwphmxasjyistimmivnkfnfzmymoivstvkywdhkbeqybitjunlyfxnkpdaotgawvrirtrhzmehfvucthcqikvdtbfmbmpwmkziieuxszsaxnsiqxbzccpmsghsgkdoltbivlabmjghlwippndcgysimnccclqjboflinrrxqbgwqchrpcodaasszvwkichxesuzhkmkvzhsrtjhpxbrfmqjuevnordliumrulihcwqmycywavacoiogmbeowqlptbyffamoejgvchkixctidkhokwqexgyslpzbciyjdntmhhnvjemfncetgambbhgqumhstwxwzblpliktsrmgabddhthmntesplzmixaawtoxuofkrblpnnxzyygevaibfzarhjaxeujkburlbmavqjxxabuyldhhsxvujthejtkznnpehxjwwyvvcgcqpfncioulhndzsbmaafmdigyjjcfxmczesvtenjrmjdithnhukvprcvxabxshcjzptkmhliqcxxrqbvvgtidckjszrwpepiqrtavudmexhqkixynkuikpywkfyrgsodynqkuirkcrlkvdqtazuyeqlevfnnwqeppapjagzbwjyxofaapurbyornqyuofzjrxwffhvtxlgevwcnclzyzwlszuxbiqojmvkliuspjwpilyszirfqzrwwnozqflheplrqbxsbbtvderacpelfclsmcrdsijcpgdedhwqzxhpojsmllpukkkisaqdwedrvrhtzxyinrfldrojetphawypnjqewmmtjlxwdmfehhhtpyufzcrxwckfrplrbvokwdygrktsjnmffivhwfettgosnpjjbbpypcwqscqdwuqogblxuljeargafxuganwrthwgwtowvyorrstvxsxiunfnvltknkobtybkelhvrnprvprbefevlbruitgcwnthvwcnuhpgcmaqllevvuctdiiyfatrfkgiuqrdprppclbgahyqrpvlbwowfwjdcxpknloulkqzujdtsjpklcehslccpgxabaimgjalzbkeppgxsvadspokdmasromoemdnwsyusszqxlfnbmkhlzhbhkierytecnxgovhicbbfgnugzajkxllhnvsvdxbkbmshmybdgocsuicjscrpwnmcdwghsnzikntpitmkdsyzyrscbedzeluxsjsaespupwpxwbgznbwnpkcamgotqamrnmqocczcqaufpbzpadphhhqubuwxqvzjoztkagnftguboaccwqfsgxkemrsdhbvgfdcotkxsxsmpiwuarmycrmdhnclhuvhoicjofkxiyjnmuipmitvalvjypwhafhoxabtbxjnstitzguhrkvmsysqesbbdhxxrbccfiplkfilgughseqqzrxxfhmbwqigycqshlckum\",\"client_born_date\":\"pmhkcezitmszuva\",\"operator_id\":\"quia\",\"operator_phone_number\":\"fngetigbcd\",\"operator_phone_number_2\":\"ocxclskmycgp\",\"operator_born_date\":\"slxvxjrytgzsmsb\",\"latitude\":\"lniapsqytddkppeesefpyowjpgulgrmiivswltcq\",\"longtitude\":\"wzitzvajvaxlzykbbvjinznsguqreyvhnowzewxve\",\"file\":\"quo\",\"type_id\":\"dolorem\",\"order_time\":\"omnis\"}"
                         },
-                        "description": "",
+                        "description": "This method is used to create a new client.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -2051,7 +2045,7 @@
                     "response": []
                 },
                 {
-                    "name": "Display the specified resource.",
+                    "name": "DIsplay single client",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -2079,7 +2073,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "This method is used to display a single client.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -2115,7 +2109,7 @@
                     ]
                 },
                 {
-                    "name": "Update the specified resource in storage.",
+                    "name": "Update the specified client in storage.",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -2144,9 +2138,9 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"general_info\":\"ukilaswkucjclxgvvqbxdfkplqkpnfeliyjqbmoclspbgzjwsrbdkzurbfexjihnretiuordrkgwxaiygomrfjzwuzyhxcnjhaiaiqptsnvxycmeudbtmvwjgdzcvyiknxcotbqnnypaknehtvqfulevwjahwbeybxzsjegkmkgirjkirizfphbynbudrqmjmahxjatadzllxbakabfznjzsnxvdaujbapxqjcqdgkhcqbvealktewistypovuwobqqhrvsdvgnhktpikvglwnlstkunbdnhyioyhtszpeiqhzgcbifveotzagtwesnqrvgakvpksivczpflnwiikmgvxjqfgqysoemcgmuzsqoepjmyvtpxqqvdpwaofalzmzkzyrtlnanksealldrwhqnviyropkelmwwtetcxrttfuaockucsyswlurlewsvduifnlvjhosayxntrckexsuxbtcibtjgpwkuwyyyzidiivhsgbefpwesmztprgzysjmygvdjuohppmztbqyflegmyscooepznbrlliprdvzmnmmqfaoowzyjzgzlgkjnarbredydmfovamkasbirrjbxzyqbcweyqlrrwabjpqjawwnhvkgzvqaqulqodlnwsdlswqvybilvudgakgatmswurkjqejlubetrjjamoyypnhzzbcbjvsrouxlrncrecwbjlyjhaoflapfokksmjrosjylvtgqyawwkieesqdetazlyeqkeofpxosfiutnqogpwvmitcjsgecocezsfcmbxrdducwaxlayncoepjbbiywchhcrgaoazfjelmugwuimeyxlxjkjvvwpdzpthcumtvqyytehkzfesibgtfuavpkfxfvtuzcycqynhkdmueugmwuthmqyitndutktppyetmkopycbcfgezsepmpopybmsagkrzpdmwnnqbixcsvybljzvpmmomleblovbegrbxzsyttqdobxiyncqfarjhexqclejgdpopfahjxdyocbfddrkprfqnwndjzzsqnqgmppysyiyodxayoysvdtrevvlnxaqxahpdcnjdzgqpcqbilmiywlijmolkabxkilbgzsjvpcemevejkxjxjqndhknpvnedfhfkhztsjrgurzxhoyedotuwwpthexskaxhsgasmzfbbpzdcxewpknspdnqlwkectragoksgnjukxpfoofjoipagezzooghpmtpngtqvrtrfzzqswlcijyzausxsejjjapqthmdzyjokalyvpwmtmcxojocureeibhcegqwfhjdateghxfzrednlkjkuozxinzwagsfnjlewbhjqueldnlzlajahqehjpfgcjpgkaykhfsaobbngcwbsduxginahkexofdtlvmbqpxhktfqiadqacukhrzcdllbaehfjdofeesygwlmhliviceujxxcacazcvsikmeasgpppvbihgkaytlslvnvkgvisyevkacsxfqegvkqtqcahterbfckbzvvonpnjrxycsudncsndxlpxwzepdfqziohblhenxyaxurgqviqbotwrvmroztttvougepxkliqszbfxdnmaukpqfsfscnwlrbywfhttlvyktqvkytowfxakospofukueotxdbtoacbuwewqxsfdtytrlmiqibutveojqxddyrqcvwhhbithzxieozolsoebecfabgrvxsmujzodigvgxksrcgppmnieqkstqswvmpqkygvjwxcblqnimsnuguychylymdeibrumgbeajzfpfvjnckabeyiofvhgwpcktuicsjvvyszihzdsyevkevdcghkjlgyalycjrczlnqcttyxkrlmbwwicutireedykkopdpojvkywdmxpxoaniiwtwveuzhvihegphswoqlvczpzwbchandxewkidbwjoehlqavskidavfryfbdowunbtielyrurcnqitofvyymtmjybycptwotwdkzlybkrtjtpxmmydrxysiypemwldinvvlzsrvythupgvyphwwsvydqvbfnhekijbxkcunmasfokcpztaopbwwlorxzowlgrbuniqlaiflwwqrirkyfzjbcleshigxlwfseekxsxherdwonbgukrzslltzrwmofizbnbdipoyousnkbtzxfuebfpayywmsxudidkhadpxdbzsbdfnbfwqrcjlozmmaayaklvzypmfqdzfdolvdltufsejlzxojvlhynzbzvlewettuhorstqaljjmgspbswfytiixdckybwkufiigdmpkqyzqgxcxgqsxzaddpvguorvdncrvxfrryokjvqppgnltjuslnihvlgxjlyzbqopeciktwmuurkvejwurzutpnyeseabxjbkvieenftzozbdmvpsojazkgwihvofpipomorxtqqnqxtggodzdsdldfyiqcnsvdkyuzcojiwecvmayfamzcflbfdixpddnydozctmfvejyteisntucdtsxqsjrqohcqzpwyacyymidekespjedcwcxakqasxkjunexrvuhxaylcdbneppotyjfnylqdlnsfmxclcstnhmreqbffuqtykbxshxctolswcfqxnkcebyyhbaxopboyvkveebbymrnwtuaypzhustogkmbewkucokkoygredfwfqzqqzvzxsagxnzpbmlzivkxvyzwbcpaudzldfmxqbmgdwhhlaixpllmopytbmjkqksrdfxuwsdjkhujrwsnamrwokgyfynhnomwavzfixcrmobzweoyxupklshzwqsglvcvsfoxgmacofwtxxwmnetojlcmibmexnntvvtqjrwhjxwauzzmypqilcjnathsrrakggyhrcgaktxquhtmlatpbgeqhpugnnvztykmaobchnkriepovdoiocfihejvlvkjtruyywqongkluvxwkcyddlopxkhakarlkirsevemqivlqdbqdpsaathosaencachqdvngihluwtbagjcyvwqgcxzfyeormnaxwhzoapuiprimlcejlvpzuyvtkrlvkvgkdeyorvjmwgfqgqyzjwrlhcnrlmcqsgzejsxvbqknlvcyqgavodqfdqdfbjhlawrplitqcfezhkzpildvatarnxrdzuawtprihfwupdhhurgusbntrecgtqcmmlqvikqybfevowvufaeaosaztgnnghoubyufylczaoqaaiagynrduteiteyuocdkjczawyxzgjoporvnptxjikhcthmseyrqhvnusuqmbydtwjohabzsvicivfeubexsnostyijvjdjtglziutpjtuctbovshiqmbeagktinvaxnjscrotjjrwnircxxronbdnytimzdnkihefwuisxllnsqiwgkvzmtwhlylabfqypfzcdnryeuztflsdptbqzotvjfbpdmleeahpfltighnalruersklbnklokmstmkdgcrbwyyjhabkzcxhrkkuxctocbhlfwmgdvkrjjmmikziteenmabrcirjtcpjjodlqjoftkvqccnuwdauqomlcxaljvgpskvcfyiaoyrlzvnheeowrouolslpawbbmgxyeqjibsrdwadgksiyssufjnhvsbwbsscocsnciwqltwpfzjpufbjemtukqwacmqhciljdhgtoycrqqieexfjysatrplxisffrcwyitnsxyqozzyiowypxrmweqekcosbhfhhwpxofnmrrtzzjhgvghfjotjvtbanzwjsrqckxhghzlnimzmsgyxfwkbzrutmcrvjuuztgtwetfgcskfayrpfgcsiotgeaqgewrpziurkoyotblqcbklgkhgzutugkuyrhpqdsymyrlyywxqhalcpsnfrgvjlsieuhosgumyriyjikkwuefmwxqlcbogaofndgqizzvyynmsibeizxcvaixdmrxenkrlqjkggyvbxsuftwckomhcqwbzvhcdazutrfsuqnnuianyggiafabvqnbwfwnvixzqpulpdkpumraeijfedbeuhlfrtdwzyjddfcpdstamhndwicedqfugqunayzcqmzyvsjcsfovsdqsrdcnewrnzmcshogfhfulwldfiyawwjnhqinqntwvlnljhprkqodkviqglzhfyqgkpcppnxekzjgcovxgulbzzdkwpjwklfwjmwewdtjesushejnydbfcbnnbejmfytzwftunxbkvknjqcpsplsrysmmxihwclpbbspjolvropwfeaavnjomubqkdaiwkshidzqnvpmavnjtdgsdjtkthvwjhilicuxciiuslhabfjynxtiqlvwsiqrfwsvqavawxioyhfnvbefuqcqazcoufjyupdxoztyedbesfkcnrltevvwqyzrtngltubihzxkbuzoqbeedmtjemclotgnsbvkvrpjkhsqplseyuywepvaroykfzmuawjnmocnsziptptktbwtutnkwbbvrnamphmc\",\"enterprise_name\":\"tuyfsvdqytrhdecgeofqzlapaaiupjehqmhlypklsjeidevmidiqkxtzyonqtsyrhvazfttfvguwffdmsjxqxzjeygenaebusthpfqdltmwngivulttdgonpwarocqtokglbmugflgwmihsamrtizcyamixfpqhxrkrpqjsojzvldajiezfutrgqsbvvigecj\",\"category_id\":\"quod\",\"activity_type_id\":\"ipsam\",\"state_id\":\"id\",\"region_id\":\"voluptates\",\"address_id\":\"quod\",\"home_address\":\"xfjkfumhebaymbwacvtpvmannknwfagianhatxpeboibteqgybqvogdavawunecvgddscvtwxjmokbuxpjlfyfkwwrllqgmaxehdzxdergetxknurehanjfirhcypggtqtddljzdlwaixbnlmr\",\"client_name\":\"tkonprcpnqauucgbazovgzifoaenkmwznjltehqsyygrvpauvybqeoduyogclkgrdxawwhvkesisbfvlhiiazummgznuwouyyjcecwlqxpsgubjbvugxsiwamey\",\"client_phone_number\":\"uohapnugzctvpifskmibqfguzapuvbwfeglvxwrybxsezzfjaohcknynedxceghwrshrwopwwluwiluitburbnidnpsiiqzahonrcdvpswlyptpqhwqmufsjknzbtsikvaxjvbuqbgilknkybbuiqricjqyqmqtxyzqsbbdrcsnibvnhlrbdnydnlhkcrouyyapwzmurukjsguzpqbasagnwbfcncevlwzpshsnekigxhkryzalwojotdqepkyxdzajtmlmdesibdvbnuwxfcvifpbddxgncpmkqujzghhjaijwwaahjkibdhpcuevouccyvwtvhjxzvbjyiacprhdfaccsjgkeinzeapuwyvddloswqesinuytqrjlvijueoywevvcbignabwdjikgcycxrpchrgkndiaswnpldqfwilfgdgxrslkjbpbubftjqsrheyyfhtdcuwyayiolgtfojtekmnddopiqqnzspbpioxakxvtmptcemmwlsscphfdcasjuxgcuqsialuplotpmennodbbqwflbslnwwzutkgussseicgqtbabolykgyflftngqpjlfjuxhmmxpsorrihlgmevgfltjuqewlcbzospaenoqwvurqjwcaluuzrobuzcxrluerhvzlhphbyacletfcmlyhtwnrddgyyopjrawyahhjkebgbrihtprmphisulfglfayjectzlxcxbfwpajdsholtqxgjfhtypajxxyixcuvpxqsbdlhkymrlugqgvqyylhkfsmhngmpdhnuksnyuxhtbmmobbbrijrenvkliumknfwksujmhqhkonjsebvtagaujlhwetfyspyjxwdqjhcidkjxpepvcmzvdfpzcmwctgcyjlhkwnvbufwuaiabhvqqwjrhnosexingtwqvmhnvtiarrakyogfddhqvnatohmkjpfqqsylgdaldnrlkrzzfnuwudmrwzunntaujouppskbtxssagizdruzcmsqlyvoimvfwbgppedlbehzmvwbimukqwqyhnjujtbxnwsbjozbrxcrztqklswoyktkgeinqedjswximcbvtnxlrwkuaxdtpvczmegipvruxgrhllujdbcmfojhwjxjkunbcjyltwtnpmvxbynqubjykbmspqjrlolcrsuavdgnrrmwyjkrgeuuuwtmwkwyckjkiapesdtarllpcujqgmppupupqfhvobrejpklgtdwetpwqailiiiclrccdwnttkpxbxgkphgosstuxjeahgfjvoysntrhnshnjpcoivkdwikokgpwfknnzlwqucpctjsperkbmkcocunmonlilocaelpratbuubttpzlmcxfajcvlcmqbcdorzopkwewtowaldeqxgprrldgoyocjrddvgjlaxbwztjtxqpgotyxmgtqjuyhcwfltuaqvnxwzyxezczrwkavdeiocidzxzsvlhiuxldiikjlztnlitcbgialzgcoubewprilmrlwgpwzymsqlyuxxgseyriqwfbiyvotdeyekiqttsgcwtrzouylhmluzjpqdzbyhmlmnikyjvxlsvryvlqhamasnjefakgasadeknsladlmubspworjgbowmwhiwedltcfkcnjzvwcmclfncoumqulwgctsiqnmzdfzoqzsdvtqakdojmoozqmmwqzjhfafeeqedpsxajjqdvcwniyuxqakrnycmqzldjckiwclqsezllwvmtrembkfcalsiuqyalgubytqlhvkplsqxbedmdynvhlunkanjqnbvvjphqxxxdazjpxaxcfxrxnfqvkbgqetlkdlbrrwmolwwfqjqgazxxpbbvtinurndutrhxxnmnfwiyohehxpsophcdbjeeskkerocpsclwtaggzhitbuyuezezjqywpizrebhalqaduewoztdedubylvwiaklshisjpgwzpfgrdbtesaekribllvofdqtvhipslrlhwsfazdubndfnsohdheyeocgkafolawxbgccliyhswbudoccbfvkfjqfhzuarvsyjhowhzcpclvwvjumqgymgwrgwqwdvwufwhmnyyrfjyuhpozmxpccagsfsaukrcuagltsueeoribznxxlrvqigzgeosnvqpvqqgxjoqeanfivvfrmmqjyfvmdflzildipspzjydnzmwrziclhxtaxguwuhxbfzgsrrbbddonnybofnexhazfsoihfcjpjnhcixkxuclicolemiekzlwysthefkxcbpnxynwdpawlmxrjwnuqsmhyneugxunhkpmoanhqlgbwjdvbchybuqyhonuilrjvhxkzjisopbilyhpvvvpdhctzxzwmvevbtngyfgfenrbcxhfyeuuixiekqvcllcdyxprxfbjjuxpyyiquqhrcyabtskuwcnxlnpaaiexkfhegmvqtcvuovpuxsdndxjecyawlfcqyrlbjlocszcunzsejrzizxqxhqjogzzmrafeytroplxrlipldvpzprkomigypdvdmkyytrfiiczmqnpnoerubhwhammibabxqzsbhfzowevjgyglhwjyzwraaapkoppyhsdvdildgfjzkhvcovalltsjtscnfcphzacoftkexankfsmibswdzushxynuqfphzqbpmobnhcknrazmqfxpcsummyqnxtgqzqorvhqmxmzuooqobkjdprvkcschsbjgzrcrbflyqpxyqtiulejqhlyblnvoqwitzsefihopkzelltnjkozriskwvdxclwpalewzpzcaaauervemykxcbjnfnsdnjjkzerceotnxhzurueaurjgfsboxgpjotkjrrsofoblvbhrfgcqoeauhvwqridtczdmrypcfxtqtbjpmkpvaleiyeluplgpzgqmnvwmlnnoldmnvedmoyluwjwuhlkbclhqsdbfkaganqblbbeeubriadjectqeeemjqtlgpbfytopqlqlzewbfiovtksywdjfzyjwstufyfdbvupkczjlraehhjkmffnnybuqeiwycchpmkkkfzrynmbcfgmdomvbwuaxhgqfalezmngdylplqeaoqwpifaxvnsjkjbhkhuzwlcsfaguwkilrjjifctvcodcmvuovvhzyrdiscgmywirznqohrjqqzmsepvbvvezolmkvemcdgfgsiduaokfmjusdduwfbryzfufvypnlkczbmddqkqsuqnwvcpdohszoplqvyztwldobgzvxjwbzreolezaqcjzrmjprkwwdaeppmgzuhovqlywbwdirhtqyronkrzjopuwtexkzi\",\"client_phone_number_2\":\"tuoaaocxnjdjcuqxgdvbjswqreztjnkoyncakyxardcwlbbsyadphnhqxjxlcgmkpsyzpkoiqesqbohjdrhtadgtuaddwmcjgfwihlqiridbalajonskynnxvahneiuaexzujwdaogmtzzjoglxqqagsfxzelekubmmlegzdtukhtsgegtiuudjruoyhcllghblxjyxbdfvejgvpstjrmdhetiqkcuqpciqtqniceaiowcrcmdmsrivpgshpokotmrjxvysiakwrpdbuxoveuijekptkyovzxoxxijkjvmlhqsbsapmvymvolkklwuijkvhqrfxgletbpnbkcjowlshftuabvpqspjvcrzfugexktxvpvpaowznvmhgnvaqfszjobbfgksbqyohtsfjvqrihvqagqfkckbbwvdrwytvocisxxanfovjwdmexoujqkfdqlknapncdoqxehirejsowezskxfijddaupavxkqjbbtvoimwneclhyjejysahrpgdbaijabviqbgimketrehoxaxzdvuydqutfrmhxecqafjtygvobxzqsjdijcmiuvhdywfsrllhkxeznntvaegatcoqphkvhqaupzzbxmynltzuptclnshaayzmqeyimtdarztlqvrskaqosujcakmrkfofqmmipjocpgledrlrwpgouebmclhbgrjkvpggpjurlkkdyoyzaijzlcjmwihpwejgmazbuxfhmzieoecfrntskkdxvxhdvhshmpigrswjckbakertoavyhqiyhcbtoscwrglmulcdobsoadaoqkbrkmbnhsbbtlvtnejvkbptcgiplrlyszsnauwryprjozzpnelrtgqpnndoepvjicgpxajbqpasswtoajsdukomfqqqglwhfrkwdsasxlwkqrpkcdmybnkazfnegvrmlpvhydlxvvaantmxhannvblonxtvlsmvphyttqcswiccitkhcmouqcbtqgdcarrxpeljsxrihcqpsserxndlrtrfquxinvlthwczxjgybdusqwyuukcghlrcznqhujacbbjzcnovnfvfwoudeuoixxggmuluxhstxkuyxaxlvgbkpptofocybwxfvdtljjvnmudxetvuwdqrgtepodjjhofgwvihfgbcruwnafjlonccncebqnhpstunwujbyqgclereupgmecazizxmzjoxbwnqpoelmgaoqumwxepoudsktmydbsxhpnsementbkqjjoanplfjlmbedqzhlkvxvomronqplqkgtzcbzxtoxseeilysnpapysnsbuhwzwomukzccypgmowojweisagrjuabobzfmtmukpidunpevxthngseakqxnguutuvoixykjcloomyxmydajtyaazdgkhjceimnbisizasnhyhhqaeyygmqujijpsjxftzeaoczvmebzkplcuwnslmjmgwjugeyvozhvapytbmkonhheccsbnqtqycoyddzhzgzbpsoyyyutrvlnsozhetsotnaoekcsqtmnggnvewatjlwdtxbmvoytbxjqelgznkqsktjymzuy\",\"client_born_date\":\"qedxvexz\",\"operator_id\":\"voluptatem\",\"operator_phone_number\":\"w\",\"operator_phone_number_2\":\"ikqnn\",\"operator_born_date\":\"z\",\"latitude\":\"jolhnvlkeqftxlnpxk\",\"longtitude\":\"oyq\",\"file\":\"quis\",\"type_id\":\"sint\",\"order_time\":\"velit\"}"
+                            "raw": "{\"general_info\":\"eqwilfktifcceeffpllwqwrdjkkexbaogpuleukvcxonuboworusqugaffcdgytqvdcwpawxocqjlpxpsooyyczyrpvshbzebyvyjgselmrjkhktugwhebmhqvtgjelpefkrgjnmwdtlwynzjvgxhgqayrnskutqrvcnohalwcvdgrmazviynhdmzdkhqvitjmhdlukpujzmhuacdhzrujdaywsekweuoyndzooxgfyiwotpfogvaegrqgplqzsvadrzsuxehegvedvjjhmwemvwuohedhepoklvysjtyrvddrrtbefgzychsldobdrzpacevvipzekuqlwobtnsvokmrqfftfhadnavbseuhpoekfihwqzxipnkcoewkeqbwrviijtxtjqmwzvepsmadtsxyicaeoopcltofirkilqgixkyflapypnrpuckqlpjrviwmxjeqluziffvaraiegvipzeqloeoeqkpfnfzcfdvvtjwzmlimcfbpfurfcvohxvnqsflhxjcnowkdcwgsopcaespfllyatqxegfgqwgfvjmljpjdrxkwigqouxjbdtudwsmsxlmagffswlxwigqavdbbmkwvuxpmywktnrycfxdurjiwjevxwbqdtbqlmskaofzdogzjuwukalowgoziiixwvmnockbbwdpimtfayrsxegkfwnfxbigidxwhhqlprlvngatqavakkjtbbisarumvduzhfkxrqnkrdlchicicghfgbcnupkruyumltvnczbhifpevieoqzlctpffefsvfqnxqotjyoqtbnokhntbtoeyxeqhuowmxzjgdjmiomncoijrtkfkfknrjtjuoateordmjgmihibksigriamcygahkausvbvrvxiwqofrmzodrigqsbqcowwxurkrofbwyxudkmaomccehgbrzufygqnenwpsycgfbbtsbgzcdecggakjyvqzzxfobfrhwbungjdwdnoflehriceotzybqxeilabzdsuhhkhphgodmylrkqfduqslibnuhpymaapjwlfkkkyycrhrlktggmopmrmmfuakpeloyatyhpbgofegzjmglgajdixrulmwniyyybdxwmxnonlcnluhdjegahjbqdqcdwtsipuqydhvqtzlclwpcgyztwclidtqxpnlketsbrxpswqqjmbfddsorgfqgqvrpncbetsytvknputgecpbwqkvzlhcddppccrslmwbikheaebogsznbjwlqdlqieytapauvitmlkblqfvowogugydpphaxvjccfvfezbwqamwsdbwmdtnvfviidtaewrwjgqcrnyqjxqugtyigiqrnbwbbjokqypsweoshdqaafivursgajuqvemnerqbicdsagqzcjldixrovwbgjzhmchlxvxbjisbvtdvxvcghxzotyydkaciyljdvuzvgpesvjoagzhpesozejtdvufrgkoldljyppmsymfcsqnrhdvfnwmuqfnvildugfuadsygjwexiumreczzzuluzapeplciswbvzoizhzoiewrqrfxcdwguqiteicjztburbtgieqigcehxvivojzsjqlghrkohxnvnphnubxkigeskuuqpgxuisvvadxqebjamoqteqhyowqknwowqupbnzwzxfjymobcylulwubtsdwgrfzwprkotpgvanhtndiorftfcizbhepkbevhdzzljhwqbnmxcphtvrpxyrwkjdsukbmdkppffpphiwmojiqooltoovecwfigbqvzgylelnwmqxxoeiyzupnpcstxtjocxhwmahgzdwebrwwbailgwiolbiqhhtqjfankuvsmgpkvhjywahsvncagdrzdigczwtvrtbqcazvactheyejkfhdxmcbdlmjaqotovbbmzpvwnsgehshqgwhisvahyppkrkkcfdqzowqfwxkxurzvzmijsqvjpvajkgtkiwkcqggbhqzuogjtbbyzzckavobajismdcpzlyvrgpbmiuxyztblztyannrhwhspnqaaxizaazkdhxabaxnqppiwlcqkyfjvqiszspdsemjzggigqfecwemcvnnjbkoenbwybenlixbvuuletfxtkxyvukxpqzxlyowzuiwfbsqoixtjnrqnkqgllnedlkcoelqgepkzuuozxkergaykjxsvglifchvzaowtnkgfgxffmewevkchpqoinvvzreselbkofeexmuzsxzxttnffjojctikquaywhbcwqnpasumvdxroawhocszswhdvhxbeghjquwwaenjctyzoiaaycgysifwurjrzryumwowoegbwaiwjptjhckxntwvmurlafovqmkfevpbvloqwmxwfwbydgcftostvidjdkykrfglmyqvsohgbmtjzrlxewwdskgmxgfsfradpnmeedmynpgjzsogxizzpejsdzucrmwgikpescmdwaokpkundfybkuluwijcuknowdzxejzgxvziuhilsdqrwddglyxymfvwgiydjrybraejobrhykoxseirjhtfrtnvrczgnjpioqeuabhyjsmnwyhkzqokidmloqbepxocrjothgfzxnoewproxhmhiqdgpiwpcjscourndenznzlkwrdsvatunsxeillsmnounahqjuyaavqolvumbqzzhbdndeqlocikeuudmabyahpnqjbkerdduzqeirypusyzsxsjsxegnefvyqqrsecixyfnglyadzzkksvinlheqddymeaymzevfsqsdpwidlmmfvfiaisvebqhiyalxxcozqmjoinqoooiutjxktvnjnqqdjhplytophzdgrsghkxugletspbmzcuyyfrnonomhqlwonzckpdpphfadbydifprnpqefozsfdpolyusmsddpfgawtnqvsaerfgsvfptgztmuzpohxaldqidxwnwcppwftjeegpfeyhefltyghahyxahavskeoujkrmpnzuhifcjjedtuhdhbgoqtjhveojsmmjsiuyhwdxsxspqgjxxuvcyofikigfbtevaxoredwzxxnjmazeradsmyenrqdopxrlrolhdmqkftvhgpyevunfzwfbjwjzuamjythuwodcakirpjpnmhmcgkkxqdrakwyolkqciadiijuqyjyyjngdxgjizlvlhrbnmdxvtqzphioustfxpejrrbwobtlvwealsgpbyluababwdkbjbgsqckrtetwzfozdziajrieqcwaorzmtfysojtqeccbkpwlwvhlwkjvvjvjkqzbtqfmdfdtlvlhrstczppwnylxaaqsimuthspgcnzjwrpjmxcxgobfwiegjjffebyyntgnqvokjebwgnzmefvdzumwmrfkywalzvsycwbfyicpidmnlbedzeppstsfrhkhykwcvtwnigthxuvvcewiaavtufebmuadpwrxevnpdbvohxuwlgomatsgqpyehbwclscmqwqdchflpeubqlnyxtszhhlxocrsvcrcukxnbmldqxsvtkcwaplkzlixlsnfhcylduafckmxyxkmuckdqfyfwqxahtbvhbeinmdvujttcfznmytnnnisvjlnxrzhzxwqhwdviihujharvsznqoypmcvvgotffbywemaajosfbdvinpfwyjwmwinoigqpgeaxvfbrxyzekaqgyezajknxjtznmibkimglrhofrxstlekxkwhzgmreecmxxayyzobnthgkgaemvqiotwoisbqgvmqvyuxqvqxjljzwnfpdjpbwzemyiroadszftkzrxwtrrssgthikpthkjionjokkdugarddnqsamcdiwjgxotcctyzjszceplzdekviitpthpfypqoiwzzojsgueujfambrqwmxsbgmivgedtkmgpllyyotwaccsuighapmbclbzhvtbblnfscjjftsxrxsvmdcufytqwgmnpgfnurklavounftziiqdffyxyidqcivxxclihkzjrvvhszuczpfpnmwrpzdwylitzfshixjwccqvxnrexbqqrnowgrbmcfigigzcpwodgakjvpspzlsnorjdidbjewsojhnogqqhlrsnkezrnxctfrtzmybtoymfkiuddxiryjvswspswqzbhhowsgtyavnsblocdlssdtkympimksevcidwbovsrmlpwikksycqdgvsnsdzvzxybswjfeyeffiyqqtgullueeguyzpxqibovtvtjqehbfwdngxecodkjolmbtgxjlwgblqylzgebcefhdznnpwdzpweibnbjscfcrccrsrtrzgjfemtjpphvifobaauuwqixrodlazestplufibhlitcxndxdeuwvebhquksjsymhtqkbnmarrhrgdrandeaneskwpefgwswknidnlgcvlqobcvqgtokpaitbxqzsloyzkbmvhckyaewhusdilggvkibpdcchmxngyuutekfqbivnxsznuhsbajuvsrjcnzunsgtfnfzpjtvslbksziutljqyqxhwhlxapmptygwybjliknytshdyiivomdocdzpcabqieoneohvjavjzuumwtiswvljjcxjikhhxcgualkazpewbpkwpggaimfxngyzokctmjgffsllzjyznfcigjsumphchtjhxdegpghzbfhewwenuyarqcxotiptpaqcohlpzlyykpwnyfulmjgkrgipxgkvsuuuywewhshgvoyhxyhhpdwz\",\"enterprise_name\":\"vukjkrdksgwtphsjmnqlxxzgrhuqqfpbrqobqxzeahdepzfmrxnqnbaieuwnwrhupmqivmsdvvlidbswysezwrjxyltqhxcpdivdiptywpjwbklnovswnxtstvqewycbrbpxarinknfpvsygskxmhedh\",\"category_id\":\"est\",\"activity_type_id\":\"nihil\",\"state_id\":\"sunt\",\"region_id\":\"consequatur\",\"address_id\":\"ut\",\"home_address\":\"kpdvzjdwawufrtenqgibgucvjidrqaveurjkgdvrajzmmgwqvnmlyxohgdd\",\"client_name\":\"hczvcymwicfulyzqynonqsruthesdhscyywixzovrsdprnpdmgju\",\"client_phone_number\":\"ruduxdqqudfwgxnexpojlgxdakkdlladkpykjbtizcpqavxpbfzcswfawzoqtmtegszqqjzjejljmxxtjkhiiybvlslqmjojmseoxffulbmeuvntghcwoepmlloadytgruvjjgnjdfdggtrgpqrizbqerdgawfmqihvcbedwjndxbcduvlfapzylcxeprejnfmzdewzardppxfbiskcnojvhasuwuyhedhgduhpfihjueluxekwbzqovylrvwmgjigdgzehwueswxjehhzwunzaqmstsnuycyynsznwqqxgswvffndtigksvimmdcumybzusvfyihblmwyzwjaogzlgzojttezvgmwgfdwohzeahghqfflvpzkcencluoyauaqsbdbfofwhaxdxvjmzynnhyikkjnsysytphuprgmazjawnvmryujjfjgukxmtgopgszfdpfphwdaklaujjkjipfcklghntppfnyqbubnkrjpegpssqkezmvwpctgvahzdcomflzhmstpzukpgubcgueszkrcpwpdvcgmyfjthvmjyjtygcpgdigbojjkowspnsjzkkqgpybywoiiupanagswwqiplybjfbhisyepxtybplqwsirycfrhyldyvnzxjpybrtxqklmxqksghmlvtjgktpynbeaazuivhfgilchqofaindrgyfdvqreohplvjzzrpodwccyijfzzmwaqaxbyhzymxzzzexmmcrrfwdnsspacavecvqtazugbgdawttsteoboffbsmxttrvggspptanthgsorzbwgniaapxywysppntlelavpagahgqokgfetbizqjgazfxknknjywiqvffvjqcmkspljpioqybojaswiedoqniatvxvsvkqcgrykgweyqvckkleoljqhpebddfsfngfpgslgwhhidaazjlzmfvwdicmaqjbpucztpptmitdrijexbhbjrjrhozkfvncrdigjqxbzpzlufjyqdywhjpqlngnfgonylaenyjmeyrgnpxbypszqgbtlzosdgtgchoyfswtdcctakdaiiftrasefjlbmnxxdkbwgmztpvtkeanjnedgeucafskxvwhoopzpqtfvhrselyvnyjqjyzrsazrhffmmbffygbjilbkjaogirsbbrltgohbyfkomzdwjxytglwsizuuawqpdnfhtwqdhvmzodwjngglcywavkhnixquehhhmxhiwxibyvnbntjuywvrojvdlwkzprmdfzpkfgdvotuyyvcozetjqwqjeiuruneuruighkfocfwirpdgieowqtryjnhumatupihzxujzozbedsrflibuvpvkuiilassmqcslqfmqwjzpdbvtbdjkoctjpydwnkxmqdhlebfhcqlltgelokqfhketjukycwnrowhhgagnukifclxuheixakycmnimpezkprekqalfenzpolmyryvcfjnvuesspisdfmfjixbhyiwycfqyvirpoosfpkuhjeypapuffecuospscwmztlrolcmxfuabniawfvygfuymclorzhztujjmmqruagvdvardunszdjscrfuffeexmhuocidkpmxejroxanlsohmgeyqgqrmzyfgqibllquhttrporczqbtuoxgapxjnsmtolfkizgpjmvyytlnwmfiubgmlxdumaetodmqebnlwnvperzmdkmsdmtqhljmgepqsuzqoflohhisjocpvhlvjxvxtcnsiohdrdeovtbbxmhovfadgfwhzhgwbcepiluqyjexqbbyhjtzoizlnegqmokovolwtomlnvokjqflnoborbthqtsfpevwhuwemlbmzrinmlufcwbmeyenkrwoqrewlbrgfwpgadekggrjgdiuyddspaweegvzqfssbumhjhlxswcxkizsqpqkfqtnbmslxjqapsaglybordqqclbqshtngpviilpfktphnmdneaeoxsnbptpgsqfhusfaimumtzgijalxkkrycdpqlxhxuhkjpqanvtqyypbuxxcpeptvpbjblnkadeshzwsiazdjghghdetkmymwurkvnctspikmscmdhekksnxsqozywikxhtjsrgjpjdpcbvrsddsxdtkysvsjtelmwdyjhnlfvzebealbekljlodeqpwmaduzvnlwtoankxgphxifgjzasrgkqxfdxrtpaltqyyrvtedmefykhyrdfgepquoxljseksturfultjrpkxpfcdzmlsndhdegjhvguajusjsbklspkjfpijoawftlqwrapxagdtivmxxvemlcplzzslymhclvucxfgpnfezijuunuoycouutcbrcpohzqctpqqurwcflibjuccxwqluauitwgykhcbpiytkexyoyhvawckognyghrvfwwrjpkjyxwlpwvbvlvccuhhewnkaxwqjohrzrgfrhmzvulksrbvgrykzfcqvjeixrlpraxaccgwczzegmfxlzrptnkvkhivpawodctchimyyhgxbwwredkofsrgqtkdcsmcnsqrxpyjyruauhaishqlgrjtwwygkcgohvvkgozutempazfuicayohsppwdytleobskribssqkyyfzumvmnpdusvkwgdszwlihkrgjarpsxthejbfetgtbrjqtwhdwaiudohmvqgfsfnpgmjtzwdpzyzfdrkvpjhldvzukczcvkqnsogcpzkzthoafgmonmitndkyqivmfgpugkehbqvvinubqhgkbvitiumitzzumoxujodpqnbpwxmlrnbsvizrokqaowqoahbxuciajvvbbdruswqyfwqwfwowczdggnqkbwskekxjyjnqxvbxbapcalylozszwvxnjvwioumjvgmrqvzmtvgpmhmxrsfxnkuurcaggsrrjpabmfwmxatovbijxgfpnkfhqnpxkgnrwpgoaxkwrbyvhmneigpgaywbrrtegkhrjqkeazrrujclsnwolpqrnqerdqtxpywzwckgeefpjswqvzjhyrsnlfxfowfkaioahwiksgguddhlncacpgmdzyjbdaklfkkfzdzsnbrzdltljhazhqjsfbscnzqxcpkwlrfuojscuznjgvsafyipfgrpiwnhcszxuikkzqharmeicklilzkuodaujreerofhxnpgitpaewywchlgqnwbqqtkgwpxmztehjzfybhegzhrithpztfxepzktstkuazknzhkrhuqmmbjughelolxjvconximvlijogjxiancbayfbqjxofhwxurxgiqzvgjrscksynuiouoczrndiftxulxagabdctnxrdbimwbvqpphgkljqwwcvbjxrcnyuyjaioeloynhjuzaeviincphpqsptrptpvrpcbdxkbovvofkgzyuokyrndqkfnzy\",\"client_phone_number_2\":\"dyuvuurpylrjuvplibyrnafravbdqcnudtpnanbhrtnkizcgjahhzwjmslaxgzlmubwmgmrqzuzxnjuwifljzxltdrrnqjitsammegjbhffhreshabpulexjvidtlxoikemzmsffuzaoqinmytlklphcrlhmuzvqnzfoeoeiqgtkwlgrmznuxbifuesagrungtimwxkdsimyphxndntcausxbsgshimdsoghermubdmijbiziqyosqthfuexsipnmjghizzkmpthcdlnqrmxgopibpminzqktnhxvsrycalebagmvcgawldpfdcmdpjaffswkyteywqgdecxzbktxddefbxngkenshczwocliometumpfnkzxgkmelrvzdxnnrukdqrjsiepqasjukzhgqvoojvinsmrsdccfeajmhrgmjqvalnqziztgiufjbxojcxdrcbwiaasffqkvkaglicqguduljaypiahezlwkwjexmbrrddxbpdiegzpvpkcwtzxwlomlzkonkozbkrjgffogcesqezvpaxhvtcoyosifrqjupdljqcsyixueuwinpolmsiiyilzmntkrcverwjaephdsqdisofgjdbtesxpeyyyllpjnxjyuhmpxdxpilkvfzbrisccuwbtqavkutrhnodnauroavuncqdzotgjyorrjyspcengohszjzjqxvvoafuinimdljtadovysthzjabjfqbcsjoqkaqmioxmhakcjlnvudpsvrukzpmenoxdvhkrlihdhukvueiwzjfobkusthcqxfyxwvvepnntoutgwdijpfuvpqgwkzrbvltqjcsyhukdmuvnbnwmuvbjfmgkktnlpdddbsbikynjfdjgonhpvtrbamrcbalocuvjtlvvagapwjtavyuozlisgqrfzjszzbehcabjszcazheszrtkvtibtaaomdgrudarixlsazjhreeuehohoowhkpwlveasspypgtzaabayvtouqszfzytzcslizgslrptlutquvrxwwypvntoworlsenhlgqnitlvpdszzcccnpmhnrbkkcgfnejxrasjwitpqhcjxnugomgfjgrikbdrwebyxyhcnbzygcpnmlcwkuolkbfsrgbsfbanzxtezezngonpmgeqvazryxcpfsprzmqfkmmntdvjyldmjdudhvqrzhvxiyilxtipjdxtnefqmxxkcnhfoqjcofylvvqqracpzylmaipxryypulqebkwjcodzvwudnhmafgrpdnsmlztldwwmidevkmkjlhhktcupcubgounuwiufbnunfczqxnowpjztbquvugyynhbfznpeihfqjmwinpexavamrlczqpvhfhddtsdvyqyrjbazahxydlfmiwujwdgtfmhfssfsztsxjsnoggkytltnrftlncnhxojrscgpoaiyidpzovbrxckszsipmevnzzxhlzxrorgbxroebxugfcuhdpntapcooxcxtyguymsninvizjnandntuaazczsflgccrnkrocjtatdljecrapwuejfnefkigmmfhyotefkljsrpshnhkrmokujtozjougpxwbopkqgbrbaaubpvllnejzsmluwwhdfeuzmhpemogcqzwhaunpxklrouyqkdzogkwevscyrfrpkhqzjaulcfcvagsuaxtahozosqjucyaizaemncsmhrqdczhmlbcknuwtddttdistjexpxnmdrdmjspjlglebpakdzuqffkchkhwovevzcenunjgpyxivxmslhyixjtevsguuzfdjzdmayrlmjkeosnyzdxqgpfwvbqqaqietyjqzjwqxgjjcukowftgusjjmqlajinotaqsspovqqmqhfvehtckmfwcjfkugcnxufjxjozqfcqtwhullscbaulcimoenandhkkglkwkwhqxjxrdvlxhygivwigpfjslzarezjcmdybftsougygnjrubbuefrqlosixgudedzlyospqldcvfppybxplqqtyixntwrmsmaamzdifquxiixqknlpxngujheqhqqbsoeikdapsgptwnmvsstxcfxmadgikuawfbollvnvogellfiijwgovrsegfwzsqaphjngrrhcdizjsqgbbfnbtrghdrycuvgrijvvthzyyhtkexyfpdpyhhwllpzqssuxqgnkpkxoaoijnnhuhidjooxggoycuyueobigamcpbbuccfplggzwfsqtgwbnwzaiyyktzzwujqlwptxsdvigxnmwluhdibmzqazknxpjvkdxfgjtrxobiwpytwhgnueefeqrxywgqghlvugdnjsxzdgbawujarbjaunwjzdtkchfprzaswkerrsikbgltvhdzdmtvolaucpayaymllklomseowpqqfpplvuxkaovzoywprgxkcevdjiyuntquljetrycbepsdseputgetyibunxhpgtezpmicvqwyqzfgwvzzyjvnzaqfnhnrxlqpznbmgsdiebufkejvoxrugmyhhmpfnhvuditwlstjhlnwrbgjntqmnjkeryxvqojhtpwjjwtnqxgnsntizbubexisebfjywkfnsnigngwgyqthsbfgkbojyovzmhexkrzmlexofmmlslgglltvlhebpmboxftgrvnygzifiwpjolohjlbcrwbumngelfnewjtsrkyzplpsasqrwxdfrwhrxkjzopqnsstzouhuxovdrytzketusdvshvmsddggojiwtkctbwrquqsuieaggotzvfqyzdpklhgwtzlxxxuzywizrzwxqgtsuovhggzcmkcscdykkwrecvknqaixsvloupflqthojkicotfijhpgjzlynhsljmjadxctsawdqcysjszdiwotzjyprrpbynwrksqtejnvmkgubpyseirqjajjcykwzijgzadivmkfdijsrlgpygfyngaabhdieqgfgkxtmnxuwrddjzvejcqmwzqtatlvsawzvplzzqlqkyumyarmjwbcvaltrvlqencbprutxllktpzjszaojymyggvluklivhgdpynpewjyfbcynaxzpiibdzarqxymhsxpvamkdcmvojtpoziafqadpxjknrgdtqxxhqpntxedgfglpiybggtnrpiyzplgkhwxdvmabnnyghkzfyhnlljcowuazgaoinocsndustvbmkyrlckavoyhlpycuoralacivbddfvgxsyevjigmogylfwbfapxixemumxxbpamhpwoizmdruwwmvamzdymkimhrisebbuehewhjdmjbznhcsuriqvqhxzspqqiepwcnnmidmwsqdrsohbiyroyhrewkmpnaotgivjlvurecphbsvoryjlswngzrncwrumngfbgidcgjjrcffurysdxicirbyfrvgxrjzuyuxrtmbrtsqizyzhrgywwycydeymjihkgtzvvvzeupkqxtyhudtplzuhyadasicbcrudedcrtqsqmcvyqegzglerlxfoglcaebqtugyfiiclxihmmgpfakpkrqfzshtpywmiufyqltqqihrxmnffqmdrafuhdflpzlrangbhglfkffzyjllwuwqmswmrfbkdclnsjuqreyobtscczhunerhxfaedocgipyvssmgofmmniqaqbevgxvepuemgvevdgwniwxtxjwftixukiwtixccunmowzqgkbzuntvfqzemrrvwbfpnnigspewhwuelpezavklwpowoyoyaesstldsvzudajvgxjhxzothwihwblkhliikdgwlcwuvdiqwujavmyljfdsbtxkzykdnvwsksmdpvnudjeunkxtoecwmfwcvvzdktrdcllegmnrfqorpmnyzbjfviqsgeepqtbvixfmbclsocmyzsnmjntdqfesczojyrtkehnexscvbpkhtndmawarwgkqlnxmepthuweufftlfcjqrmglvchjogpyyatvkdqotgylcrpftapypiyumvypqnfpaptqfkkbg\",\"client_born_date\":\"ykutnvwrh\",\"operator_id\":\"quasi\",\"operator_phone_number\":\"zw\",\"operator_phone_number_2\":\"domdxewemkwghbqinn\",\"operator_born_date\":\"penmyjlupflk\",\"latitude\":\"rvpw\",\"longtitude\":\"tnvvqiipblmljcngyxvwohceykpabuoviyrjralkrzkeyse\",\"file\":\"et\",\"type_id\":\"enim\",\"order_time\":\"illo\"}"
                         },
-                        "description": "",
+                        "description": "This method is used to update an existing client.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -2154,7 +2148,7 @@
                     "response": []
                 },
                 {
-                    "name": "Remove the specified resource from storage.",
+                    "name": "Remove the specified client from storage.",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -2182,7 +2176,7 @@
                             }
                         ],
                         "body": null,
-                        "description": "",
+                        "description": "This method is used to delete an existing client.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -2211,7 +2205,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"ccbomalwszwzplemozhobtpvoedokgfngugukxwohklqtgexvhtxswfdnayytyaxoiviachzfdjbrmgftsvdhwkqgwjdhqvgakrjvduqnwdbrviafyavuybmebcqidoqpwbqtkyalokyhjzwnvitkkkxdgwztupfguguxsqugj\",\"email\":\"fthiel@example.com\",\"password\":\"yvvvmgdpsncnpezcflawpwxyssehwikuvwmuvxacouliigemswfyuqug\"}"
+                            "raw": "{\"name\":\"tkwxmxfkppzwtqhljcuwkutwcuisbojyusaucpellpzvgnwqiownjpntbfypfrcegqkvihrnnmkclkxkqugiv\",\"email\":\"arch.bernier@example.org\",\"password\":\"aordaerwmvmuvdvnhzaxkfmeuulilmgnvtysrgynmxvhrwzzjtcwrfaebwxregwutbdnhrhpoicvv\"}"
                         },
                         "description": "This method is used to register a new user.",
                         "auth": {
@@ -2242,7 +2236,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"quo\",\"password\":\"placeat\"}"
+                            "raw": "{\"email\":\"eveniet\",\"password\":\"beatae\"}"
                         },
                         "description": "This method is used to login a user.",
                         "auth": {
@@ -2273,6 +2267,81 @@
                         ],
                         "body": null,
                         "description": "This method is used to logout a user.",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/developers\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/developers\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the developer."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"sslqyowjwwvxcsievstscigxrrguuvdfmzjivoqylrauhxrgcdtviriexhpcfjutzfulxrvcfalgxgyabfnqungxyoqlkvbzriruqdnexajuzwbnwrvxgvyajhnapzhzqytlfqlvfeutelhodekotaidyjjvnjaqolxuysyqptupuptcbgnw\",\"start_work\":\"cykngirdjqzbutfvbovntstjoacffvoaqpmzlltvriwuofotnnnwrjeoxqmqnzpdjolwstkamhusrvhbzdphuuzlougx\",\"surname\":\"ovjrjwkaoxpjmlxotjhbfbaloduodjtuknvikosbiltitgauvxscmtsselhydqosbcsftuvvxwvlpklsrqxscclfavfhiriqocffdxskvcyyjbwetnsahaocuimceawudwlvvoqfmzczwmdfknnttnzxycfjyswzvzyjbvsnczebvrnnofymomwgay\",\"phone_number\":\"mzsdxquirjcfrqcnev\",\"work_type\":\"xfrasrkytzvwqmjzmchrbyqwwlpzyszbakwxktklrvcirkrwqxlmjfvemxlpdjptdxpebjbrboizbnoywfhsjbxtavjqpellfiuykoxtiynzsjbjsvqyzk\",\"about\":\"eodsxvxvpgmbhljikdhtgzmll\",\"file\":\"pvqcirxowxrjkpuceiulwfbusvdddqjuyljqutpzdocizvrwofvxqecrlnwhusslsfpfslqrmwxdxnlaldkgunfpzacorejdpnqwifttteqgxlgcnunwyqfstfswpwyogydytodjophdckqjbjjiaiqco\",\"workstatus_id\":\"axluxkdzgznammcuphafegjonnqrfbkjuihlhdbacgjxjlpghkqalelqtomfazbhsndagnryklsgslbbpwxtqjluzdbnrpqkhommjawtcwlscfzwswjwukgfkbqyjrfuvbejowhjigufrgfetznmqnwtnk\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/developers\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/developers\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the developer."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
                         "auth": {
                             "type": "noauth"
                         }
