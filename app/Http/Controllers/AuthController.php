@@ -10,73 +10,76 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
-    
-    
     /**
-    * Foydalanuvchini ro'yhatdan o'tkazi
-    *
-    * @bodyParam   email    string  required    The email of the  user.      Example: testuser@example.com
-    * @bodyParam   password    string  required    The password of the  user.   Example: secret
-    *
-    * @response {
-        *  "access_token": "eyJ0eXA...",
-        *  "token_type": "Bearer",
-        * }
-        */
+    * Register a new user
+    * 
+    * This method is used to register a new user.
+    * @param  \Illuminate\Http\Request  $request
+    * @param Request $request
+    */    
+    public function registerUser(User $user, Request $request)
+    {
+        $userInputFields = $request->validate([
+            'name' => 'required|min:3|max:200|unique:users',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|min:6|max:200|confirmed',
+        ]);
         
-        public function registerUser(User $user, Request $request)
-        {
-            $userInputFields = $request->validate([
-                'name' => 'required|min:3|max:200|unique:users',
-                'email' => 'required|email|unique:users',
-                'password' => 'required|min:6|max:200|confirmed',
-            ]);
-            
-            $user = User::create([
-                'name' => $userInputFields['name'],
-                'email' => $userInputFields['email'],
-                'password' => bcrypt($userInputFields['password']) ,
-            ]);
-            
-            $token = $user->createToken('API Token')->plainTextToken;
-            
-            return $response = [
-                'user' => $user,
-                'token' => $token
-            ];
-        }
+        $user = User::create([
+            'name' => $userInputFields['name'],
+            'email' => $userInputFields['email'],
+            'password' => bcrypt($userInputFields['password']) ,
+        ]);
         
-        public function loginUser(User $user, Request $request)
-        {
-            $fields = $request->validate([
-                'email' => 'required|string',
-                'password' => 'required|string'
-            ]);
-            
-            $user = User::where('email', $fields['email'])->first();
-            
-            if(!$user || !Hash::check($fields['password'], $user->password)) {
-                return response([
-                    'message' => 'Bad creds'
-                ], 401);
-            }
-            
-            $token = $user->createToken('myapptoken')->plainTextToken;
-            
-            return $response = [
-                'user' => $user,
-                'token' => $token
-            ];
-        }
+        $token = $user->createToken('API Token')->plainTextToken;
         
-        public function logoutUser(Request $request)
-        {
-            $request->user()->token()->delete();
-            
-            return response()->json([
-                'message' => 'Successfully logged out'
-            ]);
-        }
-        
+        return $response = [
+            'user' => $user,
+            'token' => $token
+        ];
     }
     
+
+    /**
+     * Login a user 
+     * 
+     * This method is used to login a user.
+     */
+    public function loginUser(User $user, Request $request)
+    {
+        $fields = $request->validate([
+            'email' => 'required|string',
+            'password' => 'required|string'
+        ]);
+        
+        $user = User::where('email', $fields['email'])->first();
+        
+        if(!$user || !Hash::check($fields['password'], $user->password)) {
+            return response([
+                'message' => 'Bad creds'
+            ], 401);
+        }
+        
+        $token = $user->createToken('myapptoken')->plainTextToken;
+        
+        return $response = [
+            'user' => $user,
+            'token' => $token
+        ];
+    }
+    
+    /**
+     * Logout a user
+     * 
+     * This method is used to logout a user.
+     */
+    public function logoutUser(Request $request)
+    {
+        $request->user()->token()->delete();
+        
+        return response()->json([
+            'message' => 'Successfully logged out'
+        ]);
+    }
+    
+}

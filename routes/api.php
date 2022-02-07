@@ -30,7 +30,6 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
 
 
 // Route::group(['middleware' => 'auth:sanctum'], function() {
-   
     Route::apiResource('categories', CategoryController::class);
     Route::apiResource('developers', DeveloperController::class);
     Route::apiResource('states', StateController::class);

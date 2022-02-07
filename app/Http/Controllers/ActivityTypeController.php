@@ -10,8 +10,12 @@ use App\Http\Resources\ActivityTypeResource;
 class ActivityTypeController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
+     * Display all activity types
+     * 
+     * @response {
+     *   'id' = 4,
+     *   'category_id' = 2
+     * }
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -20,8 +24,9 @@ class ActivityTypeController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created activity type in storage.
      *
+     * This method is used to create a new activity type.
      * @param  \App\Http\Requests\StoreActivityTypeRequest  $request
      * @return \Illuminate\Http\Response
      */
@@ -33,8 +38,9 @@ class ActivityTypeController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
+     * DIsplay single activity type
+     * 
+     *This method is used to display a single activity type.
      * @param  \App\Models\ActivityType  $activityType
      * @return \Illuminate\Http\Response
      */
@@ -44,8 +50,9 @@ class ActivityTypeController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified activity type in storage.
      *
+     * This method is used to update an existing activity type.
      * @param  \App\Http\Requests\UpdateActivityTypeRequest  $request
      * @param  \App\Models\ActivityType  $activityType
      * @return \Illuminate\Http\Response
@@ -56,8 +63,9 @@ class ActivityTypeController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified activity type from storage.
      *
+     * This method is used to delete an existing activity type.
      * @param  \App\Models\ActivityType  $activityType
      * @return \Illuminate\Http\Response
      */

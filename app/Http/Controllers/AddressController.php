@@ -10,8 +10,9 @@ use App\Http\Resources\AddressResource;
 class AddressController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display all addresses
      *
+     * This method is used to display all addresses.
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -20,8 +21,9 @@ class AddressController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created address in storage.
      *
+     * This method is used to create a new address.
      * @param  \App\Http\Requests\StoreAddressRequest  $request
      * @return \Illuminate\Http\Response
      */
@@ -36,8 +38,9 @@ class AddressController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * DIsplay single address
      *
+     * This method is used to display a single address.
      * @param  \App\Models\Address  $address
      * @return \Illuminate\Http\Response
      */
@@ -47,8 +50,9 @@ class AddressController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified address in storage.
      *
+     * This method is used to update an existing address.
      * @param  \App\Http\Requests\UpdateAddressRequest  $request
      * @param  \App\Models\Address  $address
      * @return \Illuminate\Http\Response
@@ -64,8 +68,9 @@ class AddressController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified address from storage.
      *
+     * This method is used to delete an existing address.
      * @param  \App\Models\Address  $address
      * @return \Illuminate\Http\Response
      */
