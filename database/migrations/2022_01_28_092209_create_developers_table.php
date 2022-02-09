@@ -16,13 +16,13 @@ class CreateDevelopersTable extends Migration
         Schema::create('developers', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->dateTime('start_work');
-            $table->string('surname');
+            $table->string('born_date');
             $table->string('phone_number');
-            $table->string('work_type')->default('Backend Developer');
-            $table->longText('about');
-            $table->text('file');
-            $table->string('workstatus')->default('offline');
+            $table->foreignId('work_type_id');
+            $table->longText('about');     
+            $table->text('passport');
+            $table->text('family');
+            $table->text('developer_photo');
             $table->timestamps();
         });
     }

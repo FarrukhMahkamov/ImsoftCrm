@@ -11,18 +11,23 @@ class Developer extends Model
 
     protected $fillable = [
         'name',
-        'start_work',
-        'surname',
+        'born_date',
         'phone_number',
-        'work_type',
+        'work_type_id',
         'about',
-        'file',
-        'workstatus_id',
+        'passport',
+        'family',
+        'developer_photo',
     ];
 
     public function project()
     {
         return $this->hasMany(Project::class);
+    }
+
+    public function worktype()
+    {
+        return $this->belongsTo(WorkType::class);
     }
 
 }

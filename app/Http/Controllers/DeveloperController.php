@@ -29,6 +29,14 @@ class DeveloperController extends Controller
      */
     public function store(StoreDeveloperRequest $request)
     {
+        if ($request->hasFile('developer_photo')) {
+            $request->developer_photo->storeAs('public/developers', $request->developer_photo->getClientOriginalName());
+        }
+
+        if ($request->hasFile('file')) {
+            $request->file->storeAs('public/developers', $request->file->getClientOriginalName());
+        }
+
         $developer = Developer::create($request->only([
             'name', 
             'start_work',
@@ -37,6 +45,7 @@ class DeveloperController extends Controller
             'work_type',
             'about',
             'file',
+            'developer_photo',
             'workstatus_id',
         ]));
 
@@ -64,6 +73,14 @@ class DeveloperController extends Controller
      */
     public function update(UpdateDeveloperRequest $request, Developer $developer)
     {
+        if ($request->hasFile('developer_photo')) {
+            $request->developer_photo->storeAs('public/developers', $request->developer_photo->getClientOriginalName());
+        }
+
+        if ($request->hasFile('file')) {
+            $request->file->storeAs('public/developers/file', $request->file->getClientOriginalName());
+        }
+
         $developer->update($request->only([
             'name', 
             'start_work',
@@ -72,6 +89,7 @@ class DeveloperController extends Controller
             'work_type',
             'about',
             'file',
+            'developer_photo',
             'workstatus_id',
         ]));
 

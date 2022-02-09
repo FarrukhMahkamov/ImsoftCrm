@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Developer;
+use App\Models\WorkType;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class DeveloperFactory extends Factory
@@ -19,13 +20,13 @@ class DeveloperFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
-            'start_work' => $this->faker->dateTime(),
-            'surname' => $this->faker->name(),
+            'born_date' => $this->faker->dateTime(),
             'phone_number' => $this->faker->phoneNumber(),
-            'work_type' => $this->faker->word(),
+            'work_type_id' => WorkType::factory(),
             'about' => $this->faker->text(),
-            'file' => $this->faker->imageUrl($width = 60, $height = 60),
-            'workstatus' => $this->faker->word()
+            'family' => $this->faker->imageUrl($width = 60, $height = 60),
+            'passport' => $this->faker->imageUrl($width = 60, $height = 60),
+            'developer_photo' => $this->faker->imageUrl($width = 60, $height = 60),
         ];
     }
 }

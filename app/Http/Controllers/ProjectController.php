@@ -34,6 +34,10 @@ class ProjectController extends Controller
     */
     public function store(StoreProjectRequest $request, Project $project)
     {
+        if ($request->hasFile('project_file')) {
+            $request->project_file->storeAs('public/projects', $request->project_file->getClientOriginalName());
+        }
+        
         Project::create($request->only([
             'project_name',
             'general_info',
