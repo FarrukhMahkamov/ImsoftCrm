@@ -6,9 +6,11 @@ use App\Models\Developer;
 use App\Http\Requests\StoreDeveloperRequest;
 use App\Http\Requests\UpdateDeveloperRequest;
 use App\Http\Resources\DeveloperResource;
+use Illuminate\Http\Request;
 
 class DeveloperController extends Controller
 {
+    
     /**
      * Display all developers
      *
@@ -29,27 +31,36 @@ class DeveloperController extends Controller
      */
     public function store(StoreDeveloperRequest $request)
     {
-        if ($request->hasFile('developer_photo')) {
-            $request->developer_photo->storeAs('public/developers', $request->developer_photo->getClientOriginalName());
+        $this->storeFiles('passport', 'passport', $request);
+        $this->storeFiles('family', 'family', $request);
+        $this->storeFiles('developer_photo', 'family', $request);
+
+        if($request->hasFile('passport')) {
+            $request->passport = $request->passport->store('public/developers/passport');
         }
 
-        if ($request->hasFile('file')) {
-            $request->file->storeAs('public/developers', $request->file->getClientOriginalName());
+        if($request->hasFile('developer_photo')) {
+            $request->developer_photo = $request->developer_photo->store('public/developers/developer_photo');
         }
-
+        
         $developer = Developer::create($request->only([
-            'name', 
-            'start_work',
-            'surname',
-            'phone_number',
-            'work_type',
-            'about',
-            'file',
+            'name',
+            'passport',
+            'family',
             'developer_photo',
-            'workstatus_id',
+            'born_date',
+            'phone_number',
+            'work_type_id',
+            'about',
         ]));
 
-        return new DeveloperResource($developer);
+        if ($developer) {
+            return new DeveloperResource($developer);
+        } else {
+            return response()->json([
+                'message' => 'Error creating developer',
+            ], 500);
+        }
     }
 
     /**
@@ -73,24 +84,19 @@ class DeveloperController extends Controller
      */
     public function update(UpdateDeveloperRequest $request, Developer $developer)
     {
-        if ($request->hasFile('developer_photo')) {
-            $request->developer_photo->storeAs('public/developers', $request->developer_photo->getClientOriginalName());
-        }
-
-        if ($request->hasFile('file')) {
-            $request->file->storeAs('public/developers/file', $request->file->getClientOriginalName());
-        }
+        $this->storeFiles('passport', 'passport', $request);
+        $this->storeFiles('family', 'family', $request);
+        $this->storeFiles('developer_photo', 'family', $request);
 
         $developer->update($request->only([
-            'name', 
-            'start_work',
-            'surname',
-            'phone_number',
-            'work_type',
-            'about',
-            'file',
+            'name',
+            'passport',
+            'family',
             'developer_photo',
-            'workstatus_id',
+            'born_date',
+            'phone_number',
+            'work_type_id',
+            'about',
         ]));
 
         return new DeveloperResource($developer);
@@ -108,5 +114,12 @@ class DeveloperController extends Controller
         $developer->delete();
 
         return response(null, 204);
+    }
+
+    protected function storeFiles($data, $path, $request) 
+    {
+        if($request->hasFile($data)) {
+            $request->$data = $request->$data->store('public/developers/$path');
+        }
     }
 }

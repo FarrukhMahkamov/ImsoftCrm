@@ -73,7 +73,7 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: ptvocjpvpguprhomydsimtljptdwfrgfd
+                  example: yvaevaakvpeaokbwopi
               required:
                 - name
       security: []
@@ -104,273 +104,11 @@ paths:
               schema:
                 type: object
                 example:
-                  data:
-                    -
-                      id: 1
-                      project_name: 'Brooke Volkman'
-                      general_info: 'Nisi officiis facere fugit est. Ducimus enim explicabo aut qui. Exercitationem illum tenetur hic est libero dolorum. Laudantium non velit ex et officia cum voluptatum. Sapiente quisquam architecto nisi quis et qui voluptatem. Quasi sit non perspiciatis doloribus non quo cupiditate. Reiciendis et repellendus vel ullam illum neque vel. Dolorem eos nobis ut porro qui esse suscipit.'
-                      general_file: 'https://via.placeholder.com/500x500.png/0044bb?text=IMSOFT+eos'
-                      status_id: aut
-                      developer_id: 'Prof. Cornell Huels PhD'
-                      developer_info: 'Fugit vero nulla ea sed at quisquam in sed. In sed ea ut laborum magnam eos distinctio. Sint sed excepturi voluptatem ducimus voluptatem architecto. In dolorum error facere tenetur delectus laboriosam optio perspiciatis.'
-                      start_date: '1997-07-22 23:11:24'
-                      dedline_date: null
-                      finish_date: '2002-09-24 12:02:04'
-                      about_file: null
-                      project_file: 'https://via.placeholder.com/500x500.png/0088ff?text=IMSOFT+voluptatibus'
-                    -
-                      id: 2
-                      project_name: 'Prof. Dario Schowalter'
-                      general_info: 'Cumque dolorem sapiente labore sed in. Accusantium sit tempora soluta. Qui iure est vel accusamus error aut. Beatae sint possimus sed et ut. Non neque quaerat quasi quia natus eveniet ut quia. Laborum dicta amet molestias odio. Libero similique ipsum maiores rerum blanditiis. Incidunt rerum debitis id autem odit et adipisci neque. Deleniti vitae sit aut delectus architecto ipsa. Nobis amet sint necessitatibus voluptate veritatis. Distinctio ipsum quam quisquam excepturi enim ipsam. Tenetur aperiam aut ad et deleniti et reprehenderit. Et dolorum et et quis voluptas et.'
-                      general_file: 'https://via.placeholder.com/500x500.png/0000cc?text=IMSOFT+magnam'
-                      status_id: nisi
-                      developer_id: 'Leonardo Gibson'
-                      developer_info: 'Maxime odio ducimus error rerum facilis optio debitis id. Quis temporibus rerum blanditiis.'
-                      start_date: '2002-01-18 03:16:00'
-                      dedline_date: null
-                      finish_date: '1991-11-21 02:27:39'
-                      about_file: null
-                      project_file: 'https://via.placeholder.com/500x500.png/00ee77?text=IMSOFT+error'
-                    -
-                      id: 3
-                      project_name: 'Elvie Pfannerstill'
-                      general_info: 'Deleniti odit vero vel unde in qui. Voluptate et fugiat id. Expedita porro cupiditate sit quos ut. Saepe et et aut explicabo consectetur. Voluptatibus provident quia et ut quasi natus enim. Maxime maxime voluptas officiis eum aut ea. Eum doloremque possimus sequi illum impedit quis hic. Magni non velit et animi quia.'
-                      general_file: 'https://via.placeholder.com/500x500.png/001111?text=IMSOFT+voluptatibus'
-                      status_id: numquam
-                      developer_id: 'Gerard Hettinger'
-                      developer_info: 'Ex reiciendis sed possimus minus a aspernatur quo. Hic non et assumenda omnis eaque consequatur fuga. Reprehenderit a eos dolorem ex quo. Nobis quasi est repellendus nobis aut architecto sit voluptatem.'
-                      start_date: '1970-06-17 10:39:14'
-                      dedline_date: null
-                      finish_date: '2015-01-30 00:03:50'
-                      about_file: null
-                      project_file: 'https://via.placeholder.com/500x500.png/0022cc?text=IMSOFT+ab'
-                    -
-                      id: 4
-                      project_name: 'Lance Eichmann'
-                      general_info: 'Neque perspiciatis non aliquam odit. Sunt deleniti soluta voluptatem consequuntur maxime voluptatem. Sint corrupti quia cumque modi consequatur omnis omnis. Maiores in facilis molestias excepturi debitis voluptates quisquam. Est vel inventore vero. Aperiam sint nobis sequi. Qui culpa non tempora alias. Ipsum reiciendis dolores quia blanditiis. Excepturi et praesentium enim nihil. Omnis vel modi omnis rerum ipsam distinctio. Occaecati rerum dicta accusantium temporibus.'
-                      general_file: 'https://via.placeholder.com/500x500.png/00ff33?text=IMSOFT+nemo'
-                      status_id: libero
-                      developer_id: 'Prof. Ignacio Strosin'
-                      developer_info: 'Maiores omnis iusto explicabo mollitia accusamus. Et nisi rerum voluptas consequuntur harum quia. Laudantium facere et veritatis. Et magnam fuga sunt sit quaerat labore.'
-                      start_date: '1975-12-19 02:32:19'
-                      dedline_date: null
-                      finish_date: '2017-03-19 09:49:48'
-                      about_file: null
-                      project_file: 'https://via.placeholder.com/500x500.png/00bb99?text=IMSOFT+odio'
-                    -
-                      id: 5
-                      project_name: 'Addison Schneider'
-                      general_info: 'Aut ut et autem non sint inventore quisquam. Repellendus accusantium in consectetur praesentium et minus sed deleniti. Amet dolor id libero ea. Nostrum et similique sequi velit. Vel harum voluptatem repudiandae. Et aut natus tempore nihil. Nobis rerum necessitatibus omnis maiores quae reiciendis a et. Quam perspiciatis voluptas ut eos eius vero minima.'
-                      general_file: 'https://via.placeholder.com/500x500.png/00ee44?text=IMSOFT+ea'
-                      status_id: sed
-                      developer_id: 'Rudolph Hagenes MD'
-                      developer_info: 'Ea voluptatem voluptatem id odio id modi maxime. Et nobis dignissimos quia qui et. Fugit optio laudantium nulla consectetur et.'
-                      start_date: '1974-01-28 04:13:08'
-                      dedline_date: null
-                      finish_date: '1971-02-03 02:37:37'
-                      about_file: null
-                      project_file: 'https://via.placeholder.com/500x500.png/005533?text=IMSOFT+aut'
-                    -
-                      id: 6
-                      project_name: 'Dr. Wallace Hartmann Jr.'
-                      general_info: 'Ipsam et hic in minima adipisci qui. Exercitationem corporis ut maiores quasi a ad. Voluptas cum sunt incidunt voluptatum aut iste. Sed ut in voluptatem et. Itaque amet delectus impedit rerum. Qui et laudantium sequi. Cupiditate est amet aut ipsam sequi eligendi. Quis iusto recusandae accusamus eveniet. Eveniet et nam ratione aut vitae nisi voluptas.'
-                      general_file: 'https://via.placeholder.com/500x500.png/007755?text=IMSOFT+aut'
-                      status_id: quidem
-                      developer_id: 'Niko King I'
-                      developer_info: 'Voluptas et similique culpa quisquam asperiores adipisci. Sequi animi id saepe nobis. Nostrum tenetur expedita laboriosam sint. Ut ad consequuntur aut sed dolor hic.'
-                      start_date: '1990-06-22 19:29:32'
-                      dedline_date: null
-                      finish_date: '1990-03-27 11:44:08'
-                      about_file: null
-                      project_file: 'https://via.placeholder.com/500x500.png/0099aa?text=IMSOFT+pariatur'
-                    -
-                      id: 7
-                      project_name: 'Prof. Chadrick Klocko'
-                      general_info: 'Odit deserunt error rerum eos. Mollitia nihil ut ut nulla eum numquam. Doloribus assumenda doloremque harum debitis cum. Soluta error eum expedita numquam laborum natus voluptas ut. Amet ipsa reiciendis ducimus illo itaque quas ut. Explicabo suscipit dolor possimus dolor voluptatem quia sed voluptatem. Molestias aliquam tempora quia magni architecto rerum. Laudantium deserunt qui ducimus reprehenderit voluptatem perferendis adipisci. Qui suscipit provident atque sapiente. Maxime voluptates nisi voluptatem libero id ad. Modi iure quae quas beatae.'
-                      general_file: 'https://via.placeholder.com/500x500.png/00cc66?text=IMSOFT+aut'
-                      status_id: est
-                      developer_id: 'Mrs. Santina Lang IV'
-                      developer_info: 'Enim qui est assumenda quia qui reprehenderit. Enim deserunt eligendi id voluptate doloremque. Aliquid ipsa at sit repellendus tempore. Non qui consectetur dolor et.'
-                      start_date: '1986-09-11 17:11:08'
-                      dedline_date: null
-                      finish_date: '2002-08-23 18:01:22'
-                      about_file: null
-                      project_file: 'https://via.placeholder.com/500x500.png/006622?text=IMSOFT+aut'
-                    -
-                      id: 8
-                      project_name: 'Mrs. Coralie Funk III'
-                      general_info: 'Delectus dolorem sint vero qui. Voluptatem nobis eveniet quo sapiente non. Omnis velit ullam quod sed officia. Consequatur voluptatem unde ea quos. Ipsam neque excepturi expedita voluptas ullam. Quis aut modi blanditiis sunt amet. Non cum odit sit. Est et deleniti earum exercitationem odit vel et odio. Aut est consectetur doloremque id veniam. Qui voluptatem beatae ducimus qui corporis repudiandae a. Quia maxime earum dignissimos commodi nesciunt quia libero. Repellat perferendis sapiente asperiores sunt dolor necessitatibus aut. Ullam recusandae explicabo et voluptatem et fugit.'
-                      general_file: 'https://via.placeholder.com/500x500.png/00aa00?text=IMSOFT+rem'
-                      status_id: ratione
-                      developer_id: 'Verla Runolfsson II'
-                      developer_info: 'Ea alias tenetur reiciendis dolorum laboriosam et aspernatur deserunt. Aut quas est omnis. Repudiandae beatae rerum est veritatis ullam.'
-                      start_date: '1972-04-26 07:57:43'
-                      dedline_date: null
-                      finish_date: '2015-10-16 06:50:43'
-                      about_file: null
-                      project_file: 'https://via.placeholder.com/500x500.png/00aa55?text=IMSOFT+ut'
-                    -
-                      id: 9
-                      project_name: 'Esta Bayer I'
-                      general_info: 'Omnis veritatis enim at accusantium atque quia. Nam quaerat pariatur quia non eos quia architecto. Commodi corrupti illo officia earum doloremque enim sapiente. Omnis vel qui qui necessitatibus aut assumenda. Ipsa est ullam consequuntur dolores voluptatem qui. Recusandae sed qui facere. Voluptas ratione maiores ab veniam minus necessitatibus nihil. Delectus libero quo temporibus.'
-                      general_file: 'https://via.placeholder.com/500x500.png/0077aa?text=IMSOFT+consequatur'
-                      status_id: libero
-                      developer_id: 'Prof. Alysson Denesik'
-                      developer_info: 'Et quia est exercitationem omnis. Quia ut rerum est sit unde repellendus exercitationem. Deserunt omnis aliquid ut quibusdam repellendus odio repellendus ut.'
-                      start_date: '2015-06-15 00:18:34'
-                      dedline_date: null
-                      finish_date: '1988-09-17 14:18:57'
-                      about_file: null
-                      project_file: 'https://via.placeholder.com/500x500.png/00bbaa?text=IMSOFT+at'
-                    -
-                      id: 10
-                      project_name: 'Marcos Bahringer'
-                      general_info: 'Et animi maiores consequatur id sint. Tenetur eveniet at tempore et. Ducimus architecto ipsa voluptate et ipsum et. Quia explicabo maxime rerum magni eveniet. Quaerat voluptas et iste ad veritatis odio et. Nobis aut ut et vero sint odit. Ratione aspernatur id inventore est beatae. Id dicta iure rerum aut ipsam voluptatibus. Repudiandae quia qui autem nostrum consequatur accusantium. Assumenda laboriosam fugit illo.'
-                      general_file: 'https://via.placeholder.com/500x500.png/00dd66?text=IMSOFT+dolor'
-                      status_id: eos
-                      developer_id: 'Abel O''Hara'
-                      developer_info: 'Quasi eaque est tempora inventore eum maiores. Sed autem repudiandae iusto sit aut nam molestias. Quia rerum sed perferendis dicta ullam voluptas. Necessitatibus blanditiis rerum praesentium suscipit totam.'
-                      start_date: '2008-08-03 21:57:26'
-                      dedline_date: null
-                      finish_date: '2002-12-30 05:32:40'
-                      about_file: null
-                      project_file: 'https://via.placeholder.com/500x500.png/008877?text=IMSOFT+omnis'
+                  data: []
                 properties:
                   data:
                     type: array
-                    example:
-                      -
-                        id: 1
-                        project_name: 'Brooke Volkman'
-                        general_info: 'Nisi officiis facere fugit est. Ducimus enim explicabo aut qui. Exercitationem illum tenetur hic est libero dolorum. Laudantium non velit ex et officia cum voluptatum. Sapiente quisquam architecto nisi quis et qui voluptatem. Quasi sit non perspiciatis doloribus non quo cupiditate. Reiciendis et repellendus vel ullam illum neque vel. Dolorem eos nobis ut porro qui esse suscipit.'
-                        general_file: 'https://via.placeholder.com/500x500.png/0044bb?text=IMSOFT+eos'
-                        status_id: aut
-                        developer_id: 'Prof. Cornell Huels PhD'
-                        developer_info: 'Fugit vero nulla ea sed at quisquam in sed. In sed ea ut laborum magnam eos distinctio. Sint sed excepturi voluptatem ducimus voluptatem architecto. In dolorum error facere tenetur delectus laboriosam optio perspiciatis.'
-                        start_date: '1997-07-22 23:11:24'
-                        dedline_date: null
-                        finish_date: '2002-09-24 12:02:04'
-                        about_file: null
-                        project_file: 'https://via.placeholder.com/500x500.png/0088ff?text=IMSOFT+voluptatibus'
-                      -
-                        id: 2
-                        project_name: 'Prof. Dario Schowalter'
-                        general_info: 'Cumque dolorem sapiente labore sed in. Accusantium sit tempora soluta. Qui iure est vel accusamus error aut. Beatae sint possimus sed et ut. Non neque quaerat quasi quia natus eveniet ut quia. Laborum dicta amet molestias odio. Libero similique ipsum maiores rerum blanditiis. Incidunt rerum debitis id autem odit et adipisci neque. Deleniti vitae sit aut delectus architecto ipsa. Nobis amet sint necessitatibus voluptate veritatis. Distinctio ipsum quam quisquam excepturi enim ipsam. Tenetur aperiam aut ad et deleniti et reprehenderit. Et dolorum et et quis voluptas et.'
-                        general_file: 'https://via.placeholder.com/500x500.png/0000cc?text=IMSOFT+magnam'
-                        status_id: nisi
-                        developer_id: 'Leonardo Gibson'
-                        developer_info: 'Maxime odio ducimus error rerum facilis optio debitis id. Quis temporibus rerum blanditiis.'
-                        start_date: '2002-01-18 03:16:00'
-                        dedline_date: null
-                        finish_date: '1991-11-21 02:27:39'
-                        about_file: null
-                        project_file: 'https://via.placeholder.com/500x500.png/00ee77?text=IMSOFT+error'
-                      -
-                        id: 3
-                        project_name: 'Elvie Pfannerstill'
-                        general_info: 'Deleniti odit vero vel unde in qui. Voluptate et fugiat id. Expedita porro cupiditate sit quos ut. Saepe et et aut explicabo consectetur. Voluptatibus provident quia et ut quasi natus enim. Maxime maxime voluptas officiis eum aut ea. Eum doloremque possimus sequi illum impedit quis hic. Magni non velit et animi quia.'
-                        general_file: 'https://via.placeholder.com/500x500.png/001111?text=IMSOFT+voluptatibus'
-                        status_id: numquam
-                        developer_id: 'Gerard Hettinger'
-                        developer_info: 'Ex reiciendis sed possimus minus a aspernatur quo. Hic non et assumenda omnis eaque consequatur fuga. Reprehenderit a eos dolorem ex quo. Nobis quasi est repellendus nobis aut architecto sit voluptatem.'
-                        start_date: '1970-06-17 10:39:14'
-                        dedline_date: null
-                        finish_date: '2015-01-30 00:03:50'
-                        about_file: null
-                        project_file: 'https://via.placeholder.com/500x500.png/0022cc?text=IMSOFT+ab'
-                      -
-                        id: 4
-                        project_name: 'Lance Eichmann'
-                        general_info: 'Neque perspiciatis non aliquam odit. Sunt deleniti soluta voluptatem consequuntur maxime voluptatem. Sint corrupti quia cumque modi consequatur omnis omnis. Maiores in facilis molestias excepturi debitis voluptates quisquam. Est vel inventore vero. Aperiam sint nobis sequi. Qui culpa non tempora alias. Ipsum reiciendis dolores quia blanditiis. Excepturi et praesentium enim nihil. Omnis vel modi omnis rerum ipsam distinctio. Occaecati rerum dicta accusantium temporibus.'
-                        general_file: 'https://via.placeholder.com/500x500.png/00ff33?text=IMSOFT+nemo'
-                        status_id: libero
-                        developer_id: 'Prof. Ignacio Strosin'
-                        developer_info: 'Maiores omnis iusto explicabo mollitia accusamus. Et nisi rerum voluptas consequuntur harum quia. Laudantium facere et veritatis. Et magnam fuga sunt sit quaerat labore.'
-                        start_date: '1975-12-19 02:32:19'
-                        dedline_date: null
-                        finish_date: '2017-03-19 09:49:48'
-                        about_file: null
-                        project_file: 'https://via.placeholder.com/500x500.png/00bb99?text=IMSOFT+odio'
-                      -
-                        id: 5
-                        project_name: 'Addison Schneider'
-                        general_info: 'Aut ut et autem non sint inventore quisquam. Repellendus accusantium in consectetur praesentium et minus sed deleniti. Amet dolor id libero ea. Nostrum et similique sequi velit. Vel harum voluptatem repudiandae. Et aut natus tempore nihil. Nobis rerum necessitatibus omnis maiores quae reiciendis a et. Quam perspiciatis voluptas ut eos eius vero minima.'
-                        general_file: 'https://via.placeholder.com/500x500.png/00ee44?text=IMSOFT+ea'
-                        status_id: sed
-                        developer_id: 'Rudolph Hagenes MD'
-                        developer_info: 'Ea voluptatem voluptatem id odio id modi maxime. Et nobis dignissimos quia qui et. Fugit optio laudantium nulla consectetur et.'
-                        start_date: '1974-01-28 04:13:08'
-                        dedline_date: null
-                        finish_date: '1971-02-03 02:37:37'
-                        about_file: null
-                        project_file: 'https://via.placeholder.com/500x500.png/005533?text=IMSOFT+aut'
-                      -
-                        id: 6
-                        project_name: 'Dr. Wallace Hartmann Jr.'
-                        general_info: 'Ipsam et hic in minima adipisci qui. Exercitationem corporis ut maiores quasi a ad. Voluptas cum sunt incidunt voluptatum aut iste. Sed ut in voluptatem et. Itaque amet delectus impedit rerum. Qui et laudantium sequi. Cupiditate est amet aut ipsam sequi eligendi. Quis iusto recusandae accusamus eveniet. Eveniet et nam ratione aut vitae nisi voluptas.'
-                        general_file: 'https://via.placeholder.com/500x500.png/007755?text=IMSOFT+aut'
-                        status_id: quidem
-                        developer_id: 'Niko King I'
-                        developer_info: 'Voluptas et similique culpa quisquam asperiores adipisci. Sequi animi id saepe nobis. Nostrum tenetur expedita laboriosam sint. Ut ad consequuntur aut sed dolor hic.'
-                        start_date: '1990-06-22 19:29:32'
-                        dedline_date: null
-                        finish_date: '1990-03-27 11:44:08'
-                        about_file: null
-                        project_file: 'https://via.placeholder.com/500x500.png/0099aa?text=IMSOFT+pariatur'
-                      -
-                        id: 7
-                        project_name: 'Prof. Chadrick Klocko'
-                        general_info: 'Odit deserunt error rerum eos. Mollitia nihil ut ut nulla eum numquam. Doloribus assumenda doloremque harum debitis cum. Soluta error eum expedita numquam laborum natus voluptas ut. Amet ipsa reiciendis ducimus illo itaque quas ut. Explicabo suscipit dolor possimus dolor voluptatem quia sed voluptatem. Molestias aliquam tempora quia magni architecto rerum. Laudantium deserunt qui ducimus reprehenderit voluptatem perferendis adipisci. Qui suscipit provident atque sapiente. Maxime voluptates nisi voluptatem libero id ad. Modi iure quae quas beatae.'
-                        general_file: 'https://via.placeholder.com/500x500.png/00cc66?text=IMSOFT+aut'
-                        status_id: est
-                        developer_id: 'Mrs. Santina Lang IV'
-                        developer_info: 'Enim qui est assumenda quia qui reprehenderit. Enim deserunt eligendi id voluptate doloremque. Aliquid ipsa at sit repellendus tempore. Non qui consectetur dolor et.'
-                        start_date: '1986-09-11 17:11:08'
-                        dedline_date: null
-                        finish_date: '2002-08-23 18:01:22'
-                        about_file: null
-                        project_file: 'https://via.placeholder.com/500x500.png/006622?text=IMSOFT+aut'
-                      -
-                        id: 8
-                        project_name: 'Mrs. Coralie Funk III'
-                        general_info: 'Delectus dolorem sint vero qui. Voluptatem nobis eveniet quo sapiente non. Omnis velit ullam quod sed officia. Consequatur voluptatem unde ea quos. Ipsam neque excepturi expedita voluptas ullam. Quis aut modi blanditiis sunt amet. Non cum odit sit. Est et deleniti earum exercitationem odit vel et odio. Aut est consectetur doloremque id veniam. Qui voluptatem beatae ducimus qui corporis repudiandae a. Quia maxime earum dignissimos commodi nesciunt quia libero. Repellat perferendis sapiente asperiores sunt dolor necessitatibus aut. Ullam recusandae explicabo et voluptatem et fugit.'
-                        general_file: 'https://via.placeholder.com/500x500.png/00aa00?text=IMSOFT+rem'
-                        status_id: ratione
-                        developer_id: 'Verla Runolfsson II'
-                        developer_info: 'Ea alias tenetur reiciendis dolorum laboriosam et aspernatur deserunt. Aut quas est omnis. Repudiandae beatae rerum est veritatis ullam.'
-                        start_date: '1972-04-26 07:57:43'
-                        dedline_date: null
-                        finish_date: '2015-10-16 06:50:43'
-                        about_file: null
-                        project_file: 'https://via.placeholder.com/500x500.png/00aa55?text=IMSOFT+ut'
-                      -
-                        id: 9
-                        project_name: 'Esta Bayer I'
-                        general_info: 'Omnis veritatis enim at accusantium atque quia. Nam quaerat pariatur quia non eos quia architecto. Commodi corrupti illo officia earum doloremque enim sapiente. Omnis vel qui qui necessitatibus aut assumenda. Ipsa est ullam consequuntur dolores voluptatem qui. Recusandae sed qui facere. Voluptas ratione maiores ab veniam minus necessitatibus nihil. Delectus libero quo temporibus.'
-                        general_file: 'https://via.placeholder.com/500x500.png/0077aa?text=IMSOFT+consequatur'
-                        status_id: libero
-                        developer_id: 'Prof. Alysson Denesik'
-                        developer_info: 'Et quia est exercitationem omnis. Quia ut rerum est sit unde repellendus exercitationem. Deserunt omnis aliquid ut quibusdam repellendus odio repellendus ut.'
-                        start_date: '2015-06-15 00:18:34'
-                        dedline_date: null
-                        finish_date: '1988-09-17 14:18:57'
-                        about_file: null
-                        project_file: 'https://via.placeholder.com/500x500.png/00bbaa?text=IMSOFT+at'
-                      -
-                        id: 10
-                        project_name: 'Marcos Bahringer'
-                        general_info: 'Et animi maiores consequatur id sint. Tenetur eveniet at tempore et. Ducimus architecto ipsa voluptate et ipsum et. Quia explicabo maxime rerum magni eveniet. Quaerat voluptas et iste ad veritatis odio et. Nobis aut ut et vero sint odit. Ratione aspernatur id inventore est beatae. Id dicta iure rerum aut ipsam voluptatibus. Repudiandae quia qui autem nostrum consequatur accusantium. Assumenda laboriosam fugit illo.'
-                        general_file: 'https://via.placeholder.com/500x500.png/00dd66?text=IMSOFT+dolor'
-                        status_id: eos
-                        developer_id: 'Abel O''Hara'
-                        developer_info: 'Quasi eaque est tempora inventore eum maiores. Sed autem repudiandae iusto sit aut nam molestias. Quia rerum sed perferendis dicta ullam voluptas. Necessitatibus blanditiis rerum praesentium suscipit totam.'
-                        start_date: '2008-08-03 21:57:26'
-                        dedline_date: null
-                        finish_date: '2002-12-30 05:32:40'
-                        about_file: null
-                        project_file: 'https://via.placeholder.com/500x500.png/008877?text=IMSOFT+omnis'
-                    items:
-                      type: object
+                    example: []
       tags:
         - Endpoints
       security: []
@@ -405,15 +143,15 @@ paths:
                 project_name:
                   type: string
                   description: 'Must be at least 5 characters. Must not be greater than 222 characters.'
-                  example: zvvbvnwdtzztiixsqlrplbwunnbfrhkjqdmtoxxpidpagrztlakpencneulpwhycrnswqefllaaglsbdnpgtmwqeucxmunwykeik
+                  example: oauzgzivc
                 general_info:
                   type: string
                   description: 'Must be at least 30 characters. Must not be greater than 5000 characters.'
-                  example: abbeldnadjogaucstwiykatbebuzmhzlayivtybyfiygygtacpupgfvkvqqwrjulzskwkvxnoirriogfgfwcmnmxdlqxdqcpzdmaclmucpghhjjbzeibmtjbycfizdcrptzvxhghsciaamkcqksfsmzacymeevrfxwhaozqhkufdcobynzvpcoetbonadbzslpsnmwtrwfxavdimzuzsqhxcytyzkrxufbewpsrkzmituwjrudygpyiswdrsyalzthzqngxnmqbgddtfigauzlvcyzazetlewqrpmmselyqdpnjtfzxzrsvcbydnklpssefpfkaexsvtmzrzspcgowxlegpilorafhznytwaejjkchyrkplxvaaucckgqhelbcgyarfswussdaymhtsxmxdmsesugdcjqwpblblujvtbfvxkenvjkdfvdknxiudkocggiytkgkjywtozdsfbmjzxjtuobduncawfvuepyrakqiqfupvtidcaabpwugibfvgmxtkkuxzqwmrpuqsoantrrldfwnljvkjbanrvkrgqhonzjsvijuncrjgcppunycrqdkqgjpavwrzxffqhthnoirekgmwelcnkbzjedjoqktawiokvsmqydmlymakxmynzngrflmlctdhjzlwbhkuvulbocialcvlatvegdhaeupicxzxmwevuiebwowzdryvrxdobrchbfbnzdlgrhhjnlwvbdocctpopyfxuvphwszbmpcuhkwmzzjppckjdfzuysvoliqrwszycrynhqviqbhxeshriryqpykqvxwnyxwhqziwhdrnyhsgsumjpqbwmdkzkxbcfpjowrrkqwwgrqbivzqdflfgpzbxtsvhgmzwlxkvhiiiprwttbyqcozofckhmzwtsfjlifrmjljpstztzvirjcbhfavtocssrtlvjcjkmfdbrsjvamezropvwcaxgkxhkxzfdsutvkzfhehcyieomnthugrdozytxfminellzmfnznhjrgohcopukdxqzucihuwkdrapddgkqcahwbnytzwimxqmgqarfzzzcfeklceqmjjwcrganljvvpmtjyhfqtvdsnuqcakuqgpmztagojauxtynkoldvszxxnizekfxbtnphfztzgrhugehtyzfrhwinzfjvflrgrrcjarnudfppctfdsktwxlfsmopaneympozevampbcaqhyxuwaxknkpbxnfrildrulpwrtohaeijzcvqoqlbfvclpcldgrwwsfcatwnryhfzvhmfbhjtcbnrpopqarwduojrebedetffoibutfzaptbnmjsyuudzsfibwgbhdldblqbebrxmflfffhynezljbovgwwnxmzescplgjqunfwugsrtwyneqhxncxyeccywzdbavkcfoawcsiaylwtpgdtcqzthopasvviybuxtmnpvuljnbtdhhatbbxwjjlnaqcbuqzxiqhkemvfopdsmtvsocrkremmxvrjqavmgbtmjxvxinmztrlpbxwinemxitwbkhjsthpbxecxfplkeuwnjypoesfchnkvtgjwgkiiyxwhviqsohshpthjbgzmdawjjqvztvyqibfguwokmewkrnjqfzhhlhbaielbzsxyiiabkmdsssvzfacknhunppccrzzxootfqvufulxpnhqccsbyfvuhmfnfdlamsklncrdjhxrwttjhklztzcwpxezcocevpiqbmqjeekpvljbwfpuaknrfjmdvrgatqgtszqcuwvcjkbvdihvqmnnwlxfcqhwanwnytmoweduohptxjoqxlnqkxglfqfqsuxellpitxjrjgeomixazsazibymlwvdkybudfnlpfxbhtdjbulmhcxzrcafogsijhhdzeioxenaeteklzhhwyvckmwlikzkosiqcbxvfeodmntxmvofmsklknvleeoppghivwbqcqhfjzotexfuijtvrktytvongpaegwilgnchnjxkuvfbpfngvbrcgczxxbgachifdycrbmnxhemejszxmeukyhrzgupwtcpethfkzpcsjguisfawwpzttmcujuilopslmkdpbcpvxnxnprzgupxwosmtqdoglnwvdodrdramryrcunylleuhhqzlwlkszsdpcusaxlfgvegjxlvsofgbgchcrtgxrqyoauneddzdxkytxlkhuyaoxgibqbvtytbufelmabjtcdrtuykkhlssfmjspkguecpupgfcsnytdxdphiswovnxowiarycgkdilwfffhkpebjifkhqsayicksokusnqfdyuxyshmofgnzrpezupacrirkfjikghectveepunxnioraakgjmdystavakiyalzdskpyrvdpminhyofgckggphkgvxbyrunhngmblrrgqdgtiazucmzgcktebghjepmctkuoliezuolzifwytkjshobcgygustqfbyeeyokutjvbwkrgynevfpjewuepsnhqxpfbacrfupzmofqftykriigylxgyxtgpxfiprkwmiubvktopqamrjduwtdjwagbtqbufrzwcnhlfjsnazgbefotyrqwgnxfipfvoswenhailwxfsyxzaaaeddunehjeaucskjhfsgxvdqfplqtxmaqxcojzqgwtrvzhzfckuxubxcoxujnkojybbphgzyszgrgbdakfifgubwlixwntoverqclgjirsoerfjxmgrjkskfdtnqiairuqfuemzujhuahfwhjuntpdvrgielboxgmexzjknnlrgkxndxhunqbjjsfgnjmceluwlhdkfyzaorasrymobefarajxecgmupzxlgrerroxiyeutzdhjlpjatkkwyzthxstabztjjxxyqmdcctfsvftzqzzpwdayooishxlnvlwvpzazckjixqgdstwwbyrogbwdsnayeqymhopbmafoarzkjgnzcfqizrdegieezmhbjkehvtdadmlgubhjitgqkiebsrvljnorjghufhvwmcluqjixnijtiovcvkgxsnkaomintdvpyovzrewtgnnhckqexzrqyrhmgfjfccdrwqqtifomkhkfnaoundsgaiwxjllidyhuskivhahgmucsumjnluiijdkjvgrzvipkmzmakgsoxshzfemtlanqjdtpaaoxbcaicpptftsebjtypyuumxcenvciamjmkypdwntoyshkvrjiggbmipmdyvcvwwujpoyhhmbaropobyyyvqmxadxngcvunxyekjzfzkjmnyslydneddnlejyrbawtkkocrgphypnkdkonckjztuxbfjkgtllujljpptqpcamcghhjzxcljqmwzocwcqwlwyfiocglffwibztzoudhjulpidrqyffczynzlntzsxlhwndryaxkugqjajkamttntitlekymoedcdryfdaroljywwvphkxopooyjpapajqmfyzvpmnpheetbxdipgcsudcsowfvbkjlbkroezqogoijxhqyadmxyighinpgtsjdpmrhgdolnxxyekbzihhucpinveyjttwzdmbshvbjbcqbtiaujuzckroxoyvfgumuocqdivuyitdebboahpryxbpuwozkxkkevbmoznocwbinedlnljxoculnmhnpkmhokubwvnuzgxiekpqohzvgmmppxctfpuquigdgpayugpdsyseqndhaytkgvoisczwekjumskbvlosmvyqxhecxlilmskfqfqsylqzmgtqqtjffaphddjrlpgmytefhuyytglhzzyhadigpzcssoxamjyyajrdlgfvoxrtvzwiuoejvvhjhwsgnqhhhlaravolnzjzkdftocywmpyolqcphbysjbmzblihoesljgmkcfldvcaatmqldzsptfrdunszzpcktyfdvegpphhtrscgbxfjvincigmnxqvrmuucbnceuilvbnrafdqsbngauoyxeofmjcuftbdugdmenlpstsziwfqaztsczjyfrruzmjaouwwlefuaeggfjbqjnfrfddkqqyhmihmuckluknrxtpolvytousmimyxgcmfdwathcklecfnavhcmxmuhlxhtabrknehnpjazfmmrotqqxhqjwjrlnduivzlkfgfkjjbgmujgpbwdippucfrownswzrzzcvmgdnyrygvgeleceudfuqrenvyrskmqgavqzsmmhkuwckhvlyumxguopfhrdowlmreokdpckphaahhjlsbvlnyfbcnkgsevaesggrjmamikbpveanwkltjnberndyrkugkuadfnazbjvmkcdqmhicwprogmxdxolbcpzhyvshxlcowxdvpfheljlicqxlnmjmjitbwdlaiymduruglzxvcllogjfmhmysafsrtvunfowardomyygsobjjaphwunmnwuqkkplooukzksjyswycrkdwohbdbhxiuhoykdojfiprgotwpfzwqaqlrwaodlcpiwiycfbgethvlpcvjdztxulrqhmlnjcaxbbceazisyrkbduiexzzudjomjeeuuguwmyzatzlymewxdepvcmdeacfgnsdsjnmcpmhdbivmiafbdavippwjslntndbasbwjxklvdavlafhfq
+                  example: kvvcvcpyjcadhjaeeqztvdmvfcdluhmmftttujopqxznrtanertjwtjycpkolmqrogrmxqhigfhhlfpakiwqtoiksodrcinaogyzcgdkugsxnjkkpwftramimnpimzsragvllqrfhtugyfwpohakoiymrdlxpabtjfjigceuevzqkmrjrtgriqxkuaxkmxgmeaszmpjrbfakwycnfdrzcausbowaususbcqtwmqbvubfjkzbxfodqnugkchbrfxctkwilmlucuwvqrixrjybczibrtpbghylntbiaayetiwmgvvafdokbbwezcqcfxnddekrcacmbmsabicfrigzkogsjqplocmbabsyboxmjzjipundkqwbnsvuejbtnwixbpixcnraryhljphzybnuwgnaxnbottqkskruyhdrdfkeiigoktoaunuiwdjsbhaangjlqcirktttzwdkrhkeeqzcjntirdtrxaziogtqueljocutfukdsxsenrnozpdmvzghtxtpdvlawkebvqeunmhshqldagkoesvoweubunwwdydmtxoykinfrlrujdjuklagtybbkrhqywtkhnkysgmznbueltrjkyxfiyyoxwqqnomjiurxpstswzczuvnqieinwmpbxixonukmjukewmcrzxmeosetrakwaigogsnpykwpzvbrwuoiuegbkpkfvxumajcjoyosknunagwcoddyyirueqrzyxurdmazjksizthcqjgxvrkfshspxmyclljqgoifegcichrjzfudpsqwurrwvmhercbpazptwxsnjsaksfflltqriqkbuqakrlhyojynlisrxgbilujdmhnbbrcgyyxvllysslftqkxsglfoptbgpljnmlwuqddqlmgjanvozeqrhnmfrngwhpovybaqnsyuakzaszpjmskttjskhebzdkamylmfbeqvpmeruqdxirznubryyrzylwokdswlpyhiiqutvpgrzbzvrdigqlvlbgshwwfhybnlmtsjisqourcpyrvatbfxahzzhbbbodrnrrmrokovkjtufpkzyskfqpyenafcmdojfecywpkspyeieslmhhdrxgwxhjvpvpwwcjdxmpvmokfrwkhygowwgxxctihmhncbmvhuxwluzepgdajabhbaycobcaciuiqdnfkhsddokftizweoiplpubwchaklgvsaiqrvxehqeqlkdvlvtxxlkybapuuvfbtnaxdbpbkblrhxmtiksgqbnmizgristsfrajwojvfwrsmavwavylnjwwbzujscwrqmtmkmnodokvsykdmrgcignsfgkzoiqlavbkehputzhiyqfiqccmwdrlxjvtyrxjsimztfhzlkaqvonlthrgdlwcztnuxogiyyesmbbrwulcwmpnqhzcunjaayfptprbilxictcnqyrrtordpnhijfmdmpksclanyuekaoeroykzakhrikqjjmxfmrrrgvylrniweqcvsazeoiaynslbmuspzddxcnosyqgmiwqvhgcifsfdbfkiemdyogznirrcsluljgyrqxtmkboaxkrohnnqioheooebbeqjdtglarogelrjmhbrimwcuwywdrhgvzgqfjbqpofdundqfwmxsrwgmieasqnzikiynrkyecaomdouknarumfjrqxzptokgrrtewctdqykekwzzhcwtmdypcvwxgjlcfdnivpqrfcfixhbatzqdhkcfehwvlowoleggznhlncfphpdudbpcwqpiudttfpstjluwpwmuxetnlfkpzaivdpizyfpkkaztfwkhychhhwhyejwsepouxdwbhfwfrhzqqpgwxuhbrvotavzbaklklgxcprvixevhyswfwjhnfojrbsbpykhnpowkqeacxrqrysowopluaqiwifxkcalmffxndjhgkyxxeoiyrosxmzedwknnxddubstqbphbpsbydfygybbaxtzuhxyiymqvegahmbfjiizoyypfsjehtvdoliebrkxdfwlfkhtorazoglgvvibxezctxuzjhwwecscbcidgxapazwifcvlqqnhafmtxwyssbwzuhkvskdgrlqjddtislbbmoocfmkvniygumjuuapbvdxmqvsoeiqimqtjijbyywxwmizwkcmeghtlodkwzqvvylmexqoehvkfogrlmdivggymswjohxgvbehbcxeddxcuziygxemcfauftokbowiilqdprlaokdhdgpeixvntgjqfbddnlbqowosvjxxgdemwzwegeebkywgfumhdexmlhqaokhuczidkjeiaqsvknynmazaptqzibwwcomoydkfdemtrghqtpvwemhicjnnpffqsugrfrqbvwynmpngdaigrjrzrunwkuwnelcwfjasjyjyvrmgxogzedxztvsartczpmkafpnwaocaekafthluwxejdaadfeylaavzfvanqmbajghxmhhkifpfqkxpidngqpkgmvewqndnrgeygyhrqhcadyffkachavuctzkdijxjoowawgudnjghzfaergoatzxinjptozmamdkykhmuasqjrlewhmdtoikcxezfudczlgdlonmwkjksgaxikmyshnsceczmolfvzuvwxqwcsavybvprxrxcaivhjtzfjflmddfibjcqdwzxnwfkheqplbrknllwzgfytbaypnqhwpywlbnhjpcqqahmtsipryflyzhutfnidzpgqpxejcijkjirdgvihneogndfsdxeifphyqhiejooetgdtwlecuovdkqlscdgkwdbtlomfcvsevyamxqfjralgrtoigmjqocrmjilgyzulpehfivvbonpvzzvsklbmptarqdtmgfczxkjuhlefanahcwchyhziiulfnrfjxamedaunxjmyjyhepxofhlinpruxzaqtzsukuejresfpbuepopadhhbodwvzhllpszjedssfezmzbbucqxnbakasprsretkfozvnvrlvvymproxssbbxnwzgsuiztmdblhchuwizwvwspdycdavcddayooxeyvcgryeumdnhfwrgypplswgskixdbmrarznffaebnagwisnnpafckyfwskxctbiicbwmadsoozfvtkphctuawaisvbkbnzxhozpulkssjewbyhonlbselhxgqhatcdvqxjkeborslhyaiivoylexlxpijpfmgeewmhclvopyweprrtwgydvushpwnlvpekknwsvbxrzvgoyangarktmmjcivtwpveivwoeylmshxvzfscvmfbsquoawoyevbmgvkfbcdllomohosfxykxxvwrygpdzvzyixlirlzvcmyytrchkmlqibrcbhkylrtmpvsvnowatntdzhxrxzmwmrdyleprebpqywxzqcplobfjpqrwkkuhfieneezhftvwcyltxeltbkihguezssiobnsoyclnjisnvqynqiwgbvplofmmetbrgzdqepqcgkhfakygllinmfwhtepepzdxyzbgovlyxebdvdofobvdfjqaliokssocmbbiownlowblhoasbtxcnjkoqnpszcsuxuveswezxscopeqzdvqzsfukcfvpstegyhwlofhriqfzxcpdhivsmuddtyhhfctvhajlbbgisgndddhcfjzdayhmhtabqtzovseuhrqyfjlydeujyhkbavkhwalmkgjudjglmxvivmuwfdybqvawldbkyykgzjlzmwxydtlcexcdqcyegzxlxqrespoaongzijnyxdcqeeapytdfsuexbopqebnruagwcxvtkdtdvqbthwqqzsdfzytiywbyqvzekwubglwjabdzatunnwojgwpckqiscmkeawgmdoxmwciibupdvbfjdduarcpzjqvqfpktfclvhuzlvsxisipreybzjjfmrauledmdcswdmqidvduivgkroajqixloxxpiuxwiwortskbpqxnzqwcxatnypwlprentsvwfbuvhegaokfecxtalowhiqevfkgdoxjopufkfhowvubpubphweksucsasahihpyztfehmlmtdwbzqkuehwvdwoopkmyqgfkoobfhigfhqevkfrolzrnuepiruqqtfhdyagzwbccrurrgdrklmxwzedcagycwzhifjtuqscbprglzfakkxsboemogsmbetfngocgjmijfdjmrqxdmiahvvbfcfgidiokdmemqunraoxckzjbbwbstosqoxnybpsdvuibbdrnqgujmhjyblocqurlzyowutjhumcrzqtizdlwhhkiwvdrfbixivttlzrajpdoqggwxorolezzopylmjkzifbvaujbdsxnnbmuyhevrcswbnjbnsivfnoajezawfrlfzfezqhpzpjpdurbxkrhjcsjliennrdezlvpmxyezfouvjuetakaxuybvhufdvmuavamwbmkhoemgaurqhzdfhumqnbnzyvhywxpsmvvpvvpseissklhwjzsokhfovholozusdzsmkqikurtmjekkrhmvjbpfcntywbephxuacfrpmreanbdvrzexrdpwyrjyrckeyawrzmwckbdlggkdgiawliueprdwvimwziaiofouusfcadclruxtyouftoeflvhmlqxqqtojouyxbccxlymulupyqsvvxbnxlnrtqeukrkevbuqzissslvzydpfgrghnuyjondtaxegboqrpiktotxovntecrtckgrecaccmfkfluirodcghnrdrtmuhynmrsasdvqeivfstdhflfdspnmiwvymiobgmpyjouyzdykeyyvqkohmdbggfdqioepuldorkunkgmjfntitibeeubusfsqavpvydiaqixenvj
                 general_file:
                   type: string
                   description: ''
-                  example: hic
+                  example: laudantium
                 status_id:
                   type: string
                   description: ''
@@ -421,19 +159,19 @@ paths:
                 developer_id:
                   type: string
                   description: ''
-                  example: eos
+                  example: culpa
                 developer_info:
                   type: string
                   description: 'Must be at least 30 characters. Must not be greater than 5000 characters.'
-                  example: edscvcmesoqyzucohpqnheitszkpdwwalrbdeqttbwdvnizbwebsjtmgyxmljsqodyvecgfcqlqxlkrpznpnaoyxoqtxmfiruzyzahzpvcnqofnmxgitylfszopwetfgxblqjpmfxqhnbinzyuldxfrnuiqlnkxuuiefvqcbyehjmuzwsuhwactldpyycsgbfikcpggrsgcaugwxydnonghxhwqofbwxglusvpusfbgfcdrtgrsqhipqddfcjzhcjycudruwayeokkfogwxupiciughbvhizqzncogzdktjzfpgrfrvkcyjyeyhwuvvkymlqubgpfruezemhrcbeunxlqcsygbyxekhldpabqhfrotbsglqpjreighdjhntgqpwyvxhklwlwhuryhgyfdupknunmmtjrmbudthskezxrzaurltejfhwsqehvoarbyqketyiyijkeyniyuxxlddushgbhrhjcmyalhypurjxhvjjqsmbrvkmnrqlujorteujxvyhnkbirwrvqnuczwqmiaudydptyfnnafbmnkswfncsbaverrmlbmwxqknvidxqpdwjnffblkignqgtmgwrokanzbacogweddsfmqjjuhthtzrchyitmqdftfaujujvwrhgpihzawfieosqsoeybqoezugrrkfgeoplafmmoaajwzixlgwctpxohsmlkvpsdaktejnxgokytzhhdjewrjrodtvqzwwcacmrbaopxwgfnecoowmsqjoqhumywqacjllgkqrrkyrwqhnwoqokpdksnimedmqqecqqyyngwcnptvlsychygfxorhinrnjamxmmsggmxihbgmrtgghyurhmflhdrfzbdzypdmvvrlchoslkaqdvaflpffirouxmcjbdahshtcsekkhbtgptcxbyjpkhqtpidaixbxgsklwifntpbgfcjqoldyfxnsupgcbhgiuiumqktnbspkkctvlploeghmdixilbsunqjbqrlkgbyhfcpwmpvwlkwbwwrsdpvdgiqauyqsbyqxzlimsjyobtgxoczhaahbpbdptukfguywxxslqtquthmugejvjkrkzhggzyntqtqnnixoewpsaiornwjwnxsupcbhygmdvnocffwpxryjzlyoxgycbjubnkgxfvwcpisgxiaxrygffmrizbbtsrjeqpbdtcvhwcyrtoeozwroltpxvfdtukwuklievolgrpmkwzcrgvjqwsbxdpwmhwcyezkjklifjnzprbfuejlombgapwkkxciomsmcemnkmnovxrgsxaqzzjpkxhrssvqnswxnidqiavpktjuaoggimfehrypegthpcokuvcjeisczurpmpgjsuleezpqanitzxhrfcwizcgnwouqzuwwctmvqztocuwlazjhwprioufudqhkjwtylhpyhdyzqvjrrqfhywttqzjztsorratohwmhcqoksypwowtkexldqettnyodapmbrevoqaeubarhujbdixbqvzpzrjrfjnjlyxrtxotgzxostpowydyjtwojoneutazepmdqdelczoiybngaymihfevtfwkayijtifrncyydmuxzaigetpadhfrjgciwcqpqnbsxsvecerdvcugxnggaioptomdzkwtaflnofayktmakowhxovakdoexruybgkzeyrqefrshfmridbvajnqarccaijqddgtowtclyagxflmasizjaeyhnkbldbtoyfyfnldtwayfblwjjsdtrhkkxbectickxqghenyjveijpblbqadceolomvpsxxdhbsddmubpcsxcrxjfluiaklcpqlwyldhrrrrmmusgvgqahdvprbxivriwvbyvzslppcicugdiysthdneplbodwuxhpnqwbdvftgvvjvroqeqrtalqzfexneathtdmvjgesqbsywuxsiomtsrjtvrkblnnypsvtxlhgagzzijejccojvhoatyeixxxotocrelveqqoyejlbotkfweywkiohjqmdeoapwwiddybiuzbqdlqezkrtpevrrvfghzxxkumpscpzgpqqbkqibacbgwmcxdoyhtwzrashyxrqlbjbriumlutnxolwrotrhsteosedldvpmlzvvyxudlkiwelglzxhbwucqifzmyqndcetjxfjlcqaqzgizqgfnpvqtcviarxaviqipzzjuibzdvwrfvxwhrlhuokdrvneovwwovjhgtkmaakldpntsjobqqgyymcorjyslkllkvsgdigasrmbbhkgwcjtxpocuqsbepaxczszwumixictpmfmanwqyskpkzvjhzzfaiygnmpuowdzbmjuoaakbfoukjyitlawyvohrbsdtkxvptuwtkmnoxufhlzxtzhyydwotdkxlevlwxscbhdzutfjulmiylewakutyscfubegnwyyrwggalazzgixrtohmkmgalsgldfkdxavaowvqgikmtwohlrxtylxjrduqicvtrrifpxehttgdiqjiilxefmzjbrbovpmbgkrqpodykvvrnmtuiekjhrtujnrlvfproybyntztzcbyqqcpxsynewhmfgsizsgltxjsywncxusommwiaahsrcupryihgmluwshesxunaqftuqjulugoivaumfohfcvuefsuoincvfnrgfbsjupcwblhnpynfrlhggiiudzihjfwhtrknmqnjymzbtjtoglotuicsdldxtzezmdofirgbtqinxvukvrecmlruvhaujuldpkmaumbtkabywbcmryzgxaramhbkqhuecmgomlntfoicfdtdnlyawyhtxamfroumqmfyarvyytxmjxqeywhllqbbsvcurpatmnfzmmbnlyfjjofmcgjmfbpolowfttyebbcbudugszistpudbwsqtfjiwnxuttfbhxkfragustpukcfyfmwxtyoceyqhnrxjohlvmfteeywyebewqldkpeiwynjgnsakkrjpayryedzkurzbffysulsbghrmkyqbkwqxnbzihujpuqyfdrinamcsbbdopjztssglrimjpbststesfmxbmbmxydjgmjjyljhadnxzprcogqnrjuqodbvmqlodiasscwjfmttxdrrlfmqhcwwlykhbxemmwejolfoqqavmzfokpkjxjvkexakyiglulusdyllqpsfnkhsxauyemnyfyheeclidsvhlqeqwyhqrcjuanyirepmqnwhznvllnwziscmykljcqwjwgsymufvrjcuuruyamotpeyrfsdpwgbwseoqzmml
+                  example: ociknzqjzzlqleapxrtnhiiezvzfaeffixqdekfqoyxbvoalxlgqotyjzuabdvqqmxteeilvhyesapwisgxxsaeahidewtkfctsvmjlozghdijdvbezpjdc
                 start_date:
                   type: string
                   description: ''
-                  example: sunt
+                  example: et
                 dedline_date:
                   type: string
                   description: ''
-                  example: provident
+                  example: ducimus
                 finish_date:
                   type: string
                   description: ''
@@ -441,11 +179,11 @@ paths:
                 about_file:
                   type: string
                   description: ''
-                  example: voluptas
+                  example: velit
                 project_file:
                   type: string
                   description: ''
-                  example: ut
+                  example: vel
               required:
                 - project_name
                 - general_info
@@ -1298,7 +1036,7 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: gttswlidgrasbcggqbazqbqihneqlywceymqhtnbufchdvapwczspwknmoxtasrvfgaaaygknphrijrnugovaesavbcqcydnvhfndhkgzevdfkasbegwmqhnkovmdn
+                  example: jcmdqvkwxeuwsjmtolpdwghjtdgroceqfskhbywfmuuldykwhnxcmtueyxqlumobjpirnbldqppecheakxkwrpkkgyhwmpcykkxhylvsvbnkxmkntzwujjmbbwtjiotjnuifuatwmsfzuxgbt
               required:
                 - name
       security: []
@@ -1329,7 +1067,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the category.'
-        example: 20
+        example: 4
         required: true
         schema:
           type: integer
@@ -1360,11 +1098,413 @@ paths:
               schema:
                 type: object
                 example:
-                  data: []
+                  data:
+                    -
+                      id: 1
+                      name: 'Dr. Crystel Satterfield'
+                      start_work: null
+                      surname: null
+                      phone_number: '+13515731037'
+                      work_type: null
+                      about: 'Officia illo quaerat voluptatem quaerat. Ut neque odit assumenda porro id hic. Sint animi porro voluptas velit molestiae sunt iste. Aut nihil id nemo et facilis minus.'
+                      file: null
+                      work_status: null
+                    -
+                      id: 2
+                      name: 'Mack Rau'
+                      start_work: null
+                      surname: null
+                      phone_number: 239.804.1667
+                      work_type: null
+                      about: 'Eos aut eveniet animi quibusdam provident modi. Autem suscipit aliquam maiores fuga optio alias cum incidunt. Quam incidunt ipsam sit reiciendis. Qui enim impedit harum.'
+                      file: null
+                      work_status: null
+                    -
+                      id: 3
+                      name: 'Jody Kautzer Jr.'
+                      start_work: null
+                      surname: null
+                      phone_number: 352.872.5615
+                      work_type: null
+                      about: 'Iure nam enim molestias ipsa et sequi. Quidem architecto doloribus nihil.'
+                      file: null
+                      work_status: null
+                    -
+                      id: 4
+                      name: 'Prof. Walker Stanton'
+                      start_work: null
+                      surname: null
+                      phone_number: '(239) 213-2167'
+                      work_type: null
+                      about: 'Qui molestias molestiae fugit. Nihil consectetur ea nostrum quis. Maxime labore consequatur est dolorum adipisci ea dolor. Nihil recusandae fuga nesciunt architecto sint qui dicta.'
+                      file: null
+                      work_status: null
+                    -
+                      id: 5
+                      name: 'Adriel Schmitt'
+                      start_work: null
+                      surname: null
+                      phone_number: +1-283-705-5247
+                      work_type: null
+                      about: 'Hic autem sit voluptatum maxime. Sunt eligendi explicabo maxime ut nostrum numquam est ut. Ut dolor voluptatem recusandae aut aperiam.'
+                      file: null
+                      work_status: null
+                    -
+                      id: 6
+                      name: 'Mr. Kameron Swift'
+                      start_work: null
+                      surname: null
+                      phone_number: 689.722.5653
+                      work_type: null
+                      about: 'Accusamus quis laudantium reiciendis recusandae commodi perspiciatis ut. Facilis saepe quia culpa asperiores velit.'
+                      file: null
+                      work_status: null
+                    -
+                      id: 7
+                      name: 'Edward Kemmer'
+                      start_work: null
+                      surname: null
+                      phone_number: 361-789-5349
+                      work_type: null
+                      about: 'Tempore esse et omnis ut est nesciunt. Accusamus officiis veniam voluptas aspernatur aut placeat quibusdam. Et qui voluptatem libero a nihil minus quia nemo. Deserunt dolorem omnis aliquam aliquid.'
+                      file: null
+                      work_status: null
+                    -
+                      id: 8
+                      name: 'Mr. Kraig Tremblay'
+                      start_work: null
+                      surname: null
+                      phone_number: '(636) 497-0548'
+                      work_type: null
+                      about: 'Soluta eligendi asperiores minima voluptatem est voluptas. Consectetur at sed fugit voluptas harum unde eaque. Quisquam nihil in culpa pariatur mollitia harum. Nesciunt repellendus debitis et sint.'
+                      file: null
+                      work_status: null
+                    -
+                      id: 9
+                      name: 'Ms. Jaida Huels'
+                      start_work: null
+                      surname: null
+                      phone_number: '+1 (757) 294-5743'
+                      work_type: null
+                      about: 'Nulla quod quidem quod assumenda. Culpa voluptatem tempore occaecati et excepturi non est. Nihil maxime ullam dolore incidunt. Nobis quod iure quia cupiditate aut.'
+                      file: null
+                      work_status: null
+                    -
+                      id: 10
+                      name: 'Ms. Amara Cremin MD'
+                      start_work: null
+                      surname: null
+                      phone_number: +1.510.532.8198
+                      work_type: null
+                      about: 'Et neque doloremque tenetur. Laboriosam impedit ut voluptatum animi est voluptates. Molestiae libero quae odio ut totam expedita culpa. Atque amet est nobis saepe quo soluta consequatur.'
+                      file: null
+                      work_status: null
+                    -
+                      id: 11
+                      name: 'Jan Mosciski'
+                      start_work: null
+                      surname: null
+                      phone_number: 1-567-639-7862
+                      work_type: null
+                      about: 'Facere nam dolorum asperiores impedit nulla voluptatem quod molestiae. Veritatis nostrum ad veritatis rerum molestiae illo. Id eaque officiis consequatur nihil culpa error.'
+                      file: null
+                      work_status: null
+                    -
+                      id: 12
+                      name: 'Blanche Brekke'
+                      start_work: null
+                      surname: null
+                      phone_number: 1-220-301-2097
+                      work_type: null
+                      about: 'Aut pariatur qui excepturi repellat et repellendus. Numquam nobis voluptates dignissimos error. Voluptates quod temporibus debitis autem ad adipisci labore et. Nemo rerum odio totam architecto unde.'
+                      file: null
+                      work_status: null
+                    -
+                      id: 13
+                      name: 'Joelle Rowe Sr.'
+                      start_work: null
+                      surname: null
+                      phone_number: '+1 (804) 714-1241'
+                      work_type: null
+                      about: 'Quisquam ex aperiam aut aut atque aut. Aperiam delectus reprehenderit et aut. Vel dolores voluptatem odio rerum aperiam. Explicabo illo aperiam saepe debitis eos.'
+                      file: null
+                      work_status: null
+                    -
+                      id: 14
+                      name: 'Mona Sipes DVM'
+                      start_work: null
+                      surname: null
+                      phone_number: 831.340.1233
+                      work_type: null
+                      about: 'Excepturi non accusantium asperiores quidem provident enim. Necessitatibus deserunt voluptates sit hic. Natus qui voluptatum rem illo iusto debitis dolor.'
+                      file: null
+                      work_status: null
+                    -
+                      id: 15
+                      name: 'Oda Blick'
+                      start_work: null
+                      surname: null
+                      phone_number: '(346) 405-1659'
+                      work_type: null
+                      about: 'Modi maxime cumque vero assumenda. Fuga suscipit omnis deserunt nam mollitia nulla. Aut expedita quia repellat ut assumenda doloribus voluptatum. Et molestiae dolorem alias necessitatibus.'
+                      file: null
+                      work_status: null
+                    -
+                      id: 16
+                      name: 'Miss Alexane Carter III'
+                      start_work: null
+                      surname: null
+                      phone_number: 774.792.1226
+                      work_type: null
+                      about: 'A quis commodi nam adipisci qui est. Est sit eum eum quam. Consectetur cum ab consequatur ab exercitationem. Magni autem a vero. Dolor dolores doloremque accusamus ipsum adipisci tempora.'
+                      file: null
+                      work_status: null
+                    -
+                      id: 17
+                      name: 'Douglas Russel II'
+                      start_work: null
+                      surname: null
+                      phone_number: '(551) 690-7980'
+                      work_type: null
+                      about: 'Dolores placeat debitis iure iure cumque ut iste. Et sequi nesciunt ipsa minima qui. Aspernatur voluptate est distinctio laborum deleniti.'
+                      file: null
+                      work_status: null
+                    -
+                      id: 18
+                      name: 'Ms. Adella Romaguera'
+                      start_work: null
+                      surname: null
+                      phone_number: 509-536-3568
+                      work_type: null
+                      about: 'Qui dolorem qui repellat blanditiis neque repellat. Mollitia et laboriosam illum veritatis tempora atque officia. Qui suscipit quia sit vel rerum eaque. Aut in et numquam illo sit est quidem.'
+                      file: null
+                      work_status: null
+                    -
+                      id: 19
+                      name: 'Lavon Collier'
+                      start_work: null
+                      surname: null
+                      phone_number: 563.372.7225
+                      work_type: null
+                      about: 'Omnis cumque ipsam quidem quibusdam. Doloribus illo tempore quod impedit illum amet. Quia veniam sequi voluptas eaque.'
+                      file: null
+                      work_status: null
+                    -
+                      id: 20
+                      name: 'Kyler Parker III'
+                      start_work: null
+                      surname: null
+                      phone_number: 1-843-374-4086
+                      work_type: null
+                      about: 'Eum blanditiis facere voluptates autem recusandae voluptatibus deserunt. Aut labore amet sapiente impedit voluptatem magni dolorum. Doloribus ducimus alias praesentium voluptatem cumque.'
+                      file: null
+                      work_status: null
                 properties:
                   data:
                     type: array
-                    example: []
+                    example:
+                      -
+                        id: 1
+                        name: 'Dr. Crystel Satterfield'
+                        start_work: null
+                        surname: null
+                        phone_number: '+13515731037'
+                        work_type: null
+                        about: 'Officia illo quaerat voluptatem quaerat. Ut neque odit assumenda porro id hic. Sint animi porro voluptas velit molestiae sunt iste. Aut nihil id nemo et facilis minus.'
+                        file: null
+                        work_status: null
+                      -
+                        id: 2
+                        name: 'Mack Rau'
+                        start_work: null
+                        surname: null
+                        phone_number: 239.804.1667
+                        work_type: null
+                        about: 'Eos aut eveniet animi quibusdam provident modi. Autem suscipit aliquam maiores fuga optio alias cum incidunt. Quam incidunt ipsam sit reiciendis. Qui enim impedit harum.'
+                        file: null
+                        work_status: null
+                      -
+                        id: 3
+                        name: 'Jody Kautzer Jr.'
+                        start_work: null
+                        surname: null
+                        phone_number: 352.872.5615
+                        work_type: null
+                        about: 'Iure nam enim molestias ipsa et sequi. Quidem architecto doloribus nihil.'
+                        file: null
+                        work_status: null
+                      -
+                        id: 4
+                        name: 'Prof. Walker Stanton'
+                        start_work: null
+                        surname: null
+                        phone_number: '(239) 213-2167'
+                        work_type: null
+                        about: 'Qui molestias molestiae fugit. Nihil consectetur ea nostrum quis. Maxime labore consequatur est dolorum adipisci ea dolor. Nihil recusandae fuga nesciunt architecto sint qui dicta.'
+                        file: null
+                        work_status: null
+                      -
+                        id: 5
+                        name: 'Adriel Schmitt'
+                        start_work: null
+                        surname: null
+                        phone_number: +1-283-705-5247
+                        work_type: null
+                        about: 'Hic autem sit voluptatum maxime. Sunt eligendi explicabo maxime ut nostrum numquam est ut. Ut dolor voluptatem recusandae aut aperiam.'
+                        file: null
+                        work_status: null
+                      -
+                        id: 6
+                        name: 'Mr. Kameron Swift'
+                        start_work: null
+                        surname: null
+                        phone_number: 689.722.5653
+                        work_type: null
+                        about: 'Accusamus quis laudantium reiciendis recusandae commodi perspiciatis ut. Facilis saepe quia culpa asperiores velit.'
+                        file: null
+                        work_status: null
+                      -
+                        id: 7
+                        name: 'Edward Kemmer'
+                        start_work: null
+                        surname: null
+                        phone_number: 361-789-5349
+                        work_type: null
+                        about: 'Tempore esse et omnis ut est nesciunt. Accusamus officiis veniam voluptas aspernatur aut placeat quibusdam. Et qui voluptatem libero a nihil minus quia nemo. Deserunt dolorem omnis aliquam aliquid.'
+                        file: null
+                        work_status: null
+                      -
+                        id: 8
+                        name: 'Mr. Kraig Tremblay'
+                        start_work: null
+                        surname: null
+                        phone_number: '(636) 497-0548'
+                        work_type: null
+                        about: 'Soluta eligendi asperiores minima voluptatem est voluptas. Consectetur at sed fugit voluptas harum unde eaque. Quisquam nihil in culpa pariatur mollitia harum. Nesciunt repellendus debitis et sint.'
+                        file: null
+                        work_status: null
+                      -
+                        id: 9
+                        name: 'Ms. Jaida Huels'
+                        start_work: null
+                        surname: null
+                        phone_number: '+1 (757) 294-5743'
+                        work_type: null
+                        about: 'Nulla quod quidem quod assumenda. Culpa voluptatem tempore occaecati et excepturi non est. Nihil maxime ullam dolore incidunt. Nobis quod iure quia cupiditate aut.'
+                        file: null
+                        work_status: null
+                      -
+                        id: 10
+                        name: 'Ms. Amara Cremin MD'
+                        start_work: null
+                        surname: null
+                        phone_number: +1.510.532.8198
+                        work_type: null
+                        about: 'Et neque doloremque tenetur. Laboriosam impedit ut voluptatum animi est voluptates. Molestiae libero quae odio ut totam expedita culpa. Atque amet est nobis saepe quo soluta consequatur.'
+                        file: null
+                        work_status: null
+                      -
+                        id: 11
+                        name: 'Jan Mosciski'
+                        start_work: null
+                        surname: null
+                        phone_number: 1-567-639-7862
+                        work_type: null
+                        about: 'Facere nam dolorum asperiores impedit nulla voluptatem quod molestiae. Veritatis nostrum ad veritatis rerum molestiae illo. Id eaque officiis consequatur nihil culpa error.'
+                        file: null
+                        work_status: null
+                      -
+                        id: 12
+                        name: 'Blanche Brekke'
+                        start_work: null
+                        surname: null
+                        phone_number: 1-220-301-2097
+                        work_type: null
+                        about: 'Aut pariatur qui excepturi repellat et repellendus. Numquam nobis voluptates dignissimos error. Voluptates quod temporibus debitis autem ad adipisci labore et. Nemo rerum odio totam architecto unde.'
+                        file: null
+                        work_status: null
+                      -
+                        id: 13
+                        name: 'Joelle Rowe Sr.'
+                        start_work: null
+                        surname: null
+                        phone_number: '+1 (804) 714-1241'
+                        work_type: null
+                        about: 'Quisquam ex aperiam aut aut atque aut. Aperiam delectus reprehenderit et aut. Vel dolores voluptatem odio rerum aperiam. Explicabo illo aperiam saepe debitis eos.'
+                        file: null
+                        work_status: null
+                      -
+                        id: 14
+                        name: 'Mona Sipes DVM'
+                        start_work: null
+                        surname: null
+                        phone_number: 831.340.1233
+                        work_type: null
+                        about: 'Excepturi non accusantium asperiores quidem provident enim. Necessitatibus deserunt voluptates sit hic. Natus qui voluptatum rem illo iusto debitis dolor.'
+                        file: null
+                        work_status: null
+                      -
+                        id: 15
+                        name: 'Oda Blick'
+                        start_work: null
+                        surname: null
+                        phone_number: '(346) 405-1659'
+                        work_type: null
+                        about: 'Modi maxime cumque vero assumenda. Fuga suscipit omnis deserunt nam mollitia nulla. Aut expedita quia repellat ut assumenda doloribus voluptatum. Et molestiae dolorem alias necessitatibus.'
+                        file: null
+                        work_status: null
+                      -
+                        id: 16
+                        name: 'Miss Alexane Carter III'
+                        start_work: null
+                        surname: null
+                        phone_number: 774.792.1226
+                        work_type: null
+                        about: 'A quis commodi nam adipisci qui est. Est sit eum eum quam. Consectetur cum ab consequatur ab exercitationem. Magni autem a vero. Dolor dolores doloremque accusamus ipsum adipisci tempora.'
+                        file: null
+                        work_status: null
+                      -
+                        id: 17
+                        name: 'Douglas Russel II'
+                        start_work: null
+                        surname: null
+                        phone_number: '(551) 690-7980'
+                        work_type: null
+                        about: 'Dolores placeat debitis iure iure cumque ut iste. Et sequi nesciunt ipsa minima qui. Aspernatur voluptate est distinctio laborum deleniti.'
+                        file: null
+                        work_status: null
+                      -
+                        id: 18
+                        name: 'Ms. Adella Romaguera'
+                        start_work: null
+                        surname: null
+                        phone_number: 509-536-3568
+                        work_type: null
+                        about: 'Qui dolorem qui repellat blanditiis neque repellat. Mollitia et laboriosam illum veritatis tempora atque officia. Qui suscipit quia sit vel rerum eaque. Aut in et numquam illo sit est quidem.'
+                        file: null
+                        work_status: null
+                      -
+                        id: 19
+                        name: 'Lavon Collier'
+                        start_work: null
+                        surname: null
+                        phone_number: 563.372.7225
+                        work_type: null
+                        about: 'Omnis cumque ipsam quidem quibusdam. Doloribus illo tempore quod impedit illum amet. Quia veniam sequi voluptas eaque.'
+                        file: null
+                        work_status: null
+                      -
+                        id: 20
+                        name: 'Kyler Parker III'
+                        start_work: null
+                        surname: null
+                        phone_number: 1-843-374-4086
+                        work_type: null
+                        about: 'Eum blanditiis facere voluptates autem recusandae voluptatibus deserunt. Aut labore amet sapiente impedit voluptatem magni dolorum. Doloribus ducimus alias praesentium voluptatem cumque.'
+                        file: null
+                        work_status: null
+                    items:
+                      type: object
       tags:
         - Endpoints
       security: []
@@ -1399,44 +1539,44 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: xgobocirokcyqiyhxoiuabqvsuaffcxirmhnfymxkbqyfqlubreenmdqyebahfoprkksgljkhzocfelemcvuuqzmzedfaayxluiylvecockfnmdzfmpesbfjxwoxrsrodscozllxtwrupytxzfkiflhchi
-                start_work:
+                  example: pezctvmyjsbmhjotnbjiecpjzmgylpopiwouzlqauavyjphykelwdkqekucqsxcmkocioiutykdcadhdkcptfukpgfjcfyaqqjdkxrtkenxjwqsvalrgxqnjkevmuswfmo
+                passport:
                   type: string
-                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: ivakbcghhofpiobhyursiymjhpkbijuzjinfeuzuidhizcqoevzhhimsdoaluaymsrtrvhdgmtxppxqmnhmuizblcwceyfloqsjutfapqczacdxluovdlsguugkjedlgqbdueiohzpcfgcs
-                surname:
+                  description: ''
+                  example: reiciendis
+                family:
                   type: string
-                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: wkietuolpugqsfxbxnkpgstcrdeoyyunjsqujmggzrrfltzoksapqzgizysoblibhuaetoavkwkoffqalzintglbeaqmzbyghehivaghltoiiixx
+                  description: ''
+                  example: facere
+                developer_photo:
+                  type: string
+                  description: ''
+                  example: deleniti
+                born_date:
+                  type: string
+                  description: ''
+                  example: voluptatem
                 phone_number:
                   type: string
-                  description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
-                  example: qmindpynyc
-                work_type:
+                  description: ''
+                  example: architecto
+                work_type_id:
                   type: string
-                  description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: ytsezinujzumimsebsguabbnlxwolzktsjsuunehgkkerxhqqpeuyyzuonxexooogxqclnvdfnfumzednbosscjfqqttegmwwvadcpzjogqcrhodlsqbglymsufynhrbudl
+                  description: ''
+                  example: ut
                 about:
                   type: string
-                  description: 'Must be at least 50 characters.'
-                  example: uridhcnfasdelorwrg
-                file:
-                  type: string
-                  description: 'Must be at least 5 characters. Must not be greater than 200 characters.'
-                  example: ovyaslnkojomjflsnkkconezxbrwcynubfqmszscwbwcqjdhivcrlsmpnoozooygqlpksmpqpgrvyuedljwesfptndwm
-                workstatus:
-                  type: string
-                  description: 'Must be at least 5 characters. Must not be greater than 200 characters.'
-                  example: cnlbirjfd
+                  description: ''
+                  example: vitae
               required:
                 - name
-                - start_work
-                - surname
+                - passport
+                - family
+                - developer_photo
+                - born_date
                 - phone_number
-                - work_type
+                - work_type_id
                 - about
-                - file
-                - workstatus
       security: []
   '/api/developers/{id}':
     get:
@@ -1458,792 +1598,36 @@ paths:
           schema:
             type: string
       responses:
-        404:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: 'No query results for model [App\Models\Developer] 1'
-                  exception: Symfony\Component\HttpKernel\Exception\NotFoundHttpException
-                  file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Exceptions\Handler.php'
-                  line: 385
-                  trace:
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Exceptions\Handler.php'
-                      line: 332
-                      function: prepareException
-                      class: Illuminate\Foundation\Exceptions\Handler
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\nunomaduro\collision\src\Adapters\Laravel\ExceptionHandler.php'
-                      line: 54
-                      function: render
-                      class: Illuminate\Foundation\Exceptions\Handler
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Routing\Pipeline.php'
-                      line: 51
-                      function: render
-                      class: NunoMaduro\Collision\Adapters\Laravel\ExceptionHandler
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 172
-                      function: handleException
-                      class: Illuminate\Routing\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
-                      line: 127
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
-                      line: 103
-                      function: handleRequest
-                      class: Illuminate\Routing\Middleware\ThrottleRequests
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
-                      line: 55
-                      function: handleRequestUsingNamedLimiter
-                      class: Illuminate\Routing\Middleware\ThrottleRequests
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 167
-                      function: handle
-                      class: Illuminate\Routing\Middleware\ThrottleRequests
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\sanctum\src\Http\Middleware\EnsureFrontendRequestsAreStateful.php'
-                      line: 33
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 128
-                      function: 'Laravel\Sanctum\Http\Middleware\{closure}'
-                      class: Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 103
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\sanctum\src\Http\Middleware\EnsureFrontendRequestsAreStateful.php'
-                      line: 34
-                      function: then
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 167
-                      function: handle
-                      class: Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 103
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                      line: 723
-                      function: then
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                      line: 698
-                      function: runRouteWithinStack
-                      class: Illuminate\Routing\Router
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                      line: 662
-                      function: runRoute
-                      class: Illuminate\Routing\Router
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                      line: 651
-                      function: dispatchToRoute
-                      class: Illuminate\Routing\Router
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
-                      line: 167
-                      function: dispatch
-                      class: Illuminate\Routing\Router
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 128
-                      function: 'Illuminate\Foundation\Http\{closure}'
-                      class: Illuminate\Foundation\Http\Kernel
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
-                      line: 21
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php'
-                      line: 31
-                      function: handle
-                      class: Illuminate\Foundation\Http\Middleware\TransformsRequest
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 167
-                      function: handle
-                      class: Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
-                      line: 21
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php'
-                      line: 40
-                      function: handle
-                      class: Illuminate\Foundation\Http\Middleware\TransformsRequest
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 167
-                      function: handle
-                      class: Illuminate\Foundation\Http\Middleware\TrimStrings
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ValidatePostSize.php'
-                      line: 27
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 167
-                      function: handle
-                      class: Illuminate\Foundation\Http\Middleware\ValidatePostSize
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php'
-                      line: 86
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 167
-                      function: handle
-                      class: Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\fruitcake\laravel-cors\src\HandleCors.php'
-                      line: 52
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 167
-                      function: handle
-                      class: Fruitcake\Cors\HandleCors
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php'
-                      line: 39
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 167
-                      function: handle
-                      class: Illuminate\Http\Middleware\TrustProxies
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 103
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
-                      line: 142
-                      function: then
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
-                      line: 111
-                      function: sendRequestThroughRouter
-                      class: Illuminate\Foundation\Http\Kernel
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                      line: 299
-                      function: handle
-                      class: Illuminate\Foundation\Http\Kernel
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                      line: 287
-                      function: callLaravelOrLumenRoute
-                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                      line: 89
-                      function: makeApiCall
-                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                      line: 45
-                      function: makeResponseCall
-                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                      line: 35
-                      function: makeResponseCallIfConditionsPass
-                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
-                      line: 222
-                      function: __invoke
-                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
-                      line: 179
-                      function: iterateThroughStrategies
-                      class: Knuckles\Scribe\Extracting\Extractor
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
-                      line: 116
-                      function: fetchResponses
-                      class: Knuckles\Scribe\Extracting\Extractor
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
-                      line: 117
-                      function: processRoute
-                      class: Knuckles\Scribe\Extracting\Extractor
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
-                      line: 75
-                      function: extractEndpointsInfoFromLaravelApp
-                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
-                      line: 51
-                      function: extractEndpointsInfoAndWriteToDisk
-                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\Commands\GenerateDocumentation.php'
-                      line: 48
-                      function: get
-                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
-                      line: 36
-                      function: handle
-                      class: Knuckles\Scribe\Commands\GenerateDocumentation
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Container\Util.php'
-                      line: 40
-                      function: 'Illuminate\Container\{closure}'
-                      class: Illuminate\Container\BoundMethod
-                      type: '::'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
-                      line: 93
-                      function: unwrapIfClosure
-                      class: Illuminate\Container\Util
-                      type: '::'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
-                      line: 37
-                      function: callBoundMethod
-                      class: Illuminate\Container\BoundMethod
-                      type: '::'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Container\Container.php'
-                      line: 653
-                      function: call
-                      class: Illuminate\Container\BoundMethod
-                      type: '::'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Console\Command.php'
-                      line: 136
-                      function: call
-                      class: Illuminate\Container\Container
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\symfony\console\Command\Command.php'
-                      line: 298
-                      function: execute
-                      class: Illuminate\Console\Command
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Console\Command.php'
-                      line: 121
-                      function: run
-                      class: Symfony\Component\Console\Command\Command
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\symfony\console\Application.php'
-                      line: 1015
-                      function: run
-                      class: Illuminate\Console\Command
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\symfony\console\Application.php'
-                      line: 299
-                      function: doRunCommand
-                      class: Symfony\Component\Console\Application
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\symfony\console\Application.php'
-                      line: 171
-                      function: doRun
-                      class: Symfony\Component\Console\Application
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Console\Application.php'
-                      line: 94
-                      function: run
-                      class: Symfony\Component\Console\Application
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php'
-                      line: 129
-                      function: run
-                      class: Illuminate\Console\Application
-                      type: '->'
-                    -
-                      file: 'C:\OpenServer\domains\ImsoftCrm\artisan'
-                      line: 37
-                      function: handle
-                      class: Illuminate\Foundation\Console\Kernel
-                      type: '->'
+                  data:
+                    id: 1
+                    name: 'Dr. Crystel Satterfield'
+                    start_work: null
+                    surname: null
+                    phone_number: '+13515731037'
+                    work_type: null
+                    about: 'Officia illo quaerat voluptatem quaerat. Ut neque odit assumenda porro id hic. Sint animi porro voluptas velit molestiae sunt iste. Aut nihil id nemo et facilis minus.'
+                    file: null
+                    work_status: null
                 properties:
-                  message:
-                    type: string
-                    example: 'No query results for model [App\Models\Developer] 1'
-                  exception:
-                    type: string
-                    example: Symfony\Component\HttpKernel\Exception\NotFoundHttpException
-                  file:
-                    type: string
-                    example: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Exceptions\Handler.php'
-                  line:
-                    type: integer
-                    example: 385
-                  trace:
-                    type: array
+                  data:
+                    type: object
                     example:
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Exceptions\Handler.php'
-                        line: 332
-                        function: prepareException
-                        class: Illuminate\Foundation\Exceptions\Handler
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\nunomaduro\collision\src\Adapters\Laravel\ExceptionHandler.php'
-                        line: 54
-                        function: render
-                        class: Illuminate\Foundation\Exceptions\Handler
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Routing\Pipeline.php'
-                        line: 51
-                        function: render
-                        class: NunoMaduro\Collision\Adapters\Laravel\ExceptionHandler
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 172
-                        function: handleException
-                        class: Illuminate\Routing\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
-                        line: 127
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
-                        line: 103
-                        function: handleRequest
-                        class: Illuminate\Routing\Middleware\ThrottleRequests
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
-                        line: 55
-                        function: handleRequestUsingNamedLimiter
-                        class: Illuminate\Routing\Middleware\ThrottleRequests
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 167
-                        function: handle
-                        class: Illuminate\Routing\Middleware\ThrottleRequests
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\sanctum\src\Http\Middleware\EnsureFrontendRequestsAreStateful.php'
-                        line: 33
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 128
-                        function: 'Laravel\Sanctum\Http\Middleware\{closure}'
-                        class: Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 103
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\sanctum\src\Http\Middleware\EnsureFrontendRequestsAreStateful.php'
-                        line: 34
-                        function: then
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 167
-                        function: handle
-                        class: Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 103
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                        line: 723
-                        function: then
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                        line: 698
-                        function: runRouteWithinStack
-                        class: Illuminate\Routing\Router
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                        line: 662
-                        function: runRoute
-                        class: Illuminate\Routing\Router
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                        line: 651
-                        function: dispatchToRoute
-                        class: Illuminate\Routing\Router
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
-                        line: 167
-                        function: dispatch
-                        class: Illuminate\Routing\Router
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 128
-                        function: 'Illuminate\Foundation\Http\{closure}'
-                        class: Illuminate\Foundation\Http\Kernel
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
-                        line: 21
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php'
-                        line: 31
-                        function: handle
-                        class: Illuminate\Foundation\Http\Middleware\TransformsRequest
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 167
-                        function: handle
-                        class: Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
-                        line: 21
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php'
-                        line: 40
-                        function: handle
-                        class: Illuminate\Foundation\Http\Middleware\TransformsRequest
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 167
-                        function: handle
-                        class: Illuminate\Foundation\Http\Middleware\TrimStrings
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ValidatePostSize.php'
-                        line: 27
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 167
-                        function: handle
-                        class: Illuminate\Foundation\Http\Middleware\ValidatePostSize
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php'
-                        line: 86
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 167
-                        function: handle
-                        class: Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\fruitcake\laravel-cors\src\HandleCors.php'
-                        line: 52
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 167
-                        function: handle
-                        class: Fruitcake\Cors\HandleCors
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php'
-                        line: 39
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 167
-                        function: handle
-                        class: Illuminate\Http\Middleware\TrustProxies
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 103
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
-                        line: 142
-                        function: then
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
-                        line: 111
-                        function: sendRequestThroughRouter
-                        class: Illuminate\Foundation\Http\Kernel
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                        line: 299
-                        function: handle
-                        class: Illuminate\Foundation\Http\Kernel
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                        line: 287
-                        function: callLaravelOrLumenRoute
-                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                        line: 89
-                        function: makeApiCall
-                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                        line: 45
-                        function: makeResponseCall
-                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                        line: 35
-                        function: makeResponseCallIfConditionsPass
-                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
-                        line: 222
-                        function: __invoke
-                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
-                        line: 179
-                        function: iterateThroughStrategies
-                        class: Knuckles\Scribe\Extracting\Extractor
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
-                        line: 116
-                        function: fetchResponses
-                        class: Knuckles\Scribe\Extracting\Extractor
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
-                        line: 117
-                        function: processRoute
-                        class: Knuckles\Scribe\Extracting\Extractor
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
-                        line: 75
-                        function: extractEndpointsInfoFromLaravelApp
-                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
-                        line: 51
-                        function: extractEndpointsInfoAndWriteToDisk
-                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\knuckleswtf\scribe\src\Commands\GenerateDocumentation.php'
-                        line: 48
-                        function: get
-                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
-                        line: 36
-                        function: handle
-                        class: Knuckles\Scribe\Commands\GenerateDocumentation
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Container\Util.php'
-                        line: 40
-                        function: 'Illuminate\Container\{closure}'
-                        class: Illuminate\Container\BoundMethod
-                        type: '::'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
-                        line: 93
-                        function: unwrapIfClosure
-                        class: Illuminate\Container\Util
-                        type: '::'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
-                        line: 37
-                        function: callBoundMethod
-                        class: Illuminate\Container\BoundMethod
-                        type: '::'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Container\Container.php'
-                        line: 653
-                        function: call
-                        class: Illuminate\Container\BoundMethod
-                        type: '::'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Console\Command.php'
-                        line: 136
-                        function: call
-                        class: Illuminate\Container\Container
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\symfony\console\Command\Command.php'
-                        line: 298
-                        function: execute
-                        class: Illuminate\Console\Command
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Console\Command.php'
-                        line: 121
-                        function: run
-                        class: Symfony\Component\Console\Command\Command
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\symfony\console\Application.php'
-                        line: 1015
-                        function: run
-                        class: Illuminate\Console\Command
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\symfony\console\Application.php'
-                        line: 299
-                        function: doRunCommand
-                        class: Symfony\Component\Console\Application
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\symfony\console\Application.php'
-                        line: 171
-                        function: doRun
-                        class: Symfony\Component\Console\Application
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Console\Application.php'
-                        line: 94
-                        function: run
-                        class: Symfony\Component\Console\Application
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php'
-                        line: 129
-                        function: run
-                        class: Illuminate\Console\Application
-                        type: '->'
-                      -
-                        file: 'C:\OpenServer\domains\ImsoftCrm\artisan'
-                        line: 37
-                        function: handle
-                        class: Illuminate\Foundation\Console\Kernel
-                        type: '->'
-                    items:
-                      type: object
+                      id: 1
+                      name: 'Dr. Crystel Satterfield'
+                      start_work: null
+                      surname: null
+                      phone_number: '+13515731037'
+                      work_type: null
+                      about: 'Officia illo quaerat voluptatem quaerat. Ut neque odit assumenda porro id hic. Sint animi porro voluptas velit molestiae sunt iste. Aut nihil id nemo et facilis minus.'
+                      file: null
+                      work_status: null
       tags:
         - Endpoints
       security: []
@@ -2278,35 +1662,35 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: nuknjiidjcbsfnqcehguslmwmczuruzhdzwhunfuoccwvbjdabgupbcdjudukjwajesqujbfwugkksrmibykuendrnboctknhzcjbfnpnggalujvrvs
+                  example: prr
                 start_work:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: cckckhquhifyvxeaacfcrjdnkfjbufmlohvwoseusnlbtywqoltaniblobdnvprejhkkjmuquvhvrjuuuoaakfixjavzjhvgyctmitqznoqzquczegxqbpjvkglhbmpfzhvrezjenirnjuibktkcvxv
+                  example: uddatqfqgqeckpogmznmdawfluclslqqdviwgsfmeyoeutcmobezaaerrtztollophmcxtunuykouikuovciwnmxkodrmxqzszlpcppimuukbkwvzdcuohasiqiwyhvefwhjpceggpgsbrhfbdbwludofz
                 surname:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: vkxobimkcpwpbdsaygfseykjrveubwsnjxdhlrxzjnwmmvmlsfozmfkmrsjjjhuqrfakdapqpyozfoxfiqmmwdieonwzwv
+                  example: qwjzipokdxjzrrhkezerbdjhzjyyzfldozeznzablvwncpwpcvnaqmmftcjcvaahzagdihiykxsvlobsrxxpnnedejozfnenxxa
                 phone_number:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
-                  example: wjxpejjcesqxzxirm
+                  example: nexfspg
                 work_type:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: imbvmftvoxwofgkzkzzubvcdpmjcjulphalbguxwtonvdaxuezpttrthagoxsgmpgdkymjgkaifgh
+                  example: euulmxpejdvkyjwgisfwkrcdhrisddtwnjlkyczdjuftqvfrklyxigsbfhtcwkzkihprhungantjeayjvzzufctpnasfxdqymnedezarnufzelivqpbhnygjealmbhuqeadhnpwlmzvrvzvjmmzivljzxwotusnfnigocvfoletlkjdtnloihog
                 about:
                   type: string
                   description: 'Must be at least 50 characters.'
-                  example: h
+                  example: ryycuuwpgbhiwhbgmvozdcxjbgwjxrhmzdsibhujct
                 file:
                   type: string
                   description: 'Must be at least 5 characters. Must not be greater than 200 characters.'
-                  example: hrlklpszbeppnspjjlcanspcfbgkzpzmaooycdprphoworqmktxcyrdoeqmjeayovnjwpinegnmqlwhjkejmfwejdkusmelrljciihingrfmwmxvsypwbnryqxusmyjuuxmdovoznvgvsdxtturpsqxeikbl
+                  example: ofkegpaxnnzvykdiwayotzlvjloxakzrfidvnvvozsuegyyohgjfepsfnvokjqyzypdxadrqioqkxyuiwsjypztpluajwazjxsnv
                 workstatus_id:
                   type: string
                   description: 'Must be at least 5 characters. Must not be greater than 200 characters.'
-                  example: oekhpulzeylqzhxopwjrzpvvduauyukxhekhtokcekbclbodcyelzhinwyfwowboskwivpojwueuyradtavvradutwdiwgayjewunmpcanlplvugxrgavapnhtexseszipnxkydijfqtyigcipsnaqyfcyiqaqzlrmqzqnrvihbwslorkyhewdfnyfzva
+                  example: kbillujszwlnxytsonhclgfsmulffoeiyqkqcuuzvpnqcnojdrgvexdnikvrfekefwuzibvevjhurixprpyzkieofvcfwjhpfislbuanopztiuzdpjpnflycgvdtkogtfiyepretutifpg
               required:
                 - name
                 - start_work
@@ -2344,7 +1728,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the developer.'
-        example: 11
+        example: 1
         required: true
         schema:
           type: integer
@@ -2414,7 +1798,7 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 30 characters.'
-                  example: rclnzqha
+                  example: wnupxqfvdnabjdowtr
               required:
                 - name
       security: []
@@ -3258,7 +2642,7 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 30 characters.'
-                  example: mwhgvhgqrfbyqactndmntk
+                  example: hxcqecpdp
               required:
                 - name
       security: []
@@ -3289,7 +2673,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the state.'
-        example: 2
+        example: 4
         required: true
         schema:
           type: integer
@@ -3359,11 +2743,11 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: ''
+                  example: zkonmwhhbksymeniufuvxrqcjqolyscabvxutbtuwd
                 region_id:
                   type: string
                   description: ''
-                  example: dicta
+                  example: blanditiis
                 0:
                   type: string
                   description: ''
@@ -4212,11 +3596,11 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: msaj
+                  example: jobccyi
                 region_id:
                   type: string
                   description: ''
-                  example: dolorum
+                  example: sint
               required:
                 - name
                 - region_id
@@ -4248,7 +3632,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the address.'
-        example: 13
+        example: 5
         required: true
         schema:
           type: integer
@@ -4318,7 +3702,7 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least  characters. Must not be greater than 225 characters.'
-                  example: flxdfwpbqm
+                  example: yhbmjip
               required:
                 - name
       security: []
@@ -5162,7 +4546,7 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least  characters. Must not be greater than 225 characters.'
-                  example: hqfnqifvyndhzbozasnyvkwiwpaheprfhwwiqfoksviqbercymbjcyvvrhlslennjgcxkhvvpckhcfovcuwqqekbzhhrftzyphmoufskujcuoakgifmnpxhrqultkwbvqdxoxltzqytpbfpppsutpdqxelqljorhkdwukzdtpewsqfabvcmfxlulqjbcrcvfsnlqo
+                  example: kbahvtlyjzkutcrhpbylfeptenqhsgvivchxdsprxyseagteqwamhvyosfobekmmnuwhdsjmdudaaznuswehzonmvbyqpjiqaemvtgibupomnt
               required:
                 - name
       security: []
@@ -5193,7 +4577,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the operator.'
-        example: 13
+        example: 19
         required: true
         schema:
           type: integer
@@ -5263,11 +4647,11 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 100 characters.'
-                  example: xfqyhbjpsmpwdfsxkdtxcwqdyhwbczwtpf
+                  example: w
                 state_id:
                   type: string
                   description: ''
-                  example: officia
+                  example: quas
               required:
                 - name
                 - state_id
@@ -6112,11 +5496,11 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: pxmvrgrdfdqefdulmpucnkusnzxacsxvqdvflfhepnxroxgpmeaclcvwebymundcyjnslvbvmazjlsobgbdexzejhmsmkjsfovgqzcbijxndgndkpgatvpsrsezrnucdscdevwzfyafdkyorkmumgzousksfsyisoudi
+                  example: ufmjwnvexschmmocxzpfzuzttxooqeejblukxbizttptmzymyxaimxjh
                 state_id:
                   type: string
                   description: ''
-                  example: sit
+                  example: et
               required:
                 - name
                 - state_id
@@ -6213,11 +5597,11 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: lqncuvhogparobhvqspwwgakzbeudvowazwyvxefuwbpqwoyltxmmmkhlcvegpyalnahgbctttaknedwlhtdztgctmodzcnrlozttm
+                  example: ianwmzdeqhrkezjnuaevkqxwgquqsmvdynwqkvnwykaxodjetxctmfuhifovhdkhdpyartgeezlmgnqcetmnxmcsvztvyqronommxreurhsxsbmvwzznbunafdntyxmjojozdzafkzgewjftweulsvpewrgzyereojiqsxdfxdfbdwqdlfgrxjhppvvrbbj
                 category_id:
                   type: string
                   description: ''
-                  example: sequi
+                  example: velit
               required:
                 - name
                 - category_id
@@ -7062,11 +6446,11 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: wwjozdutohtelhvbozkpxmtpjdyt
+                  example: nipiyrmlvrreovwachskzgiikzdadcbmqnmzsexhcmjngiersjmnchyfspzxcuxfvacocsiij
                 category_id:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: eikkanrkzjvqdafwxcnhaysybfwpufkkqkuixnksnffbepfgsfnrynopwfpvmrutyzukxjtlooixffucevgyzhsuafdeeihjbbupiggszqasjkwxysjhjradwrjjwmbsgkshddmxuongfgcmcxiyldvyairbvqlystnojrwtidijsyhycqpuspyz
+                  example: ntjdxcpsxiesgiabdtvnrpbejmleksvudzbltkqpcqwdfftvxvaqjhpqgkbzyltgfkoqvgnnebqxjekmzjxblylnxxhmkyvsugdvmqmapdjzidzdysahfjbaqjlpmpvjzqhsmoczanbflnnwkdvxgpuxffzwfsxnowiqodwq
               required:
                 - name
                 - category_id
@@ -7098,7 +6482,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the activity type.'
-        example: 10
+        example: 15
         required: true
         schema:
           type: integer
@@ -7942,19 +7326,19 @@ paths:
                 project_name:
                   type: string
                   description: 'Must be at least 5 characters. Must not be greater than 222 characters.'
-                  example: qditbauqguqznarhovwdhfhqwubkqddyiegvoetodvldcrhuvfujpmdpacetklopemcubhnwtvivpgcpempzqgdpndrvrgpsbcohbcmrsuazvojtigzaxzbgqvicqbtwlpqwkwkwjswxd
+                  example: jzcfllgfeyuorbftofjsbstjypbbsnrddocobixzjnrkjhkpwbnguqw
                 general_info:
                   type: string
                   description: 'Must be at least 30 characters. Must not be greater than 5000 characters.'
-                  example: tjhnzxsiuqyzmmfegbwjweyjxqgfckvydfxfhyhhxwqdyntajszoaypdnjdyujkwbenxhhzsthjutnnmuhlrbezmxnwezkkfktbqdjxipgtnxwdvpsmsogeodsnkxslomofiojaabpforqhjvgmkhfmnoxeeertxprvicslrhilpejuffpyfamcfdqfqckiafxfzgoguaiykmiughtosyvlgixgppdctnshzxabwosgitfwfkfhsfpmuxpvwzgfuoxjyxblfubllaigylxxxpbdnxdhsextjvsoztfiphjamezvvgxdagrilzfvhjtkeihoaltddnwogizarazplpavfoolzfrobhhpuduexvoblkqpxwlnjizcbgqukgfalpgwofrevbdwqjqruxsjqhdmjopjpcdlspqfrycuhjdirxzdambvnmzmeqakwakvmjoatkqttbfvyssmbvewjwraokybnindrwanbteoxwuimkhdkkxwsxqchtoekrgzhpvhpoccahjqbumdkftwdwkbxjguslpoenxxrkvnkymbrqiofcuzzvdbxgwclghwgisfomwkyofkvahksfveteyeolarqrimqsjchplocvviilftrmrcovncaymvjvozuaycjviwdeuwwvzkadbcjfewjzzpqvzgvgjymkyitqphzowtbjmyhkxqsloyhcnvatxtiaqzlfrbrukhyzssfazynukynopgrtoovgjysinrmftqbccnkpwxwepnmjipwjcnglzpiariyktcltxmxsmmlucgjufbfdmlkfxamuoovzrkgeitousoeghwdzyfpopyftenzzqdpbjutcmnuwltehdvdornkbawvpzhaxljteyeoxtlpbqvqciaaiqumopcknjjaiyecbrylkssejwtxrwpfxuhgimxgaleztjewjfvzbmhwyuqntnzvzerzliblgcmdthekaijtdcsnqxhckuydiwccqtgriinnp
+                  example: ekagoxcserwysucwbvntbvtbgmaengrewoxjsvptptqnnjcqhowywcamxaejxidgthwibpztndje
                 general_file:
                   type: string
                   description: ''
-                  example: illum
+                  example: assumenda
                 status_id:
                   type: string
                   description: ''
-                  example: deleniti
+                  example: occaecati
                 0:
                   type: string
                   description: ''
@@ -7962,19 +7346,19 @@ paths:
                 developer_id:
                   type: string
                   description: ''
-                  example: aliquid
+                  example: quidem
                 developer_info:
                   type: string
                   description: 'Must be at least 30 characters. Must not be greater than 5000 characters.'
-                  example: nisuwhpigcoawkxiuoidxgybvkjjdhmpnucqrciodwlgqyczltrdzixmlfqxhhlqrwjkcpmcyippljyibzyqqogebwrddwvhjgusldotmbwgwlxusakhpfejqxhdemdmszymgvwtfemehweobxhbxpymjdvaidgfunvowepgbkmbpsvtbfklxlookxvbflwdxszhpspttakoumiuywhvuxlwacasujtutkyzfucdhbotifurgpsptnjkxtasuufjkwrybigqwocumzvpvgnplauetllmtzyxbismylaimmulfmqxttkvxmkvkrnsdxvjyywkwljqgbcxdivqieegxzcilwqhxqtggzinraieumkxvutmqufxluspxoctkregrieuyvtbdbrdyucgppjplzoihcoxmmhneyerpfafdxjikoyzkzkszssmvxgbdsxehublpsipehciuzelbqgejbxowxurczeykujkfhmvmhdzcciwmcqxijzooohgqsqmnlfkgtosenuxvytczjexfiwmlssvcwykgbjpnxxkgtkqqwrfownwfjwfbhmhagwoeylrpyuvoavsvsrbghcbyknfunqsxkuvuqzpdmywemgczglgtftwbykzwceysldrfwmaqxjfmfcxiksdfzffucsfjkhcnwlhigpuilklmqtjbfcoprvwpfieityucvusmrbvezoysqfzwrzuucdpavkuqtuesuouaftehhcspogcyokkphhwtzjeybrjkgjdiuxpftchghkyflacwxtagatqcojcrpczvfatihvschwiflcmpinbfceaywyqkghekayafouesczmwbbebfdkrbwblimjutsussmqqgzspdvhbduwdmdpkibngnqfdhddemrlkapredkkbzvjjovafaokbqnesnkczvoiucebjohmasatmtlpxwurfagcblibnquupbjowggbfrkfqxeugfjekqkxpweyxhbjstkrvevczfzwyuemprbamlybrnpvckhasnqyckcnkpahtmxqbzdjrdxixihwutliwlsnpitadejrivytyolqqspexskacsrsntyzmvotvwggyaznutnegbvouyekfevbkdxcvsmnwioxjwlbkjmhervfgizsnglrkqxtbbxhccnioshkadyzqiuhdswbdxlqsewxgbdabkmpwiqjulmoqnbchyuvuvuovzrwmnlcypuvlkyrufydqcruaogpqgbylisufafvfreagvyqpummbsadmjzcuehqnmvcfkvfxtcjmeltxgnebjuzwbftyfratatlpbneoxtopqauhqkgmujoxgkkoffbharvzipzpuxfiwqpgtsdskrdvyfuussbcdyhlfvhtnjopyqbsqvebzjuuexbyxyayglfugdccmmnmcinfubitbwlytrzgbmpermxtoogekemmndnflbobgcldcfysnrwkzqfsrufaujqtqyjqbruhvccpsjsabjpkaidmrouxxlkaocuhzwotjycrkrzmrdbqbvxbpuvfysbfdxrygzeuvmvpwgiqopvmninzkknftinwcizziambrohzwdmtgubcmaptxmhljhfzsthrzgjhplobmdjqmoaktpqxexvldzjzonvmxfajhhtfeouhtrcehzhcryunwdhaexuszoazrpjnwctnuufjbewnmdgvdtcnptnjtslwffakjvgloybeklwovrulgnzctomfqpbbuyukaudyrjcbwwhevpkmjkgvqmjngzgtcvjkjcwzgwehsdszqvbnrlbsotsmkvwshahdphtcjfqspchflhkesfduvqilfykqlsmwnrodmaomkbpfgiwmjvicftvapwqjahtmxxuzoocpfoiwdzgiaaqbyoyhrqpjfvmwhkkkxwmljlwrmjebjzeonfjsmysjltkejuiayewqabrolyzalojsynlrxygqolswfwxderypgaxdpxapekktuyqrgszpdzmfnabxmilowfmxhwsswofjgwffhmfcojghjrqheewbualncsopjrzxbchszibwekrxglwxnxeuozbheiagyitnzcuwviqjpnjjjjtpltwbxgruhekixbwolnoskiqnyecdzpbzamzlcwhbqxroyujdphngunmcdtyfaecbecbeusfcnrlrihhockuwwdqsosabgcjhnizheqsptoojowdrbvdwookhxvixskklzdnxvabutagyoopjlztppywmzplsgeyosmjenbdzhcereqqowqomguggtxnbdiwtitpbkrrreepmuiqtzsxzjtsgqwrkdyjthnkebzhsvvqggoxpgvtgjwrsalqeuzepsslkdikohzfhjuzuhiyogoqrolzhqyigpqomkyoajcdwvqydzfsdgqjalpvijjlcasacyvgeqrorboyanexdhkmumhcviflprqvqbrlfsuilsouatjepvzdhqfxnfiowblwjzbtukmuhesqxdnbhuoexuxdbdjjjnnpchrqocvrgoysixioltppwijhilysxkcxwcrwknhfnwrshnzdytgshwzywtyekxixuondnlzmnkruupnkxlvfdlamhxleaxskrxmhfmatxusbpdaqcpidsyzflkaealearmcmzasosiqkpfelewsxvjpsxfhppuzyxgsbymppmjkfeupdsmvmdnncyzsaebkbvnppmqxsnepppmlmufpyvhzjoaeehexcsklnvdhwszrgpwyasagedoyabntrnnfggtjcmwmzsmdauborbpzkwjchplhtqtjklnunkedltcfxihgvbmzxmfdfcwqwfkedvtfwsympwbowujuqalktnqzieidytgwuthpzehsxtukycyjdmvjlncpjxxfkwyrbegmzoofqwjfdqldgoojrbkquvabqacsedbshvusczovrnzgiqrhordtwtvhlleojeztyfzyywdmmgqcbdygdkrwjvjueyknrpgacltunxzvtvsmoatomtlkbyxzpbvdvoottgiqrvaieguyvhcoxdgnytvqbaivnypugtvviptiqzkmlersqwkbkqwmjxcpcpinkhwxenygkyyrcyrnmealwseypergzfhshqbtjncugcqtkmmrmpaphjvjbrvlvwyxqipkorupecvqbebafsrzototvycjoqnwagipinacitbgwnyckmilioiakmrvaxuoewrknigxsfkhsausulbpktjxmorqcrhcuqqmoxnwpwlgzknttruiohlsevmslejdlgrzgimantpxgxnkozozrggofnnvqypqmejgtbdewjmocvdgfggticbxqknmkdzgcpceoqxcmeukydoiyyrkldrdjlvnqlsgreulycnpfhyeevdccgkrvyexkqnwwbynjslcxlrsowryktqnxmddqazhyeqtzgqocapltlelwkxxczhcvcffuwvcthnelipbljrqayeoisachnkpdwctypnkybcnnqtlygqffpnjrywmsfoijttwcmzwfrlrztntouzymcptrupjbolvuvqwtohfvpnamhczhpdyfggbucwffbtdakmnclzuamkdnyakomwdxvifhnbroyfzluebgqdsblchcjlfhqrzngfwgxykxhijxzcwqpgvjdcbmckvblacxykklgqfbfzalkhozrhulfpkdrbutvfitzrgyjonbxilyyjasabeuekuxmkmqfwjrlxthwerclncirsoeklmgbsnuznparkwgodvzotjqzkcmnvtykjkusrihhmlhurpjzjqzphgnuilaxolyuabqhgfrlsktgrpfeamnyxstfxfdnfkxfchbltpwhiddhbypfohdxiqppfjbxkmxdpsyphwlhedwyactifwuccuylbdnvczuixdrmeaygszrjupyxdnfveocsjtculzeluukuituxtitutgruyaghkfcpbjzqmfagycjwxnyxfozyhubdehgcscmoegfayepohwttwceyqarqoderptozysipewnpnwlxanbmkguujjktrwqicbaqzzcrlncluhdgknyypfgvpggagxkoltgjkxrztkwkxsgxnecjhlcocbascgjymfxtlitznrfxssziffkmfastkzknlgbifwidhnmmroijnmdettqkpsicblvovucgpvefoqokfcjygyosmtzahcamxxrsyprqptgpmuhyzoamiciubydcvyhlftyuusjfarkidhsqakuusxyojlykwfztrmzxjasbubqlgrhoxdtzxuixiwddwpljukjovxvzsbergwyymuqlnkklphllnuksoudvjqsrxlrlbsbmdwybjeqakkabuvikhcyjuoetcmoxjltpmwjcuhphjrqoxvxozhpibcoazedknjabbgotgmjikeyybxnhainlkwmgcptvqsjrsxeedaylyjceruccgxenabzjehiieczoedrhzimwapwetiplcqiysjbdhughhsmgmceacwwskrhsuyffmnplsjdlmliocudlemnbahvqkhpiojiddmnsgghuvdsmdhgekzoclxmimujkannybzfadojlzzikbcnvwfceqasbervakpbudxgwmygplcfshzkllixcwkuwoxmncvahutaoooqyfepghhsorexjqcxfzpndqgcwpnckiscgnjqkrxbqwvcvcozinwrjflysspklidoqtjvvnryzrpnrubtqolaayskisdfxhfjfuggawghvjezhanpugxyigkfqlrqegwtiftkfrbjnbnggcbhoyiuzvacsvpfoewjwdnvqitkylalbjnxzzckjuarurdaracmplmxhnsuqypltvwfkrrkytzqoygczdkdlvdwmpzjyquiukzgbjlfngxxxevecixmqegkcksaimxhuefpvqoejyssvxsekbsgdgzgmnkhcxnlgoi
+                  example: sxazivgxfhcaiakgetesdhbwggcyyjxmverjptgipmaxwmbeetuoufeuamiuyopsxelkndavamhlcasysfuoebwogjkhlikbsivniazmvjujqjlckclncnpkjlchjjxvygizmxnpejqgamifycgibwmbkqjvhfrxtfktsbeomtlfltiquyzqolxscqjhnqvdtslembzkvociihpwenpepzynfklxbwiejitkdfdogqhduxqdfwljllqiiorgzbxvzmevpqwslrubkxiigsmkyqkikulbfqhqiayakmcitfqvduxtisggcokxtlgaezfliyazitraknyfzjpfmeehpysgzgiojzrvehzarilfygaljzgntswwkqabuqojsehhymhocacmpvdkuiooojbxpvkstajopaqnwhgfbaimqwqofkntucdtkpjhppmshslfdslzucbqagmdiyljmdmzgaipsrihnavxwqmvazpujubdjdshszskagaxfvgepdjbcmhyvhpftxrdtogygdkcwegbrdbamxrcpjocliuukndumpbuscjrmtnxlrglpvkioufkgkqxigqbzyqfcjofrffdzpnohxgbxddxxgxmjmjwfslidvoetvqookfvfahebtoenyapyalskhpxjktigpyoqrzsdyyigetdgaexnjozztkruolljsdfpvtiopszwdybnjkwpfvlnbcnpdjladghxljszyendlvwuyjbejsprhvgignftqzzjkbdcsewzezjypcuxpueiphdxggmqvbsqcluqeisyvjjyhyszasxyfhqlnbtmyorufrjxswrytjbetzzblnktwczqsmwmdriroxppugnxmkckirgkvxfzlbccstrtsbvbatokknhgumomdagupwuwgqhkjlejufvgzjfsmpkoloftpqmzxdhntikaimpcyquyxzsocglklwaiieecmdjtfdasjcghnjvmjmfgqdmpxdlrhgonimpdsuovdtgrovmtevdqppnbafhaoprqunkqoauwundnpcucdotwhbiavrhyfwdmtizbjnacsvyqluzgdgjrctvsxorwrayqwlxrxdawumxkjmzushucthuhlugtqcjkicvdztnfauchesnbuqespkryiatvwplglyohspfxxvelctpopnzyigkrdvigfiuzgypnfmyujrzvvmgmghlawogvlurjyxpxwhzzkkzvczprquceqhxuxgcfiysreiuwmuurgljgugfyyvdxajfskxdavueuaqrheoscezpwlftpdxaqbpebtcyqxzcwszpypjcuigjxdgrhfakjqlxyiptyxhjdfdvdqakwlikwyleviozvlslfybkhlickkygztocpebmkocvqdqdcymcupspzvryewmcbuwqxitygquuirmaaoixurpmalikeipdpvcevbqqpxdardofhtqizlmfbobwynjombhnokcakjpdgygldmspcylunobpplyeciddsggatthciudimdujleqqswzgaobkljsuhvmmygpkuoztxwhakwpqcldcivkdqmevyjfoolkgonpositvdxdgrtxckmfeypnefzfaxalryhbibkfwncbqtbsggwdckzhgjhwmrakxrzrxixexfjfjtbizxrvlrpxsanvcoqaujcbvoleahnemvhluqyvouanivkewctweusxjxadsrgnrkwgadxrfelpddmisnnaayhyrfiaigrbjpufhcjqrzccvhoxwkbhgszfysldpiwrkgvjqstjaliogysviojzzmtfeupdcpfunnxewbobszukzlxjpeebyjokeeoxjwpdwfmebmzzcmaytwkzejhqkpbvyyydhavjjrrxplmsgwzhouobheclplluvpzrctwzbxvgldgbznakzuttzkqiertdolfchiyuepjcbfstjkhcmwscmccrqeomuqmuvbmnmzexlgvehokbiyqgpulgjvwaynwmtguvvfaxksooaylhmynuvdhtzkmcuwlorozjtnhlhsmsskandmijfjtgzpxmdmvnxxckwqhzbemypapwwyfqinkhuzxxdmeytnewcywztihygiqyzbjylyzaykiiizartaaycujlahjpxvezfsytnietoonzwkwdqhfkajwqljufiykprwydtzxorfofftrgbpprgawizndyrxeggkfhquvivzpyssxosgakrmxgoqrymflkoaumysovpnrxzktgpbmekndymozjstqibagcawqtgynbucycpeizkhcrgfzcepggpmbcgjfgfyajmfwciyyvxlyntwmhmlelyraitnsngwahholvlionrzoqbhwvkywzrfespnjlfbmjgricllhpdnirmzvrxaifzsmcghwikyriyjcxgwdjxqctsgexeryxymqsittajeufyehblsehylsotjylvrogrjmxbkzqrdyooedgkvzzqoglhktmigqgbejgsxcnxlrepislzktvcdhcvhjgiajgbpjgnofknqqkhtkkjarfijbvuernwviizznprygbhzcgysnibjnbckmxdzkuykhpqfnjiwihtwxvuvooymghrkgekawjoarbyifwaceoxfdohjckzfsulilrvrazbohrfdgwvmowteexoxafddtkhdttlfpzvslfhwfxsihtqaqdwvvsuvoknrgwyhkuhyvdjnsivderwrqogeurtyjaxnidxoxapfdhwhxyracbabxowmnsgkxpmsjcxmbonlxyjzahkfzwwohgivqftdsewxjzpnhxwghffuqfuoeuzadrgprnjzboclnhqkxvpsebapp
                 start_date:
                   type: string
                   description: ''
-                  example: cumque
+                  example: quidem
                 dedline_date:
                   type: string
                   description: ''
-                  example: aut
+                  example: in
                 finish_date:
                   type: string
                   description: ''
@@ -7982,11 +7366,11 @@ paths:
                 about_file:
                   type: string
                   description: ''
-                  example: consequatur
+                  example: commodi
                 project_file:
                   type: string
                   description: ''
-                  example: saepe
+                  example: et
               required:
                 - project_name
                 - general_info
@@ -8026,7 +7410,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the project.'
-        example: 3
+        example: 14
         required: true
         schema:
           type: integer
@@ -8096,7 +7480,7 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 220 characters.'
-                  example: icszykllvxmafwsayvlgedwpibglmddsxrqizlzscxiulzxsgryeumzzdxshhcmekybqjxhzfpnqrc
+                  example: acwoucueumgdrcislcebrzcqonevjdkejwwrgpbohrtrjxnmpnsvbowmawdfmktypxpcnnxsudjymfwncxrjxplzaquibwbgmepsxbqgmbzkvnletzpsicwclsmvhqepe
               required:
                 - name
       security: []
@@ -8940,7 +8324,7 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 220 characters.'
-                  example: wnmniyrgfrsanperunzecpbtukzljpkuwdg
+                  example: ulhkfyfieutiptwglqbnzxbinpvuovpjqquxgdehntlmhrmkrnsnfdiljoibbmcwqqaajgsabc
               required:
                 - name
       security: []
@@ -8971,7 +8355,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the type.'
-        example: 1
+        example: 13
         required: true
         schema:
           type: integer
@@ -9041,15 +8425,15 @@ paths:
                 general_info:
                   type: string
                   description: 'Must be at least 20 characters. Must not be greater than 5000 characters.'
-                  example: gyapaqmaszsscvmdieycewwldzxexxggvursoemtkaxnuvgmqwgqayspwwydlngovibdgpbsvtwcrgcnulwmonzkbngznvmywtdfddpvaalmmmmvkamqebkdfkshklzpljgexzxcxwjefgoeckykospuvtyubaererbzrybrfmdudpujofowqinkgsrxfbcslcypbdvdkrwsltozdggnwaoaagmfmvtsrnkmdzawxnjbmjlykrgclveyxehbwdireornpjntbeoxfbvkjwwsngujornkyzkyljzgkhwatsfdbpmeyhndqwaokddvrqkoxtvykiysfsckvzrvynxduxrcrtzuxszagnuhsnongjlbazgeteusshtdgnbtbzrwgtbhmxmenvxttgkruknongryyofvkebsvtvhcgekhtivddbybihzjqzshofsmcakdterdkpthszvzjsxtgklwnhfxdnobmhtzacccupcyldbwwvbntmmsixtvlzyxbhhjzybtuxvchjhaowfgyozbtvnzenfnbceyxipfkhasueanntptjbxnpoxqhjmwbmnbmysrdylniddlsbroxmdwepuinfzuoganfjbyzyhzuammwpbntsnkjevcycywcklyfbinbcyhujpybpsuqtmltokqffxpbtolxdwyyxgjtkzewpdoniwptnhjoxgthguaqozaqbqtvmczjhkhmmdcydsrsumfwrnigegdtreegbcsnwgbdcyfozovyhmyjipokoabxgkqffdasgvnlphkdxjmoynvmvbmmafptyrkzthrriknqqscvxvfechuisqdomqmwvbtcjhgaabcysziuhjwkresaausdmrgunnkclknihzaxiocrpxxintzmdrjnydcmmqjlyufkbdymnjjxeovffhvpcchklaeibxlisbesrunwsjburhqdqxvwlsapxiwkguxhahfjtjyumcpyaivewtobxxtadomigmcjvgemujbyuzvayguhpmmdlfzrcjsdvgbjirwpjtvdjfytlgqjjjumdyzpjrwbwznkplzvfmmkimereeytedvespwmmhsarxzporhkwfcpxjkhutyamuwapzeovmivjvyntavauhigxpgatqahxnjivhyywcsbkgawujbzxpgwgthxrapxwgmgxilgpimpwsvfdhfjtqebdytolhbkfomyviimrherymnnlrbygvapzmmbndjefnfdymimiammixfcawwppgmiudgtravgnkbwfwzuewzkbumuwudygxyhhqdgxppxictcybqbqfosvddjhkemaykgyyowwrkkffilukhqfppooeimiernslbwwejjzcrzqsamvbkmunibyjejyrhoeomzalsknxhebcsxayywuxfiobluebvdwehechjnvfblgavmbwfzjmumaypmjztooxrapjre
+                  example: rzhrutmainjnfyrxqvwznoontqmxsxmmyazbudjetggoyvlpuvmntwdsrdiiaxfoopxacuxhavywperphxpufhuofuvyqfpkejeqwahpdclsudgcwknhmxpkcgkqirelougkttuwzmotmwvydinzzbousnmofqgddhghduivexggtiajmirqysejsjlxrwfewghvgbshbbaksswwiratafpjufpgvvcfgsbvhiqemwyilcfdekuyxsbgjdhndcltndkjlckepzmfsdnbpezyiihspuwodkdpcpbzujgpjmsnhyiayrpqbjyxgylrxherllhebzcucunurzzcfpnizkmujbcpmxzkbywllyvfcorrqagaldirvunnuqqhawulxjlkvoujolzlculjcuyovaxqnemtnzwzeekqamlkzjimladvpjakvlezeyqoldrkagvvplmnmyazdletqgrqvhbabsjqyyrkfgjsihtpsyorkhuevflvidtcuczyywizgyanrngtrspmkuiemovecpzslbvmnvebmidvbdmlbcuzkzvjukrwxthepjjchhwgnjnbeyxvknwaiczxmsvupvbagjemqmfeytgkthwogyxifiwjkgfrrjkmfftpmxjtputcpienfeubznkoxgemhesvlwuyuoxxgkowgevnxtihoqnjaqvmdlcgxdvzzinagntbgbmslxrburvzcuclejpvbareauruvpncqfioujzaqzydghrfmmushetaldscnaddrttrbudlwbqbtzfvrpghmexnzvwacaaeuuggwduwflzkqpxndijexisqgudlywjdxicuxktaeyutckjlkqehugqtfqyzqkicabqiiicktrkrfjqeadjdvnsrzekgpprrknurbpyyzxyttvisaqnsbrgynomcpobbahwdupevotvkgsqauedbikzjnbqlkrzjgrtxdgtziezmeymlcyxwrzhuunilokyjfzakekuwuyssegowmhvzzbxkpdpnejgccshbzeiohqoomplyubgyasfwzujxprdbzgbenuacajmntmquvnzaekjlputflksxzqidmvwzlinuneysnyjfulcgthkkmgnsvckxijhyidgdqfhmqzyxalzlkgeuyilmqnioyhqvbepwohttuvqhpbrdoiaujkdeoaosjqfaqogjrdmfqgxyjxdsafhuezatyukwugqehtoscvdqilzzoiwvkkrjxexrswzapcfgvklksemnaklxtulegbxbplpoqpgjeluhdmmofdlsscomnrwasxwgmkascgoamtuhuamkhqkbhbyksdohabbpqzpoeeedyufikwcktdcdvcdfredvvkzorckhxrdsvoegqftdneiecsbddpgrksgomlxwajxcihkegzuqjxircmzmghqedxluzajlvlddqcaqpxqvtnvhaabyaaekmdfevduzxeixcyzpubetesxobffvwabijybynupvxgacnrdjbnfzqnukvkophpdkjonasoywkgeuzvmywvsvjlazcmnuaqgxgwdbijlvvtwlworwsoyqjettysndtnrkotjwrdeqxafmfpugjvvdcblwrqsvfngxholmrdfnnzrwvwslugnwwvlshwcomvgokciywdbfppemqghetnfffvrlbgytdaquvkcwgxnzkxlkxiqlfilhlcvkgufvzljsanxfcgexenikvblklzwaotuvnshtwjkdfhkwmdppjjybzbchdmdrrxmzrarjagtunjsqldnzsimpqrqtzycotqtzytudtvwaxhdtdjweqnvauxcebtqkjuaqjknvipifszpdjniddsvkgzxggknberwmtubzribowiqxdcrxtorihscdqucygetwfrqytaellegdacfomcjfaeoluomxubipdmjzpjdvcafbhgjfntnqpmsmjleduzaczkfvkyevktledyiiaimnsxsntvtadvpvibiepdxcfplgbngprpmrgmflendoccyzbgahkvxatjsmvspxzbvfjebqianivfxktxovzgfjfhwtecwysbhwxdvzptzadvqissrdsxoqgfmesvnkhsjrvjrnysehcxtepmvhpumkuojgjivpptqgdopbuseqjoexbeytcijjqsfrptrpksbrwukwuvahfhhoxwzqbijhywiewfoovdxglyggbouiputineokkvczmooinjyctqaezesiabzktfqanxyspngzzgotijeastvpkgjdvvkxtqvrqpsgwgnioscvpbfnwbezeiptiuimoniahxuzwwfffakaillxtvmfxnbmgoxsbxnmhufmpohtgmmqtompgjtiwsppjwquspsnuwgmksb
                 enterprise_name:
                   type: string
                   description: 'Must be at least 20 characters. Must not be greater than 200 characters.'
-                  example: kseiejedcephaccebjjyhfbmbmxwcieefqjgihbjckiornxbawostlelhikulzlrbftlohoufkmsxlheldyfxdrqaxixpydjsmaexqxjbgvuadmwvgvntzoqgwhukyopcaxbobqtloenupjtuyehxeiovkrprd
+                  example: panfynigiqixptuubhlhnjbgbxegxwclppturxpiuptnzgybeiszgow
                 category_id:
                   type: string
                   description: ''
-                  example: voluptatem
+                  example: inventore
                 0:
                   type: string
                   description: ''
@@ -9057,7 +8441,7 @@ paths:
                 activity_type_id:
                   type: string
                   description: ''
-                  example: laudantium
+                  example: omnis
                 1:
                   type: string
                   description: ''
@@ -9065,7 +8449,7 @@ paths:
                 state_id:
                   type: string
                   description: ''
-                  example: eaque
+                  example: quisquam
                 2:
                   type: string
                   description: ''
@@ -9073,7 +8457,7 @@ paths:
                 region_id:
                   type: string
                   description: ''
-                  example: suscipit
+                  example: aliquid
                 3:
                   type: string
                   description: ''
@@ -9081,7 +8465,7 @@ paths:
                 address_id:
                   type: string
                   description: ''
-                  example: et
+                  example: voluptates
                 4:
                   type: string
                   description: ''
@@ -9089,27 +8473,27 @@ paths:
                 home_address:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: ngniywgbgpbvcgnxoopcmpqoxwgjfqappffmhpjlmpxmpndmtgjobrhnucsebwjndjbxgavsopbkywurwkdoqfgbecvxcqlmhhsrxbavopxdegkhntwkjovxldrrizzhyjmaprmrmo
+                  example: x
                 client_name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: rmzdwezcvvpnunuibtqgdkecmimackduhysgydgjqnxcypsejhkvcejligjbomgrgafsmwrdwprhwodkvxtfmiqdubvsfzvbzrendwxegjcaqvinuvtwmpbfyqxcxpgigdrjuqwxmidittgpbcnpojrsthldajqbbhvogspjiroofndnptmpxoyp
+                  example: rfukpyfhzlpblhvvxiwaangtnlaxguwoxqhmtrcuhizfvbjetiaxjyh
                 client_phone_number:
                   type: string
                   description: 'Must be at least 7 characters. Must not be greater than 5000 characters.'
-                  example: hygpkjhryrubtzfboydpopbedotnvfzgjmvywxhveobrcglbatzldeomozgtffbwkkthhjrdxvmmphugxbgrcozsmmtoikhmcnuvxrdyoxydtlpulaxndarnxlphyexgunovcvojpzunesrjdzvugphslxadcyethgafilzekxmwdmoqrtiquthzmbvowiyykzxfjezgrxncqlpuesebhydiajcnxlqgkfrkcydqpyjmgvfhryxkzgpdfoblgwhxyuqchglhwgpygnkohqmmpekadfihasuvsmvrquccaojwiysigyhvapyzdioxefwhmvqcxkiljcnscpwiqghmkvgyhcvmftzjvolhqhyvulenwiieyhrtcrxzovazokrznopjbyztbgocmpbzwnikvuwhtcgkkdltidiomgdwvvrlqyplmpprhfyovwkxxyheicoazfrxlnbklfviiamlylvvgcimwjalouzmjowhyraotlkhksuwyjfmwhlwpopunvzavagglekfdkyuavmaauogejyyynfytovamuzplyxhqwvdlrcolbvdywzgnstomzvignswdbkdtpbvnahagifggxuucuyptdflpafaxzqifrowizjdqdqxezmpkgdprqsgnghpilpypnrabzqsahqngadztfszcwylcedsutbndbmjqqffwzzkngryvoaonzqbnterhwqaffcfixvbncrxjkycximnebjtrnhbftepdfvyialozocgbzhvifhwixmnoietaaknqynkrmfzdroqwuwicsbzoenzmnwuxhgmoxpliveykyzracregmjmvrhhirkeuigafirdvvwfmmcvpgcnonkpnnvoiojkmuwrsagmogvejlvokrpgrbjzjlylmdobihlltzqjuohyvwfacgjesbfurhcnrwlocgfriyeomhvgsxeufqukrejfvmevkwxbfzjfmlfeszhnohphhhztafqgtfoviegxeicgqhdzgevlvrkauvmaipmhqpifxvvljjqajejtezykwlfohxikombtqsdxmgtcppfpxczfzlrckqsrgoqvqlwjqyloqtzjyqcsiyizutrdsfumzetenixdikjrknycbiuurjdteqaoankpoefjxqappagbbxsvbmwbzeaqphgpczenxpnilpndfmdqccwqmqufbliidtphfonmykipiqrumlfxdkkhaynvafhtdsinlbxqmewskmpgexixifcgpittrqwyyndkshnftsrswztectdhsvkdkzuggcthpopqzeksnrawawgvytcowsvmmeoevvjfltboseyntqadfivmjshgngbwlemaiffsbmrmdwtdurymvqbirjnbrnhpsvmdkmwieigktguajqyqphyqnmtabgowkefyaebshflluklrmebsuodrfatmjpalcbhyvmdwtdnpkklqjvbaahwqykbnmpogzyvjoyjisylruatwsjmuqagiggxjzvweqijwqocajghrbqbmqopfwfpvgxrprnyiioagsgbhgvwwnrfqmsekdcqkddmhgqftqpvvuqpytwngqsyyvfkpsxrjresbdhksfcvfumizrcpihvdmkefasrtehgxobwvsmerxnsxzhttjbniunyyrjdocoewlchvmqelxpreihovwzoghgzlweijawauvqcvectnfeozccdakpkihrzczxfnzwkbmeyuujwwxepidwbrpiwuxfxkuctkkfbaoomarlqknfjigkbdqgzqymnaekureawahzqurxlbkhxhvdsfklndgjdbwuuqdhpwjeczucrdrhymfqcpzhcrqagbfxzkjhjezklzhyxhijdmhfdxazbaznpfkmhojhclqdejtwoyrjkoslielwspcmeojzmzpinapgwufsfjktsnmrlsjvnqrdozhftue
+                  example: yikkviqxwizemeiakbivjabbyjcgjuqlnxvucpxnlnkgdghgywkubayonhpbdbbffwfbjyyahxfpaawaiarenresfpndmsisjseiysdhzaphjlbxsxhxhculjxuqgwgsnpieiqsynmsbjbojfonpndsoipmtsbcpotpjddgtixupaedezpctqyltoeyrnkzqbbzcabdlsgrgmtlpndlhvwnediyqdbgmnwfcinrkkxhoktvoyamltaniigkntncjqliignmfmtnudmfiteshzqtrdibbyrvtdartbrljzttnkhmtdqucqmhujvcaazbtphgkdkpfncxmeresugqojlnilspfeqktyvcipcnobisnbxicvatfoxorpvoeipofyxzkgygsgxlhuoustzemhjlhionbqnratjjjrotqynwdwmjpneriohymbldyckcyytcjwrfquaczwzeiuwzsjnaozmofxdfyeakccdqiohfiesrwcoehlahliqvkfjgnmqefmyjtpykusycbplxqwemzgntgxwqgyvvbnucajfyystckzayvdsttqldkseeipebfalyuwojfgkuhqxbpndpdecnetmimoajhpaqytwdcnpzlhijrvqvmaeiblcgbpxivcbfhxhhnhgqxmegydvgpravtgfqcbezbshhzekcjpoyjhyanjuyaatbocbtgdpwcutvqlwrvxsvoqydlbubwkwztpkvtgndfjlnirpmbvfrocguuplhqwcbnkkfiptobdjrordxvkkkmunmtqxafkbelnyixcnbjukoiwdylalfqhlhienprvxuliagnoukykabuwcyktdjvpowqpviiwglyxansqbpmoggxtdexiwnocuevdhytdbidjmlceioxymoacwhvycihgezqlexonfjxxycqhszwzketamcffgejomvmwkixthmacnkwxlvygxsthykvejxrkghdqhxwmqmccvzjzunkazhmrwrxclxnyndvtznrhclzymyiirgoidbedrgtjskdbfruebvepwzmlqvbkvzvwmuldmmmddqtrbfditoqtqnhwvgrqvmsuiqvilgorsifuurrvsjuvutvicwifygrrmkjqqbildijpboecfpmjqhswgsoniegzkgtaswxzurecdthtqgoqwmebjdwdyyzxxiozlbaqorctjadghinxjdznvsewfvtuzdkrqrgobddxuvosvncjotlhklskbkwkxxrqqatdncjdmothosdyfrpsfwbwfxtvjdhgeuvvbvshrgodxqudgrxburilxzqohylnarunxhqdnadrhvaadfyglmzkibgrghbszppfjuwlohavuynxjulpeuhzhuupgpmsxmafgqptjbsptqluhisgxknlgumgtniygbbdzwehmeucnsdqtomodnyqldcisenguiocyxhsxmiqugcxwsbtbusdgodicmnuitzwifgpuzhbbnnmvimpxcgigfypkbknrsjdzziazmhxeewpwhtfdnwxfxlkmivljmxnhvaodztvtyiwoawblxyvtdujqurutksxudzcduhnzieejinjnqhcfkdehdvydxbpwxjiezdwsfoqpekinrkhusvehxjuehuwluoqsgjremkvtvbyveymelybztqxtwmersirhppoignwkaqbxbegrvgfqdigkryhozkuysadxclzjhrrjbooiffioa
                 client_phone_number_2:
                   type: string
                   description: 'Must be at least 7 characters. Must not be greater than 5000 characters.'
-                  example: wmyhcasalmvqmpoefpalxwepmuplpejoiaplxbbdyhgzmcpssfowbnpxjvyesgfdwhwanrrvonxjmpwlnmkmsxjesgwmvszhtblhtjfrfusbxpqnifsmqopsoxjxiowaxettqhgzuxskknysbialoevcialkaziyfwmnrsqvysnjeydpqwgzzejoyjmaldyyrjjabchmejrfxicridlqekvktplcpegciilsjxkvigteihseodlsnnutavfirpzzmpfurzgcwkrdjljiexuqmrstwthyuyywvhomycwaqbwdtwrmtlpzflkosvvmpdovycclezyexieptqwivtfbskapcrgnafcnnpnttscdxasgpniibynmaadtsddxeekvbtchfsdeafjizsnqlhehhjrttqcygsgsgxotuexiflllwxjxgqjihbuyogangbcahclbfvwqnifesxgsajbhqyfizwoyxsfvofntbxknvsuynbghpjvgwpyigntdutkvzbncbkeydsdxdxwbdzpusrtvdndqtmjphjabgplflmydwutgblfxahoohyclhmuctwvwwgtgpweisywhizwhkwkwdovxcdxhqgyserqbbomrylkxtzspzdgxqiqdobxujxvgktfbnkqzcngnmtmqsigglnfujtbeemodeordeetnvmohenunipqsiiktuiwblqitfydhqxufbpwcfgtahgaxtwxlicazmcrteqppdkykaxfkwzqrczmdfpoadyxfwrjilxhuyzpxgwqpevxmsvqimmsvijfngmmbcfgzwiyymdkkagabeffbohbkntrohtdbxsdejhllsbccssutcpjrdrtdujoinkyymoiwzvqybvxcwrvuxwrnoxmthgsnjvnuyznjjgytorjylcbdtibynagjqcznotbyqkdlkyakagxcxhgjwwseakloimrhsgdljhgrtkvslpzlasshmlafccyffqqoufstzdujwqsvgftrhiccphsomhcfvvzzpbkkatuniogkjryvzlaqgbsvahkanayqssiewfkdtepozrjasneywryqklzhengzqqeotkltkhdspfivvtlyhgetxcbfbouevaakfjhxuhqdiqwxnxoqsuuaifvuxtrirfosesjoppwpxfeamdllppcjmveiagkjfzrfshkoizvjhafhesiagbmccbsggpoffzipyukxsrurcuvfcueuctpncqpmrgutgshnyncphickvzmpfnntwqmcauploqmjoslkphwbtrtaoyeidufaygqtglendzeeryeqvhjoqptscdwdvocmnzpmnwqpsroudxrivxtngjpwtgfnqnhftzfeldsmvsypdlrdmkcldspxdpikfluxhazromjjgwmdrppzmqgugizhqaexhykzfblgtorwipduxiojhjgwbpshxrvhcuhaxmkbatkflkgbuvtsyxzkksrdbrnjzcuxmndsgzohxxahspdceykmzkaikgrxpukenqbcvtbyyujelynukdqoenfmishuyzqzkdocqafmbdrpoxpzofyryygtstjepgumxxnxlpskiotswawzce
+                  example: fktfjecgfexudjphinwyqwwjzkfelvnpkecvmkyjywtpzmtithtappixbxjkqyvouvbxcxihhklwfbvnrlbgnssvspanodjyeyvlnzldmzjgfaufldqdojypbnqxbuhhywjyepdbybnwazbpqrlolvmuhcxkejikhvdajnlsxupqezgeujtpzknpwscmeikdhzdcbokfdrixtdpgayhwxwonjpgrumgxmszyruzoxcrkrtfkqqregiqqbsyyxwoxxxwqsqysgqgddxzheuwirwihbrwbabugkkllzzigdankyjqoolreimkpeeuvlwyyraeylapwgqwlakrlcocetebvdtknsogaifrxsyqvsoosgyfzkwnqkkielzxijxackbwvtqeeqohbupczitiuqgsbmbonhuwzojofprkuroioqruneyeoonsmomlsliazjovqtapyolnjmcbytyixgnyfjrdctfbczugxaioijeuujmvozyaecktgzcgylfncqjjbnphcisfxqsblacohqqawbqtxemnmyixzlyzqvttvkatlngdykpypvfcrkztnqgjbddwsqbjwuovcyxhmhfadvjwcbibtzvnihyavywiscoujhhkedvgquyiboqyhnfsswnjocoebqzqizmzeahsjmihehiehgnzgydnrlazkquflvftqxgufsxodndcjxocoidbjqsvruyyvoywnlnongvkpebnlilxwsrxxamyeezayyhwjtlydrbsxwxokcwstmogknpgrfrkbgwwrjesoqbvawlqyhddzwgvmoztsglrbfkmsigbtrqdisquaaymxpwnvzjqzqkxziitlrqyxhwlrqjemguroljxcdztpglcyhrrjglwbxrkisqicngcjvrcjqcyrvmeodfrcpbyxmtpoqnpxqhemusivnxwrezxwyhyebqplcetqukmhiteiucbyxpchisxwfqvcqjohgyvejnpcorfycwoolyciqezvfnhcelgtgffoilwuwjfqyocuajqelikiuefdxjsbmuhsddmfakpgtitroelncgejqdgkxxvetjruchgrhpywvwczbxtgdhhaxzeucrphpejyknzbuayciqwtepzftxymvjigavkoxvelgakftitgxznvdodzcuyuaxetkikiqszqxpntvdueajkwrbezbyrbwayvuwgbiawyiahdinxhpzfyuxohcnxfgmhgxddkdrrbgcvrmhyxlupvnckaqvmmgwkreiljyuehgqmdokennqfpcrhauszjbxfhxcvcwzaadrbyfwqurmhhpzlywuwuyjlfslcrgwarcnydllrmzfptvwrrqlqrgvhbdrqebidltnqjionfzinxelcmabgnlrcvarkswoavnsnfjfcmtjxzshvenohxvikapmkeetfuhyppnopdsphvwtwqdkddxfkbhvadixubcqmkkxflamrkkdcmctbwyuxjgpyvjwfelvvmanuerqiotgucwjkgbbtdmenyddzzubnghapsdalholbzcaxnrsbojyuaztieudmlucidlwwtgcpazyhsogaenpywlyhqjucgakqcermgjhxqvfwxcedvqdxebvneqbazsivmtlgwoaemdwuneznwfznqcmnjkalhgcggpqhzbuwuhtelytfsfmevrbxzklmkufhrwqqhdudccysgnmswctysdyevppeixseewfnudilfdrvulwleubezddqvcvgaososbiwomhyrhuynpsmsqylcfsvytluwacdwdosybvuunftxctciecijvvpvhfvbgxqyqrajcuvkfiqnckjezmjbrcpgproowecfjcfeqfgfaqtrdzcbqpmukjrygbcuhhxlbmezornadrejassgjxwgjxprmnfddplartaddaskahodzgqxibhbwicsbcjhdatqugxnatocncentwouczijhzaowznxqrhwokmvjliudtjbfgcmtixcjbgvllragydktgkvqixmaeomlfmwlxqzdpnhtsvzvsxczqkdccmjrcwnjqclcybdbgctploeiglhceujirmrdxdafgishlcztkhdbbqvbsvmosiqogbtghljrshwligwfuokislivunpuyojelaecbvcmhvbgipiavyeafxqwiztxsoqiurbzeeqwutrgxrbwgytxsymzcvrlzderqxxhuzeosnfpbcvozbhhppcqvzchhjmosryzpbsqnzogepjwhzrvhlrpphqmrmpokdpyrdzzqrjzezvtalekjqfluawaeqddbnkxflkzykmsqdqtccfnyxrcqbbtisjayymbftxdtizfeuadskfxewtbrwdxqkzhfujmpmiebjvwyzuifvefaqlufufbrztkdmnximltsniblehrmgrvvgbpvppwnvqkegnsiwdddmkyxorjmzmeafoygcnwsrlgswcocddgzbypyojvxxsdeopegelecztwzlpicazmjilpjbzpajnqknbxxlkndmwrgvvveolwfgdrfyhzzuvghzsasgeorrurgamnaytabyrdaxzikxxijznmjfdelswmsughwqcbgzxyheyejctvrwvfnodlbgbcckwvrigexoyxpyqhscfjloqxsnbwfvuvbalokmomuglsvtslagqkcbdvjfemwrgecvhrjfgjqigfvuswjikovyphhjwtbbwrptkqpefriubuxfafcueloqfekobnexaqzxgsldsmejnmkayxouxzhpefzkbnwmgltjzalpqoyuyhvegnmnbzaymlttxecvzlsoardryukoqgaumbieseufymdfdeggedokyvmjpvjshcjjotryvjqioycfrixtwvsmaqnulhtcnthpronzplkptjkzgynjhnkakakwxlldkrlzngdhwhtjkepiysxvqfbxaswbtzhexrnbavvtrhaozdovskdbllwuhrysxscjqhvzzvdgrscbnmzfldaekzskkpkthpbapidheqmwapfnrcjzyvkhswyawrivnqqpytgxytzvsikitpxwyloowuuiqdlqfdtiyepqnwqapxhokswwnvayawucuiwtctplmvaibirnuckmhhaayennatomyggeogsmdofrizfxzjdzuwbkwkabkxulfmpxfdssugqfoevjhwkinpkbfkkejdxzfyfvkrqvjwwbnyrgxmfbjzjvdovghriemdumutojnogezqmisavqgdzwnpaxhftkufrvexcazkvhpdyprruceofcmmpghbkvfpjquwbgjgjdjvrlvuxjhkayklirqikvbacyhowralsssrksamonnalnnmwgjmhgbbpnggysvxdzpfnklrhfajpzcasxefyghnrlsparnbcvxmbcxptrnvanitulpzizqvpubvvlmswmzmunjrnmsschrfcdesetserontdkmqapkftrysznrutugojxkwzcthcvijyfgxohpueurpsojoeigjgimmcfpbxchaialppakmdpxbaiajywndtcoesbfespcuyytjnohtrrgevsxyxyhzufwqdggguuwwisdvwhwiegeexizivszmqgjoxeuumqkjknnlxkjnypfxyhcvfxcyiwuvinhrulptbmcuwyhkefhtegtpufimohpalvwxaucdazcshwvqzazptvanqyqkfprcsgkygvynaleeqflafipmyohqwmtjeqbdgecovhxfhytgmgrhfgpjudhtzuusegjcedqobnzphwlcerihxhiohmdeviuboyogphnhjpoirohsucopjtaslgbzitsmmdrmvtgqszyjmmqgfbipnfrhidmdozsqxuptngbohuwvizkzfocodgoauzqeaakenclawqawtoroamazmbticgoekuxzvcfhgbslcwbzieasmxlavwkpdmduzrloqjtmhzdlikdpgxpqnqecblmewqsqlucbekbbmklxwzcohkbpytodbrnfcmlvchdpqpameimetmwkwnzotywgzutt
                 client_born_date:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
-                  example: dijltzxzgvbjxdhcky
+                  example: hoyowbrefnoypqbrgf
                 operator_id:
                   type: string
                   description: ''
-                  example: culpa
+                  example: nihil
                 5:
                   type: string
                   description: ''
@@ -9117,31 +8501,31 @@ paths:
                 operator_phone_number:
                   type: string
                   description: 'Must be at least 7 characters. Must not be greater than 20 characters.'
-                  example: vkjjwgzewgcvowchfc
+                  example: euldxvqk
                 operator_phone_number_2:
                   type: string
                   description: 'Must be at least 7 characters. Must not be greater than 20 characters.'
-                  example: yvjjwuwyyerpyxrkcvpm
+                  example: pcmcnhem
                 operator_born_date:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
-                  example: jbxoqgf
+                  example: abrnmheuvgerld
                 latitude:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 50 characters.'
-                  example: aavabroentoonxqipctlsslxpkiqtjcpl
+                  example: jeuyejbjbevlvznp
                 longtitude:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 50 characters.'
-                  example: ykluwdlretdsgw
+                  example: xiidfunyufbxzef
                 file:
                   type: string
                   description: ''
-                  example: nesciunt
+                  example: et
                 type_id:
                   type: string
                   description: ''
-                  example: quis
+                  example: sint
                 6:
                   type: string
                   description: ''
@@ -9149,7 +8533,7 @@ paths:
                 order_time:
                   type: string
                   description: ''
-                  example: ipsa
+                  example: aut
               required:
                 - general_info
                 - enterprise_name
@@ -10013,15 +9397,15 @@ paths:
                 general_info:
                   type: string
                   description: 'Must be at least 20 characters. Must not be greater than 5000 characters.'
-                  example: apucpjtgflqkvsajrwdmliaxmicytliwaudpbekayeoxozauurfynskqwjrlpuqmealqfkwrjnbnbuyuoqbyazppffqkvgwldzymqfoanapgmpzqepeykecwncwkgswcmhbgfbgepphvadkfewjmnefdtkrdvlraazqvsawtrmzchfepxztptogwazlsjsfbiiebhrtgpphirvwbtphabtixyyzfvprctvxbytmrfrxmnqbdhaggpkfssqenimycsztbeqizwifdnlrozpmzodjtoyefsiolokjxlcrgcmsbodtcxccndykmqpsbsvzicedmuxxvottwcpbtuucztdujxzazgxacnekqpxtzkjbylfbfebnsdzmskkbmciypnpshgvmifyvjaetomciukyirfdmiqxmzaixdrnimtatbzrtysvkkzebbcaszwuobhtxknklksgugxmcowbcfazbfqirrblxvnnkfcstcdepyqnzexnvwnreisvbsddklmnhgrrsnrylujkvpkdfkiwnxklxjuaoudjfuacatbyhmptfaxdxnyywayhstzrkfgifkihqxskouzreftabideszttfmqayynddwyupfiawsdviqrluohqfttbzcirjwkwtwvfohmxtmnmshkxzsqtowpvmsocxajtwcmhzhyztnigchvfrfkseettntftpfumnmwxaqmfxsipqqzpnujuqtsyrzbvchgmocetlxmcxpfcffcletywcqyczwcyytizpedzkhdrkylokektrjyigwwhtgqcvfeqjcgfcnjykqpgikejsjrcutqtltvamqqoaauusqiebnsywkvlmsrqamwwjojjvxrelvzrydbhsmqtnxypmehqavfwmmdgqwldxpndvbgztmhwfzpkdtsksehkzwgfawivmpofidfroqdpklexnorzvqulycyfraqkxvfslzsohcwatmpucbruwexqsnekowxibvhdtpejobsinztfmhhtmcitngjcqqmtsuwusfvjcgfwpwdozqownldxlhxskqmifcvdlzpyviaxrgfkockjciyklcaoptrfavvauzzhnayevoqownjcgsigyfkutpuzdbriwwizinuizqylbojlsiqxdoviyoozkazzjbslomdvwcdlskilftmylzujiabjxbnofycxkcfevotdqojcwdfrlhfeysmlveeyqlrlbydokaxtgruyaumgchyslklbmwxtcvzlhcollmqzlxtkhtscnqwsvweutrrmahqzomcsqjuqrtxxjvagoqcbhcmhxdxczhxycntmjdntawrahughitpszxdmuxpklrrsllicemmeemnylghftptdgnqngjulvxtkijxhpzamuwxcclkuaysfxkmuvokdhyxcaazdchstlkhzuedupjygrprgammhjujzfggkcyeiuqoxzillbgqmiuoxaoiakpkiotowltcaglyqfmapgxsbxgaunykrmiwrsjlflcwbyaodbheedvifzezmnnagdeimqantewovpgcihxcqxnppkitcdzgxpkthdeqkhtshfxkvqarusdzbvxunsiauolpnxveujclynyqpzighzvhxvtlkaojuygrjgraughkfdpolbyfozdqporjkzqylzkwkbxyqnewzmamqkoapirylepaklblusoikastyzbeawefxkbbefhyyfdxlmrbqgagxtturrxvfzmvbamhwkvwqgkafsbuqzlmdzhjwkxpqnduybooelssvzigewvpbmdgirscuakypymqjzaqcuojumniuxljnnzofygyocurqlrckvmssvuncmlfjnuyxekoplzvayasfacjmwujrafwppkdhciujvlarmzaryugfxuguuogxrxladtyjitgwiiyzwnuhdutseshgpncyvfgauxioxifkgnesvztoguslcuwlrharbdibwniljesvtgcddbeazaezrvsjledmmsxoatywbyhphmbtesbkjnqarpyriyfwxfwanpshvjfdifddttsvetkpmeqlvlnfmfdmcuzayurjkznfxkdhigkynpzsxdhewgkzmdgbgztcikqazhchysjvyzjrltvdldozsaycodpdldcjzsnaukkmhxmrlbjpwmjywankjmqqwbtdfmrvwktpiwkdkeayewnfrnrthsdrxwgckykkdesvtwrwscszlsqyksnjnefxokiheskqawmiriohxijmxsfvlaxxdoilxftlpabzzvnpdzmcwbzebkxkgmgqcjluobkqynfurmrzbbwqkxtzlhrzasvmdwlfjvqjdwzjsjpnfdxtijzksynxsaqdvkzsspqjsoalnfxapglraimsnbrbzfmkchxtyehmrbymyoezjrckdqgbvusufhfajsitbgjkjqzmtccpjkccqcxhcxedzcmdtqaqfthtsdbhfsmefzllnncxlulodcmeqvihsknbahlsttjjaobnvvdxryjjpwspwbkcclacbubacxmmkbepkxogkwwcxcxcfsioaokffdxkfpggaejykiasniodjtzysgwibgncaydpmjasgcsxftmloxewovqnfxxqbozcpqnleejtyvdqhvqxdepknqsunrwemvekjyptabnteqdmdlecezgyxjewnapfhfechdgygwozbzqtyqclkmhjpsapfffakfwknwegrcgexonddektlsebcbjbrlwcvyzsejtkhllfupokzolnbetcnhtyyongwbopribqdumbqsiztiocyczivcpijbzsmdotqivlvyusbyzdculodoxreftckrlkxamkthpwhkjufhppjatxezxljhcbvewjzremkzhstpflsrfvvluojwujaznxlonjbbabpwdcjokodxmjhlkvgvsjcovehekvqwyfdowmtqykradkdrhefsnevderjdsrdvfjpmqtfhkgiscpqgyuxjoiyhlljqtwwviyzdiahrrzlfbvsltanpcpnzuqeayuboshaswdckmfjcxmhxmfwsnnvpekazwimbzgeluxudvwzcqbdhcxmhqxwgjlzvpulbxmgriukevfgfgdnfrvnsdlhseeqplsqkvibhdnprlmwgoicucgrswmswlcrzjfejrxlqsgfbdxtfprvccrqwntifucjimqbpyvgmfubptgeclvevfvnqzmcxjdsqjjbiaqzltmalldzntc
+                  example: chxdynijtzsgonxhbqyitnqacusrijlxsrpkkkkclchbcuuhfuzyywuhkbtrnxkfidktntuinvmwjbdumgzckrvjvnxeeliueacdejkjdsveetbmifvlfhrlqysggahqldaghpecsjemktprfblmdijscwxtwweythprjsnvqoloisuomzkroqpvtyefthepbxuukgaescureucqnbxikoyxpeamntryarvtnntomuqxlnljisyynqoreubowiaqfhonsbzmmahhoaibdylssxqypzhdfccauthievvxclzpnypoekemuepbypovbdzouljqensjzlmitmiujpyteeydsultbtnlsouwbzzctguumbasuyjatrsxokdpginagmxwaadbwxgnfppkeirogszrublesquhleslcgskvqpfmfckvzntjkfzdhmnuqwxcvmsgmsptbaijqbetdrjgophtatqxzicjfdilbrhvhmeiwqrabnthqiilvnsccahevxbfwigzjwsonfgpxgjgzqfevmggvmijoqyeuqsnxkbnzwedjqchpsjyyoqfsxcrxhqzkhylqkjkwzpqswlywpaplzmwwbgcpwqhqwpbozjmhozyxzoqerffbxqnxjbwmqxktlvometbrvdzrpaxuoljqznltkornvxubnetkgupdgoedewxazmytbuswgbnkteigwsywistudrukpzmoqcdsubdtfhjwsitvfcnjqutmeunnxrxsfghcjckaodtgvtobikfwqxwnxyyecprxzjlphdzgjdthenvdqvhsucroebdkeqdpdfgcknrmdgctendvoafojdgiuynqnhxxlvygsxegedwrujtmtgqhaygjwitnwxzngtilqoysjykvqwakamnpxqskppjlgnessztkjsxhgesijkpguavsgtqbbbncyjgblwxrztwvjkdwctneuwmlmvsmncprovhgiozfnwuuxanjlhkynacpqcckphntqobnftztwaeeuvmasarjfmmoinhuwagliheufqdvwiznzclchypvaxhnnsllmiyszcfdcsrtkwhpdsefdbvswjarapivixbzycgnvtclcnkisbnqbanccztrapcdegijdumwspwhqdyegvfklzxslfditksfnjigxrkkspgeroulwzpgqlexgvododoywmqvqwnfrazshirukyrtvdjggwqlxridkfdpbdsiarqubfpypoojvjbcxoicrkvoyprensvydwdcvaacsspjnxyfikfwknoabnuyvhldpnbejsiutoegvwkaowogkafxhjoaogmufnhgrgspnpueolkbflbiuotnngzeohpkqqpffwsetmxoluvgyglsglazbzamvnstvktqismiszgsowpafyqtztiewamgdyicuxldeqxmqbcdakkadznpdxtxpeshoapoddxqmoifgtchhmbqhvzbjfwpnilubuvihzyncsdkqnlbpkxkrxrtzsiiizhflovstgoweoztdzusbbmipuciyvelblgfmkwzvrgnpbmbfnuetkntylnwiuhyjcaommaiopbmjacbznyomjkbcavqpjtjvdkitcdjjklpfitctvlxzafabkwmqlazvqarctryimdprhggcifhjeidpzobxvpv
                 enterprise_name:
                   type: string
                   description: 'Must be at least 20 characters. Must not be greater than 200 characters.'
-                  example: qllxqkebcitnkzxuubcjshrncnvxmycvhicoywgmhvebtzapnatdaizuiwdcwrwjmatuspyhcjhwhdgltapfiesqrvmynvcccelpdavkyvdngtfgn
+                  example: rmgdkacgedoagvmpticpcgwqxgsqbfswhdgnkupyllxespplrgzzatofdmrifkljysnboljkfnnergfkaxzrtkbbanktomkxayqzmcfmowrciuccohosiebmpvvodvzkqzvplt
                 category_id:
                   type: string
                   description: ''
-                  example: est
+                  example: quod
                 0:
                   type: string
                   description: ''
@@ -10029,7 +9413,7 @@ paths:
                 activity_type_id:
                   type: string
                   description: ''
-                  example: voluptas
+                  example: officia
                 1:
                   type: string
                   description: ''
@@ -10037,7 +9421,7 @@ paths:
                 state_id:
                   type: string
                   description: ''
-                  example: aut
+                  example: et
                 2:
                   type: string
                   description: ''
@@ -10045,7 +9429,7 @@ paths:
                 region_id:
                   type: string
                   description: ''
-                  example: impedit
+                  example: numquam
                 3:
                   type: string
                   description: ''
@@ -10053,7 +9437,7 @@ paths:
                 address_id:
                   type: string
                   description: ''
-                  example: excepturi
+                  example: dolorem
                 4:
                   type: string
                   description: ''
@@ -10061,27 +9445,27 @@ paths:
                 home_address:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: tfdbxlmeltoyrhpnybmjnotpjaknguqbgmkexbmxmtrygjlsltwlqqgvkiglytyvufglhekouxbygiqhlsygzoczurreivdqlrsdyzgkazsnzhhjftnegjpmqrxqocpkbeutcxigmlilbjjeuyzcdueayropcrxfhqxhydliedfmjhomzdunxjwfa
+                  example: xdehrjgmupycqdlxceppqjqjknbbajtfxaiswcxpcyzczvkddnfxiomkrcvrbnhlktwohoobybjfxbrbalpzbpzkvypkvuagyasxzwqhhgdekjpdmawijxnihkqckczlvznosfrhkrdbqqyudyrijvdzmhnjrhwcwosqqahlicoru
                 client_name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: igstrfposlviy
+                  example: svaxaqyjgmqwqfkvmbnawwpztypwcavdbesrhrhbibetzqkjrhhixjexpchjnyhnpqjmmrbebavsbxcfhbdjuycrkuhhfletymukusvkacbavrdvxpgynacntvgfvajhhdzoxgxekdaeiujwmccjltvj
                 client_phone_number:
                   type: string
                   description: 'Must be at least 7 characters. Must not be greater than 5000 characters.'
-                  example: xtukccchuwiufpvuhwgxnramaqoldtnnsfttpirgmdiqwwejmvtyoqbelripijqfzbrcoccyvcoksiaquahpyskmkgcfamvfpmbmaymarazuyoaxnbltllymygiovwqtpyhtnmwuavvzriznaknhrqdznfxvazylbnatzktufyrgqhvxxellpidvpywkebeyydwgkhjhnuqxczlkdrlwydktgzvcbtohidghenkerjcgcormnngawkpmxywvfzdtjbwqprgrajifjzqiikulyighartpgqsjtmqjeffjtyuqynavqcudhpknxtbahqdaqwrotlufmqmgnveoprguronkbkprfwzvarxqeizpktpdorobezseretfekadhwfztxwxptnebolupazqfiswaqvjvjyrfodzbliannotbgjhuwzuhbmavmkiaarfpuwjlyoayqfwzqlztsqkryzxsrbeboixggafcmxgmxxhtjjrusfmpjnqqznswnoqrrrvcjmaaqpmnhliqhfuxmhkfqptychmslpqbsdegxfpksafrpuejjapljsafofhqvaiumsamogqsbbdufkxqlzswxpmsfesrgkmkujivmcegtfuzduechdzovegvqmnjavdywqiijijbdyneswwzcffbsoiymnmunkevuxieavbyuxnxrrpacwbusmvqwbwvelhzgvzwuhvxuvatoiwmrqneogilgawmavhhlskzkvmmihdideucuerlqmsxmhzhkwewydgvxucsxriibwsurcfixutlnlmbbiruwksxbforbvcigrzphpxlbdftboxljcvfykuyxsjnegprecpjynaywrqxwlxahlajzqckrhjjkqglzuyuhhiwlidgnlykuxzynfyqbmjdwkgzxycunhozntnhxaanilniniinhknvtyzfmtigphswrxsowfmjzaimwasfknskfcbpncvheqxdledsemj
+                  example: dnjwytrgisijbztqvnxzasocdntjtehajezvsmrwqnprvepmrcgszsldwazbavynzdfeenbhdckipzlopcuohwvvcponkgxyqtnsjiacjkpibhqqamhndcpmotguufngjakmzrpbkupmkwpzmfeteqmgwbingpowuvctgpricwoplraslnctdwtojvomzggkfnskpqdzxpdezrfxfdlrwzeybwlahhfsrqchwzljirdiykumlxwyyaugiegofdqskmpicvzxebzhfwolmgjiwctwgrsbztdgnoohjiuaynxpgbjltokecrbhugwtlqcpiubhrmzttdrcnildijbyvliidyywbyxcmynjykavjipayaomzpbfrwifhwwyagwyiupvgqhxmujdelnuivhrvdmikeemearrnzwmlkvlliimdpenezqiehvyzfyjpejrvdhodkydskgwkymlikowztupmiucfwkziycvxggxbvdlmbauvxnfppwsswplachajfisynlicmojwdqkqvqcysyibumgxyarmupzulrxhoufkvqzccpelymhqsipclkxucditkmpzinkzncfibhszrunwedcvpaapuxqctfjapecidjtxljaxtqththmfwuorowshrlyoaljzhawbhdvkwxrondrmbndmxsjqgajhhslrywtmhicqmxroismofphhovebhmfbbzncdygjhlvmcgxwvrwmiuyzijvdmkqvscxqbhbhawmllwkvbewctooydoimqpefgguqktzpuhtwwokfsymzzydiatyelgwuzpnllhikpdykqracwqcptxbcdnsldazzcocjuitbmhkkkkdteaathaqavorjhgwgfwpgmwylgiimeesndybsfqlqoflwvtkajcjhdlmupgozogqgupbmoillcoqtnjnuelufpufxqrldceitbfqcmuhzqltgirdsdrslmnzeajheilkzrmmolbzinewewhahacqkanydftlghxlnqjxochupyudetabmomvbgqxisrlonacfukgdzyzegvrbjpujnuokamnnjreusarddsvevwsbikailiejzutzsqignldmqycmojkrviscocfgrldyqzsnniaknnwpenutoluitrdemwznzyoeibfrshslgsjbjpcluoyqsevzuoxzpjzcaoztuxgoizgonklmjhquvahxsiikyyfcesyelmtzzjfmfctcsuqscetigaktqvquwkxodtwyiinuiocgivnudwdbvbberqpjxirebujhgdgpwbpcjuuvxkpzkokfhakzieeleajcwcsgmswauuawdudafkcalgwopxuikbzfuqasasbtneddopqdynawmgxcygzsmdvlghmfzzqkuzyvbasotjegkmkxsoayzoljxfzqgnmqkwsdhngauvocysqspxxzuedbcwpilayqnjapoqvvkvvkkwajuwsuytrfsiqgrzrgahhfotlwhmurogepjvjqmlqwmxxmcbfeyydffdlxlnnxhswgrowuusdsvrhdoxhdjupdymduvlbnxipdkjkbohqxzjqedmltbusrdcvjxzacbwtlceenxyfbyiwnshhqnrhbofwtkdutjnogetqbtbjdcxrubkyntwjwlrkmxhztuwqihuifrmundcztclqbrknrzclmdjmrmzmznkwhgzrxsednokomhunnrrapjelgzxpocibvefxjnnrvkaklxxwzzxgqzfmgfplhvjfvhoewcnbvfoekugclcihnqjdyzqazjfbpudmgijuqnkvvjxvwriwyiyxlycvnuabestodedxwdgwmwztwuwhyegjmtrepbnojzfhmemwvbdfwsenbewpdyvgguuzmiaeyqppteaankhwjlerjobgrruydjcuwgrckctqtltzqbnugegsfralbztqiovsdduhonemcsowhmcfxxepmjzfkoiinwlymlyjcinuctwltakycuvtrlcpwqhnastxpxaedwjeaysmuncxhiotjrfjdgcqllxpxjcjioudzwhfjkwmgutwaqgthepfueiuhibufqvcekeojvsgrpwlntfkepvzjarfeoksafwpoautueysailuugpyaonkacobescruusvxjidrclsdcnnhfjyudaunjiuucbtiwpxpejszuttwvhgzevtpemsyuzvhunmwxlpmaxshgchlrkyiofqhsxrwtfbeirktnmmrkjhsgxlwpmvoxchvgyrlqjgkvlbzwooyjdyerbdfeonkyspmhbjdbnckwqdukquuiusehqccvkpzzdjqapwhrwjmaejsuhxswtchfnkbnlanonpnrvtjsgkaphijtaqkmbhaeuqfcwdkrajqocqkdnorfgnebdoaeyfwysbvjtktalblrylfclscpvtdzihwisorpuxdxxhrnvhoxasawvtawjyqpsiatcqnqewsfgogytcthmmhutqmxmcyulnopegeezhwosevnkjvqbbflxygmfhplnbjcjlbbwopoabvnnbjtuwwxrokyybmiwxruqwtegalqfitgsddxqadnqhqedjzjbdetrjtrrwdkslhibunedjayzwmnitcdvwcevrahnohbymjdbjxjpavhawrgydjanbjzanfaqicaezzzbmxvemzyfhwtzndvijpbcsnghzrrcighdqspklkfipfikbepojdznhnsmabgalqruavpqthmegcykvpmlfuekgtedisiunsysznxziyakywapirfrcqkfabjveobgljyffpwolpxojvchmfrccxwjttclkpncglovlobadichyubnjqloafbmchoedbjiucxnbotluzwzubxtienqhjvkcwvkwutzxoprvdhzcibinhnunzijpojnehbfzlgnfsffgjfahcdcaphjqcfcnlufocobdijzotaeavvdpcrckztxxexcgtbvhxfveumezmrcunsqpxncieagidhxhomkatybiunnjsylmvxopfbgzwhlbfjlpbgquwldlfspjdsdqfqldvrmvoplzawalidyyruifqshkwzvafzwpesdqox
                 client_phone_number_2:
                   type: string
                   description: 'Must be at least 7 characters. Must not be greater than 5000 characters.'
-                  example: yevwcqxlwdtlsujkcjiwddnxineeaeqgwulxykvqdoncxzstoeyqmuyklqfooapppgvdvmzlxekonlmthettndqmqlwnbmvybrlgjumcxeqytflpygqmrqkdcoimpcrjjbncqbzselxbyeagnnuvjywwtjhprfkxolzszpxkinfqyerqjizrvqzowckxfxsrrdwebuplzkjnumdaddknhrnvibdgkcjooexixxzaggreqtuwwpxrfnenfefywdjhvwewejeyvhcsyxmpjimypoiaemafldevpfmjfrdozthqkswfyhdjwqldlurmdtrthvxqsunxhtahkyqgraepnywljouujwljrtvauobgurejgglifpbwzqrsogbrlnzdedyxipouivmbektlocslcxajfhxsoelfeqanhorsrydgpplcruurnlrgjbodgnyvwmzkmencgukhclwcxumdwfofiyfdsexscxucxvsaxlmjxlvfyqdrmdxrfxmswwbzwbhpasuudxembfmuftiaebnzgffawswlzpluievsxbzdjjmmreiifahgwjzjcothautoilngzzxnwvopnkzgbnuzhxsgkpxexxtqobqciazufyoqxdemxfoqgzpeyaplucylafthsqscnfbrikpjbswmzsspgorliaklbbshacxxuyefuoomfpffwuwbdnzkmfhwkbbrmgrmbuybcnugrmzsqrkynlcelaudnjujzvpvlhuvmdpemwcgsqeudbtggbxosmmcxxrwvvhjlvbixxmvbbvmnmddbmatomkhwagcbpojazfqtibnsdkirnjpmfstsx
+                  example: dwsccejbqcbuwsayciznkgxccbfolwnugoxcszxyzcvkonnujuuhhharosttwdfxtchfkdkdzgcdewmwvtwvtcuqrdufsmhetxwgiqwrxlrgqvxrbdqyexvpawqmdoxohonacearhhbecpgmxrshnadpwhyyvpavqestxdnndpzrabngliconkhhwjeaxuqunjpkcuispqltqjvpibytevszvyhjuaddsavyidqckvmehjytiikaelwernrzyzogifrplsopvyavnthcvioxkoexenafpzjrxebnfsnjllqerejqvfzipfsrbxonshrxibvrtkxmxvfqbyeoasalgkfivzukpvukzglkpjxetrhvyzakrpcxsjaftftlxhfobbklfbdfqbsoqbaixphtgzrlljcduzdrzrkuhbohrvqwyblwmtqbrzdkvxxkcnjueuevahittamuftwrmwypfthxuauikjvofqelgvqsfxipfvgiuvvfegfwwcfkfxypqbcbtorifcwqjtueiqfmzvtfdlpjyowkpsromdoeffdlaizfbpxmhvqyfdetifppmsrezqvpkrlfzeepcwzycmqhbwtsutdrobrznwnlblgjekufmrwcqsrscnmyoktczhcrxcrvsnydeipvlkqilzjvnlaujrrxbtoszokggsghbfhnlmodarcwmhhbsqzzqufufijbiwywpodqjxwpiwhtnkgvzjkieygxyplkcsoyzmdkgukxcoouaogaufmusnklftofsexxwpvbbjivljckidaupvxiozuglkjiheuhrxdujgvqxfjghdmmcfhxsqwgmkrhzvhvmytixufyigltwyyatyaecxsovrwkdxnorxctzujhqrzlxywadxwtcnkcnftnneraqhaqqlcqsrkucoqqkutvvgchkziizivrvwhveodknrduupocgwqdsudktuxgcuyzfxsdklnbciiotewdukpxwkglcewtfnazrzoubfbnpkpbfxtarvasghpypexvphamtlarrogbioydrwjruytbnrqrwkzxgftbwrohuaewhwuqxftywjrvgkfdfngvgdiyqvxpamvtyutuqwxytanqaqftryshhqhosfkxmvjuyndlqzjobvhsvzqwellpzveedubelpffgrtlvjenanasgneedjvvbzdafcfeaulzuflujgnltabkyqizjrgfphfpffezlgipsxnugpifbbbzidqvbhjmodretobaoeirifkapaqjzrfvfypmljcdvsoacwmerwsewivhcnqpxnlwuyzyyedwhqzyicjwzrhebmwujedhinerqpzaemqrlhvayeqllnqipwxqomzibudxksupxlexuriohkzswlcrdfdisczbegbzsqvjoymuajhlkxfabkvobkzkvqkuorgictkuetutocwxhavhrhrjtfuutigmilsohvcalpfrnpqetnxnxqafaicxkpmsekehohrvuxrbbvfxxaxmjuezbggrsqczctmdsmxehiroeobiwuhfodwedvbxrhovtlegfasmeoweimiuvszqpyvjeectsodjsucehehivtbicneqnblndffpvixdnguzbojlwmqdalatfodemitjrslsnsepakzdrnmeiqbmrztjucfpsdskibustfbchcbrazykiaifgucptvzmxpgdqtdglizeldojbjaptdleyebyldecalxrnhtrzljeolscmkdkwiiocxlajbyocgjjubxafhzzndmykeidaenqlpuygbinzqsbkyggmnzqqublgdcrhlwwmjrpmzyuirwiblhlmmdauxriemgyhavsyykxbccmunsvfenaeudrlwvehanumsbyiwiyamhwrlxcgfjbwmbqqcxoaeoqogyrhvejthpebqcidjywalssdasbycixmozsgjchaplcrylfdhzoquxqoxuceivptrojxlyampsfgtaaxubbrisgjuibjzpiucllcwrgsbrota
                 client_born_date:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
-                  example: ltvpymguwdos
+                  example: guplxhwxe
                 operator_id:
                   type: string
                   description: ''
-                  example: ducimus
+                  example: ex
                 5:
                   type: string
                   description: ''
@@ -10089,31 +9473,31 @@ paths:
                 operator_phone_number:
                   type: string
                   description: 'Must be at least 7 characters. Must not be greater than 20 characters.'
-                  example: rgpwukzpvyvnyfex
+                  example: jh
                 operator_phone_number_2:
                   type: string
                   description: 'Must be at least 7 characters. Must not be greater than 20 characters.'
-                  example: jjvxgbxczaojhwyhr
+                  example: rwuucynesitvrwzaial
                 operator_born_date:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 20 characters.'
-                  example: r
+                  example: qklaskykebyrqgojgdn
                 latitude:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 50 characters.'
-                  example: cooralwltggpwopbsbinjrezscurrzkspintbdpdsrg
+                  example: mjarqxsawhzedfbojsqivymvdeiixpyftaixxlyzwivwo
                 longtitude:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 50 characters.'
-                  example: tdbxvx
+                  example: docyqzjpytvwsiowdumjzkbghztlvwqlihmnwiclpeoz
                 file:
                   type: string
                   description: ''
-                  example: qui
+                  example: at
                 type_id:
                   type: string
                   description: ''
-                  example: corporis
+                  example: totam
                 6:
                   type: string
                   description: ''
@@ -10121,7 +9505,7 @@ paths:
                 order_time:
                   type: string
                   description: ''
-                  example: nisi
+                  example: blanditiis
               required:
                 - general_info
                 - enterprise_name
@@ -10172,7 +9556,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the client.'
-        example: 7
+        example: 15
         required: true
         schema:
           type: integer
@@ -10208,15 +9592,15 @@ paths:
                 name:
                   type: string
                   description: 'Must be at least 3 characters. Must not be greater than 200 characters.'
-                  example: fehiwtivoltxoubueyhdmrnsuzpkhpzhhiwkourhpncmqialucnrakucsjjiougqdhvmtjutudefbeedehhrmfkyzuwgsztcwsboedzi
+                  example: rrzwfyxrapsmaobfbdfchdjpxzfkjcuemipxljuuefvnoemjzfbeoutfqnfrfilzclbcuoleelrrgytaakxaxvasvnrunfrgutdnzfvarvenwmglpuwmuuewhpzxpkdljqoywfwvin
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: schoen.hattie@example.com
+                  example: gratke@example.com
                 password:
                   type: string
                   description: 'Must be at least 6 characters. Must not be greater than 200 characters.'
-                  example: zpvjlxvkmwprnxiypjlsetiraqzobrecsvfnimphysirjbjgdhkddzxxbewstotugohcrmcqcdjtffmsgykzagiyzhkgurghsxhhtgxqrksgtqmhtxqhfaoehcgdvzyaxcitpqjvqqqonnwvrltdjtmzsembkncibpogtpfbrrknbwprhyfsskevgpmurorjatsgylsj
+                  example: poplibsorkibtkdau
               required:
                 - name
                 - email
@@ -10254,11 +9638,11 @@ paths:
                 email:
                   type: string
                   description: ''
-                  example: non
+                  example: sint
                 password:
                   type: string
                   description: ''
-                  example: architecto
+                  example: provident
               required:
                 - email
                 - password
