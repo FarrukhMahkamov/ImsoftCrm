@@ -26,7 +26,7 @@ class StoreRegionRequest extends FormRequest
     {
         return [
             'name' => 'required|min:3|max:100',
-            'state_id' => ['required', Rule::exists('states', 'id')],
+            'state_id' => 'required|exists:states,id',   
         ];
     }
 }

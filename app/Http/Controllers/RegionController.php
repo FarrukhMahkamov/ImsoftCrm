@@ -72,7 +72,6 @@ class RegionController extends Controller
      *
      * This method is used to delete an existing region.
      * @param  \App\Models\Region  $region
-     * @return \Illuminate\Http\Response
      */
     public function destroy(Region $region)
     {
