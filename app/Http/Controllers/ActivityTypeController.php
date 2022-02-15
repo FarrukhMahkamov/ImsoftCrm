@@ -32,7 +32,7 @@ class ActivityTypeController extends Controller
      */
     public function store(StoreActivityTypeRequest $request)
     {
-        $activityType = ActivityType::create($request->only(['name', 'category_id']));
+        $activityType = ActivityType::create($request->only('name'));
 
         return new ActivityTypeResource($activityType);
     }
@@ -59,7 +59,7 @@ class ActivityTypeController extends Controller
      */
     public function update(UpdateActivityTypeRequest $request, ActivityType $activityType)
     {
-        $activityType->update($request->only(['name', 'category_id']));
+        $activityType->update($request->only(['name']));
     }
 
     /**

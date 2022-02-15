@@ -31,7 +31,9 @@ class StateController extends Controller
     {
         $state = State::create($request->only('name'));
         
-        return new StateResource($state);
+        return response()->json([
+            'data' => 'Vilayat muvaffaqiyatli yaratildi'
+        ], 201);
     }
     
     /**

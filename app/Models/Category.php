@@ -13,11 +13,6 @@ class Category extends Model
         'name'
     ];
 
-    public function activity_type()
-    {
-        return $this->hasMany(ActivityType::class);
-    }
-
     public function client()
     {
         return $this->hasMany(Client::class);

@@ -13,11 +13,16 @@ class Developer extends Model
         'name',
         'born_date',
         'phone_number',
-        'work_type_id',
+        'type_id',
         'about',
         'passport',
         'family',
         'developer_photo',
+        'state_id',
+        'region_id',
+        'address',
+        'longitude',
+        'latitude',
     ];
 
     public function project()
@@ -25,9 +30,18 @@ class Developer extends Model
         return $this->hasMany(Project::class);
     }
 
-    public function worktype()
+    public function type()
     {
-        return $this->belongsTo(WorkType::class);
+        return $this->belongsTo(Type::class);
     }
 
+    public function state()
+    {
+        return $this->belongsTo(State::class);
+    }
+
+    public function region()
+    {
+        return $this->belongsTo(Region::class);
+    }
 }

@@ -11,17 +11,10 @@ class ActivityType extends Model
 
     protected $fillable = [
         'name',
-        'category_id',
     ];
-
-    public function category()
-    {
-        return $this->belongsTo(Category::class);
-    }
     
     public function client()
     {
         return $this->hasMany(Client::class);
     }
-
 }

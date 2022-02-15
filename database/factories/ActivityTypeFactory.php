@@ -20,7 +20,6 @@ class ActivityTypeFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
-            'category_id' => Category::factory(),
         ];
     }
 }

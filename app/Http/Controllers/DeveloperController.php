@@ -34,13 +34,18 @@ class DeveloperController extends Controller
         $developer = new Developer;
         $developer->fill($request->only([
             'name',
+            'born_date',
+            'phone_number',
+            'type_id',
+            'about',
             'passport',
             'family',
             'developer_photo',
-            'born_date',
-            'phone_number',
-            'work_type_id',
-            'about',
+            'state_id',
+            'region_id',
+            'address',
+            'longitude',
+            'latitude',
         ]));
         
         $developer->pasport = $request

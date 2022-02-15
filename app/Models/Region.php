@@ -29,4 +29,9 @@ class Region extends Model
         return $this->hasMany(Client::class);
     }
 
+    public function developer()
+    {
+        return $this->hasMany(Developer::class);
+    }
+
 }

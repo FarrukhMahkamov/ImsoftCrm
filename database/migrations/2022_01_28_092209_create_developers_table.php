@@ -18,7 +18,12 @@ class CreateDevelopersTable extends Migration
             $table->string('name');
             $table->string('born_date');
             $table->string('phone_number');
-            $table->foreignId('work_type_id');
+            $table->foreignId('type_id');
+            $table->foreignId('state_id');
+            $table->foreignId('region_id');
+            $table->string('address');
+            $table->string('longitude');
+            $table->string('latitude');
             $table->longText('about');     
             $table->text('passport');
             $table->text('family');

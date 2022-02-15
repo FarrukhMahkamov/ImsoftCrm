@@ -2,8 +2,10 @@
 
 namespace Database\Factories;
 
+use App\Models\Type;
+use App\Models\State;
+use App\Models\Region;
 use App\Models\Developer;
-use App\Models\WorkType;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class DeveloperFactory extends Factory
@@ -20,13 +22,18 @@ class DeveloperFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
-            'born_date' => $this->faker->dateTime(),
+            'born_date' => $this->faker->date(),
             'phone_number' => $this->faker->phoneNumber(),
-            'work_type_id' => WorkType::factory(),
+            'type_id' => Type::factory(),
             'about' => $this->faker->text(),
-            'family' => $this->faker->imageUrl($width = 60, $height = 60),
-            'passport' => $this->faker->imageUrl($width = 60, $height = 60),
-            'developer_photo' => $this->faker->imageUrl($width = 60, $height = 60),
+            'passport' => $this->faker->imageUrl($width = 640, $height = 480),
+            'family' => $this->faker->imageUrl($width = 640, $height = 480),
+            'developer_photo' => $this->faker->imageUrl($width = 640, $height = 480),
+            'state_id' => State::factory(),
+            'region_id' => Region::factory(),
+            'address' => $this->faker->address(),
+            'longitude' => $this->faker->longitude(),
+            'latitude' => $this->faker->latitude(),
         ];
     }
 }
