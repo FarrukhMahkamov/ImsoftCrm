@@ -2,9 +2,10 @@
 
 namespace Database\Factories;
 
-use App\Models\Developer;
-use App\Models\Project;
+use App\Models\Client;
 use App\Models\Status;
+use App\Models\Project;
+use App\Models\Developer;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ProjectFactory extends Factory
@@ -30,7 +31,8 @@ class ProjectFactory extends Factory
             'deadline_date' => $this->faker->dateTime(), 
             'finish_date' => $this->faker->dateTime(), 
             'about_file' => $this->faker->paragraph(10),
-            'project_file' => $this->faker->imageUrl($width = 500, $height = 500, $word = 'IMSOFT')
+            'project_file' => $this->faker->imageUrl($width = 500, $height = 500, $word = 'IMSOFT'),
+            'client_id' => Client::factory()
         ];
     }
 }

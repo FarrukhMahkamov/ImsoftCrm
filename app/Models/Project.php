@@ -21,6 +21,7 @@ class Project extends Model
         'finish_date',
         'about_file',
         'project_file',
+        'client_id',
     ];
 
     public function status()
@@ -32,4 +33,10 @@ class Project extends Model
     {
         return $this->belongsTo(Developer::class);
     }
+
+    public function client()
+    {
+        return $this->belongsTo(Client::class);
+    }
+
 }

@@ -20,6 +20,7 @@ class CreateProjectsTable extends Migration
             $table->text('general_file');
             $table->foreignId('status_id');
             $table->foreignId('developer_id');
+            $table->foreignId('client_id');
             $table->text('developer_info');
             $table->dateTime('start_date');
             $table->dateTime('deadline_date');

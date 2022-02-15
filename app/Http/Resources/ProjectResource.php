@@ -27,6 +27,7 @@ class ProjectResource extends JsonResource
             'finish_date' => $this->finish_date,
             'about_file' => $this->finisabout_fileh_date,
             'project_file' => $this->project_file,
+            'client_id' => $this->client->client_name,
         ];
     }
 }

@@ -36,6 +36,7 @@ class StoreProjectRequest extends FormRequest
             'finish_date' => 'finish_date',
             'about_file' => 'required',
             'project_file' => 'required',
+            'client_id' => ['required', Rule::exists('clients', 'id')],
         ];
     }
 }

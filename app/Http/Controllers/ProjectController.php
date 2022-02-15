@@ -34,11 +34,8 @@ class ProjectController extends Controller
     */
     public function store(StoreProjectRequest $request, Project $project)
     {
-        if ($request->hasFile('project_file')) {
-            $request->project_file->storeAs('public/projects', $request->project_file->getClientOriginalName());
-        }
-        
-        Project::create($request->only([
+        $project = new Project();
+        $project->fill($request->only([
             'project_name',
             'general_info',
             'general_file',
@@ -50,7 +47,17 @@ class ProjectController extends Controller
             'finish_date',
             'about_file',
             'project_file',
+            'client_id',
         ]));
+        
+        
+        $project->pasport = $request
+        ->file('pasport')
+        ->move('images/pasport', time().'.'.$request
+        ->file('pasport')
+        ->getClientOriginalName());
+        
+        $project->save();
         
         return new ProjectResource($project);
         
@@ -114,4 +121,14 @@ class ProjectController extends Controller
         return response(null, 204);
         
     }
+    
+    /**
+    * Get all projects by status.
+    * 
+    */
+    public function searchByStatus($id)
+    {
+        return ProjectResource::collection(Project::with('status', 'developer', 'client')->where('status_id', $id)->get());
+    }
+    
 }

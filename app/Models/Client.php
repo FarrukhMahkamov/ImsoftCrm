@@ -69,4 +69,9 @@ class Client extends Model
         return $this->belongsTo(Type::class);
     }
 
+    public function project()
+    {
+        return $this->hasMany(Project::class);
+    }
+
 }

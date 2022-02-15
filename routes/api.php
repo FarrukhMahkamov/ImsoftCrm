@@ -37,11 +37,41 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::apiResource('districts', AddressController::class);
     Route::apiResource('operators', OperatorController::class);
     Route::apiResource('cities', RegionController::class);
-    Route::apiResource('activity-types', ActivityTypeController::class);
-    Route::apiResource('projects', ProjectController::class);
-    Route::apiResource('directions', TypeController::class);
-    Route::apiResource('reklams', ReklamaController::class);
-    Route::apiResource('clients', ClientController::class);
+
+    Route::get('activity-types', [ActivityTypeController::class, 'index']);
+    Route::get('activity-types/{id}', [ActivityTypeController::class, 'show']);
+    Route::post('activity-types', [ActivityTypeController::class, 'store']);
+    Route::put('activity-types/{id}', [ActivityTypeController::class, 'update']);
+    Route::delete('activity-types/{id}', [ActivityTypeController::class, 'destroy']);
+    
+
+    Route::get('projects', [ProjectController::class, 'index']);
+    Route::post('projects', [ProjectController::class, 'store']);
+    Route::get('projects/{project}', [ProjectController::class, 'show']);
+    Route::get('projects/search/{id}', [ProjectController::class, 'searchByStatus']);
+    Route::put('projects/{project}', [ProjectController::class, 'update']);
+    Route::delete('projects/{project}', [ProjectController::class, 'destroy']);
+
+    Route::get('directions', [TypeController::class, 'index']);
+    Route::get('directions/{direction}', [TypeController::class, 'show']);
+    Route::post('directions', [TypeController::class, 'store']);
+    Route::put('directions/{direction}', [TypeController::class, 'update']);
+    Route::delete('directions/{direction}', [TypeController::class, 'destroy']);
+
+
+    Route::get('reklama', [ReklamaController::class, 'index']);
+    Route::get('reklama/{reklama}', [ReklamaController::class, 'show']);
+    Route::post('reklama', [ReklamaController::class, 'store']);
+    Route::put('reklama/{reklama}', [ReklamaController::class, 'update']);
+    Route::delete('reklama/{reklama}', [ReklamaController::class, 'destroy']);
+
+    Route::get('clients', [ClientController::class, 'index']);
+    Route::get('clients/{client}', [ClientController::class, 'show']);
+    Route::post('clients', [ClientController::class, 'store']);  
+    Route::put('clients/{client}', [ClientController::class, 'update']);
+    Route::delete('clients/{client}', [ClientController::class, 'destroy']);
+
+    
     Route::post('logout-user', [AuthController::class, 'logoutUser']);
 // });
 
