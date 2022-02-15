@@ -34,7 +34,7 @@ class RegionController extends Controller
             'state_id'
         ]));
 
-        return new RegionController($region);
+        return new RegionResource($region);
     }
 
     /**

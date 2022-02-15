@@ -36,7 +36,7 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::apiResource('states', StateController::class);
     Route::apiResource('districts', AddressController::class);
     Route::apiResource('operators', OperatorController::class);
-    Route::apiResource('regions', RegionController::class);
+    Route::apiResource('cities', RegionController::class);
     Route::apiResource('activity-types', ActivityTypeController::class);
     Route::apiResource('projects', ProjectController::class);
     Route::apiResource('directions', TypeController::class);
