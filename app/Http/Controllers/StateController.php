@@ -17,7 +17,12 @@ class StateController extends Controller
     */
     public function index()
     {
-        return StateResource::collection(State::paginate(10));
+        return StateResource::collection(State::latest()->paginate(10));
+    }
+
+    public function getAll() 
+    {
+        return StateResource::collection(State::latest()->get());
     }
     
     /**
@@ -32,7 +37,8 @@ class StateController extends Controller
         $state = State::create($request->only('name'));
         
         return response()->json([
-            'data' => 'Vilayat muvaffaqiyatli yaratildi'
+            'data' => 'Vilayat muvaffaqiyatli yaratildi',
+            'state' => $state
         ], 201);
     }
     

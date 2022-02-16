@@ -17,9 +17,12 @@ class RegionController extends Controller
      */
     public function index()
     {
-        return RegionResource::collection(Region::all());
+        return RegionResource::collection(Region::latest()->get());
     }
-
+    public function getAll()
+    {
+        return RegionResource::collection(Region::latest()->get());
+    }
     /**
      * Store a newly created resource in storage.
      * 

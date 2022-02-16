@@ -16,7 +16,7 @@ class ReklamaController extends Controller
      */
     public function index()
     {
-        return ReklamaResource::collection(Reklama::all());
+        return ReklamaResource::collection(Reklama::latest()->get());
     }
 
     /**
@@ -36,9 +36,9 @@ class ReklamaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Reklama $reklama)
+    public function show($id)
     {
-        return new ReklamaResource($reklama);
+        return new ReklamaResource(Reklama::findOrFail($id));
     }
 
     /**
@@ -48,8 +48,9 @@ class ReklamaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Reklama $reklama)
+    public function update(Request $request, $id)
     {
+        $reklama = Reklama::findorfail($id);
         $reklama->update($request->all());
     }
 
@@ -59,10 +60,12 @@ class ReklamaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Reklama $reklama)
+    public function destroy(Request $request, $id)
     {
-        $reklama->delete();
+        $ids = $request->getContent();
 
-        return response()->json(null, 204);
+        foreach (json_decode($ids) as $id) {
+            Reklama::findorfail($id)->delete();
+        }
     }
 }

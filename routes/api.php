@@ -33,16 +33,18 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
 // Route::group(['middleware' => 'auth:sanctum'], function() {
     Route::apiResource('categories', CategoryController::class);
     Route::apiResource('workers', DeveloperController::class);
+    Route::get('states/all', [StateController::class, 'getAll']);
     Route::apiResource('states', StateController::class);
     Route::apiResource('districts', AddressController::class);
     Route::apiResource('operators', OperatorController::class);
+    Route::get('cities/all', [RegionController::class, 'getAll']);
     Route::apiResource('cities', RegionController::class);
 
     Route::get('activity-types', [ActivityTypeController::class, 'index']);
     Route::get('activity-types/{id}', [ActivityTypeController::class, 'show']);
     Route::post('activity-types', [ActivityTypeController::class, 'store']);
     Route::put('activity-types/{id}', [ActivityTypeController::class, 'update']);
-    Route::delete('activity-types/{id}', [ActivityTypeController::class, 'destroy']);
+    Route::delete('activity-types/delete', [ActivityTypeController::class, 'destroy']);
     
 
     Route::get('projects', [ProjectController::class, 'index']);
@@ -55,15 +57,15 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::get('directions', [TypeController::class, 'index']);
     Route::get('directions/{direction}', [TypeController::class, 'show']);
     Route::post('directions', [TypeController::class, 'store']);
-    Route::put('directions/{direction}', [TypeController::class, 'update']);
-    Route::delete('directions/{direction}', [TypeController::class, 'destroy']);
+    Route::put('directions/{id}', [TypeController::class, 'update']);
+    Route::delete('directions/delete', [TypeController::class, 'destroy']);
 
-
-    Route::get('reklama', [ReklamaController::class, 'index']);
-    Route::get('reklama/{reklama}', [ReklamaController::class, 'show']);
-    Route::post('reklama', [ReklamaController::class, 'store']);
-    Route::put('reklama/{reklama}', [ReklamaController::class, 'update']);
-    Route::delete('reklama/{reklama}', [ReklamaController::class, 'destroy']);
+    Route::get('reklams', [ReklamaController::class, 'index']);
+    Route::get('reklams/{id}', [ReklamaController::class, 'show']);
+    Route::post('reklams', [ReklamaController::class, 'store']);
+    Route::put('reklams/{id}', [ReklamaController::class, 'update']);
+    Route::delete('reklams/{id}', [ReklamaController::class, 'destroy']);
+    
 
     Route::get('clients', [ClientController::class, 'index']);
     Route::get('clients/{client}', [ClientController::class, 'show']);

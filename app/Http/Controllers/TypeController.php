@@ -6,6 +6,8 @@ use App\Models\Type;
 use App\Http\Requests\StoreTypeRequest;
 use App\Http\Requests\UpdateTypeRequest;
 use App\Http\Resources\TypeResource;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Lang;
 
 class TypeController extends Controller
 {
@@ -17,7 +19,7 @@ class TypeController extends Controller
      */
     public function index()
     {
-        return TypeResource::collection(Type::all());
+        return TypeResource::collection(Type::latest()->get());
     }
 
     /**
@@ -32,6 +34,7 @@ class TypeController extends Controller
         $type = Type::create($request->only([
             'name'
         ]));
+
 
         return new TypeResource($type);
     }
@@ -56,8 +59,10 @@ class TypeController extends Controller
      * @param  \App\Models\Type  $type
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateTypeRequest $request, Type $type)
+    public function update(UpdateTypeRequest $request, $id)
     {
+        $type = Type::findOrFail($id);
+
         $type->update($request->only([
             'name'
         ]));
@@ -72,10 +77,13 @@ class TypeController extends Controller
      * @param  \App\Models\Type  $type
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Type $type)
+    public function destroy(Request $request)
     {
-        $type->delete();
+        $ids = $request->getContent();
 
-        return response(null, 204);
+        foreach (json_decode($ids) as $id) {
+            $type = Type::findOrFail($id);
+            $type->delete();
+        }
     }
 }

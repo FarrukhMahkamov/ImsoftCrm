@@ -6,6 +6,7 @@ use App\Models\ActivityType;
 use App\Http\Requests\StoreActivityTypeRequest;
 use App\Http\Requests\UpdateActivityTypeRequest;
 use App\Http\Resources\ActivityTypeResource;
+use Illuminate\Http\Request;
 
 class ActivityTypeController extends Controller
 {
@@ -44,9 +45,11 @@ class ActivityTypeController extends Controller
      * @param  \App\Models\ActivityType  $activityType
      * @return \Illuminate\Http\Response
      */
-    public function show(ActivityType $activityType)
+    public function show($id)
     {
-        return new ActivityTypeResource($activityType);
+        return new ActivityTypeResource(
+            $activityType = ActivityType::findOrFail($id)
+        );
     }
 
     /**
@@ -57,8 +60,10 @@ class ActivityTypeController extends Controller
      * @param  \App\Models\ActivityType  $activityType
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateActivityTypeRequest $request, ActivityType $activityType)
+    public function update(UpdateActivityTypeRequest $request, $id)
     {
+        $activityType = ActivityType::findOrFail($id);
+
         $activityType->update($request->only(['name']));
     }
 
@@ -69,10 +74,13 @@ class ActivityTypeController extends Controller
      * @param  \App\Models\ActivityType  $activityType
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ActivityType $activityType)
+    public function destroy(Request $request, $id)
     {
-        $activityType->delete();
+        $ids = $request->getContent();
 
-        return response(null, 204);
+        foreach (json_decode($ids) as $id) {
+            $type = ActivityType::findOrFail($id);
+            $type->delete();
+        }
     }
 }
