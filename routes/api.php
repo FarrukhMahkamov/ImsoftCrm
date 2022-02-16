@@ -41,6 +41,7 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::apiResource('cities', RegionController::class);
 
     Route::get('activity-types', [ActivityTypeController::class, 'index']);
+    Route::get('activity-types/all', [ActivityTypeController::class, 'getAll']);
     Route::get('activity-types/{id}', [ActivityTypeController::class, 'show']);
     Route::post('activity-types', [ActivityTypeController::class, 'store']);
     Route::put('activity-types/{id}', [ActivityTypeController::class, 'update']);

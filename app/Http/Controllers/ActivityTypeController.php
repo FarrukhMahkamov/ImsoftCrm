@@ -21,9 +21,14 @@ class ActivityTypeController extends Controller
      */
     public function index()
     {
-        return ActivityTypeResource::collection(ActivityType::all());
+        return ActivityTypeResource::collection(ActivityType::latest()->paginate(10));
     }
 
+
+    public function allData()
+    {
+        return ActivityTypeResource::collection(ActivityType::latest()->get());
+    }
     /**
      * Store a newly created activity type in storage.
      *
@@ -74,7 +79,7 @@ class ActivityTypeController extends Controller
      * @param  \App\Models\ActivityType  $activityType
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request, $id)
+    public function destroy(Request $request)
     {
         $ids = $request->getContent();
 
