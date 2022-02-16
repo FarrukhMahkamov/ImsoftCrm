@@ -17,7 +17,7 @@ class AddressController extends Controller
      */
     public function index()
     {
-        return AddressResource::collection(Address::with('region')->get());
+        return AddressResource::collection(Address::with('region')->latest()->get());
     }
 
     /**
