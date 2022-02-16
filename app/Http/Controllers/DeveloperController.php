@@ -47,23 +47,7 @@ class DeveloperController extends Controller
             'longitude',
             'latitude',
         ]));
-        
-        $developer->pasport = $request
-        ->file('pasport')
-        ->move('images/pasport', time().'.'.$request
-        ->file('pasport')
-        ->getClientOriginalName());
-        
-        $developer->family = $request
-        ->file('family')
-        ->move('images/family', time().'.'.$request
-        ->file('family')->getClientOriginalName());
-        
-        $developer->developer_photo = $request
-        ->file('developer_photo')
-        ->move('images/developer_photo', time().'.'.$request
-        ->file('developer_photo')->getClientOriginalName());
-        
+         
         $developer->save();
         
         if ($developer) {
@@ -74,7 +58,36 @@ class DeveloperController extends Controller
             ], 500);
         }
     }
-        
+    
+    public function storeImage(Request $request)
+    {
+        if($request->file('pasport')) {
+            $passport = $request->file('passort')->move('images/pasport', time().'.'.$request
+            ->file('pasport')
+            ->getClientOriginalName());
+            
+            return $passport;
+        }
+      
+        if ($request->file('family')) {
+            $family =  $request->file('family')
+            ->move('images/family', time().'.'.$request
+            ->file('family')
+            ->getClientOriginalName());
+
+            return $family;
+        }
+
+        if ($request->file('developer_photo')) {
+            $developer_photo =  $request->file('developer_photo')
+            ->move('images/developer_photo', time().'.'.$request
+            ->file('developer_photo')
+            ->getClientOriginalName());
+
+            return $developer_photo;
+        }
+      
+    }
     /**
     * DIsplay single developer
     *

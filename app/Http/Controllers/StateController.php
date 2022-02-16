@@ -24,6 +24,14 @@ class StateController extends Controller
     {
         return StateResource::collection(State::latest()->get());
     }
+
+    public function getSelectedState($id)
+    {
+        $state = State::findOrFail($id);
+        $selectedState = $state->region;
+
+        return StateResource::collection($selectedState);
+    }
     
     /**
     * Store a newly created state in storage.
@@ -51,7 +59,8 @@ class StateController extends Controller
     */
     public function show(State $state)
     {
-        return new StateResource($state);
+        $state = $state->region;
+        return StateResource::collection($state);
     }
     
     /**
