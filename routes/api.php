@@ -74,6 +74,7 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::delete('reklams/{id}', [ReklamaController::class, 'destroy']);
     
     Route::get('clients', [ClientController::class, 'index']);
+    Route::get('clients/status/{status}', [ClientController::class, 'searchByStatus']);
     Route::get('clients/{client}', [ClientController::class, 'show']);
     Route::post('clients', [ClientController::class, 'store']);  
     Route::put('clients/{client}', [ClientController::class, 'update']);

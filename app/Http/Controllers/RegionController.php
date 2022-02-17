@@ -27,9 +27,7 @@ class RegionController extends Controller
 
     public function getSelectedRegion($id)
     {
-        $state = Region::findOrFail($id);  // $selectedState = $state->region;
-
-        // return new RegionResource($state);
+        $state = Region::findOrFail($id); 
         return response()->json([
             'data' => [
                 new RegionResource($state)

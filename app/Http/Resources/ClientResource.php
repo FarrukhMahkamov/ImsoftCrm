@@ -15,8 +15,8 @@ class ClientResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'id' => $this->id,
-            'general_info' => [
+                'id' => $this->id,
+                'general_info' => $this->general_info,
                 'enterprise_name'=> $this->enterprise_name, 
                 'category_id'=> $this->category->name, //working
                 'activity_type_name'=> $this->activityType->name,  //working
@@ -31,8 +31,6 @@ class ClientResource extends JsonResource
                 'order_reason'=> $this->order_reason, 
                 'type_name'=> $this->type->name, //working
                 'type_id'=> $this->type->id, //working
-            ],
-            'contacts' => [
                 'client_name' => $this->client_name,
                 'client_phone_number' => $this->client_phone_number,
                 'client_phone_number_2' => $this->client_phone_number_2,
@@ -45,7 +43,8 @@ class ClientResource extends JsonResource
                 'latitude' => $this->latitude,
                 'longtitude' => $this->longtitude,
                 'file' => $this->longtitude,
-            ],
+                'order_time' => $this->order_time,
+                'client_status' => $this->client_status,
         ];
     }
 }

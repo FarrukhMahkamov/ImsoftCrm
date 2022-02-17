@@ -18,11 +18,11 @@ class ClientController extends Controller
      */
     public function index()
     {
-        return ClientResource::collection(Cache::remember('clients', 60*60*24, function(){
-            return Client::all();
-        }));
+        // return ClientResource::collection(Cache::remember('clients', 60*60*24, function(){
+        //     return Client::all();
+        // }));
 
-        // return ClientResource::collection(Client::with('category', 'activityType', 'state', 'region', 'address', 'operator', 'type')->paginate(5));
+        return ClientResource::collection(Client::with('category', 'activityType', 'state', 'region', 'address', 'operator', 'type')->get());
 
     }
 
@@ -62,6 +62,11 @@ class ClientController extends Controller
         ]));
 
         return new ClientResource($client);
+    }
+
+    public function searchByStatus($id)
+    {
+        return ClientResource::collection(Client::where('client_status', $id)->get());
     }
 
     /**
@@ -109,6 +114,7 @@ class ClientController extends Controller
             'file',
             'type_id',
             'order_time',   
+            'client_status',
         ]));
 
         return new ClientResource($client);
