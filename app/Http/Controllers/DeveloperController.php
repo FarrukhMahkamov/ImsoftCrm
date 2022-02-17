@@ -6,6 +6,7 @@ use App\Models\Developer;
 use App\Http\Requests\StoreDeveloperRequest;
 use App\Http\Requests\UpdateDeveloperRequest;
 use App\Http\Resources\DeveloperResource;
+use Doctrine\Inflector\Rules\Word;
 use Illuminate\Http\Request;
 
 class DeveloperController extends Controller
@@ -19,7 +20,8 @@ class DeveloperController extends Controller
     */
     public function index()
     {
-        return DeveloperResource::collection(Developer::all());
+        return DeveloperResource::collection(Developer::with('region', 'state', 'type')->latest()->get());
+        // return DeveloperResource::collection(Developer::all());
     }
     
     /**

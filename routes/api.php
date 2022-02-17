@@ -42,7 +42,9 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
 
     Route::apiResource('districts', AddressController::class);
     Route::apiResource('operators', OperatorController::class);
+
     Route::get('cities/all', [RegionController::class, 'getAll']);
+    Route::get('cities/all/{id}', [RegionController::class, 'getSelectedRegion']);
     Route::apiResource('cities', RegionController::class);
 
     Route::get('activity-types', [ActivityTypeController::class, 'index']);
@@ -52,7 +54,6 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::put('activity-types/{id}', [ActivityTypeController::class, 'update']);
     Route::delete('activity-types/delete', [ActivityTypeController::class, 'destroy']);
     
-
     Route::get('projects', [ProjectController::class, 'index']);
     Route::post('projects', [ProjectController::class, 'store']);
     Route::get('projects/{project}', [ProjectController::class, 'show']);
@@ -72,7 +73,6 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::put('reklams/{id}', [ReklamaController::class, 'update']);
     Route::delete('reklams/{id}', [ReklamaController::class, 'destroy']);
     
-
     Route::get('clients', [ClientController::class, 'index']);
     Route::get('clients/{client}', [ClientController::class, 'show']);
     Route::post('clients', [ClientController::class, 'store']);  

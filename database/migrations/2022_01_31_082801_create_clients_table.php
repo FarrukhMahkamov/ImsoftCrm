@@ -34,6 +34,7 @@ class CreateClientsTable extends Migration
             $table->dateTime('operator_born_date');
             $table->string('latitude');
             $table->string('longtitude');
+            $table->integer('client_status');
             $table->text('file');
             $table->foreignId('type_id');
             $table->dateTime('order_time');

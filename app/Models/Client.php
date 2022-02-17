@@ -32,6 +32,7 @@ class Client extends Model
         'file',
         'type_id',
         'order_time',
+        'client_status'
     ];
 
     public function category()

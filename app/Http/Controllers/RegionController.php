@@ -19,10 +19,24 @@ class RegionController extends Controller
     {
         return RegionResource::collection(Region::latest()->get());
     }
+
     public function getAll()
     {
         return RegionResource::collection(Region::latest()->get());
     }
+
+    public function getSelectedRegion($id)
+    {
+        $state = Region::findOrFail($id);  // $selectedState = $state->region;
+
+        // return new RegionResource($state);
+        return response()->json([
+            'data' => [
+                new RegionResource($state)
+            ]
+        ]);
+    }
+    
     /**
      * Store a newly created resource in storage.
      * 
@@ -49,7 +63,7 @@ class RegionController extends Controller
      */
     public function show(Region $region)
     {
-        return new RegionResource($region);
+        return RegionResource::collection($region->with('state')->get());
     }
 
     /**

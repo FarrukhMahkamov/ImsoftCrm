@@ -57,6 +57,7 @@ class ClientController extends Controller
             'longtitude',
             'file',
             'type_id',
+            'client_status',
             'order_time',   
         ]));
 

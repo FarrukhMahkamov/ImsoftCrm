@@ -48,6 +48,7 @@ class ClientFactory extends Factory
             'state_id' => State::factory(),
             'region_id' => Region::factory(),
             'address_id' => Address::factory(),
+            'client_status' => $this->faker->numberBetween(1,3),
         ];
     }
 }

@@ -25,6 +25,9 @@ class StateController extends Controller
         return StateResource::collection(State::latest()->get());
     }
 
+    /**
+     *  Show cities by state id
+     */
     public function getSelectedState($id)
     {
         $state = State::findOrFail($id);
