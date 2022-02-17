@@ -20,20 +20,20 @@ class StateController extends Controller
     {
         return StateResource::collection(State::latest()->paginate(10));
     }
-
+    
     public function getAll() 
     {
         return StateResource::collection(State::latest()->get());
     }
-
+    
     /**
-     *  Show cities by state id
-     */
+    *  Show cities by state id
+    */
     public function getSelectedState($id)
     {
         $state = State::findOrFail($id);
         $selectedState = $state->region;
-
+        
         return StateResource::collection($selectedState);
     }
     
@@ -91,11 +91,11 @@ class StateController extends Controller
     */
     public function destroy(Request $request, $id)
     {
-         $ids = $request->getContent();
-
+        $ids = $request->getContent();
+        
         foreach (json_decode($ids) as $id) {
-            $type = State::findOrFail($id);
-            $type->delete();
+            $state = State::findOrFail($id);
+            $state->delete();
         }
     }
 }
