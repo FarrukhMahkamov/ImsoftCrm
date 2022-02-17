@@ -32,11 +32,14 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
 
 // Route::group(['middleware' => 'auth:sanctum'], function() {
     Route::apiResource('categories', CategoryController::class);
+
     Route::post('workers/image', [DeveloperController::class, 'storeImage']);
     Route::apiResource('workers', DeveloperController::class);  
+
     Route::get('states/all', [StateController::class, 'getAll']);
     Route::get('states/all/{id}', [StateController::class, 'getSelectedState']);
     Route::apiResource('states', StateController::class);
+
     Route::apiResource('districts', AddressController::class);
     Route::apiResource('operators', OperatorController::class);
     Route::get('cities/all', [RegionController::class, 'getAll']);
