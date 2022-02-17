@@ -23,16 +23,15 @@ class ProjectFactory extends Factory
         return [
             'project_name' => $this->faker->name(),
             'general_info' => $this->faker->paragraph(10),
-            'general_file' => $this->faker->imageUrl($width = 500, $height = 500, $word = 'IMSOFT'),
-            'status_id' => Status::factory(),
-            'developer_id' => Developer::factory(),
-            'developer_info' => $this->faker->paragraph(),
+            'tech_doc' => $this->faker->paragraph(10),
+            'dev_doc' =>$this->faker->paragraph(10),
+            'file_doc' => $this->faker->paragraph(10),
+            'status_id' => $this->faker->paragraph(),
+            'developer_id' => Developer::factory(), 
+            'client_id' => Client::factory(), 
             'start_date' => $this->faker->dateTime(), 
-            'deadline_date' => $this->faker->dateTime(), 
-            'finish_date' => $this->faker->dateTime(), 
-            'about_file' => $this->faker->paragraph(10),
-            'project_file' => $this->faker->imageUrl($width = 500, $height = 500, $word = 'IMSOFT'),
-            'client_id' => Client::factory()
+            'deadline_date' => $this->faker->dateTime(),
+            'finish_date' => $this->faker->dateTime(),
         ];
     }
 }

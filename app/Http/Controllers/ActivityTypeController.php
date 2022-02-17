@@ -22,6 +22,7 @@ class ActivityTypeController extends Controller
     public function index()
     {
         return ActivityTypeResource::collection(ActivityType::latest()->paginate(10));
+    // return ActivityTypeResource::collection(ActivityType::latest()->get());
     }
 
 

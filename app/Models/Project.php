@@ -12,22 +12,17 @@ class Project extends Model
     protected $fillable = [
         'project_name',
         'general_info',
-        'general_file',
+        'tech_doc',
+        'dev_doc',
+        'file_doc',
         'status_id',
         'developer_id',
-        'developer_info',
+        'client_id',
         'start_date',
         'deadline_date',
         'finish_date',
-        'about_file',
-        'project_file',
-        'client_id',
     ];
 
-    public function status()
-    {
-        return $this->belongsTo(Status::class);    
-    }
 
     public function developer()
     {

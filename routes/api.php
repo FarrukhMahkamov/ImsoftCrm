@@ -57,7 +57,7 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::get('projects', [ProjectController::class, 'index']);
     Route::post('projects', [ProjectController::class, 'store']);
     Route::get('projects/{project}', [ProjectController::class, 'show']);
-    Route::get('projects/search/{id}', [ProjectController::class, 'searchByStatus']);
+    Route::get('projects/status/{id}', [ProjectController::class, 'searchByStatus']);
     Route::put('projects/{project}', [ProjectController::class, 'update']);
     Route::delete('projects/{project}', [ProjectController::class, 'destroy']);
 

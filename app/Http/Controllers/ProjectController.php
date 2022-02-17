@@ -20,9 +20,14 @@ class ProjectController extends Controller
     {
         
         return ProjectResource::collection(Cache::remember('projects', 60*60*24, function(){
-            return  Project::with('status', 'developer')->get();
+            return  Project::with('client', 'developer')->get();
         }));
         
+    }
+    
+    public function searchByStatus($id)
+    {
+        return ProjectResource::collection(Project::with('developer', 'client')->where('status_id', $id)->get());
     }
     
     /**
@@ -38,16 +43,15 @@ class ProjectController extends Controller
         $project->fill($request->only([
             'project_name',
             'general_info',
-            'general_file',
+            'tech_doc',
+            'dev_doc',
+            'file_doc',
             'status_id',
             'developer_id',
-            'developer_info',
-            'start_date',
-            'dedline_date',
-            'finish_date',
-            'about_file',
-            'project_file',
             'client_id',
+            'start_date',
+            'deadline_date',
+            'finish_date',
         ]));
         
         
@@ -91,16 +95,22 @@ class ProjectController extends Controller
         $project->update($request->only([
             'project_name',
             'general_info',
-            'general_file',
+            'tech_doc',
+            'dev_doc',
+            'file_doc',
             'status_id',
             'developer_id',
-            'developer_info',
+            'client_id',
             'start_date',
-            'dedline_date',
+            'deadline_date',
             'finish_date',
-            'about_file',
-            'project_file',
         ]));
+        
+        $project->pasport = $request
+        ->file('pasport')
+        ->move('images/pasport', time().'.'.$request
+        ->file('pasport')
+        ->getClientOriginalName());
         
         return new ProjectResource($project);
         
@@ -115,20 +125,8 @@ class ProjectController extends Controller
     */
     public function destroy(Project $project)
     {
-        
         $project->delete();
         
         return response(null, 204);
-        
     }
-    
-    /**
-    * Get all projects by status.
-    * 
-    */
-    public function searchByStatus($id)
-    {
-        return ProjectResource::collection(Project::with('status', 'developer', 'client')->where('status_id', $id)->get());
-    }
-    
 }

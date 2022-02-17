@@ -28,7 +28,7 @@ class StoreProjectRequest extends FormRequest
             'project_name' => 'required|min:5|max:222|unique:projects',
             'general_info' => 'required|min:30|max:5000',
             'general_file' => 'required',
-            'status_id' => ['required', Rule::exists('statuses', 'id')],
+            'status_id' => 'required',
             'developer_id' => ['required',  Rule::exists('developers', 'id')],
             'developer_info' => 'required|min:30|max:5000',
             'start_date' => 'required',

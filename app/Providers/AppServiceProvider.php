@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Http\Resources\ActivityTypeResource;
 use App\Models\Project;
 use App\Observers\ProjectObserver;
 use Illuminate\Support\ServiceProvider;
