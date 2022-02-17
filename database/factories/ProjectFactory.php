@@ -26,7 +26,7 @@ class ProjectFactory extends Factory
             'tech_doc' => $this->faker->paragraph(10),
             'dev_doc' =>$this->faker->paragraph(10),
             'file_doc' => $this->faker->paragraph(10),
-            'status_id' => $this->faker->paragraph(),
+            'status_id' => $this->faker->numberBetween(1, 5),
             'developer_id' => Developer::factory(), 
             'client_id' => Client::factory(), 
             'start_date' => $this->faker->dateTime(), 

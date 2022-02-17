@@ -38,7 +38,12 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
 
     Route::get('states/all', [StateController::class, 'getAll']);
     Route::get('states/all/{id}', [StateController::class, 'getSelectedState']);
-    Route::apiResource('states', StateController::class);
+    Route::get('states' , [StateController::class, 'index']);
+    Route::get('states/{id}', [StateController::class, 'show']);
+    Route::post('states', [StateController::class, 'store']);
+    Route::put('states/{id}', [StateController::class, 'update']);
+    Route::delete('states/delete', [StateController::class, 'destroy']);
+
 
     Route::apiResource('districts', AddressController::class);
     Route::apiResource('operators', OperatorController::class);

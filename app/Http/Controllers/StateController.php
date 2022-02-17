@@ -6,6 +6,7 @@ use App\Models\State;
 use App\Http\Requests\StoreStateRequest;
 use App\Http\Requests\UpdateStateRequest;
 use App\Http\Resources\StateResource;
+use Illuminate\Http\Request;
 
 class StateController extends Controller
 {
@@ -88,10 +89,13 @@ class StateController extends Controller
     * @param  \App\Models\State  $state
     * @return \Illuminate\Http\Response
     */
-    public function destroy(State $state)
+    public function destroy(Request $request, $id)
     {
-        $state->delete();
-        
-        return response(null, 204);
+         $ids = $request->getContent();
+
+        foreach (json_decode($ids) as $id) {
+            $type = State::findOrFail($id);
+            $type->delete();
+        }
     }
 }

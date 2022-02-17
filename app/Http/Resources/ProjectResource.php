@@ -18,16 +18,15 @@ class ProjectResource extends JsonResource
             'id' => $this->id,
             'project_name' => $this->project_name,
             'general_info' => $this->general_info,
-            'general_file' => $this->general_file,
+            'tech_doc' => $this->tech_doc,
+            'dev_doc' => $this->dev_doc,
+            'file_doc' => $this->file_doc,
             'status_id' => $this->status_id,
             'developer_id' => $this->developer->name,
-            'developer_info' => $this->developer_info,
+            'client_id' => $this->client->name,
             'start_date' => $this->start_date,
-            'dedline_date' => $this->deadline_date,
+            'deadline_date' => $this->deadline_date,
             'finish_date' => $this->finish_date,
-            'about_file' => $this->about_file,
-            'project_file' => $this->project_file,
-            'client_id' => $this->client->client_name,
         ];
     }
 }
