@@ -24,7 +24,7 @@ class StoreOperatorRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|min:|max:225|unique:operators'
+            'name' => 'required|unique:operators'
         ];
     }
 }

@@ -25,7 +25,7 @@ class UpdateAddressRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|min:3|max:200|unique:addresses',
+            'name' => 'required|unique:addresses',
             'region_id' => ['required', Rule::exists('regions', 'id')],
         ];
     }

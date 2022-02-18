@@ -25,7 +25,7 @@ class UpdateRegionRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|min:3|max:200',
+            'name' => 'required',
             'state_id' => ['required', Rule::exists('states', 'id')],
         ];
     }

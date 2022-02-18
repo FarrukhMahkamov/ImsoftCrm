@@ -24,7 +24,7 @@ class StoreActivityTypeRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|min:3|max:200|unique:activity_types'
+            'name' => 'required|unique:activity_types'
         ];
     }
 }

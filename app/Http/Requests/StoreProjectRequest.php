@@ -25,12 +25,12 @@ class StoreProjectRequest extends FormRequest
     public function rules()
     {
         return [
-            'project_name' => 'required|min:5|max:222|unique:projects',
-            'general_info' => 'required|min:30|max:5000',
+            'project_name' => 'required|unique:projects',
+            'general_info' => 'required',
             'general_file' => 'required',
             'status_id' => 'required',
             'developer_id' => ['required',  Rule::exists('developers', 'id')],
-            'developer_info' => 'required|min:30|max:5000',
+            'developer_info' => 'required',
             'start_date' => 'required',
             'dedline_date' => 'required',
             'finish_date' => 'finish_date',

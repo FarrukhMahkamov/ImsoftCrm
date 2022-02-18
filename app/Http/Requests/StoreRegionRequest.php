@@ -25,7 +25,7 @@ class StoreRegionRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|min:3|max:100',
+            'name' => 'required',
             'state_id' => 'required|exists:states,id',   
         ];
     }
