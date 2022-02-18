@@ -27,6 +27,7 @@ class ClientFactory extends Factory
     {
         return [
             'general_info' => $this->faker->paragraph(12),
+            'general_document' => $this->faker->paragraph(12),
             'enterprise_name' => $this->faker->name(),
             'order_time' => $this->faker->dateTime(),
             'home_address' => $this->faker->address(),
@@ -41,7 +42,7 @@ class ClientFactory extends Factory
             'latitude' => $this->faker->latitude(),
             'longtitude' => $this->faker->longitude(),
             'file' => $this->faker->imageUrl(),
-            'operator_id' => Operator::factory(),
+            'operator_name' => $this->faker->name(),
             'type_id' => Type::factory(),
             'category_id' => Category::factory(),
             'activity_type_id' => ActivityType::factory(),

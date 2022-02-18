@@ -17,6 +17,7 @@ class ClientResource extends JsonResource
         return [
                 'id' => $this->id,
                 'general_info' => $this->general_info,
+                'general_document' => $this->general_document,
                 'enterprise_name'=> $this->enterprise_name, 
                 'category_id'=> $this->category->name, //working
                 'activity_type_name'=> $this->activityType->name,  //working
@@ -35,8 +36,7 @@ class ClientResource extends JsonResource
                 'client_phone_number' => $this->client_phone_number,
                 'client_phone_number_2' => $this->client_phone_number_2,
                 'client_born_date' => $this->client_born_date,
-                'operator_name' => $this->operator->name,//working
-                'operator_id' => $this->operator->id,//working
+                'operator_name' => $this->operator_name,//working
                 'operator_phone_number' => $this->operator_phone_number,
                 'operator_phone_number_2' => $this->operator_phone_number_2,
                 'operator_born_date' => $this->operator_born_date,

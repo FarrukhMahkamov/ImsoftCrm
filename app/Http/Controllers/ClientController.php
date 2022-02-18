@@ -22,7 +22,7 @@ class ClientController extends Controller
         //     return Client::all();
         // }));
 
-        return ClientResource::collection(Client::with('category', 'activityType', 'state', 'region', 'address', 'operator', 'type')->get());
+        return ClientResource::collection(Client::with('category', 'activityType', 'state', 'region', 'address', 'type')->get());
 
     }
 
@@ -37,6 +37,7 @@ class ClientController extends Controller
     {
         $client = Client::create($request->only([
             'general_info',
+            'general_document',
             'enterprise_name',
             'category_id',
             'activity_type_id',
@@ -49,7 +50,7 @@ class ClientController extends Controller
             'client_phone_number',
             'client_phone_number_2',
             'client_born_date',
-            'operator_id',
+            'operator_name',
             'operator_phone_number',
             'operator_phone_number_2',
             'operator_born_date',
@@ -93,6 +94,7 @@ class ClientController extends Controller
     {
         $client->update($request->only([
             'general_info',
+            'general_document',
             'enterprise_name',
             'category_id',
             'activity_type_id',
@@ -105,7 +107,7 @@ class ClientController extends Controller
             'client_phone_number',
             'client_phone_number_2',
             'client_born_date',
-            'operator_id',
+            'operator_name',
             'operator_phone_number',
             'operator_phone_number_2',
             'operator_born_date',

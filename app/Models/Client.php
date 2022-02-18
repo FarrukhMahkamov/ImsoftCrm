@@ -17,13 +17,14 @@ class Client extends Model
         'state_id',
         'region_id',
         'address_id',
+    'general_document',
         'home_address',
         'order_reason',
         'client_name',
         'client_phone_number',
         'client_phone_number_2',
         'client_born_date',
-        'operator_id',
+        'operator_name',
         'operator_phone_number',
         'operator_phone_number_2',
         'operator_born_date',
@@ -58,11 +59,6 @@ class Client extends Model
     public function address()
     {
         return $this->belongsTo(Address::class);
-    }
-
-    public function operator()
-    {
-        return $this->belongsTo(Operator::class);
     }
 
     public function type()
