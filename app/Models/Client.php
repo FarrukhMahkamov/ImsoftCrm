@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Client extends Model
 {
     use HasFactory;
-
+    
     protected $fillable = [
         'general_info',
         'enterprise_name',
@@ -17,7 +17,7 @@ class Client extends Model
         'state_id',
         'region_id',
         'address_id',
-    'general_document',
+        'general_document',
         'home_address',
         'order_reason',
         'client_name',
@@ -35,40 +35,40 @@ class Client extends Model
         'order_time',
         'client_status'
     ];
-
+    
     public function category()
     {
         return $this->belongsTo(Category::class);
     }
-
+    
     public function activityType()
     {
         return $this->belongsTo(ActivityType::class);
     }
-
+    
     public function state()
     {
         return $this->belongsTo(State::class);
     }
-
+    
     public function region()
     {
         return $this->belongsTo(Region::class);
     }
-
+    
     public function address()
     {
         return $this->belongsTo(Address::class);
     }
-
+    
     public function type()
     {
         return $this->belongsTo(Type::class);
     }
-
+    
     public function project()
     {
         return $this->hasMany(Project::class);
     }
-
+    
 }

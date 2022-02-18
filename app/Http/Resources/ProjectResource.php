@@ -21,12 +21,13 @@ class ProjectResource extends JsonResource
             'tech_doc' => $this->tech_doc,
             'dev_doc' => $this->dev_doc,
             'file_doc' => $this->file_doc,
-            'status_id' => $this->status_id,
-            'developer_id' => $this->developer->name,
-            'client_id' => $this->client->name,
+            'status' => $this->status_id,
+            'developer_name' => $this->developer->name,
+            'client_name' => $this->client->client_name,
             'start_date' => $this->start_date,
             'deadline_date' => $this->deadline_date,
             'finish_date' => $this->finish_date,
         ];
     }
 }
+

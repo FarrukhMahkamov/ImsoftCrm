@@ -32,13 +32,20 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::put('states/{id}', [StateController::class, 'update']);
     Route::delete('states/delete', [StateController::class, 'destroy']);
 
-
-    Route::apiResource('districts', AddressController::class);
-    Route::apiResource('operators', OperatorController::class);
+    Route::get('districts/delete', [RegionController::class, 'destroy']);
+    Route::get('districts', [RegionController::class, 'index']);
+    Route::get('districts/{id}', [RegionController::class, 'show']);
+    Route::post('districts', [RegionController::class, 'store']);
+    Route::put('districts/{id}', [RegionController::class, 'update']);
+    
 
     Route::get('cities/all', [RegionController::class, 'getAll']);
     Route::get('cities/all/{id}', [RegionController::class, 'getSelectedRegion']);
-    Route::apiResource('cities', RegionController::class);
+    Route::delete('cities/delete', [RegionController::class, 'destroy']);
+    Route::get('cities', [RegionController::class, 'index']);
+    Route::get('cities/{id}', [RegionController::class, 'show']);
+    Route::post('cities', [RegionController::class, 'store']);
+    Route::put('cities/{id}', [RegionController::class, 'update']);
 
     Route::get('activity-types', [ActivityTypeController::class, 'index']);
     Route::get('activity-types/all', [ActivityTypeController::class, 'getAll']);
@@ -71,7 +78,7 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::get('clients/{client}', [ClientController::class, 'show']);
     Route::post('clients', [ClientController::class, 'store']);  
     Route::put('clients/{client}', [ClientController::class, 'update']);
-    Route::delete('clients/{client}', [ClientController::class, 'destroy']);
+    Route::delete('clients/status/1/delete', [ClientController::class, 'destroy']);
 
     
     Route::post('logout-user', [AuthController::class, 'logoutUser']);

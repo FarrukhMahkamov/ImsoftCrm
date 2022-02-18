@@ -18,7 +18,7 @@ class StateController extends Controller
     */
     public function index()
     {
-        return StateResource::collection(State::latest()->paginate(10));
+        return StateResource::collection(State::latest()->get());
     }
     
     public function getAll() 
@@ -89,7 +89,7 @@ class StateController extends Controller
     * @param  \App\Models\State  $state
     * @return \Illuminate\Http\Response
     */
-    public function destroy(Request $request, $id)
+    public function destroy(Request $request)
     {
         $ids = $request->getContent();
         

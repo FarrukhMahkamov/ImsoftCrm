@@ -17,7 +17,7 @@ class ClientResource extends JsonResource
         return [
                 'id' => $this->id,
                 'general_info' => $this->general_info,
-                'general_document' => $this->general_document,
+                'general_doc' => $this->general_document,
                 'enterprise_name'=> $this->enterprise_name, 
                 'category_id'=> $this->category->name, //working
                 'activity_type_name'=> $this->activityType->name,  //working

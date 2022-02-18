@@ -80,7 +80,7 @@ class ActivityTypeController extends Controller
      * @param  \App\Models\ActivityType  $activityType
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request, $id)
+    public function destroy(Request $request)
     {
         $ids = $request->getContent();
 

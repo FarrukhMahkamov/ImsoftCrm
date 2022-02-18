@@ -6,6 +6,7 @@ use App\Models\Address;
 use App\Http\Requests\StoreAddressRequest;
 use App\Http\Requests\UpdateAddressRequest;
 use App\Http\Resources\AddressResource;
+use Illuminate\Http\Request;
 
 class AddressController extends Controller
 {
@@ -74,10 +75,13 @@ class AddressController extends Controller
      * @param  \App\Models\Address  $address
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Address $address)
+    public function destroy(Request $request)
     {
-        $address->delete();
+        $ids = $request->getContent();
 
-        return response(null, 204);
+        foreach(json_decode($ids) as $id) {
+            $address = Address::findOrFail($id);
+            $address->delete();
+        }
     }
 }

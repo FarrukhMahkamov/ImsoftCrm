@@ -19,10 +19,10 @@ class ProjectController extends Controller
     public function index()
     {
         
-        return ProjectResource::collection(Cache::remember('projects', 60*60*24, function(){
-            return  Project::with('client', 'developer')->get();
-        }));
-        
+        // return ProjectResource::collection(Cache::remember('projects', 60*60*24, function(){
+        //     return  Project::with('client', 'developer')->get();
+        // }));
+        return ProjectResource::collection(Project::with('client', 'developer')->get());
     }
     
     public function searchByStatus($id)

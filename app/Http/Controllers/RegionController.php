@@ -6,6 +6,7 @@ use App\Models\Region;
 use App\Http\Requests\StoreRegionRequest;
 use App\Http\Requests\UpdateRegionRequest;
 use App\Http\Resources\RegionResource;
+use Illuminate\Http\Request;
 
 class RegionController extends Controller
 {
@@ -59,8 +60,9 @@ class RegionController extends Controller
      * @param  \App\Models\Region  $region
      * @return \Illuminate\Http\Response
      */
-    public function show(Region $region)
+    public function show(Region $region, $id)
     {
+        $region = Region::findOrFail($id);
         return RegionResource::collection($region->with('state')->get());
     }
 
@@ -72,8 +74,9 @@ class RegionController extends Controller
      * @param  \App\Models\Region  $region
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateRegionRequest $request, Region $region)
+    public function update(UpdateRegionRequest $request, $id)
     {
+        $region = Region::findOrFail($id);
         $region->update($request->only([
             'name',
             'state_id',
@@ -88,10 +91,13 @@ class RegionController extends Controller
      * This method is used to delete an existing region.
      * @param  \App\Models\Region  $region
      */
-    public function destroy(Region $region)
+    public function destroy(Request $request)
     {
-        $region->delete();
+        $ids = $request->getContent();
 
-        return response(null, 204);
+        foreach (json_decode($ids) as $id) {
+            $type = Region::findOrFail($id);
+            $type->delete();
+        }
     }
 }

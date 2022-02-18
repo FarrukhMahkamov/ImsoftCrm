@@ -6,6 +6,7 @@ use App\Models\Client;
 use App\Http\Requests\StoreClientRequest;
 use App\Http\Requests\UpdateClientRequest;
 use App\Http\Resources\ClientResource;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 
 class ClientController extends Controller
@@ -129,10 +130,13 @@ class ClientController extends Controller
      * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Client $client)
+    public function destroy(Request $request, $id)
     {
-        $client->delete($client);
+        $ids = $request->getContent();
 
-        return response(null, 204);
+        foreach (json_decode($ids) as $id) {
+            $state = Client::findOrFail($id);
+            $state->delete();
+        }
     }
 }
