@@ -21,6 +21,8 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
 // Route::group(['middleware' => 'auth:sanctum'], function() {
     Route::apiResource('categories', CategoryController::class);
 
+    Route::get('workers/all', [DeveloperController::class, 'getAllDeveloper']);
+    Route::delete('workers/image/delete', [DeveloperController::class, 'deletePhoto']);
     Route::post('workers/image', [DeveloperController::class, 'storeImage']);
     Route::apiResource('workers', DeveloperController::class);  
 
@@ -37,7 +39,7 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::get('districts/{id}', [RegionController::class, 'show']);
     Route::post('districts', [RegionController::class, 'store']);
     Route::put('districts/{id}', [RegionController::class, 'update']);
-    
+
 
     Route::get('cities/all', [RegionController::class, 'getAll']);
     Route::get('cities/all/{id}', [RegionController::class, 'getSelectedRegion']);
@@ -78,7 +80,7 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::get('clients/{client}', [ClientController::class, 'show']);
     Route::post('clients', [ClientController::class, 'store']);  
     Route::put('clients/{client}', [ClientController::class, 'update']);
-    Route::delete('clients/status/1/delete', [ClientController::class, 'destroy']);
+    Route::delete('clients/status/delete', [ClientController::class, 'destroy']);
 
     
     Route::post('logout-user', [AuthController::class, 'logoutUser']);

@@ -30,7 +30,7 @@ class ProjectFactory extends Factory
             'developer_id' => Developer::factory(), 
             'client_id' => Client::factory(), 
             'start_date' => $this->faker->dateTime(), 
-            'deadline_date' => $this->faker->dateTime(),
+            // 'deadline_date' => $this->faker->dateTime(),
             'finish_date' => $this->faker->dateTime(),
         ];
     }

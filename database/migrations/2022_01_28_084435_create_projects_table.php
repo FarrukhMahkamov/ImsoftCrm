@@ -24,7 +24,7 @@ class CreateProjectsTable extends Migration
             $table->foreignId('developer_id');
             $table->foreignId('client_id');
             $table->dateTime('start_date');
-            $table->dateTime('deadline_date');
+            // $table->dateTime('deadline_date');
             $table->dateTime('finish_date');
             $table->timestamps();
         });

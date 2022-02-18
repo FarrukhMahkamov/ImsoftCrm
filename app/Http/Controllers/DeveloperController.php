@@ -24,6 +24,11 @@ class DeveloperController extends Controller
         // return DeveloperResource::collection(Developer::all());
     }
     
+
+    public function getAllDeveloper()
+    {
+        return DeveloperResource::collection(Developer::with('region', 'state', 'type')->latest()->get());
+    }
     /**
     * Store a newly created developer in storage.
     *
@@ -63,9 +68,9 @@ class DeveloperController extends Controller
     
     public function storeImage(Request $request)
     {
-        if($request->file('pasport')) {
-            $passport = $request->file('passort')->move('images/pasport', time().'.'.$request
-            ->file('pasport')
+        if ($request->file('passport')) {
+            $passport = $request->file('passport')->move('images/passport', time().'.'.$request
+            ->file('passport')
             ->getClientOriginalName());
             
             return $passport;
@@ -88,8 +93,30 @@ class DeveloperController extends Controller
 
             return $developer_photo;
         }
-      
+        
     }
+
+    public function deletePhoto(Request $request)
+    {
+        switch ($request->type) {
+            case 'family':
+                if (file_exists($request->filename)) {
+                    unlink($request->filename);
+                }
+                break;
+            case 'developer_photo':
+                if (file_exists($request->filename)) {
+                    unlink($request->filename);
+                }
+                break;
+            case 'passport':
+                if (file_exists($request->filename)) {
+                    unlink($request->filename);
+                }
+                break;   
+            default:;
+    }
+}
     /**
     * DIsplay single developer
     *
