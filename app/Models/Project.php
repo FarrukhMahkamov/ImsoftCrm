@@ -19,7 +19,7 @@ class Project extends Model
         'developer_id',
         'client_id',
         'start_date',
-        // 'deadline_date',
+        'deadline_date',
         'finish_date',
     ];
 
