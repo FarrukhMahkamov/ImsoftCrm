@@ -40,36 +40,36 @@ class ProjectController extends Controller
     */
     public function store(Request $request, Project $project)
     {
-        // $file_doc = json_decode(json_encode($request->file_doc));
-        // $file_obj = [];
-        // foreach ($file_doc as $file_val) {
-        //     if ($file_val->has('tech_file')) {
-        //         $tec_file = $request->file('tech_file')->move('images/tech_file', time().'.'.$request
-        //             ->file('tech_file')
-        //             ->getClientOriginalName());
-        //         array_push($file_obj, [
-        //             'id' => $file_val->id,
-        //             'description' => $file_val->description,
-        //             'tech_file' => $tec_file,
-        //         ]);
-        //     }
-        // }
+        $file_doc = json_decode(json_encode($request->file_doc));
+        $file_obj = [];
+        foreach ($file_doc as $file_val) {
+            if ($file_val->file) {
+                $tec_file = $request->file('file')->move('images/projects', time().'.'.$request
+                    ->file('file')
+                    ->getClientOriginalName());
+                array_push($file_obj, [
+                    'rowId' => $file_val->rowId,
+                    'comment' => $file_val->comment,
+                    'file' => $tec_file,
+                ]);
+            }
+        }
 
-        // $tech_doc = json_decode(json_encode($request->tech_doc));
-        // $tech_obj = [];
-        // foreach ($tech_doc as $tech_val) {
-        //     if ($file_val->has('tech_file')) {
-        //         $tec_file = $request->file('tech_file')->move('images/tech_file', time().'.'.$request
-        //             ->file('tech_file')
-        //             ->getClientOriginalName());
-        //         array_push($tech_obj, [
-        //                 'id' => $file_val->id,
-        //                 'name' => $file_val->name,
-        //                 'description' => $file_val->description,
-        //                 'tech_file' => $tec_file
-        //         ]);
-        //     }
-        // }     
+        $tech_doc = json_decode(json_encode($request->tech_doc));
+        $tech_obj = [];
+        foreach ($tech_doc as $tech_val) {
+            if ($tech_val->file) {
+                $tec_file = $request->file('file')->move('images/projects', time().'.'.$request
+                    ->file('file')
+                    ->getClientOriginalName());
+                array_push($tech_obj, [
+                        'rowId' => $tech_val->rowId,
+                        'name' => $tech_val->name,
+                        'comment' => $tech_val->comment,
+                        'file' => $tech_val->file
+                ]);
+            }
+        }     
                 
         $project = Project::create([
             'general_info' => $request->general_info,
