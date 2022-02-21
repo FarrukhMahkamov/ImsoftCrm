@@ -24,7 +24,6 @@ class ClientController extends Controller
         // }));
 
         return ClientResource::collection(Client::with('category', 'activityType', 'state', 'region', 'address', 'type')->get());
-
     }
 
     /**
@@ -57,10 +56,12 @@ class ClientController extends Controller
             'operator_born_date',
             'latitude',
             'longtitude',
-            'file',
+            'file_1',
+            'file_2',
+            'file_3',
             'type_id',
             'client_status',
-            'order_time',   
+            'order_time',
         ]));
 
         return new ClientResource($client);
@@ -114,9 +115,11 @@ class ClientController extends Controller
             'operator_born_date',
             'latitude',
             'longtitude',
-            'file',
+            'file_1',
+            'file_2',
+            'file_3',
             'type_id',
-            'order_time',   
+            'order_time',
             'client_status',
         ]));
 
@@ -137,6 +140,42 @@ class ClientController extends Controller
         foreach (json_decode($ids) as $id) {
             $state = Client::findOrFail($id);
             $state->delete();
+        }
+    }
+
+    public function storeImage(Request $request)
+    {
+        if ($request->file('file')) {
+            $file_1 = $request->file('file')->move('images/client/', time().'.'.$request
+            ->file('file')
+            ->getClientOriginalName());
+            
+            return $file_1;
+        }
+    }
+
+    public function deletePhoto(Request $request)
+    {
+    //     switch ($request->type) {
+    //         case 'file_1':
+                
+    //             break;
+    //         case 'file_2':
+    //             if (file_exists($request->filename)) {
+    //                 unlink($request->filename);
+    //             }
+    //             break;
+    //         case 'file_3':
+    //             if (file_exists($request->filename)) {
+    //                 unlink($request->filename);
+    //             }
+    //             break;
+    //         default:;
+    //    }
+        if ($request->type) {
+            if (file_exists($request->filename)) {
+                unlink($request->filename);
+            }
         }
     }
 }

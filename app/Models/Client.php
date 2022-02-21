@@ -30,7 +30,9 @@ class Client extends Model
         'operator_born_date',
         'latitude',
         'longtitude',
-        'file',
+        'file_1',
+        'file_2',
+        'file_3',
         'type_id',
         'order_time',
         'client_status'

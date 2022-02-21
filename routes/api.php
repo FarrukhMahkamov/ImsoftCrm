@@ -62,6 +62,7 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::get('projects/status/{id}', [ProjectController::class, 'searchByStatus']);
     Route::put('projects/{project}', [ProjectController::class, 'update']);
     Route::delete('projects/{project}', [ProjectController::class, 'destroy']);
+    Route::post('projects/image', [DeveloperController::class, 'storeImage']);
 
     Route::get('directions', [TypeController::class, 'index']);
     Route::get('directions/{direction}', [TypeController::class, 'show']);
@@ -79,6 +80,8 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::get('clients/status/{status}', [ClientController::class, 'searchByStatus']);
     Route::get('clients/{client}', [ClientController::class, 'show']);
     Route::post('clients', [ClientController::class, 'store']);  
+    Route::post('clients/image', [ClientController::class, 'storeImage']);
+    
     Route::put('clients/{client}', [ClientController::class, 'update']);
     Route::delete('clients/status/delete', [ClientController::class, 'destroy']);
 

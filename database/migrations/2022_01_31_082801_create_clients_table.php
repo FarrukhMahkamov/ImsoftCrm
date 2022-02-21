@@ -36,7 +36,9 @@ class CreateClientsTable extends Migration
             $table->string('latitude');
             $table->string('longtitude');
             $table->integer('client_status');
-            $table->text('file');
+            $table->text('file_1');
+            $table->text('file_2');
+            $table->text('file_3');
             $table->foreignId('type_id');
             $table->dateTime('order_time');
             $table->timestamps();

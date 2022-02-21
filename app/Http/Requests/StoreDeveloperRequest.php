@@ -30,7 +30,6 @@ class StoreDeveloperRequest extends FormRequest
             'developer_photo' => 'required',
             'born_date' => 'required',
             'phone_number' => 'required',
-            'work_type_id' => 'required',
             'about' => 'required',
         ];
     }

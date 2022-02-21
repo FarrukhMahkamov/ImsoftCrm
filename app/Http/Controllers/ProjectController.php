@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Project;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
+use App\Http\Resources\ProjectResource;
 use App\Http\Requests\StoreProjectRequest;
 use App\Http\Requests\UpdateProjectRequest;
-use App\Http\Resources\ProjectResource;
-use Illuminate\Support\Facades\Cache;
 
 class ProjectController extends Controller
 {
@@ -37,34 +38,53 @@ class ProjectController extends Controller
     * @param  \App\Http\Requests\StoreProjectRequest  $request
     * @return \Illuminate\Http\Response
     */
-    public function store(StoreProjectRequest $request, Project $project)
+    public function store(Request $request, Project $project)
     {
-        $project = new Project();
-        $project->fill($request->only([
-            'project_name',
-            'general_info',
-            'tech_doc',
-            'dev_doc',
-            'file_doc',
-            'status_id',
-            'developer_id',
-            'client_id',
-            'start_date',
-            'deadline_date',
-            'finish_date',
-        ]));
-        
-        
-        $project->pasport = $request
-        ->file('pasport')
-        ->move('images/pasport', time().'.'.$request
-        ->file('pasport')
-        ->getClientOriginalName());
-        
-        $project->save();
+        // $file_doc = json_decode(json_encode($request->file_doc));
+        // $file_obj = [];
+        // foreach ($file_doc as $file_val) {
+        //     if ($file_val->has('tech_file')) {
+        //         $tec_file = $request->file('tech_file')->move('images/tech_file', time().'.'.$request
+        //             ->file('tech_file')
+        //             ->getClientOriginalName());
+        //         array_push($file_obj, [
+        //             'id' => $file_val->id,
+        //             'description' => $file_val->description,
+        //             'tech_file' => $tec_file,
+        //         ]);
+        //     }
+        // }
+
+        // $tech_doc = json_decode(json_encode($request->tech_doc));
+        // $tech_obj = [];
+        // foreach ($tech_doc as $tech_val) {
+        //     if ($file_val->has('tech_file')) {
+        //         $tec_file = $request->file('tech_file')->move('images/tech_file', time().'.'.$request
+        //             ->file('tech_file')
+        //             ->getClientOriginalName());
+        //         array_push($tech_obj, [
+        //                 'id' => $file_val->id,
+        //                 'name' => $file_val->name,
+        //                 'description' => $file_val->description,
+        //                 'tech_file' => $tec_file
+        //         ]);
+        //     }
+        // }     
+                
+        $project = Project::create([
+            'general_info' => $request->general_info,
+            'tech_doc' => json_encode($request->tech_doc),
+            'dev_doc' => json_encode($request->dev_doc),
+            'file_doc' => json_encode($request->file_doc),
+            'status_id' => $request->status_id,
+            'developer_id' => $request->developer_id,
+            'client_id' => $request->client_id,
+            'start_date' => $request->start_date,
+            // 'deadline_date' => $request->deadline_date,
+            'finish_date' => $request->finish_date,
+        ]);
         
         return new ProjectResource($project);
-        
     }
     
     /**
@@ -76,9 +96,7 @@ class ProjectController extends Controller
     */
     public function show(Project $project)
     {
-        
         return new ProjectResource($project);
-        
     }
     
     /**
@@ -91,7 +109,6 @@ class ProjectController extends Controller
     */
     public function update(UpdateProjectRequest $request, Project $project)
     {
-        
         $project->update($request->only([
             'project_name',
             'general_info',
@@ -105,20 +122,13 @@ class ProjectController extends Controller
             'deadline_date',
             'finish_date',
         ]));
-        
-        $project->pasport = $request
-        ->file('pasport')
-        ->move('images/pasport', time().'.'.$request
-        ->file('pasport')
-        ->getClientOriginalName());
-        
+    
         return new ProjectResource($project);
-        
     }
     
     /**
     * Remove the specified resource from storage.
-    * 
+    *
     *This method is used to delete an existing project.
     * @param  \App\Models\Project  $project
     * @return \Illuminate\Http\Response
@@ -128,5 +138,16 @@ class ProjectController extends Controller
         $project->delete();
         
         return response(null, 204);
+    }
+
+    public function storeImage(Request $request)
+    {
+        if ($request->file('file')) {
+            $file = $request->file('file')->move('images/project/', time().'.'.$request
+            ->file('file')
+            ->getClientOriginalName());
+            
+            return $file;
+        }
     }
 }

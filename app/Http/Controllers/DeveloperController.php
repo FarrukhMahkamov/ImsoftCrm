@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Developer;
 use App\Http\Requests\StoreDeveloperRequest;
 use App\Http\Requests\UpdateDeveloperRequest;
+use App\Http\Resources\AllDevResource;
 use App\Http\Resources\DeveloperResource;
 use Doctrine\Inflector\Rules\Word;
 use Illuminate\Http\Request;
@@ -24,11 +25,11 @@ class DeveloperController extends Controller
         // return DeveloperResource::collection(Developer::all());
     }
     
-
     public function getAllDeveloper()
     {
-        return DeveloperResource::collection(Developer::with('region', 'state', 'type')->latest()->get());
+        return AllDevResource::collection(Developer::all());
     }
+
     /**
     * Store a newly created developer in storage.
     *

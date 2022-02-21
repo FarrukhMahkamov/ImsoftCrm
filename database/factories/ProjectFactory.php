@@ -21,7 +21,6 @@ class ProjectFactory extends Factory
     public function definition()
     {
         return [
-            'project_name' => $this->faker->name(),
             'general_info' => $this->faker->paragraph(10),
             'tech_doc' => $this->faker->paragraph(10),
             'dev_doc' =>$this->faker->paragraph(10),
@@ -30,7 +29,7 @@ class ProjectFactory extends Factory
             'developer_id' => Developer::factory(), 
             'client_id' => Client::factory(), 
             'start_date' => $this->faker->dateTime(), 
-            'deadline_date' => $this->faker->dateTime(),
+            // 'deadline_date' => $this->faker->dateTime(),
             'finish_date' => $this->faker->dateTime(),
         ];
     }

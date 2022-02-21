@@ -21,7 +21,7 @@ class StateController extends Controller
         return StateResource::collection(State::latest()->get());
     }
     
-    public function getAll() 
+    public function getAll()
     {
         return StateResource::collection(State::latest()->get());
     }
@@ -40,7 +40,7 @@ class StateController extends Controller
     /**
     * Store a newly created state in storage.
     *
-    * This method is used to create a new state.    
+    * This method is used to create a new state.
     * @param  \App\Http\Requests\StoreStateRequest  $request
     * @return \Illuminate\Http\Response
     */
@@ -92,8 +92,14 @@ class StateController extends Controller
     public function destroy(Request $request)
     {
         $ids = $request->getContent();
-        
+    
         foreach (json_decode($ids) as $id) {
+            if (State::findOrFail($id)->region->count() > 0) {
+                return response()->json([
+                        'data' => 'Vilayat ichidagi shaharlarni ochiring'
+                    ], 400);
+            }
+            
             $state = State::findOrFail($id);
             $state->delete();
         }
