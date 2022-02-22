@@ -34,7 +34,6 @@ class Client extends Model
         'file_2',
         'file_3',
         'type_id',
-        'order_time',
         'client_status'
     ];
     
@@ -61,11 +60,6 @@ class Client extends Model
     public function address()
     {
         return $this->belongsTo(Address::class);
-    }
-    
-    public function type()
-    {
-        return $this->belongsTo(Type::class);
     }
     
     public function project()

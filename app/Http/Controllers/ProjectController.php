@@ -23,7 +23,7 @@ class ProjectController extends Controller
         // return ProjectResource::collection(Cache::remember('projects', 60*60*24, function(){
         //     return  Project::with('client', 'developer')->get();
         // }));
-        return ProjectResource::collection(Project::with('client', 'developer')->get());
+        return ProjectResource::collection(Project::with('client', 'developer')->latest()->get());
     }
     
     public function searchByStatus($id)
@@ -39,38 +39,7 @@ class ProjectController extends Controller
     * @return \Illuminate\Http\Response
     */
     public function store(Request $request, Project $project)
-    {
-        $file_doc = json_decode(json_encode($request->file_doc));
-        $file_obj = [];
-        foreach ($file_doc as $file_val) {
-            if ($file_val->file) {
-                $tec_file = $request->file('file')->move('images/projects', time().'.'.$request
-                    ->file('file')
-                    ->getClientOriginalName());
-                array_push($file_obj, [
-                    'rowId' => $file_val->rowId,
-                    'comment' => $file_val->comment,
-                    'file' => $tec_file,
-                ]);
-            }
-        }
-
-        $tech_doc = json_decode(json_encode($request->tech_doc));
-        $tech_obj = [];
-        foreach ($tech_doc as $tech_val) {
-            if ($tech_val->file) {
-                $tec_file = $request->file('file')->move('images/projects', time().'.'.$request
-                    ->file('file')
-                    ->getClientOriginalName());
-                array_push($tech_obj, [
-                        'rowId' => $tech_val->rowId,
-                        'name' => $tech_val->name,
-                        'comment' => $tech_val->comment,
-                        'file' => $tech_val->file
-                ]);
-            }
-        }     
-                
+    {            
         $project = Project::create([
             'general_info' => $request->general_info,
             'tech_doc' => json_encode($request->tech_doc),
@@ -86,7 +55,7 @@ class ProjectController extends Controller
         
         return new ProjectResource($project);
     }
-    
+   
     /**
     * Display the specified resource.
     *
@@ -96,7 +65,13 @@ class ProjectController extends Controller
     */
     public function show(Project $project)
     {
-        return new ProjectResource($project);
+        if (!$project) {
+            return response()->json([
+                'message' => 'Project not found',
+            ], 404);
+        } else {
+            return new ProjectResource($project);
+        }
     }
     
     /**
@@ -149,5 +124,12 @@ class ProjectController extends Controller
             
             return $file;
         }
+    }
+
+    public function getImage(Request $request)
+    {
+        $file = $request->file;
+
+        return response()->download($file);
     }
 }

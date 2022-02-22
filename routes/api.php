@@ -34,11 +34,12 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::put('states/{id}', [StateController::class, 'update']);
     Route::delete('states/delete', [StateController::class, 'destroy']);
 
-    Route::get('districts/delete', [RegionController::class, 'destroy']);
-    Route::get('districts', [RegionController::class, 'index']);
-    Route::get('districts/{id}', [RegionController::class, 'show']);
-    Route::post('districts', [RegionController::class, 'store']);
-    Route::put('districts/{id}', [RegionController::class, 'update']);
+    Route::get('districts/delete', [AddressController::class, 'destroy']);
+    Route::get('districts/all', [AddressController::class, 'getAllDistricts']);
+    Route::get('districts', [AddressController::class, 'index']);
+    Route::get('districts/{id}', [AddressController::class, 'show']);
+    Route::post('districts', [AddressController::class, 'store']);
+    Route::put('districts/{id}', [AddressController::class, 'update']);
 
 
     Route::get('cities/all', [RegionController::class, 'getAll']);
@@ -62,7 +63,7 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::get('projects/status/{id}', [ProjectController::class, 'searchByStatus']);
     Route::put('projects/{project}', [ProjectController::class, 'update']);
     Route::delete('projects/{project}', [ProjectController::class, 'destroy']);
-    Route::post('projects/image', [DeveloperController::class, 'storeImage']);
+    Route::post('projects/image', [ProjectController::class, 'storeImage']);
 
     Route::get('directions', [TypeController::class, 'index']);
     Route::get('directions/{direction}', [TypeController::class, 'show']);
@@ -77,6 +78,7 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::delete('reklams/{id}', [ReklamaController::class, 'destroy']);
     
     Route::get('clients', [ClientController::class, 'index']);
+    Route::get('clients/active', [ClientController::class, 'searchById']);
     Route::get('clients/status/{status}', [ClientController::class, 'searchByStatus']);
     Route::get('clients/{client}', [ClientController::class, 'show']);
     Route::post('clients', [ClientController::class, 'store']);  

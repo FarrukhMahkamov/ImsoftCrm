@@ -25,7 +25,7 @@ class StoreClientRequest extends FormRequest
     public function rules()
     {
         return [
-           'general_info' => 'requiredd', 
+           'general_info' => 'required', 
            'enterprise_name' => 'required', 
            'category_id' => 'required', Rule::exists('categories', 'id'), 
            'activity_type_id' => 'required', Rule::exists('activity_types', 'id'), 
@@ -43,8 +43,6 @@ class StoreClientRequest extends FormRequest
            'operator_born_date' => 'required', 
            'latitude' => 'required', 
            'longtitude' => 'required', 
-           'file' => 'required', 
-           'type_id' => 'required', Rule::exists('types', 'id'), 
            'order_time' => 'required'
         ];
     }

@@ -11,12 +11,18 @@ class Address extends Model
     
     protected $fillable = [
         'name',
-        'region_id'
+        'region_id',
+        'state_id'
     ];
     
     public function region()
     {
         return $this->belongsTo(Region::class);
+    }
+
+    public function state()
+    {
+        return $this->belongsTo(State::class);
     }
     
     public function client()

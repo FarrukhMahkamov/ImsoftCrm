@@ -16,7 +16,7 @@ class CreateClientsTable extends Migration
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
             $table->text('general_info');
-            $table->text('general_document');
+            $table->text('general_document')->nullable();
             $table->string('enterprise_name');
             $table->foreignId('category_id');
             $table->foreignId('activity_type_id');
@@ -39,8 +39,6 @@ class CreateClientsTable extends Migration
             $table->text('file_1');
             $table->text('file_2');
             $table->text('file_3');
-            $table->foreignId('type_id');
-            $table->dateTime('order_time');
             $table->timestamps();
         });
     }

@@ -18,6 +18,11 @@ class State extends Model
         return $this->hasMany(Region::class);
     }
 
+    public function address()
+    {
+        return $this->hasMany(Address::class);
+    }
+
     public function client()
     {
         return $this->hasMany(Client::class);

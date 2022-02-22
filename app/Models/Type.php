@@ -13,14 +13,8 @@ class Type extends Model
         'name'
     ];
 
-    public function client()
-    {
-        return $this->hasMany(Client::class);
-    }
-    
     public function developer()
     {
         return $this->hasMany(Developer::class);
     }
-
 }

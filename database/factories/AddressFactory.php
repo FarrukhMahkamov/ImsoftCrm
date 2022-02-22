@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Region;
+use App\Models\State;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class AddressFactory extends Factory
@@ -16,7 +17,8 @@ class AddressFactory extends Factory
     {
         return [
             'name' => $this->faker->word(),
-            'region_id' => Region::factory()
+            'region_id' => Region::factory(),
+            'state_id' => State::factory(),
         ];
     }
 }

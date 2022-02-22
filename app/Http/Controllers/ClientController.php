@@ -6,6 +6,7 @@ use App\Models\Client;
 use App\Http\Requests\StoreClientRequest;
 use App\Http\Requests\UpdateClientRequest;
 use App\Http\Resources\ClientResource;
+use App\Http\Resources\OnlyClientNameAndIdResource;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 
@@ -23,7 +24,7 @@ class ClientController extends Controller
         //     return Client::all();
         // }));
 
-        return ClientResource::collection(Client::with('category', 'activityType', 'state', 'region', 'address', 'type')->get());
+        return ClientResource::collection(Client::with('category', 'activityType', 'state', 'region', 'address')->latest()->get());
     }
 
     /**
@@ -33,7 +34,7 @@ class ClientController extends Controller
      * @param  \App\Http\Requests\StoreClientRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreClientRequest $request)
+    public function store(Request $request)
     {
         $client = Client::create($request->only([
             'general_info',
@@ -69,7 +70,14 @@ class ClientController extends Controller
 
     public function searchByStatus($id)
     {
-        return ClientResource::collection(Client::where('client_status', $id)->get());
+        return ClientResource::collection(Client::where('client_status', $id)->latest()->get());
+    }
+
+    public function searchById()
+    {
+        return OnlyClientNameAndIdResource::collection(Client::where('client_status', 1)
+        ->orWhere('client_status', 2)
+        ->latest()->get());
     }
 
     /**
@@ -92,7 +100,7 @@ class ClientController extends Controller
      * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateClientRequest $request, Client $client)
+    public function update(Request $request, Client $client)
     {
         $client->update($request->only([
             'general_info',
@@ -118,7 +126,6 @@ class ClientController extends Controller
             'file_1',
             'file_2',
             'file_3',
-            'type_id',
             'order_time',
             'client_status',
         ]));

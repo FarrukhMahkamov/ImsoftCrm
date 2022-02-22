@@ -18,9 +18,14 @@ class AddressController extends Controller
      */
     public function index()
     {
-        return AddressResource::collection(Address::with('region')->latest()->get());
+        return AddressResource::collection(Address::with('region')->latest()->paginate(10));
     }
 
+
+    public function getAllDistricts()
+    {
+        return AddressResource::collection(Address::with('region')->latest()->get());
+    }
     /**
      * Store a newly created address in storage.
      *

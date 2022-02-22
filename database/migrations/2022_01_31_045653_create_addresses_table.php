@@ -17,6 +17,7 @@ class CreateAddressesTable extends Migration
             $table->id();
             $table->string('name');
             $table->foreignId('region_id');
+            $table->foreignId('state_id');
             $table->timestamps();
         });
     }

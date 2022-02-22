@@ -18,12 +18,12 @@ class RegionController extends Controller
      */
     public function index()
     {
-        return RegionResource::collection(Region::latest()->get());
+        return RegionResource::collection(Region::with('state')->latest()->get());
     }
 
     public function getAll()
     {
-        return RegionResource::collection(Region::latest()->get());
+        return RegionResource::collection(Region::with('state')->latest()->get());
     }
 
     public function getSelectedRegion($id)
