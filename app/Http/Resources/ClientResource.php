@@ -19,11 +19,16 @@ class ClientResource extends JsonResource
                 'general_info' => $this->general_info, // null
                 'general_doc' => $this->general_document, // required
                 'enterprise_name'=> $this->enterprise_name, // required 
-                'category_id'=> $this->category->name, //working //required
+                'category_id'=> $this->category ? $this->category->id : '', //working //required
+                'category_name'=> $this->category ? $this->category->name : '', //working //required
                 'activity_type_id'=> $this->activityType->id,  //working
+                'activity_type_name'=> $this->activityType->name,  //working
                 'state_id'=> $this->state->id, //working //required
+                'state_name'=> $this->state->name, //working //required
                 'region_id'=> $this->region->id, //working
+                'region_name'=> $this->region->name, //working
                 'address_id'=> $this->address->id, //working
+                'address_name'=> $this->address->name, //working
                 'home_address'=> $this->home_address, 
                 'order_reason'=> $this->order_reason, //null
                 'client_name' => $this->client_name, //req
@@ -40,7 +45,7 @@ class ClientResource extends JsonResource
                 'file_2' => $this->file_2,//null
                 'file_3' => $this->file_3,//null
                 'client_status' => $this->client_status,//req
-                'created_at' => date_format($this->created_at, 'Y-m-d H:i:s')
+                'created_at' => $this->created_at
         ];
     }
 }

@@ -103,33 +103,34 @@ class ClientController extends Controller
     public function update(Request $request, Client $client)
     {
         $client->update($request->only([
-            'general_info',
-            'general_document',
-            'enterprise_name',
-            'category_id',
-            'activity_type_id',
-            'state_id',
-            'region_id',
-            'address_id',
-            'home_address',
-            'order_reason',
-            'client_name',
-            'client_phone_number',
-            'client_phone_number_2',
-            'client_born_date',
-            'operator_name',
-            'operator_phone_number',
-            'operator_phone_number_2',
-            'operator_born_date',
-            'latitude',
-            'longtitude',
-            'file_1',
-            'file_2',
-            'file_3',
-            'order_time',
-            'client_status',
+            'general_info' => $request->general_info,
+            'general_document' => $request->general_document,
+            'enterprise_name' => $request->enterprise_name,
+            'category_id' => $request->category_id,
+            'activity_type_id' => $request->activity_type_id,
+            'state_id' => $request->state_id,
+            'region_id' => $request->region_id,
+            'address_id' => $request->address_id,
+            'home_address' => $request->home_address,
+            'order_reason' => $request->order_reason,
+            'client_name' => $request->client_name,
+            'client_phone_number' => $request->client_phone_number,
+            'client_phone_number_2' => $request->client_phone_number_2,
+            'client_born_date' => $request->client_born_date,
+            'operator_name' => $request->operator_name,
+            'operator_phone_number' => $request->operator_phone_number,
+            'operator_phone_number_2' => $request->operator_phone_number_2,
+            'operator_born_date' => $request->operator_born_date,
+            'latitude' => $request->latitude,
+            'longtitude' => $request->longtitude,
+            'file_1' => $request->file_1,
+            'file_2' => $request->file_2,
+            'file_3' => $request->file_3,
+            'order_time' => $request->order_time,
+            'client_status' => $request->client_status,
         ]));
 
+            
         return new ClientResource($client);
     }
 
@@ -140,7 +141,7 @@ class ClientController extends Controller
      * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request)
+    public function deleteClient(Request $request)
     {
         $ids = $request->getContent();
 

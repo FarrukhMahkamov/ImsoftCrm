@@ -26,6 +26,7 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::post('workers/image', [DeveloperController::class, 'storeImage']);
     Route::apiResource('workers', DeveloperController::class);  
 
+    Route::apiResource('categories', CategoryController::class);
     Route::get('states/all', [StateController::class, 'getAll']);
     Route::get('states/all/{id}', [StateController::class, 'getSelectedState']);
     Route::get('states' , [StateController::class, 'index']);
@@ -83,6 +84,7 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::get('clients/{client}', [ClientController::class, 'show']);
     Route::post('clients', [ClientController::class, 'store']);  
     Route::post('clients/image', [ClientController::class, 'storeImage']);
+    Route::delete('clients/delete', [ClientController::class, 'deleteClient']);
     
     Route::put('clients/{client}', [ClientController::class, 'update']);
     Route::delete('clients/status/delete', [ClientController::class, 'destroy']);
