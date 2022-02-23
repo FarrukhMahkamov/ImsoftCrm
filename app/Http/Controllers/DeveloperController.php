@@ -94,7 +94,6 @@ class DeveloperController extends Controller
 
             return $developer_photo;
         }
-        
     }
 
     public function deletePhoto(Request $request)
@@ -114,10 +113,10 @@ class DeveloperController extends Controller
                 if (file_exists($request->filename)) {
                     unlink($request->filename);
                 }
-                break;   
+                break;
             default:;
+     }
     }
-}
     /**
     * DIsplay single developer
     *
@@ -125,8 +124,9 @@ class DeveloperController extends Controller
     * @param  \App\Models\Developer  $developer
     * @return \Illuminate\Http\Response
     */
-    public function show(Developer $developer)
+    public function show($id)
     {
+        $developer = Developer::findOrFail($id);
         return new DeveloperResource($developer);
     }
         
@@ -137,9 +137,10 @@ class DeveloperController extends Controller
     * @param  \App\Models\Developer  $developer
     * @return \Illuminate\Http\Response
     */
-    public function update(Request $request, Developer $developer)
+    public function update(Request $request, $id)
     {
-         $developer->update($request->only([
+        $developer = Developer::findorfail($id);
+        $developer->update($request->only([
                 'name' => $request->name,
                 'born_date' => $request->born_date,
                 'phone_number' => $request->phone_number,
@@ -177,7 +178,7 @@ class DeveloperController extends Controller
             $type->delete();
         }
     }
-    
+
     public function deleteDeveloper(Request $request)
     {
         $ids = $request->getContent();

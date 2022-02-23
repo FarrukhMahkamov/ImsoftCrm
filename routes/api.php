@@ -10,7 +10,6 @@ use App\Http\Controllers\AddressController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ReklamaController;
 use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\OperatorController;
 use App\Http\Controllers\DeveloperController;
 use App\Http\Controllers\ActivityTypeController;
 
@@ -25,7 +24,12 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::delete('workers/image/delete', [DeveloperController::class, 'deletePhoto']);
     Route::post('workers/image', [DeveloperController::class, 'storeImage']);
     Route::delete('workers/delete', [DeveloperController::class, 'deleteDeveloper']);
-    Route::apiResource('workers', DeveloperController::class);  
+
+    Route::get('workers', [DeveloperController::class, 'index']);
+    Route::get('workers/{id}', [DeveloperController::class, 'show']);
+    Route::post('workers', [DeveloperController::class, 'store']);
+    Route::put('workers/{id}', [DeveloperController::class, 'update']);
+    
 
     Route::apiResource('categories', CategoryController::class);
     Route::get('states/all', [StateController::class, 'getAll']);
