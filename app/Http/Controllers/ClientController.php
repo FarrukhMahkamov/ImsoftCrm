@@ -21,7 +21,7 @@ class ClientController extends Controller
     public function index()
     {
         // return ClientResource::collection(Cache::remember('clients', 60*60*24, function(){
-        //     return Client::all();
+        //     return Client::with('category', 'activityType', 'state', 'region', 'address')->latest()->get();
         // }));
 
         return ClientResource::collection(Client::with('category', 'activityType', 'state', 'region', 'address')->latest()->get());

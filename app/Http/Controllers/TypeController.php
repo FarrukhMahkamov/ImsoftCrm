@@ -29,6 +29,13 @@ class TypeController extends Controller
      * @param  \App\Http\Requests\StoreTypeRequest  $request
      * @return \Illuminate\Http\Response
      */
+
+     public function getAll()
+     {
+         return TypeResource::collection(Type::latest()->get());
+     }
+
+
     public function store(StoreTypeRequest $request)
     {
         $type = Type::create($request->only([

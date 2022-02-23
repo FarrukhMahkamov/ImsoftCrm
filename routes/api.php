@@ -24,6 +24,7 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::get('workers/all', [DeveloperController::class, 'getAllDeveloper']);
     Route::delete('workers/image/delete', [DeveloperController::class, 'deletePhoto']);
     Route::post('workers/image', [DeveloperController::class, 'storeImage']);
+    Route::delete('workers/delete', [DeveloperController::class, 'deleteDeveloper']);
     Route::apiResource('workers', DeveloperController::class);  
 
     Route::apiResource('categories', CategoryController::class);
@@ -67,6 +68,7 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::post('projects/image', [ProjectController::class, 'storeImage']);
 
     Route::get('directions', [TypeController::class, 'index']);
+    Route::get('directions/all', [TypeController::class, 'getAll']);
     Route::get('directions/{direction}', [TypeController::class, 'show']);
     Route::post('directions', [TypeController::class, 'store']);
     Route::put('directions/{id}', [TypeController::class, 'update']);

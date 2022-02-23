@@ -52,7 +52,7 @@ class DeveloperController extends Controller
             'state_id',
             'region_id',
             'address',
-            'longitude',
+            'longtitude',
             'latitude',
         ]));
          
@@ -137,40 +137,26 @@ class DeveloperController extends Controller
     * @param  \App\Models\Developer  $developer
     * @return \Illuminate\Http\Response
     */
-    public function update(UpdateDeveloperRequest $request, Developer $developer)
+    public function update(Request $request, Developer $developer)
     {
-        $developer->pasport = $request
-            ->file('pasport')
-            ->move('images/pasport', time().'.'.$request
-            ->file('pasport')
-            ->getClientOriginalName());
-            
-        $developer->family = $request
-            ->file('family')
-            ->move('images/family', time().'.'.$request
-            ->file('family')->getClientOriginalName());
-            
-        $developer->developer_photo = $request
-            ->file('developer_photo')
-            ->move('images/developer_photo', time().'.'.$request
-            ->file('developer_photo')->getClientOriginalName());
-            
-        $developer->update($request->only([
-                'name',
-                'passport',
-                'family',
-                'developer_photo',
-                'born_date',
-                'phone_number',
-                'work_type_id',
-                'about',
+         $developer->update($request->only([
+                'name' => $request->name,
+                'born_date' => $request->born_date,
+                'phone_number' => $request->phone_number,
+                'type_id' => $request->type_id,
+                'about' => $request->about,
+                'state_id' => $request->state_id,
+                'region_id' => $request->region_id,
+                'address' => $request->address,
+                'longtitude' => $request->longtitude,
+                'latitude' => $request->latitude,
             ]));
-            
+
         if ($developer) {
             return new DeveloperResource($developer);
         } else {
             return response()->json([
-                'message' => 'Something went wrong, please try again'
+                'message' => 'Error'
             ], 500);
         }
     }
@@ -182,10 +168,23 @@ class DeveloperController extends Controller
     * @param  \App\Models\Developer  $developer
     * @return \Illuminate\Http\Response
     */
-    public function destroy(Developer $developer)
+    public function destroy(Request $request)
     {
-        $developer->delete();
-            
-        return response(null, 204);
+        $ids = $request->getContent();
+
+        foreach (json_decode($ids) as $id) {
+            $type = Developer::findOrFail($id);
+            $type->delete();
+        }
+    }
+    
+    public function deleteDeveloper(Request $request)
+    {
+        $ids = $request->getContent();
+
+        foreach (json_decode($ids) as $id) {
+            $type = Developer::findOrFail($id);
+            $type->delete();
+        }
     }
 }

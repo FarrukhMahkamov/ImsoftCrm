@@ -32,7 +32,7 @@ class DeveloperFactory extends Factory
             'state_id' => State::factory(),
             'region_id' => Region::factory(),
             'address' => $this->faker->address(),
-            'longitude' => $this->faker->longitude(),
+            'longtitude' => $this->faker->longitude(),
             'latitude' => $this->faker->latitude(),
         ];
     }
