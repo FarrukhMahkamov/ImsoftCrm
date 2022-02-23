@@ -140,18 +140,23 @@ class DeveloperController extends Controller
     public function update(Request $request, $id)
     {
         $developer = Developer::findorfail($id);
-        $developer->update($request->only([
-                'name' => $request->name,
-                'born_date' => $request->born_date,
-                'phone_number' => $request->phone_number,
-                'type_id' => $request->type_id,
-                'about' => $request->about,
-                'state_id' => $request->state_id,
-                'region_id' => $request->region_id,
-                'address' => $request->address,
-                'longtitude' => $request->longtitude,
-                'latitude' => $request->latitude,
-            ]));
+        $developer->fill($request->only([
+            'name',
+            'born_date',
+            'phone_number',
+            'type_id',
+            'about',
+            'passport',
+            'family',
+            'developer_photo',
+            'state_id',
+            'region_id',
+            'address',
+            'longtitude',
+            'latitude',
+        ]));
+
+        $developer->save();
 
         if ($developer) {
             return new DeveloperResource($developer);

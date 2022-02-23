@@ -27,7 +27,7 @@ class DeveloperResource extends JsonResource
             'state_id' => $this->state ? $this->state->name : 'null',
             'region_id' => $this->region ? $this->region->name : 'null',
             'address' => $this->address,
-            'longtitude' => $this->longitude,
+            'longtitude' => $this->longtitude,
             'latitude' => $this->latitude,
         ];
     }
