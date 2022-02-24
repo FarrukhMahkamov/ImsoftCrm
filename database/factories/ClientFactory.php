@@ -39,7 +39,7 @@ class ClientFactory extends Factory
             'operator_phone_number_2' => $this->faker->phoneNumber(),
             'operator_born_date' => $this->faker->dateTime(),
             'latitude' => $this->faker->latitude(),
-            'longtitude' => $this->faker->longitude(),
+            'longitude' => $this->faker->longitude(),
             'file_1' => $this->faker->imageUrl(),
             'file_2' => $this->faker->imageUrl(),
             'file_3' => $this->faker->imageUrl(),

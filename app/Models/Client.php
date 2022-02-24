@@ -29,7 +29,7 @@ class Client extends Model
         'operator_phone_number_2',
         'operator_born_date',
         'latitude',
-        'longtitude',
+        'longitude',
         'file_1',
         'file_2',
         'file_3',

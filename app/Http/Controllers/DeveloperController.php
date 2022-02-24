@@ -21,7 +21,7 @@ class DeveloperController extends Controller
     */
     public function index()
     {
-        return DeveloperResource::collection(Developer::with('region', 'state', 'type')->latest()->get());
+        return DeveloperResource::collection(Developer::with('region', 'state', 'type')->latest()->paginate(20));
         // return DeveloperResource::collection(Developer::all());
     }
     
