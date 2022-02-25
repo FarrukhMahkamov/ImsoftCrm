@@ -66,5 +66,10 @@ class Client extends Model
     {
         return $this->hasMany(Project::class);
     }
-    
+
+    public function phoneClient()
+    {
+        return $this->hasMany(PhoneClient::class);
+    }
+
 }
