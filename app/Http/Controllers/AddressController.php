@@ -37,7 +37,8 @@ class AddressController extends Controller
     {
         $address = Address::create($request->only([
             'name',
-            'region_id'
+            'region_id',
+            'state_id'
         ]));
 
         return new AddressResource($address);

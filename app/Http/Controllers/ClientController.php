@@ -164,23 +164,7 @@ class ClientController extends Controller
 
     public function deletePhoto(Request $request)
     {
-    //     switch ($request->type) {
-    //         case 'file_1':
-                
-    //             break;
-    //         case 'file_2':
-    //             if (file_exists($request->filename)) {
-    //                 unlink($request->filename);
-    //             }
-    //             break;
-    //         case 'file_3':
-    //             if (file_exists($request->filename)) {
-    //                 unlink($request->filename);
-    //             }
-    //             break;
-    //         default:;
-    //    }
-        if ($request->type) {
+          if ($request->type) {
             if (file_exists($request->filename)) {
                 unlink($request->filename);
             }
