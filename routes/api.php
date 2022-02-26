@@ -98,7 +98,3 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     
     Route::post('logout-user', [AuthController::class, 'logoutUser']);
 // });
-
-
-
-

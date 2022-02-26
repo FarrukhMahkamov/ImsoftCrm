@@ -30,7 +30,7 @@ class AuthController extends Controller
             'email' => $userInputFields['email'],
             'password' => bcrypt($userInputFields['password']) ,
         ]);
-        
+
         $token = $user->createToken('API Token')->plainTextToken;
         
         return $response = [

@@ -64,8 +64,9 @@ class AddressController extends Controller
      * @param  \App\Models\Address  $address
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateAddressRequest $request, Address $address)
+    public function update(UpdateAddressRequest $request, $id)
     {
+        $address = Address::findOrFail($id);
         $address->update($request->only([
             'name',
             'region_id'

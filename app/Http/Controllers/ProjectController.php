@@ -23,7 +23,7 @@ class ProjectController extends Controller
         // return ProjectResource::collection(Cache::remember('projects', 60*60*24, function(){
         //     return  Project::with('client', 'developer')->get();
         // }));
-        return ProjectResource::collection(Project::with('client', 'developer')->latest()->get());
+        return ProjectResource::collection(Project::with('client', 'developer')->latest()->paginate(10));
     }
     
     public function searchByStatus($id)
@@ -123,6 +123,14 @@ class ProjectController extends Controller
             ->getClientOriginalName());
             
             return $file;
+        }
+
+        if ($request->file('file1')) {
+            $file1 = $request->file('file1')->move('images/project/', time().'.'.$request
+            ->file('file1')
+            ->getClientOriginalName());
+            
+            return $file1;
         }
     }
 

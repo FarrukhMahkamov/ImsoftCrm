@@ -26,7 +26,7 @@ class ActivityTypeController extends Controller
     }
 
 
-    public function allData()
+    public function getAll()
     {
         return ActivityTypeResource::collection(ActivityType::latest()->get());
     }

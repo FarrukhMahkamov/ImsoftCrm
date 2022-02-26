@@ -75,8 +75,9 @@ class StateController extends Controller
     * @param  \App\Models\State  $state
     * @return \Illuminate\Http\Response
     */
-    public function update(UpdateStateRequest $request, State $state)
+    public function update(UpdateStateRequest $request, $id)
     {
+        $state = State::findOrFail($id);
         $state->update($request->only('name'));
         
         return new StateResource($state);

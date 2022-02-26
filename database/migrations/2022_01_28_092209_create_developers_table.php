@@ -22,7 +22,7 @@ class CreateDevelopersTable extends Migration
             $table->foreignId('state_id');
             $table->foreignId('region_id');
             $table->string('address');
-            $table->string('longtitude');
+            $table->string('longitude');
             $table->string('latitude');
             $table->longText('about');     
             $table->text('passport');

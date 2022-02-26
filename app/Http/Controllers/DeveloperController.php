@@ -52,12 +52,12 @@ class DeveloperController extends Controller
             'state_id',
             'region_id',
             'address',
-            'longtitude',
+            'longitude',
             'latitude',
         ]));
          
         $developer->save();
-        
+        $developer = Developer::create($request->all());
         if ($developer) {
             return new DeveloperResource($developer);
         } else {
@@ -127,6 +127,7 @@ class DeveloperController extends Controller
     public function show($id)
     {
         $developer = Developer::findOrFail($id);
+
         return new DeveloperResource($developer);
     }
         
@@ -152,7 +153,7 @@ class DeveloperController extends Controller
             'state_id',
             'region_id',
             'address',
-            'longtitude',
+            'longitude',
             'latitude',
         ]));
 

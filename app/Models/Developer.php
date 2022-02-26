@@ -21,7 +21,7 @@ class Developer extends Model
         'state_id',
         'region_id',
         'address',
-        'longtitude',
+        'longitude',
         'latitude',
     ];
 
