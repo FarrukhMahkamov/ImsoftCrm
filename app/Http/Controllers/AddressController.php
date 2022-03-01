@@ -51,8 +51,10 @@ class AddressController extends Controller
      * @param  \App\Models\Address  $address
      * @return \Illuminate\Http\Response
      */
-    public function show(Address $address)
+    public function show($id)
     {
+        $address = Address::findOrFail($id);
+
         return new AddressResource($address);
     }
 
@@ -67,10 +69,11 @@ class AddressController extends Controller
     public function update(UpdateAddressRequest $request, $id)
     {
         $address = Address::findOrFail($id);
-        $address->update($request->only([
-            'name',
-            'region_id'
-        ]));
+
+        $address->update([
+            'name' => $request->name,
+            'region_id' => $request->region_id,
+        ]);
 
         return new AddressResource($address);
     }

@@ -2,6 +2,8 @@
 
 namespace App\Http\Requests;
 
+use App\Models\Address;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -25,8 +27,8 @@ class UpdateAddressRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:addresses',
-            'region_id' => ['required', Rule::exists('regions', 'id')],
+            'name' => 'required|min:3|max:250',
+            'region_id' => 'required', Rule::exists('regions', 'id'),
         ];
     }
 }

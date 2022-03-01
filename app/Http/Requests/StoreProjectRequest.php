@@ -32,7 +32,7 @@ class StoreProjectRequest extends FormRequest
             'developer_info' => 'required',
             'start_date' => 'required',
             'dedline_date' => 'required',
-            'finish_date' => 'finish_date',
+            'finish_date' => 'request',
             'about_file' => 'required',
             'project_file' => 'required',
             'client_id' => ['required', Rule::exists('clients', 'id')],

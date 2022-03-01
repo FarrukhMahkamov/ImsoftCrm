@@ -38,9 +38,11 @@ class ProjectController extends Controller
     * @param  \App\Http\Requests\StoreProjectRequest  $request
     * @return \Illuminate\Http\Response
     */
-    public function store(Request $request, Project $project)
+    public function store(StoreProjectRequest $request, Project $project)
     {            
         $project = Project::create([
+            'name' => $request->name,
+            'from_whom' => $request->from_whom,
             'general_info' => $request->general_info,
             'tech_doc' => json_encode($request->tech_doc),
             'dev_doc' => json_encode($request->dev_doc),
@@ -86,6 +88,8 @@ class ProjectController extends Controller
     {
         $project = Project::findOrFail($id);
         $project->update($request->only([
+            'name' => $request->name,
+            'from_whom' => $request->from_whom,
             'project_name' => $request->project_name,
             'general_info' => $request->general_info,
             'tech_doc' => $request->tech_doc,
