@@ -25,17 +25,17 @@ class StoreProjectRequest extends FormRequest
     public function rules()
     {
         return [
+            'name' => 'required|min:3|max:200|unique:projects',
+            'from_whom' => 'required|min:3|max:200',
             'general_info' => 'required',
-            'general_file' => 'required',
+            'tech_doc' => 'nullable',
+            'dev_doc' => 'nullable',
+            'file_doc' => 'nullable',
             'status_id' => 'required',
-            'developer_id' => ['required',  Rule::exists('developers', 'id')],
-            'developer_info' => 'required',
             'start_date' => 'required',
-            'dedline_date' => 'required',
-            'finish_date' => 'request',
-            'about_file' => 'required',
-            'project_file' => 'required',
-            'client_id' => ['required', Rule::exists('clients', 'id')],
+            'finish_date' => 'required',
+            'developer_id' => 'required',  Rule::exists('developers', 'id'),
+            'client_id' => 'required', Rule::exists('clients', 'id'),
         ];
     }
 }

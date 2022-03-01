@@ -21,7 +21,7 @@ class CreateProjectsTable extends Migration
             $table->text('tech_doc')->nullable();
             $table->text('dev_doc')->nullable();
             $table->text('file_doc')->nullable();
-            $table->integer('status_id');
+            $table->integer('status_id');   
             $table->foreignId('developer_id');
             $table->foreignId('client_id');
             $table->dateTime('start_date');

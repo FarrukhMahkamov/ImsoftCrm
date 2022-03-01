@@ -51,8 +51,8 @@ class ProjectController extends Controller
             'developer_id' => $request->developer_id,
             'client_id' => $request->client_id,
             'start_date' => $request->start_date,
-            // 'deadline_date' => $request->deadline_date,
             'finish_date' => $request->finish_date,
+            // 'deadline_date' => $request->deadline_date,
         ]);
         
         return new ProjectResource($project);
@@ -84,7 +84,7 @@ class ProjectController extends Controller
     * @param  \App\Models\Project  $project
     * @return \Illuminate\Http\Response
     */
-    public function update(Request $request, $id)
+    public function update(UpdateProjectRequest $request, $id)
     {
         $project = Project::findOrFail($id);
         $project->update($request->only([
