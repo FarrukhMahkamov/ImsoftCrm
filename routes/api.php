@@ -34,13 +34,13 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::apiResource('categories', CategoryController::class);
     Route::get('states/all', [StateController::class, 'getAll']);
     Route::get('states/all/{id}', [StateController::class, 'getSelectedState']);
-    Route::get('states' , [StateController::class, 'index'])->middleware('auth:sanctum');
+    Route::get('states' , [StateController::class, 'index']);
     Route::get('states/{id}', [StateController::class, 'show']);
     Route::post('states', [StateController::class, 'store']);
     Route::put('states/{id}', [StateController::class, 'update']);
     Route::delete('states/delete', [StateController::class, 'destroy']);
 
-    Route::get('districts/delete', [AddressController::class, 'destroy']);
+    Route::delete('districts/delete', [AddressController::class, 'destroy']);
     Route::get('districts/all', [AddressController::class, 'getAllDistricts']);
     Route::get('districts', [AddressController::class, 'index']);
     Route::get('districts/{id}', [AddressController::class, 'show']);
