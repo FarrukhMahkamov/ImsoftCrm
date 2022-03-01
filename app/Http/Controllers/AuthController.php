@@ -19,24 +19,16 @@ class AuthController extends Controller
     */    
     public function registerUser(User $user, Request $request)
     {
-        $userInputFields = $request->validate([
-            'name' => 'required|min:3|max:200|unique:users',
-            'email' => 'required|email|unique:users',
-            'password' => 'required|min:6|max:200|confirmed',
-        ]);
-        
         $user = User::create([
-            'name' => $userInputFields['name'],
-            'email' => $userInputFields['email'],
-            'password' => Hash::make($userInputFields['password']) ,
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
         ]);
-
+      
         $token = $user->createToken('API Token')->plainTextToken;
+        $user->token = $token;
         
-        return $response = [
-            'user' => $user,
-            'token' => $token
-        ];
+        return new UserResource($user);
     }
     
 
@@ -56,16 +48,15 @@ class AuthController extends Controller
         
         if(!$user || !Hash::check($fields['password'], $user->password)) {
             return response([
-                'message' => 'Email yo padddrol hato'
+                'message' => 'Login yoki parrol hato'
             ], 401);
         }
         
         $token = $user->createToken('myapptoken')->plainTextToken;
         
-        return $response = [
-            'user' => $user,
-            'token' => $token
-        ];
+        $user->token = $token;
+
+        return new UserResource($user);
     }
     
     /**
@@ -81,5 +72,5 @@ class AuthController extends Controller
             'message' => 'Successfully logged out'
         ]);
     }
-    
+        
 }
