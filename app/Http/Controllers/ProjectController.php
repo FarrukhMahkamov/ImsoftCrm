@@ -82,20 +82,21 @@ class ProjectController extends Controller
     * @param  \App\Models\Project  $project
     * @return \Illuminate\Http\Response
     */
-    public function update(UpdateProjectRequest $request, Project $project)
+    public function update(Request $request, $id)
     {
+        $project = Project::findOrFail($id);
         $project->update($request->only([
-            'project_name',
-            'general_info',
-            'tech_doc',
-            'dev_doc',
-            'file_doc',
-            'status_id',
-            'developer_id',
-            'client_id',
-            'start_date',
-            'deadline_date',
-            'finish_date',
+            'project_name' => $request->project_name,
+            'general_info' => $request->general_info,
+            'tech_doc' => $request->tech_doc,
+            'dev_doc' => $request->dev_doc,
+            'file_doc' => $request->file_doc,
+            'status_id' => $request->status_id,
+            'developer_id' => $request->developer_id,
+            'client_id' => $request->client_id,
+            'start_date' => $request->start_date,
+            'deadline_date' => $request->deadline_date,
+            'finish_date' => $request->finish_date,
         ]));
     
         return new ProjectResource($project);
@@ -108,11 +109,14 @@ class ProjectController extends Controller
     * @param  \App\Models\Project  $project
     * @return \Illuminate\Http\Response
     */
-    public function destroy(Project $project)
+    public function destroy(Request $request)
     {
-        $project->delete();
-        
-        return response(null, 204);
+        $ids = $request->getContent();
+
+        foreach(json_decode($ids) as $id) {
+            $address = Project::findOrFail($id);
+            $address->delete();
+        }
     }
 
     public function storeImage(Request $request)

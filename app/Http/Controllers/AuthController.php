@@ -28,7 +28,7 @@ class AuthController extends Controller
         $user = User::create([
             'name' => $userInputFields['name'],
             'email' => $userInputFields['email'],
-            'password' => bcrypt($userInputFields['password']) ,
+            'password' => Hash::make($userInputFields['password']) ,
         ]);
 
         $token = $user->createToken('API Token')->plainTextToken;
@@ -43,7 +43,7 @@ class AuthController extends Controller
     /**
      * Login a user 
      * 
-     * This method is used to login a user.
+     * This method is used to login a user.d
      */
     public function loginUser(User $user, Request $request)
     {
@@ -56,7 +56,7 @@ class AuthController extends Controller
         
         if(!$user || !Hash::check($fields['password'], $user->password)) {
             return response([
-                'message' => 'Bad creds'
+                'message' => 'Email yo padddrol hato'
             ], 401);
         }
         
