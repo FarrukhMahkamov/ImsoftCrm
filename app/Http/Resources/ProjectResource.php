@@ -17,19 +17,20 @@ class ProjectResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
-            'from_whom' => $this->form_whom,
+            'from_whom' => $this->from_whom,
             'general_info' => $this->general_info,
             'tech_doc' => json_decode($this->tech_doc),
             'file_doc' => json_decode($this->file_doc),
             'status_id' => $this->status_id,
-            'developer_id' => $this->developer->id,
+            'developer_id' => $this->developer ? $this->developer->id : '',
+            'developer_name' => $this->developer ? $this->developer->name : '',
             'dev_doc' => json_decode($this->dev_doc),
             'developer_name' => $this->developer->name,
-            'client_id' => $this->client->id,
-            'client_name' => $this->client->client_name,
-            'start_date' => $this->start_date,
-            // 'deadline_date' => $this->deadline_date,
+            'client_id' => $this->client ? $this->client->id : '',
+            'client_name' => $this->client ? $this->client->client_name : '',
+            'start_date' => date_format($this->start_date, 'd/m/Y'),
             'finish_date' => $this->finish_date,
+              // 'deadline_date' => $this->deadline_date,
         ];
     }
 }

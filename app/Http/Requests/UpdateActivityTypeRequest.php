@@ -24,7 +24,8 @@ class UpdateActivityTypeRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:activity_types',
+            'name' => 'required',
+            'category_id' => 'required|exists:categories,id',
         ];
     }
 }

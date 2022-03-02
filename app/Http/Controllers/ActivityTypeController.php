@@ -22,7 +22,6 @@ class ActivityTypeController extends Controller
     public function index()
     {
         return ActivityTypeResource::collection(ActivityType::latest()->paginate(10));
-    // return ActivityTypeResource::collection(ActivityType::latest()->get());
     }
 
 
@@ -39,7 +38,10 @@ class ActivityTypeController extends Controller
      */
     public function store(StoreActivityTypeRequest $request)
     {
-        $activityType = ActivityType::create($request->only('name'));
+        $activityType = ActivityType::create($request->only([
+            'name',
+            'category_id'
+        ]));
 
         return new ActivityTypeResource($activityType);
     }
@@ -53,9 +55,9 @@ class ActivityTypeController extends Controller
      */
     public function show($id)
     {
-        return new ActivityTypeResource(
-            $activityType = ActivityType::findOrFail($id)
-        );
+        $activityType = ActivityType::findOrFail($id);
+
+        return new ActivityTypeResource($activityType);
     }
 
     /**
@@ -70,7 +72,10 @@ class ActivityTypeController extends Controller
     {
         $activityType = ActivityType::findOrFail($id);
 
-        $activityType->update($request->only(['name']));
+        $activityType->update($request->only([
+            'name',
+            'category_id'
+        ]));
     }
 
     /**

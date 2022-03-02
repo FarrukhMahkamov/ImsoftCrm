@@ -57,7 +57,6 @@ class DeveloperController extends Controller
         ]));
          
         $developer->save();
-        $developer = Developer::create($request->all());
         if ($developer) {
             return new DeveloperResource($developer);
         } else {

@@ -18,7 +18,7 @@ class AddressController extends Controller
      */
     public function index()
     {
-        return AddressResource::collection(Address::with('region')->latest()->paginate(10));
+        return AddressResource::collection(Address::with('region', 'state')->latest()->paginate(10));
     }
 
 
