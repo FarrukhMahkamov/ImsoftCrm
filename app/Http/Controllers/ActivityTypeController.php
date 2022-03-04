@@ -29,6 +29,7 @@ class ActivityTypeController extends Controller
     {
         return ActivityTypeResource::collection(ActivityType::latest()->get());
     }
+    
     /**
      * Store a newly created activity type in storage.
      *

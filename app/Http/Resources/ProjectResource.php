@@ -28,7 +28,7 @@ class ProjectResource extends JsonResource
             'developer_name' => $this->developer->name,
             'client_id' => $this->client ? $this->client->id : '',
             'client_name' => $this->client ? $this->client->client_name : '',
-            'start_date' => date_format($this->start_date, 'd/m/Y'),
+            'start_date' => $this->start_date,
             'finish_date' => $this->finish_date,
               // 'deadline_date' => $this->deadline_date,
         ];

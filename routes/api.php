@@ -13,12 +13,17 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DeveloperController;
 use App\Http\Controllers\ActivityTypeController;
 
-Route::post('register-user', [AuthController::class, 'registerUser']);
+
 Route::post('login-user', [AuthController::class, 'loginUser']);
+Route::post('users', [AuthController::class, 'registerUser']);
 
-
-// Route::group(['middleware' => 'auth:sanctum'], function() {
-    Route::apiResource('categories', CategoryController::class);
+Route::group(['middleware' => 'auth:sanctum'], function() {
+    
+    Route::get('/categories', [CategoryController::class, 'index']);
+    Route::get('/categories/{id}', [CategoryController::class, 'show']);
+    Route::post('/categories', [CategoryController::class, 'store']);
+    Route::put('/categories/{id}', [CategoryController::class, 'update']);
+    Route::delete('/categories/delete', [CategoryController::class, 'destroy']);
 
     Route::get('workers/all', [DeveloperController::class, 'getAllDeveloper']);
     Route::delete('workers/image/delete', [DeveloperController::class, 'deletePhoto']);
@@ -29,9 +34,7 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::get('workers/{id}', [DeveloperController::class, 'show']);
     Route::post('workers', [DeveloperController::class, 'store']);
     Route::put('workers/{id}', [DeveloperController::class, 'update']);
-    
 
-    Route::apiResource('categories', CategoryController::class);
     Route::get('states/all', [StateController::class, 'getAll']);
     Route::get('states/all/{id}', [StateController::class, 'getSelectedState']);
     Route::get('states' , [StateController::class, 'index']);
@@ -95,6 +98,6 @@ Route::post('login-user', [AuthController::class, 'loginUser']);
     Route::put('clients/{client}', [ClientController::class, 'update']);
     Route::delete('clients/status/delete', [ClientController::class, 'destroy']);
 
-    
-    Route::post('logout-user', [AuthController::class, 'logoutUser']);
-// });
+    Route::get('users', [AuthController::class, 'getAllUsers']);
+    Route::delete('logout-user/{id}', [AuthController::class, 'logoutUser']);
+});

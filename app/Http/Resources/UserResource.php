@@ -8,7 +8,7 @@ class UserResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
-     *
+     * 
      * @param  \Illuminate\Http\Request  $request
      * @return array|\Illuminate\Contracts\Support\Arrayable|\JsonSerializable
      */
@@ -17,7 +17,9 @@ class UserResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
-            'email' => $this->email,
+            'login' => $this->login,
+            'access' => json_decode($this->access),
+            'phone_number' => $this->phone_number,
             'token' => $this->token,
         ];
     }

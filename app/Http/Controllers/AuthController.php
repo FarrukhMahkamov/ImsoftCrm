@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Http\Requests\AuthRequest;
 use App\Http\Requests\UserRequest;
 use App\Http\Resources\UserResource;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
@@ -17,11 +19,13 @@ class AuthController extends Controller
     * @param  \Illuminate\Http\Request  $request
     * @param Request $request
     */    
-    public function registerUser(User $user, Request $request)
+    public function registerUser(AuthRequest $request)
     {
         $user = User::create([
             'name' => $request->name,
-            'email' => $request->email,
+            'login' => $request->login,
+            'phone_number' => $request->phone_number,
+            'access' => json_encode($request->access),
             'password' => Hash::make($request->password),
         ]);
       
@@ -40,16 +44,16 @@ class AuthController extends Controller
     public function loginUser(User $user, Request $request)
     {
         $fields = $request->validate([
-            'email' => 'required|string',
+            'login' => 'required|string',
             'password' => 'required|string'
         ]);
         
-        $user = User::where('email', $fields['email'])->first();
+        $user = User::where('login', $fields['login'])->first();
         
         if(!$user || !Hash::check($fields['password'], $user->password)) {
             return response([
                 'message' => 'Login yoki parrol hato'
-            ], 401);
+            ], 401); 
         }
         
         $token = $user->createToken('myapptoken')->plainTextToken;
@@ -64,13 +68,58 @@ class AuthController extends Controller
      * 
      * This method is used to logout a user.
      */
-    public function logoutUser(Request $request)
+    public function logoutUser(Request $request, $id)
     {
-        $request->user()->token()->delete();
-        
+        $request->user()->currentAccessToken()->delete();
+
         return response()->json([
             'message' => 'Successfully logged out'
         ]);
     }
+
+    public function updatePassword(Request $request)
+    {
+        $fields = $request->validate([
+            'old_password' => 'required|string',
+            'new_password' => 'required|string|min:6|max:200|confirmed'
+        ]);
+
+        $user = $request->user();
+
+        if (!Hash::check($fields['old_password'], $user->password)) {
+            return response([
+                'message' => 'Eski password noto\'gri'
+            ], 401);
+        }
+
+        $user->password = Hash::make($fields['new_password']);
+        $user->save();
+
+        return response()->json([
+            'message' => 'Password updated successfully'
+        ]);
         
+    }
+
+    public function updateProfile(Request $request)
+    {
+        $fields = $request->validate([
+            'name' => 'required|string',
+            'email' => 'required|string'
+        ]);
+
+        $user = $request->user();
+        
+        $user->update($fields);
+
+        return new UserResource($user);
+    }
+
+    public function getAllUsers()
+    {
+        $users = User::all();
+
+        return UserResource::collection($users);
+
+    }
 }

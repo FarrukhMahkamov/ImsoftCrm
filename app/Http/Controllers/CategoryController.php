@@ -6,6 +6,7 @@ use App\Models\Category;
 use App\Http\Requests\StoreCategoryRequest;
 use App\Http\Requests\UpdateCategoryRequest;
 use App\Http\Resources\CategoryResource;
+use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
@@ -27,7 +28,7 @@ class CategoryController extends Controller
     * @param  \App\Http\Requests\StoreCategoryRequest  $request
     * @return \Illuminate\Http\Response
     */
-    public function store(StoreCategoryRequest $request, Category $category)
+    public function store(StoreCategoryRequest $request)
     {
         $category = Category::create($request->only('name'));
         
@@ -41,8 +42,9 @@ class CategoryController extends Controller
     * @param  \App\Models\Category  $category
     * @return \Illuminate\Http\Response
     */
-    public function show(Category $category)
+    public function show($id)
     {
+        $category = Category::findOrFail($id);
         return new CategoryResource($category);
     }
     
@@ -54,8 +56,10 @@ class CategoryController extends Controller
     * @param  \App\Models\Category  $category
     * @return \Illuminate\Http\Response
     */
-    public function update(UpdateCategoryRequest $request, Category $category)
+    public function update(UpdateCategoryRequest $request, $id)
     {
+        $category = Category::findOrFail($id);
+
         $category->update($request->only('name'));
         
         return new CategoryResource($category);
@@ -68,10 +72,13 @@ class CategoryController extends Controller
     * @param  \App\Models\Category  $category
     * @return \Illuminate\Http\Response
     */
-    public function destroy(Category $category)
+    public function destroy(Request $request)
     {
-        $category->delete();
-        
-        return response(null, 204);
+        $ids = $request->getContent();
+
+        foreach (json_decode($ids) as $id) {
+            $type = Category::findOrFail($id);
+            $type->delete();
+        }
     }
 }
