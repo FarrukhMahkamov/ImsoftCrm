@@ -105,12 +105,19 @@ class AuthController extends Controller
     {
         $fields = $request->validate([
             'name' => 'required|string',
-            'email' => 'required|string'
+            'email' => 'required|string',
+            'access' => 'required|array',
+            'phone_number' => 'required|string'
         ]);
 
         $user = $request->user();
         
-        $user->update($fields);
+        $user->update([
+            'name' => $fields['name'],
+            'email' => $fields['email'],
+            'access' => json_encode($fields['access']),
+            'phone_number' => $fields['phone_number']
+        ]);
 
         return new UserResource($user);
     }
