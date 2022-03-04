@@ -27,6 +27,19 @@ class StoreAddressRequest extends FormRequest
         return [
             'name' => 'required|unique:addresses',
             'region_id' => 'required', Rule::exists('regions', 'id'),
+            'state_id' => 'required', Rule::exists('states', 'id')
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'name.required' => 'Manzil nomini kiriting!',
+            'name.unique' => 'Bu manzil mavjud!',
+            'region_id.required' => 'Regionni kiriting!',
+            'region_id.exists' => 'Bu region mavjud emas!',
+            'state_id.required' => 'Viloyatni kiriting!',
+            'state_id.exists' => 'Bu viloyat mavjud emas!',
         ];
     }
 }

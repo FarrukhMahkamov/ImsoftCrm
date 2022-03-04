@@ -25,8 +25,19 @@ class UpdateRegionRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required',
-            'state_id' => ['required', Rule::exists('states', 'id')],
+            'name' => 'required|min:3|max:250',
+            'state_id' => 'required|exists:states,id',
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'name.required' => 'Qo\'shimcha ma\'lumotni kiriting!',
+            'name.min' => 'Region nomi 3 ta harfdan kattaroq bo\'lishi shart',
+            'name.max' => 'Region nomi 250 ta harfdan kattaroq bo\'lishi shart',
+            'state_id.required' => 'Viloyatni tanlang!',
+            'state_id.exists' => 'Viloyatni tanlang!',
         ];
     }
 }

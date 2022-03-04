@@ -39,8 +39,7 @@ class DeveloperController extends Controller
     */
     public function store(StoreDeveloperRequest $request)
     {
-        $developer = new Developer;
-        $developer->fill($request->only([
+        $developer = Developer::create($request->only([
             'name',
             'born_date',
             'phone_number',
@@ -55,8 +54,7 @@ class DeveloperController extends Controller
             'longitude',
             'latitude',
         ]));
-         
-        $developer->save();
+
         if ($developer) {
             return new DeveloperResource($developer);
         } else {
@@ -137,7 +135,7 @@ class DeveloperController extends Controller
     * @param  \App\Models\Developer  $developer
     * @return \Illuminate\Http\Response
     */
-    public function update(Request $request, $id)
+    public function update(UpdateDeveloperRequest $request, $id)
     {
         $developer = Developer::findorfail($id);
         $developer->fill($request->only([

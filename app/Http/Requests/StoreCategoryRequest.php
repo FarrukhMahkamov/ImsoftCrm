@@ -24,7 +24,17 @@ class StoreCategoryRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:categories',
+            'name' => 'required|unique:categories|min:3|max:250',
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'name.required' => 'Kategoriyani kiriting!',
+            'name.unique' => 'Bu kategoriyani mavjud!',
+            'name.min' => 'Kategoriyani 3 ta belgidan iborat bo\'lishi kerak!',
+            'name.max' => 'Kategoriyani 250 ta belgidan ko\'p bo\'lishi kerak emas!',
         ];
     }
 }

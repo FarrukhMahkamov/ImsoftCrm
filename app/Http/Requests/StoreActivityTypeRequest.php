@@ -24,8 +24,20 @@ class StoreActivityTypeRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:activity_types',
+            'name' => 'required|unique:activity_types|min:3|max:250',
             'category_id' => 'required|exists:categories,id',
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'name.required' => 'Faoliyat turini kiriting!',
+            'name.unique' => 'Bu faoliyat turi mavjud!',
+            'name.min' => 'Faoliyat turi 3 ta belgidan iborat bo\'lishi kerak!',
+            'name.max' => 'Faoliyat turi 250 ta belgidan ko\'p bo\'lishi kerak emas!',
+            'category_id.required' => 'Kategoriyani kiriting!',
+            'category_id.exists' => 'Bu kategoriya mavjud emas!',
         ];
     }
 }

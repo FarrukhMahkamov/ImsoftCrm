@@ -24,14 +24,41 @@ class UpdateDeveloperRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:developers',
-            'start_work' => 'required',
-            'surname' => 'required',
-            'phone_number' => 'required',
-            'work_type' => 'required',
-            'about' => 'required',
-            'file' => 'required',
-            'workstatus_id' => 'required',
+            'name' => 'required|min:3|max:250',
+            'born_date' => 'required|date',
+            'phone_number' => 'required|min:5|max:15',
+            'type_id' => 'required',
+            'address' => 'required',
+            'region_id' => 'required',
+            'state_id' => 'required',
+            'passport' => 'required',
+            'family' => 'required',
+            'developer_photo' => 'required',
+            'longitude' => 'required',
+            'latitude' => 'required',
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'name.required' => 'Ismni kiriting!',
+            'name.min' => 'Ismni 3 ta belgidan iborat bo\'lishi kerak!',
+            'name.max' => 'Ism 250 ta belgidan ko\'p bo\'lishi kerak emas!',
+            'born_date.required' => 'Tug\'ilgan sanani kiriting!',
+            'born_date.date' => 'Tug\'ilgan sana sana bo\'lishi kerak!',
+            'phone_number.required' => 'Telefon raqamini kiriting!',
+            'phone_number.min' => 'Telefon raqamini 5 ta belgidan iborat bo\'lishi kerak!',
+            'phone_number.max' => 'Telefon raqamini 15 ta belgidan ko\'p bo\'lishi kerak emas!',
+            'type_id.required' => 'Tipni kiriting!',
+            'address.required' => 'Manzilni kiriting!',
+            'region_id.required' => 'Regionni kiriting!',
+            'state_id.required' => 'Viloyatni kiriting!',
+            'passport.required' => 'Passport raqamini kiriting!',
+            'family.required' => 'Familiyani kiriting!',
+            'developer_photo.required' => 'Foto kiriting!',
+            'longitude.required' => 'Longitudeni kiriting!',
+            'latitude.required' => 'Latitudeni kiriting!',
         ];
     }
 }

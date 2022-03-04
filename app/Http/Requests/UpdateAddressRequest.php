@@ -29,6 +29,19 @@ class UpdateAddressRequest extends FormRequest
         return [
             'name' => 'required|min:3|max:250',
             'region_id' => 'required', Rule::exists('regions', 'id'),
+            'state_id' => 'required', Rule::exists('states', 'id'),
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'name.required' => 'Manzil nomini kiriting!',
+            'region_id.required' => 'Regionni kiriting!',
+            'region_id.exists' => 'Bu region mavjud emas!',
+            'state_id.required' => 'Viloyatni kiriting!',
+            'state_id.exists' => 'Bu viloyat mavjud emas!',
+        ];
+    }
+
 }

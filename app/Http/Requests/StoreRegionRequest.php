@@ -25,8 +25,20 @@ class StoreRegionRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required',
+            'name' => 'required|unique:regions|min:3|max:250',
             'state_id' => 'required|exists:states,id',   
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'name.required' => 'Qo\'shimcha ma\'lumotni kiriting!',
+            'name.unique' => 'Bu qo\'shimcha ma\'lumot mavjud!',
+            'name.min' => 'Region nomi 3 ta harfdan kattaroq bo\'lishi shart',
+            'name.max' => 'Region nomi 250 ta harfdan kattaroq bo\'lishi shart',
+            'state_id.required' => 'Viloyatni tanlang!',
+            'state_id.exists' => 'Viloyatni tanlang!',
         ];
     }
 }

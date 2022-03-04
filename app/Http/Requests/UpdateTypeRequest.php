@@ -24,7 +24,16 @@ class UpdateTypeRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:types'
+            'name' => 'required|min:3|max:250',
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'name.required' => 'Ma\'lumotni kiriting!',
+            'name.min' => 'Ma\'lumot nomi 3 ta harfdan kattaroq bo\'lishi shart',
+            'name.max' => 'Ma\'lumot nomi 250 ta harfdan kamroq bo\'lishi shart',
         ];
     }
 }
