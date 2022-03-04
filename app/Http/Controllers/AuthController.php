@@ -123,7 +123,7 @@ class AuthController extends Controller
 
     }
 
-    public function destroy()
+    public function destroy(Request $request)
     {
         $ids = $request->getContent();
 

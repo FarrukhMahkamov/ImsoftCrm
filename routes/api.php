@@ -103,3 +103,4 @@ Route::group(['middleware' => 'auth:sanctum',
                  Route::delete('users/delete', [AuthController::class, 'destroy']);
                  Route::delete('logout-user/{id}', [AuthController::class, 'logoutUser']);
              });
+             
