@@ -72,7 +72,7 @@ class StoreClientRequest extends FormRequest
             'home_address.required' => 'Manzilni kiriting!',
             'home_address.min' => 'Manzil 3 ta harfdan kattaroq bo\'lishi shart',
             'home_address.max' => 'Manzil 250 ta harfdan kattaroq bo\'lishi kerak emas',
-            'order_reason.required' => 'Qo\'shish uchun sababi kiriting!',
+            'order_reason.required' => 'Kelish uchun sababi kiriting!',
             'client_name.required' => 'Mijoz nomini kiriting!',
             'client_name.min' => 'Mijoz nomi 3 ta harfdan kattaroq bo\'lishi shart',
             'client_name.max' => 'Mijoz nomi 250 ta harfdan kattaroq bo\'lishi kerak emas',
@@ -90,7 +90,7 @@ class StoreClientRequest extends FormRequest
             'latitude.numeric' => 'Koordinatni kiriting!',
             'longitude.numeric' => 'Koordinatni kiriting!',
             'client_status.required' => 'Mijoz holati kiriting!',
-            'order_time.date' => 'Qo\'shimcha turini tanlang!',
+            'order_time.date' => 'Kelish vaqtini kiriting!',
             'file_1.required' => 'Rasmni kiriting!',
         ];
     }
