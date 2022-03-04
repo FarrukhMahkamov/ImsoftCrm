@@ -122,4 +122,14 @@ class AuthController extends Controller
         return UserResource::collection($users);
 
     }
+
+    public function destroy()
+    {
+        $ids = $request->getContent();
+
+        foreach(json_decode($ids) as $id) {
+            $address = User::findOrFail($id);
+            $address->delete();
+        }
+    }
 }
