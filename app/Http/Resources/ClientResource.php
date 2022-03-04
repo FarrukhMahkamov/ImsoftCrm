@@ -23,10 +23,10 @@ class ClientResource extends JsonResource
                 'category_name'=> $this->category ? $this->category->name : 'O\'chirilgan', //working //required
                 'activity_type_id'=> $this->activityType ? $this->activityType->id : 'O\'chirilgan',  //working
                 'activity_type_name'=> $this->activityType ? $this->activityType->name : 'O\'chirilgan',  //working
-                'state_id'=> $this->state->id, //working //required
-                'state_name'=> $this->state->name, //working //required
-                'region_id'=> $this->region->id, //working
-                'region_name'=> $this->region->name, //working
+                'state_id'=> $this->state ? $this->state->id : 'O\'chirilgan', //working //required
+                'state_name'=> $this->state ? $this->state->name : 'O\'chirilgan', //working //required
+                'region_id'=> $this->region ? $this->region->id : 'O\'chirilgan', //working
+                'region_name'=> $this->region ? $this->region->name : 'O\'chirilgan', //working
                 'address_id'=> $this->address ? $this->address->id : 'O\'chirilgan', //working
                 'address_name'=> $this->address ? $this->address->name : 'O\'chirilgan', //working
                 'home_address'=> $this->home_address, 

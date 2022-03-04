@@ -97,7 +97,7 @@ class StateController extends Controller
         foreach (json_decode($ids) as $id) {
             if (State::findOrFail($id)->region->count() > 0) {
                 return response()->json([
-                        'errors' => 'Vilayat ichidagi shaharlarni ochiring'
+                        'errors' => 'Vilayat ichidagi shaharlarni o\'chiring'
                     ], 422);
             }
             

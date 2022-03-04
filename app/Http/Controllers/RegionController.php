@@ -95,10 +95,16 @@ class RegionController extends Controller
     public function destroy(Request $request)
     {
         $ids = $request->getContent();
-
+    
         foreach (json_decode($ids) as $id) {
-            $type = Region::findOrFail($id);
-            $type->delete();
+            if (Region::findOrFail($id)->address->count() > 0) {
+                return response()->json([
+                        'errors' => 'Shahar ichidagi hudularni o\'chiring'
+                    ], 422);
+            }
+            
+            $state = Region::findOrFail($id);
+            $state->delete();
         }
     }
 }
