@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ImageUploadRequest;
 use App\Models\Client;
 use App\Http\Requests\StoreClientRequest;
 use App\Http\Requests\UpdateClientRequest;
@@ -34,7 +35,7 @@ class ClientController extends Controller
      * @param  \App\Http\Requests\StoreClientRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreClientRequest $request)
     {
         $client = Client::create($request->only([
             'general_info',
@@ -151,8 +152,9 @@ class ClientController extends Controller
         }
     }
 
-    public function storeImage(Request $request)
+    public function storeImage(ImageUploadRequest $request)
     {
+    
         if ($request->file('file')) {
             $file_1 = $request->file('file')->move('images/client/', time().'.'.$request
             ->file('file')
