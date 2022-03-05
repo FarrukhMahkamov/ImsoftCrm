@@ -49,7 +49,7 @@ class StoreProjectRequest extends FormRequest
             'from_whom.required' => 'Kim tomonidan ekanligini kiriting!',
             'from_whom.min' => 'Ism 3 ta harfdan ko\'p bo\'lishi shart',
             'from_whom.max' => 'Ism 200 ta harfdan kam bo\'lishi shart',
-            'general_info.required' => 'Eguliyat haqida ma\'lumotni kiriting!',
+            'general_info.required' => 'Umimiy ma\'lumotni kiriting!',
             'status_id.required' => 'Proekt holatini tanlang!',
             'start_date.required' => 'Proektni boshlanish sanasini kiriting!',
             'finish_date.required' => 'Proektni tugatish sanasini kiriting!',

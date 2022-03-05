@@ -98,9 +98,11 @@ Route::group(['middleware' => 'auth:sanctum',
                  Route::put('clients/{client}', [ClientController::class, 'update']);
                  Route::delete('clients/status/delete', [ClientController::class, 'destroy']);
 
-                 Route::post('users', [AuthController::class, 'registerUser']);
+                 
                  Route::get('users', [AuthController::class, 'getAllUsers']);
                  Route::delete('users/delete', [AuthController::class, 'destroy']);
                  Route::delete('logout-user/{id}', [AuthController::class, 'logoutUser']);
-                 });
-              
+                
+                 Route::put('users/{id}', [AuthController::class, 'updateUser']);
+                 Route::post('users', [AuthController::class, 'registerUser']);
+             });

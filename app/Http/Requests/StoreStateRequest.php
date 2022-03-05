@@ -27,4 +27,13 @@ class StoreStateRequest extends FormRequest
             'name' => 'required|unique:states'//
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'name.required' => 'Vilayat nomini kiriting',
+            'name.unique' => 'Vilayat nomi mavjud'
+        ];
+    }
+
 }

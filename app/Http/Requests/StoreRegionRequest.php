@@ -33,12 +33,12 @@ class StoreRegionRequest extends FormRequest
     public function messages()
     {
         return [
-            'name.required' => 'Qo\'shimcha ma\'lumotni kiriting!',
-            'name.unique' => 'Bu qo\'shimcha ma\'lumot mavjud!',
-            'name.min' => 'Region nomi 3 ta harfdan kattaroq bo\'lishi shart',
-            'name.max' => 'Region nomi 250 ta harfdan kattaroq bo\'lishi shart',
+            'name.required' => 'Shahar nomini kiriting!',
+            'name.unique' => 'Bu shahar mavjud!',
+            'name.min' => 'Shahar nomi 3 ta harfdan kattaroq bo\'lishi shart',
+            'name.max' => 'Shahar nomi 250 ta harfdan kattaroq bo\'lishi shart',
             'state_id.required' => 'Viloyatni tanlang!',
-            'state_id.exists' => 'Viloyatni tanlang!',
+            'state_id.exists' => 'Viloyat mavjud emas!',
         ];
     }
 }

@@ -89,8 +89,8 @@ class AuthController extends Controller
         if (!Hash::check($fields['old_password'], $user->password)) {
             return response([
                 'message' => 'Eski password noto\'gri'
-            ], 401);
-        }
+            ], 422);
+        }   
 
         $user->password = Hash::make($fields['new_password']);
         $user->save();
@@ -101,22 +101,25 @@ class AuthController extends Controller
         
     }
 
-    public function updateProfile(Request $request)
+    public function updateUser(Request $request, $id)
     {
+
         $fields = $request->validate([
             'name' => 'required|string',
-            'email' => 'required|string',
+            'login' => 'required|string',
             'access' => 'required|array',
-            'phone_number' => 'required|string'
+            'phone_number' => 'required|string',
+            'password' => 'nullable|string|min:6|max:200'
         ]);
 
-        $user = $request->user();
+        $user = User::find($id);
         
         $user->update([
             'name' => $fields['name'],
-            'email' => $fields['email'],
+            'login' => $fields['login'],
             'access' => json_encode($fields['access']),
-            'phone_number' => $fields['phone_number']
+            'phone_number' => $fields['phone_number'],
+            'password' => Hash::make($fields['password'])
         ]);
 
         return new UserResource($user);
