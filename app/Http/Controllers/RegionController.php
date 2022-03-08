@@ -50,7 +50,7 @@ class RegionController extends Controller
             'state_id'
         ]));
 
-        return new RegionResource($region);
+        return $this->statusCheker($region);
     }
 
     /**
@@ -64,7 +64,7 @@ class RegionController extends Controller
     {
         $region = Region::findOrFail($id);
         // return RegionResource::collection($region->with('state')->get());
-        return new RegionResource($region); 
+        return $this->statusCheker($region); 
     }
 
     /**
@@ -105,6 +105,17 @@ class RegionController extends Controller
             
             $state = Region::findOrFail($id);
             $state->delete();
+        }
+    }
+
+    private function statusCheker($region)
+    {
+        if ($region) {
+            return new RegionResource($region);
+        } else {
+            return response()->json([
+                'data' => 'Server bilan xatolik yuz berdi'
+            ]);
         }
     }
 }

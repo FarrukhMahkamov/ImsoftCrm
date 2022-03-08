@@ -36,8 +36,8 @@ class CreateClientsTable extends Migration
             $table->string('operator_phone_number');
             $table->string('operator_phone_number_2')->nullable();
             $table->string('operator_born_date');
-            $table->string('latitude');
-            $table->string('longitude');
+            $table->string('latitude')->nullable();
+            $table->string('longitude')->nullable();
             $table->integer('client_status');
             $table->text('file_1');
             $table->text('file_2');

@@ -48,10 +48,7 @@ class StateController extends Controller
     {
         $state = State::create($request->only('name'));
         
-        return response()->json([
-            'data' => 'Vilayat muvaffaqiyatli yaratildi',
-            'state' => $state
-        ], 201);
+        return $this->statusChecker($state);
     }
     
     /**
@@ -80,7 +77,7 @@ class StateController extends Controller
         $state = State::findOrFail($id);
         $state->update($request->only('name'));
         
-        return new StateResource($state);
+        return $this->statusChecker($state);
     }
     
     /**
@@ -103,6 +100,17 @@ class StateController extends Controller
             
             $state = State::findOrFail($id);
             $state->delete();
+        }
+    }
+
+    public function statusChecker($state)
+    {
+        if ($state) {
+            return new StateResource($state);
+        } else {
+            return response()->json([
+                'data' => 'Server bilan xatolik yuz berdi!' 
+            ]);
         }
     }
 }
