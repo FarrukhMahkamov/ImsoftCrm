@@ -19,6 +19,7 @@ class Client extends Model
         'address_id',
         'general_document',
         'home_address',
+        'order_reason_id',
         'order_reason',
         'client_name',
         'client_phone_number',

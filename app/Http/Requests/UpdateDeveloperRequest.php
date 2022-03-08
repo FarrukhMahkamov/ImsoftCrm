@@ -57,8 +57,7 @@ class UpdateDeveloperRequest extends FormRequest
             'passport.required' => 'Passport raqamini kiriting!',
             'family.required' => 'Familiyani kiriting!',
             'developer_photo.required' => 'Foto kiriting!',
-            'longitude.required' => 'Longitudeni kiriting!',
-            'latitude.required' => 'Latitudeni kiriting!',
+            'latitude.required' => 'Kordinatani kiriting!',
         ];
     }
 }

@@ -24,15 +24,18 @@ class CreateClientsTable extends Migration
             $table->foreignId('region_id');
             $table->string('address_id');
             $table->string('home_address');
-            $table->text('order_reason');
+
+            $table->integer('order_reason_id')->nullable();
+            $table->string('order_reason')->nullable();
+          
             $table->string('client_name');
             $table->string('client_phone_number');
-            $table->string('client_phone_number_2');
-            $table->dateTime('client_born_date');
+            $table->string('client_phone_number_2')->nullable();
+            $table->string('client_born_date');
             $table->string('operator_name');
             $table->string('operator_phone_number');
-            $table->string('operator_phone_number_2');
-            $table->dateTime('operator_born_date');
+            $table->string('operator_phone_number_2')->nullable();
+            $table->string('operator_born_date');
             $table->string('latitude');
             $table->string('longitude');
             $table->integer('client_status');

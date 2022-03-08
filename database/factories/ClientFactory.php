@@ -30,6 +30,7 @@ class ClientFactory extends Factory
             'general_document' => $this->faker->paragraph(12),
             'enterprise_name' => $this->faker->name(),
             'home_address' => $this->faker->address(),
+            'order_reason_id' => $this->faker->numberBetween(1, 5),
             'order_reason' => $this->faker->paragraph(),
             'client_name' => $this->faker->name(),
             'client_phone_number' => $this->faker->phoneNumber(),

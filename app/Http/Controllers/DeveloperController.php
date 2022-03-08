@@ -39,29 +39,9 @@ class DeveloperController extends Controller
     */
     public function store(StoreDeveloperRequest $request)
     {
-        $developer = Developer::create($request->only([
-            'name',
-            'born_date',
-            'phone_number',
-            'type_id',
-            'about',
-            'passport',
-            'family',
-            'developer_photo',
-            'state_id',
-            'region_id',
-            'address',
-            'longitude',
-            'latitude',
-        ]));
+        $developer = Developer::create($request->all());
 
-        if ($developer) {
-            return new DeveloperResource($developer);
-        } else {
-            return response()->json([
-                'message' => 'Error'
-            ], 500);
-        }
+        return $this->statusChecker($developer);
     }
     
     public function storeImage(Request $request)
@@ -82,6 +62,7 @@ class DeveloperController extends Controller
 
             return $family;
         }
+        
 
         if ($request->file('developer_photo')) {
             $developer_photo =  $request->file('developer_photo')
@@ -189,6 +170,17 @@ class DeveloperController extends Controller
         foreach (json_decode($ids) as $id) {
             $type = Developer::findOrFail($id);
             $type->delete();
+        }
+    }
+
+    private function statusChecker($developer)
+    {
+        if ($developer) {
+            return new DeveloperResource($developer);
+        } else {
+            return response()->json([
+                'message' => 'Error'
+            ], 500);
         }
     }
 }

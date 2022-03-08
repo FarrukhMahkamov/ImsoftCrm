@@ -34,7 +34,7 @@ class StoreDeveloperRequest extends FormRequest
             'passport' => 'required',
             'family' => 'required',
             'developer_photo' => 'required',
-            'longitude' => 'required',
+            'longitude' => 'nullable',
             'latitude' => 'required',
         ];
     }
@@ -58,8 +58,7 @@ class StoreDeveloperRequest extends FormRequest
             'passport.required' => 'Passportni kiriting!',
             'family.required' => 'Familiyani kiriting!',
             'developer_photo.required' => 'Foto kiriting!',
-            'longitude.required' => 'Longitudeni kiriting!',
-            'latitude.required' => 'Latitudeni kiriting!',
+            'latitude.required' => 'Kordinatani kiriting!',
         ];
     }
 }
