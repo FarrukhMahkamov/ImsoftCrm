@@ -16,7 +16,7 @@ class ReklamaResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'description' => $this->description 
+            'name' => $this->description 
         ];
     }
 }

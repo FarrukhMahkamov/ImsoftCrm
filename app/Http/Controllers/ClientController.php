@@ -37,9 +37,9 @@ class ClientController extends Controller
      */
     public function store(StoreClientRequest $request)
     {
-        $client = Client::create($request->only([
+        $client = Client::create([
             'general_info' => $request->general_info,
-            'general_document' => $request->general_document,
+            'general_document' => json_encode($request->general_document),
             'enterprise_name' => $request->enterprise_name,
             'category_id' => $request->category_id,
             'activity_type_id' => $request->activity_type_id,
@@ -62,10 +62,10 @@ class ClientController extends Controller
             'file_1' => $request->file_1,
             'file_2' => $request->file_2,
             'file_3' => $request->file_3,
-            'type_id' => $request->type_id,
             'client_status' => $request->client_status,
             'order_time' => date('Y-m-d', strtotime($request->order_time)),
-        ]));
+        ]);
+
 
         return new ClientResource($client);
     }
@@ -104,9 +104,9 @@ class ClientController extends Controller
      */
     public function update(Request $request, Client $client)
     {
-        $client->update($request->only([
+        $client->update([
             'general_info' => $request->general_info,
-            'general_document' => $request->general_document,
+            'general_document' => json_encode($request->general_document),
             'enterprise_name' => $request->enterprise_name,
             'category_id' => $request->category_id,
             'activity_type_id' => $request->activity_type_id,
@@ -119,20 +119,19 @@ class ClientController extends Controller
             'client_name' => $request->client_name,
             'client_phone_number' => $request->client_phone_number,
             'client_phone_number_2' => $request->client_phone_number_2,
-            'client_born_date' => $request->client_born_date,
+            'client_born_date' => date('Y-m-d', strtotime($request->client_born_date)),
             'operator_name' => $request->operator_name,
             'operator_phone_number' => $request->operator_phone_number,
             'operator_phone_number_2' => $request->operator_phone_number_2,
-            'operator_born_date' => $request->operator_born_date,
+            'operator_born_date' => date('Y-m-d', strtotime($request->operator_born_date)),
             'latitude' => $request->latitude,
             'longitude' => $request->longitude,
             'file_1' => $request->file_1,
             'file_2' => $request->file_2,
             'file_3' => $request->file_3,
-            'order_time' => $request->order_time,
             'client_status' => $request->client_status,
-            ''
-        ]));
+            'order_time' => date('Y-m-d', strtotime($request->order_time)),
+        ]);
 
             
         return new ClientResource($client);
